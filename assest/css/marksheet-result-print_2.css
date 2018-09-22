@@ -1,0 +1,148 @@
+@media print {
+table{margin-bottom:0 !important;}
+	.bg-logo{background-image:url(../../images/shakuntala/result_bg_logo-w.png) !important;
+
+	background-position:center center !important;background-repeat:no-repeat !important;}
+
+.student-info-t{    width: 100% !important;
+
+    background-color: #f1f1f1 !important;
+
+    border-bottom: 1px solid #e2e1e1!important;
+
+    padding: 2px 2px 2px 10px!important;    margin-bottom: 1px !important;
+
+    border-radius: 12px 12px 0px 0px!important;font-size:11px !important;}
+
+.student-per-info{width:100%!important;float:left!important;/*background-color:rgba(251, 251, 251, 0.7 )!important;*/border:1px solid #eee !important;}
+
+.student-per-info table{}
+
+.student-per-info table thead{}
+
+.student-per-info table thead tr th{}
+
+.student-per-info table tbody{}
+
+.student-per-info table.table tbody tr td{padding:1px 4px !important;border-top: 1px solid #ece9e9 !important;border-bottom: 0px solid #ece9e9 !important;font-size:10px !important;}
+.address-sec{min-height: 20px !important;
+
+    max-height: 50px !important;
+
+    overflow: hidden!important;}
+
+.academic-result-t{width:100% !important;float:left !important; background-color: #f1f1f1 !important;
+
+    border-bottom: 1px solid #e2e1e1 !important;
+
+    padding: 4px 2px 2px 12px !important;    margin-bottom: 1px !important;
+
+    border-radius: 12px 12px 0px 0px !important;margin-top:2px !important;font-size:11px !important;}
+
+
+
+/*print page*/
+
+.p-head-sec{min-height:490px !important;width:100% !important;float:left !important;padding:0 !important;margin:0 0 30px 0 !important;background-image:url(../../images/shakuntala/result_bg_logo-w.png) !important;background-position:center center !important;background-repeat:no-repeat !important;height:493px!important;}
+.modal-content{width:100% !important;float:left !important;border:1px solid #ddd !important;}
+.p-header{background-color:#eee !important;padding:0px 10px !important;min-height:40px !important;float:left !important;width:100% !important;}
+.c-logo-section{width:15% !important;float:left !important;}
+.p-logo-sec{width:70% !important;float:left !important;text-align:center !important;}
+
+.p-school-logo{width:15% !important;float:right !important; text-align:right !important;}
+
+.p-progress-msg-inner{padding-bottom:5px !important;margin-bottom:5px !important;border-bottom:1px solid #ddd !important;float:left !important;width:100% !important;font-weight: 600 !important;}
+
+.p-logo{width:55px !important;float:left !important;margin-top:10px !important;}
+.c-logo{width:45px !important;float:left !important;margin-top:10px !important;}
+.p-school-name-sec{text-align:center !important;margin-left:10px !important;}
+
+.p-school-name-sec h2{margin-top:10px !important;margin-bottom:3px !important;font-size:16px !important;}
+.p-school-name-sec p{font-size:11px !important;}
+
+.p-student-body{float:left !important;width:100% !important;padding:3px 0px !important;}
+.aca-header-text{text-align:center !important;padding-bottom:2px !important;font-size:12px !important;font-weight:600 !important;}
+.student-Information{width:100% !important;float:left !important;}
+
+.p-student-info{width:80% !important;float:left !important;padding-right:0px !important;}
+
+.p-student-photo{width:20% !important;float:left !important;}
+
+.student-photo{width:100px !important;border:1px solid #ddd !important;padding:5px !important;}
+
+.student-per-info1{width:60% !important;float:left !important;}
+
+.student-per-info2{width:40% !important;float:left !important;}
+
+.p-results-information-a{width:66% !important;float:left !important;padding-right:0px !important;}
+
+.p-results-information-c{width:34% !important;float:left !important;}
+
+.results-information table{border:1px solid #b1afaf !important;}
+
+.results-information table.table thead tr th{padding:2px 3px!important;border-right: 1px solid #b1afaf !important; border-top: 1px solid #b1afaf !important;   background-color: #e2dfdf !important;font-size:11px !important;text-align:center !important;    vertical-align: middle !important;}
+
+.results-information table.table tbody tr td{padding:2px 6px !important;border-right: 1px solid #b1afaf !important; border-top: 1px solid #b1afaf !important;font-size:10px !important;}
+
+.results-information table.table tbody tr:nth-child(even) {background: rgba(253, 250, 250, 0.8 ) !important;}
+
+.results-information table.table tbody tr:nth-child(odd) {background: rgba(255, 255, 255, 0.8 ) !important;}
+
+.principle-sign{width:70px !important;}
+
+.results-information table tbody.fullmarks tr td{text-align:center !important;}
+
+.results-information table thead.fullmarks-h tr th{text-align:center !important;} 
+
+.p-footer-sec{float:left !important;width:100% !important;font-size:10px !important;}
+
+.p-place-date{float:left !important;width:20% !important;text-align:left !important;}
+
+.p-techer-sign{float:left !important;width:25% !important;margin-left:3% !important;}
+
+.p-school-seal{float:left !important;width:25% !important;margin-left:4% !important;}
+
+.p-princi-sign{float:left !important;width:20% !important;margin-left:3% !important;}
+.modal-footer{padding:5px 10px 5px 10px !important; }
+.p-place-date,.p-techer-sign,.p-school-seal{margin-top:28px !important;}
+
+/*marksheet priviews results*/
+
+.class-wise-report-section-main{float:left !important;width:100%!important;font-size:12px!important;} 
+.classwise-reportbox{width:100%!important;float:left!important;} 
+.class-wise-report-r{font-size:12px!important;} 
+.class-wise-report-r thead tr th{text-align:center!important;background-color:#f1f1f1!important;} 
+.class-wise-report-r tr td{border:1px solid #eee!important;padding:5px 3px !important;} 
+.header-sec-f{text-align:center!important;padding:15px 50px 0 50px!important;float:left!important;width:100%!important;} 
+.header-sec-f .sv{font-size:18px!important;} 
+.stu-info-t{width:35%!important;font-size:12px!important;}
+ .stu-info{width:85px!important;font-size:11px!important;} 
+ .subject-name-f{width:40px!important;font-size:11px!important;text-align: center!important;} 
+ .stu-info-s-no{width:35px!important;font-size:11px!important;text-align: center!important;} 
+ .stu-info-roll,.stu-info-adm{width:44px!important;font-size:11px!important;text-align: center!important;}
+ .stu-info-att{width:35px!important;font-size:11px!important;} 
+ .section-header-title{background-color: #f1f1f1!important;    padding: 10px!important;font-weight: 600!important;width: 25%!important;margin:0!important;font-size:12px!important;} 
+ .topper-sec-box{width:65% !important;border:1px solid #ddd!important;font-size:12px!important;} 
+ .topper-sec-box thead tr th{background-color:#eee!important;padding:5px!important;} 
+ .topper-sec-box tr td{padding:5px!important;} 
+ .class-abstract-sec-box{border:1px solid #ddd!important;font-size:12px!important;} 
+ .class-abstract-sec-box thead tr th{background-color:#eee!important;padding:5px!important;} 
+ .class-abstract-sec-box tr td{padding:5px!important;} 
+ .class-wise-footer-sign{font-size:12px!important;border:1px solid #ddd!important;}
+ .scholl-name-head{background-color:#fff!important;}
+.c-teacher-page-breck{page-break-after: always!important;page-break-before: always!important;page-break-inside: avoid!important;}
+.page-break	{page-break-before: always; }
+
+
+
+
+
+
+
+
+  
+
+	   
+
+   }
+

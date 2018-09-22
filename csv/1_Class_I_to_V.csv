@@ -1,0 +1,852 @@
+admission_no,roll_no,class,section,student_name,father_name,mother_name,dob,gender,cast,contact_no,email_id,aadhar,height,weight,address,medium,subject_group,fit,elective_subject,blood_group,hostler,house,local_guardian,tc,admission_date
+3952,,I,A,Aastha Kumari Sao,Mr. Sanjay Kumar Suman,Mrs. Poonam Devi,19/11/12,Female,OBC,7869790887,,651217691352,,,"Shastri Nagar, Camp-1,Bhilai",English,,,,,,Shivaji,,,16/06/2018
+4214,,I,A,Aakriti Sharma ,Mr. Manji Sharma,Mrs. Swati Sharma,12/10/2012,Female,Gen.,9098404210,,474213610284,,,"Q/N- C.B-2/ I, Camp-1, Supela",English,,,,,,Shivaji,,,16/06/2019
+3617,,I,A,Anshu Mandavi,Mr. Manish Ku. Mandavi,Mrs. Veena Mandavi,23/12/11,Female,ST,9926113579,,527002197573,,,"Thana Supela Staff Q/N. -H, W.N. -3, Supela",English,,,,,,Shivaji,,,16/06/2020
+3713,,I,A,Mahi Rajput,Mr. Shankar Singh,Mrs. Durga Singh,22/03/11,Female,Gen.,9407672489,,236707525096,,,"Nilgiri I/13, Kharoon Greens, Kumari",English,,,,,,Shivaji,,,16/06/2021
+3733,,I,A,Navya Soni,Mr. Pawan Soni,Mrs. Anjani Soni,14/9/11,Female,OBC,8962010339,,763288836514,,,"H.N. 957, St-18, Mahadev Colony, Shanti Nagar, Supela",English,,,,,,Shivaji,,,16/06/2022
+3641,,I,A,Neha Sahu,Mr. Nohar lal Sahu,Mrs/ Anjali Sahu,3/10/2011,Female,OBC,8251002233,,,,,"Behind Gayatri Mandir, Ram Nagar, Muktidham",English,,,,,,Shivaji,,,16/06/2023
+4034,,I,A,Neetu Choudhary,Mr. Madaram Choudhary,Mrs. Kamla Choudhary,10/4/2012,Female,obc,9713111773,,417676636496,,,"78/D, Camp-2, Jalebil chowk, Supela",English,,,,,,Shivaji,,,16/06/2024
+4281,,I,A,Kumari Nidhi Sahu,Mr. Paras Kumar Sahu,Mrs. Anita Sahu,1.8.12,Female,obc,7747986620,,,,,"Contractor colony, Near Amod Bhavan, Supela",English,,,,,,Shivaji,,,16/06/2025
+3661,,I,A,Palak Meshram,Mr. Ramesh Meshram,Mrs. Isha Meshram,3.8.11,Female,SC,9893218232,,638520132900,,,"Contractor colony, Behind Digwijay Kirana Store, W.N.-6, Supela",English,,,,,,Shivaji,,,16/06/2026
+4373,,I,A,Pallavi Shriwas,Mr. Raju Shriwas,Mrs. Hemlata Shrivas,9.3.12,Female,SC,8085075454,,670249581852,,,"Q.N. 13/ D, St. N. 3, Zone -3, Khursipar",English,,,,,,Shivaji,,,16/06/2027
+4009,,I,A,Sejal Sao,Mr. Pappu Kumar,Mrs. Sneha Sao,29.4.12,Female,obC,8109507180,,555932316285,,,"Sanjana Medical Store ShastriChowk, Camp-1, W.N. 19, Supela",English,,,,,,Shivaji,,,16/06/2028
+3583,,I,A,Shiksha ,Mr. Gurucharan Verma,Mrs. Sheela Verma,17.9.11,Female,Gen.,7389377968,,773239558585,,,"Q/N-79/ D, Camp-1, W.N. 21, Pragati Nagar, Supela",English,,,,,,Shivaji,,,16/06/2029
+3945,,I,A,Shradha Upadhyay ,Mr. Virendra Upadhyay,Mrs. Suman Upadhyay,26.8.12,Female,Gen.,8085294483,,569949670169,,,"Behind Vaishali Nagar, College IHSDP  Awas Jawahar Nagar B.K. 4/11",English,,,,,,Shivaji,,,16/06/2030
+3957,,I,A,Ritika Bhuyan,Mr. Rudra Prasad Bhuyan,Mrs. Bilasini Bhuyan,11.4.12,Female,Gen.,7869550084,,,,,"S.C. Bhuyan C/O Rudra Prasad Bhuyan Store, Camp-1, Adarsh Nagar ",English,,,,,,Shivaji,,,16/06/2031
+4470,,I,A,Vibha Dewangan,Mr. Sheshmani Dewangan,Mrs. Dhaneshwari Dewangan,10.12.11,Female,OBC,9165161031,,,,,"C/O, Raju Pan Thela, Near Sahu Tall Santosh Para, Camp-2, Power House",English,,,,,,Shivaji,,,16/06/2032
+3564,,I,A,Yukti Maskare,Mr. Jivendra Maskare,Mrs. Malti Maskare,16.2.12,Female,OBC,7724080069,,88365215186,,,"Rani Awanti Bai chowk, Near Gayatri Mandir, Tata Line, Kohka",English,,,,,,Shivaji,,,16/06/2033
+3767,,I,A,Zoya Sheikh ,Mr. Ziqual Haque,Mrs. Zeenat Khatoon,2.5.11,Female,Gen.,7724046045,,63868693143,,,"Shaksharta Chowk, Shastri Nagar, Camp-1",English,,,,,,Shivaji,,,16/06/2034
+3566,,I,A,Aaditya Singh,Mr. Raju Singh,Mrs. Bandana Singh,12.10.11,Male,Gen.,9617649041,,,,,"W.N. 17. House -48, Near Singh Eng Marar, Para vill, Chhawani",English,,,,,,Shivaji,,,16/06/2035
+4350,,I,A,Anurag,Mr. Ranjeet ,Mrs. Shobha,26.2.12,Male,Gen.,8602284704,,834281621150,,,"Camp-1, Bhilai, Sanjana Medical Store",English,,,,,,Shivaji,,,16/06/2036
+3625,,I,A,Atul Chauhan ,Mr. Ashok Chouhan,Mrs. Usha Devi Chouhan,3.6.11,Male,Gen.,9993292417,,,,,"Chingri Pare, W.N, 5 Back Side of Kamala Medical, Supela",English,,,,,,Shivaji,,,16/06/2037
+3552,,I,A,Ayush Nagpure,Mr. Omprakash Nagpure,Mrs. Heena Nagpure,18.4.12,Male,Gen.,8959922696,,509051674723,,,"H.N. 340, Indira Chowk, Behind Laxmil Provision store , Ramnagar",English,,,,,,Shivaji,,,16/06/2038
+3531,,I,A,Chetan Giri,Mr. Chandan Giri,Mrs. Neelam giri,11.1.12,Male,gen.,8827422043,,,,,"Ramnagar, Shukla Gali , Near Gayatri Temple",English,,,,,,Shivaji,,,16/06/2039
+3638,,I,A,Krish Patel,Mr. Onkar Prasad Patel,Mrs. Mamta Patel,29.3.12,Male,Gen.,9407969186,,,,,Near Radha Krishna Mandir Chhawani,English,,,,,,Shivaji,,,16/06/2040
+3947,,I,A,Om Patel ,Mr. Palak Patel,Mrs. Binda Patel,28.6.11,Male,OBC,8817054726,,,,,"C/O, Chouhan, W.N. 14, Near G.H. School, Muktidham, Ramnagar",English,,,,,,Shivaji,,,16/06/2041
+3591,,I,A,Neeraj Kumar Sahu,Mr. Deepak Ku. Sahu,Mrs. Kavita Sahu,28.7.12,Male,OBC,9907106795,,787368093411,,,"W.N. 14, Near MuktiDham School, Sonar Para, Ramnagar",English,,,,,,Shivaji,,,16/06/2042
+3561,,I,A,Rishi Soni ,Mr. Sunil Soni ,Mrs. Anjana Soni,12.9.11,Male,Gen.,7869281576,,,,,"Durga Nagar, Power House, Bhilai",English,,,,,,Shivaji,,,16/06/2043
+3985,,I,A,Sameer Vishwakarma,Mr. Raju Vishwakarma,Mrs. Seema Vishwakarma,18.1.12,Male,OBC,7587183005,,978939987380,,,"Tiranga Chowk, Chhawani Near, Prakash Kirana Store",English,,,,,,Shivaji,,,16/06/2044
+3630,,I,A,Siddharth Rai,Mr. Amardeep Rai ,Mrs. Anamika Rai,4.8.12,Male,OBC,9406288881,,,,,"H.N., 290/A, Sundar Vihar, Colony, H.B",English,,,,,,Shivaji,,,16/06/2045
+3850,,I,A,Tejas Prajapati,Mr. Vinod Kumar Prajapati ,Mrs. Pushpa Prajapati,17.5.12,Male,OBC,9753555980,,824657627027,,,"Contractor Colony, Sirsa Road, In front of Bhilai, Nursing Home Behind of Aamod Bhavan W-12, Supela",English,,,,,,Shivaji,,,16/06/2046
+3907,,I,A,Utkarsh Dewangan ,Mr. Gyan Prakash Dewangan ,Mrs. Indu Dewangan,15.10.11,male,OBC,9300834678,,,,,"R.N. Muktidham, Near Govt. School, Supela",English,,,,,,Shivaji,,,16/06/2047
+3921,,I,A,Vedant Sahu ,Mr. Yogeshwar sahu,Mrs. Mana Sahu,17.10.11,Male,OBC,8085691614,,,,,"W.No-18, Near Lal Bahadur Atta Chakki , Shastri Nagar, Camp-1",English,,,,,,Shivaji,,,16/06/2048
+3946,,I,A,Vivek Tiwari,Mr. Ramnath Tiwari ,Mrs. Anita Devi,25.07.11,Male,Gen.,9981361085,,,,,"Ashok Kirana Shop, Surya Club, W. N. 18, Shastri Nagar, Supela",English,,,,,,Shivaji,,,16/06/2049
+4515,,I,A,Masdur Rahaman,Saikh Akbar Ali,Mrs. Manjuman Begum,01.11.11,Male,Gen.,9584313033,,766531858404,,,"Ali Gairaj Shastri Nagar, Camp-1, Supela",English,,,,,,Shivaji,,,16/06/2050
+4626,,I,A,Md. Sharique Siddiqui,Md. Raees Ahmad,Mrs. Baby Tarannum,07.10.12,Male,Gen.,9300358281,,,,,"Asharfi Road, Farid Nagar, H.W. 14",English,,,,,,Shivaji,,,16/06/2051
+1411,,I,A,Ranjana Ojha,Rajeev Ojha,Pratima Ojha,28/10/12,Female,Gen.,9630019141,,336641004968,,,"MIG-1, 2886 Housing board I/E, near Kalibadi",English,,,,,,Shivaji,,,16/06/2052
+4815,,I,A,Aditya Giriya,Premlal Giriya,Shweta Giriya,11.11.11,Male,OBC,8871615138,,715114975710,,,"St-6, shanti nagar Bhilai",English,,,,,,Shivaji,,,16/06/2053
+4820,,I,A,Shiksha Dewangan,Anil Kumar dewangan,Kunti Dewangan,31.8.12,Female,OBC,8871139800,,840682168093,,,qno-01 e-4 padum nagar bhilai 3 post bhilai east,English,,,,,,Shivaji,,,16/06/2054
+4813,,I,A,Yug Yadav,Sanjay Ku. Yadav,Sabita Yadav,9.1.13,Male,OBC,9329358007,,410564433352,,,"H.No-178, LIG-Housing board coloney, Charoda",English,,,,,,Shivaji,,,16/06/2055
+4909,,I,A,Hemakshi Manikpuri,Sanjeev Ku. Manikpuri,Usha Manikpuri,29.4.12,Female,OBC,9770519468,,548250505944,,,"Ekta Nagar, Bhilai-3",English,,,,,,Shivaji,,,16/06/2056
+3653,,I,A,Surabhi Shirekar,Manish Shirekar,Suwarna Shirekar,31.3.12,Female,OBC,7389537212,,279458319387,,,"H.No.273, st-no-04, shanti nagar",English,,,,,,Shivaji,,,16/06/2057
+5212,,I,A,om Thakre,kishore thakre,Laxmi Thakre,21/2/12,Male,obc,7869243192,,422083131025,,,baikunth nagar sec-1 camp-2 ward no-22,English,,,,,,Shivaji,,,16/06/2058
+5229,,I,A,Yukti Yadav,Samaru Yadav,Kiran Yadav,20/1/12,Female,obc,8319778562,,907574105663,,,hno-113 ram nagar ward 12,English,,,,,,Shivaji,,,16/06/2059
+5254,,I,A,Chitralekha Baghel,Rajkumar bhaghel,Ashima Bhaghel,25/11/12,Female,gen,9827935488,,532159942344,,,Contractor colony supela ,english,,,,,,Shivaji,,,16/06/2060
+3908,,I,B,Annu Kumari,Mr. Vijay Sav,Mrs. Aarti Sao,22.9.12,Female,OBC,9302176718,,,,,"W.No. 18, Lal Bahadur Aata Chakki Near by Neha Beauti Parler, Camp-1, Shastri Chowk",English,,,,,,Tagore,,,16/06/2061
+3639,,I,B,Anshika Yadav,Mr. Harish Yadav,Mrs. Jyoti Yadav,5.01.12,Female,Gen.,9926844201,,,,,"Ramnagar Muktidham Near Dewangan Pan thela, Bhilai",English,,,,,,Tagore,,,16/06/2062
+3729,,I,B,Anshika Verma,Mr. Manoj Verma,Mrs. Preet Verma,,Female,OBC,7722947448,,211778125408,,,"C/O Shiv Sagar Vidyalaya Behind Maszid, Supela",English,,,,,,Tagore,,,16/06/2063
+4377,,I,B,Anshika Mishra,Mr. Niranjan Mishra,Mrs. Swayam Prabha,12.6.12,Female,Gen.,8349762761,,868120614886,,,"Niranjan Mishra House No. 505, St.No. 5/C Ward No. 10 Santi Nagar, Bhilai",English,,,,,,Tagore,,,16/06/2064
+4475,,I,B,Aanvi ,Mr. Prem Kumar Gupta,Mrs. Sarika Gupta,147.11.12,Female,Gen.,8338833688,,405553854636,,,"Sunder Ngr Near Shiv Mandir Camp-1, Bhilai",English,,,,,,Tagore,,,16/06/2065
+3620,,I,B,Janvi Dewangan,Mr. Vinod Ku. Dewangan ,Mrs. Archana Dewangan,24.1.12,Female,OBC,8103612383,,,,,"R.k. Tailor Behind Venkteshwar Talkies near Pormeshwari Vidyalaya, Sanjay Nagar, Supela",English,,,,,,Tagore,,,16/06/2066
+3925,,I,B,Kashish Tiwari,Mr. Manoj Tiwari,Mrs. Nitya tiwari,17.05.11,Female,Gen.,7067074946,,208666404261,,,"Vrinda Nagar, Camp-1, Ward No.-17",English,,,,,,Tagore,,,16/06/2067
+4296,,I,B,Kshama Singh,Mr. Amit Singh,Mrs ranjna singh,2.6.12,Female,Gen.,9229859332,,434707267763,,,"Sangram Chowk, Camp-1, Bhilai Provision Store Post- Supela",English,,,,,,Tagore,,,16/06/2068
+4215,,I,B,Mahi Agrahari,Mr. Subhash Chandra Agrahari,Mrs. Sonam Agrahari,24.10.12,Female,Gen.,8827244000,,,,,"H.No.03, Laxmi Nagar, Near By Roshni Mobile",English,,,,,,Tagore,,,16/06/2069
+3956,,I,B,Navya Kumari,Mr. Navjeet Ku. Sao,Mrs. Preeti Devi,11.05.12,Female,OBC,9993506773,,,,,"Shastri Nagar, Camp-1, Bhilai",English,,,,,,Tagore,,,16/06/2070
+3740,,I,B,Purvi Yadav,Mr. Rajesh Yadav,Mrs. Savita yadav,30.5.11,Female,OBC,9691390146,,325782677438,,,"Rajeev Nagar, Supela",English,,,,,,Tagore,,,16/06/2071
+3595,,I,B,Saba Parveen,Sultan Ali,Mrs. Roshan Ara,16.01.12,Female,Gen.,9179501890,,804358097033,,,"Camp-1, Shastri Nagar, w.No. 18",English,,,,,,Tagore,,,16/06/2072
+3909,,I,B,Shreya Chakraborty,Mr. Sambal Chakraborty,Mrs. Rinku chakraborty,10.01.12,Female,Gen.,7898528266,,,,,"Surya Nagar, Near Bangali Dukan W.No26",English,,,,,,Tagore,,,16/06/2073
+3784,,I,B,Akash Sahu,Mr. Dinesh Sahu,Mrs. Sarita Sahu,8.12.11,Male,OBC,8109893605,,61072147338,,,"Arjun Nagar, Camp-1, Ward no-19, P.N. An 243, Bhilai",English,,,,,,Tagore,,,16/06/2074
+4193,,I,B,Aakash Gupta,Mr. Raj Kumar Gupta,Mrs. Manju Gupta,06.05.12,Male,Gen.,9691455577,,,,,"H.No. 67, St.No. 6, Sec-11, Nandini Road, Behind Dena Bank, Power House",English,,,,,,Tagore,,,16/06/2075
+3798,,I,B,Aman Kumar Dewangan ,Mr. Raj Kumar Dewangan,Mrs. Sonu Dewangan,3.1.12,male,OBC,9644455828,,647423229750,,,Venkteshwar Talkies Behind Bajrang Kirana Store,English,,,,,,Tagore,,,16/06/2076
+4521,,I,B,Ansh Ku.  Jaiswal,Mr. Hari Prasad Jaiswal,Mrs. Soniya Jaiswal,3.11.12,Male,OBC,9039101718,,843264185407,,,"Near New Basant Talkies camp-1, Pragati Nagar, Bhilai",English,,,,,,Tagore,,,16/06/2077
+3559,,I,B,Aniket Hirwani,Mr. Prakash Hirwani ,Mrs. Shanti hirwani,27.3.12,Male,OBC,9755004405,,,,,"Near Venketshwar Kirana Store Shastri , Market  Krishna Nagar",English,,,,,,Tagore,,,16/06/2078
+4059,,I,B,Arpit ,Mr. Lakhendra,Mrs. Kiran Devi,5.11.12,Male,OBC,9300691477,,986774094310,,,"Aadarsh Nagar, Camp-1, Talab Road Banty Kirana Store",English,,,,,,Tagore,,,16/06/2079
+3911,,I,B,Arnav Jaiswar,Mr. Anup Ku. Jaiswar,Mrs. Indu Jaiswal,10.1.12,Male,SC,9301130182,,96533323336,,,"Q.No. 105/A, Camp-1, Bhilai",English,,,,,,Tagore,,,16/06/2080
+3790,,I,B,Chirag Vishwakarma,Mr. Harish Vishwakarma,Mrs. Manisha Vishwakarma,14.10.12,Male,obc,9009643801,,,,,"Shankar Para Supela, W.No.5",English,,,,,,Tagore,,,16/06/2081
+4282,,I,B,Daljeet Singh Sindhu,Mr. Gurmukh Singh Sandhv,Mrs. Pinky Kaur,15.8.12,Male,Gen.,9713393267,,761294593129,,,"Camp-1, Prem Nagar, Ward-18, Q. No.-111/B",English,,,,,,Tagore,,,16/06/2082
+3778,,I,B,Md. Farhan Malik,Islmuddin Malik,Mrs. Salma Malik,27.8/.11,Male,Gen.,9826131044,,956221453879,,,Chawani Chowk Nandini Near Qrapal Weight Bridge,English,,,,,,Tagore,,,16/06/2083
+3596,,I,B,Nawaz Hussain,Anish Ahmed,Mrs. Ashma Banoi,12.3.11,Male,Gen.,9993320675,,416480633311,,,"LIG-I, 120,CG H.B 32 Acre Substation",English,,,,,,Tagore,,,16/06/2084
+3685,,I,B,Nitin Ku. Yadav,Mr. Vipin Ku. Yadav,Mrs. Rita Yadav,13.12.11,Male,OBC,9977034813,,,,,"18.No. Road Steel Nagar , Camp-1",English,,,,,,Tagore,,,16/06/2085
+3955,,I,B,Ram Sonkar ,Mr. Phool Chand Sonkar,Mrs. Sunita  Sonkar,8.10.11,Male,obC,9589931398,,,,,"Near To shakuntala Vidyalaya Rajiv Nagar, W-13, Supela",English,,,,,,Tagore,,,16/06/2086
+3624,,I,B,Rishabh Soni,Mr. Rakesh Soni,Mrs. Pallavi Soni,22.3.12,Male,OBC,9893239034,,,,,"Plot No.AN 23 Near Pump House W.19, Arjun Nagar, Camp-1",English,,,,,,Tagore,,,16/06/2087
+4018,,I,B,Shivam Singh,Mr. Padmakar Singh,Mrs. Arti Singh,21.07.11,Male,OBC,9993392513,,415000966409,,,"Q. No.CB/9/B, Pragati Nagar Camp-I, Bhilai",English,,,,,,Tagore,,,16/06/2088
+3873,,I,B,Shourya Singh,Mr. Sachidanand Singh,Mrs. Priyanka Singh,6.7.11,Male,Gen.,9425200351,,,,,Ramnagar Muktidham Aadarsh street Marg Opposite Neeraj Tailor,English,,,,,,Tagore,,,16/06/2089
+3396,,I,B,Sibtain Raza,Mr. Mohd Ameen,Mrs. Salma Malik,14.5.11,Male,Gen.,9300700500,,,,,"Ahmod Nagar , Camp-2, Bhilai",English,,,,,,Tagore,,,16/06/2090
+4556,,I,B,Veer Ku. Gupta,Mr. Santosh  Gupta,Mrs. Ruby gupta,3.5.12,Male,Gen.,9981898881,,851355570688,,,"C/O, Santosh Gupta H.N. 89, Ward No.13, Behind Basant Bahar Hotel, Rajiv Nagar, Supela",English,,,,,,Tagore,,,16/06/2091
+3953,,I,B,Yansh Singh,Mr. Ghanshyam Singh,Mrs. Priya Singh,8.8.12,Male,Gen.,7828446184,,701671531213,,,"Baikunthdham W.22, Behind Siddarth Vidyalaya, Camp-2",English,,,,,,Tagore,,,16/06/2092
+4870,,I,B,Dummu Dinesh,Dummu Pappa Rao,Dummu Gayatri Rao,9/7/2012,Male,OBC,9589366269,,598799134219,,,"CSEB coloney Bhilai-3, F-83",English,,,,,,Tagore,,,16/06/2093
+2896,,I,B,Menhaaz Warsi,Sakoor Warsi,Noorjahan Warsi,20.9.10,Female,Gen,9669970630,,377298522506,,,"Near National Pubvlic School, Krishna Nagar, Supela, Ward-4",English,,,,,,Tagore,,,16/06/2094
+4938,,I,B,Ilma Malik,Vashim Ahmad,Afsana Khatoon,29.11.11,Female,Gen,8878685786,,342787412218,,,"LIG_58, Ward-15/27, Industrial Estate, Bhilai",English,,,,,,Tagore,,,16/06/2095
+4936,,I,B,Saad Malik,Nadeem,Shyama,1.5.12,Male,Gen,7477227505,,412542496596,,,"LIG-58, CGHB, Industrial Estate",English,,,,,,Tagore,,,16/06/2096
+4854,,I,B,Deepika Sigh,Kamla Singh,Punam Devi Singh,22.10.11,Female,Gen,9039884482,,323233244944,,,"Kusum Provision store, circular market, Camp-2, Power House, Bhilai",English,,,,,,Tagore,,,16/06/2097
+5002,,I,B,Suhasini Dubey,Rajeev Dubey,Vandana Dubey,15.12.12,Female,Gen,9407726891,,748595731594,,,"New Khursipar, Near KaliMandir, Ward-32",English,,,,,,Tagore,,,16/06/2098
+4670,,I,B,Arya Kumar Modi,Mr. Manoj Modi,Mrs. Monika Modi,6.1.12,Male,Gen.,9826803480,,,,,"Manoj Modi EWS-324, Vaishali Nagar, Bhilai",English,,,,,,Tagore,,,16/06/2099
+4735,,I,B,Nishita Sharma ,Mr. Neel Kamal Sharma,Mrs. Sandhya Sharma,15.6.11,Female,Gen.,9827199442,,987823012927,,,"Gautam Nagar Khursipar Sec.-11, Zone-1, Near By Anil Floor Mile , Bhilai",English,,,,,,Tagore,,,16/06/2100
+5230,,I,B,Hulsi Sahu,Vishwanath Sahu,Arti Sahu,21/10/11,Female,obc,7389600144,,603304344832,,,hno-350/k shastri nagar camp-1 ward -19,English,,,,,,Tagore,,,16/06/2101
+5223,,I,B,Mukta Mall,Shambhu Nath,Sarika Devi,1/12/2011,Male,gen,9981063069,,598637159760,,,hno-412 Baikunth Nagar camp-1 ward no-22,English,,,,,,Tagore,,,16/06/2102
+5231,,I,B,Nutan kumari,Ghanshyam sao,Ahilya devi,25/11/11,Female,Obc,9993570639,,,,,hno-281 lal bhadur Aaata chhakki camp-01,English,,,,,,Tagore,,,16/06/2103
+5276,,I,B,Jinnat Jiya,Tajuddin Ansari,laila Khatoon,10/11/2010,Female,gen,9838873179,,549493204424,,,hno-137 israil Kirana store Sangam Chowk,English,,,,,,Tagore,,,16/06/2104
+4047,,I,C,Anamika Singh,Mr. Shankar Rajput,Mrs. Pooja,4.5.12,Female,Gen.,8357884228,,214157121604,,,"Kailash Nagar, Housing Board , EWS-2690-91",English,,,,,,Ashoka,,,16/06/2105
+3771,,I,C,Drishti Sahu,Mr. Sunil Ku. Sahu,Mrs.Chandrakala sahu,19.4.12,Female,OBC,9993245622,,385426295315,,,"Sanatan Nagar, Kohka, near, Kabirvatika, Supela",English,,,,,,Ashoka,,,16/06/2106
+4493,,I,C,Ishika Sharma,Mr. Indraprakash Sharma,Mrs.Anita Sharma,24.4.12,Female,gen.,9926470062,,,,,Near Radhakrishna Mandir Chhawani,English,,,,,,Ashoka,,,16/06/2107
+4161,,I,C,Jhalak Thakur,Mr. Umesh Ku. Thakur,Mrs. Bharti Thakur,23.11.12,Female,ST,8871570040,,826046773062,,,"Ramnagar, Muktidham, Sonarpara, P.O, Supela",English,,,,,,Ashoka,,,16/06/2108
+4051,,I,C,Jyoti Kumari ,Mr. Vijay Kumar,Mrs. Seeta Devi,2.1.13,Female,SC,9179692406,,929427216549,,,"Qr.No. 10, B.St. -27, Zone-2, Sec-11, Khursipar, Bhilai",English,,,,,,Ashoka,,,16/06/2109
+4017,,I,C,K. Vaishnawi ,Mr. K. Manoj ,Mrs. K. Nandani,20.5.12,Female,Gen.,8959390033,,,,,"New Krishanagar, Supela, Bhilai",English,,,,,,Ashoka,,,16/06/2110
+3581,,I,C,Nidhi Ambade,Mr. Ram Kumar,Mrs. Rukmani Ambade,22.12.11,Female,SC,7489423360,,603533453874,,,"Camp-1, Shastri Nagar, Bhilai, Rai Kirana Store",English,,,,,,Ashoka,,,16/06/2111
+4048,,I,C,Neha Singh Parihar,Mr. Rajesh Parihar,Mrs. Madhu Parihar,30.4.12,Female,Gen.,7047690793,,422293311046,,,"Kailash Nagar, Housing Board ",English,,,,,,Ashoka,,,16/06/2112
+4169,,I,C,Poorvi Sahu,Mr. Ramesh Ku. Sahu,Mrs. Duleshwari Sahu,18.9.12,Female,OBC,9617121530,,628525890724,,,"Behind Teendarshan Mandir, Camp-1, Bhilai, Ward-19",English,,,,,,Ashoka,,,16/06/2113
+4053,,I,C,Sukhmeet Kour Verma ,Mr. Mukesh Ku. Verma,Mrs. Shruti Verma,20.6.12,Female,Gen.,9827172943,,761325954775,,,"Shyamlal Verma Gayatri Mandir, Road, Ramnagar",English,,,,,,Ashoka,,,16/06/2114
+3910,,I,C,Vidhi Kour,Mr. Vikram Singh,Mrs Rajvinder Kour ,19.9.11,Female,OBC,7415425943,,339302759930,,,"h.No.52, Sunder Nagar, W-21 , Camp-1",English,,,,,,Ashoka,,,16/06/2115
+3655,,I,C,Yashika Sahu,Mr. Devendra Kumar,Mrs. Hemlata Sahu,2.7.12,Female,OBC,9303613939,,588135954772,,,"Contractor colony Sup. W.No. 6, H.No. 213",English,,,,,,Ashoka,,,16/06/2116
+3530,,I,C,Abdul Aquib,Abdul Raies ,Mrs. Salma Bano,9.9.11,Male,Gen.,9617649041,,295508912673,,,"Nizamin Manzil vrinda Nagar, Ward-17, Near Sangram Chowk, Camp-1",English,,,,,,Ashoka,,,16/06/2117
+3558,,I,C,Abhinav Hirwani,Mr. Prakash Hirwani,Mrs. Shanti Hirwani,27.3.12,Male,OBC,9993321921,,942804036531,,,"Venteshwar Kirana Store, Shastri Market, Krishnagar",English,,,,,,Ashoka,,,16/06/2118
+3755,,I,C,Md. Arslan,Mr. Nadim Uzzma Khan,Mrs. Tabassum Nisha,25.5.12,Male,Gen.,9009059668,,884308573553,,,"Shashtri Nagar , Camp-1, W-18, B.M. Shah Hospital",English,,,,,,Ashoka,,,16/06/2119
+4239,,I,C,Atharv Yadav,Mr. Vijay Yadav,Mrs. Nisha yadav,28.10.11,Male,Gen.,9826121971,,,,,"C/O, Dewangan Kirana Store, Nehru Chowk, W-19, Camp-1",English,,,,,,Ashoka,,,16/06/2120
+3816,,I,C,Bhumindra Ku. Churendra,Mr. Kaushal Singh,Mrs. Rekha Devi,4.7.12,Male,ST,9755681271,,868177137981,,,"H.-36, W-13, Rajiv Nagar, Ram Nagar, Post-Supela",English,,,,,,Ashoka,,,16/06/2121
+4005,,I,C,Jasim Khan,Md. Jafar Kamal Khan,Mrs. Raj bun Nisha,27.6.11,Male,Gen.,9713987953,,581250061251,,,"H.No. 168, Aman Road, Farid Nagar, Supela",English,,,,,,Ashoka,,,16/06/2122
+4192,,I,C,Koushalendra Pandey,Mr. Arvind Prakash Pandey,Mrs. Archana Pandey,15.3.11….,Male,Gen.,8109044950,,,,,"Vijay Complex, Camp-, Bhilai Azad Nagar St-6, Khursipar",English,,,,,,Ashoka,,,16/06/2123
+3895,,I,C,Prateek Kumar,Mr. Shailesh Kumar,Mrs. Veena ,5.4.12,Male,Gen.,8109169711,,231719996993,,,"Mukesh Mens Tailor Road, No.-18, Camp-1",English,,,,,,Ashoka,,,16/06/2124
+3663,,I,C,Priansh Bhandarkar,Mr. Mahendra Kumar Bhandarkar,Mrs. Rashmi Bhandarkar,24.7.12,Male,OBC,8085562275,,821947837844,,,"House No- 41, Near Shard Vid. Ramnagar",English,,,,,,Ashoka,,,16/06/2125
+3654,,I,C,Ram Ashatkar,Mr. Santosh Ashatkar,Mrs. Kavita Ashatkar,26.10.11,Male,Gen.,9826804136,,242738797111,,,"H.No.- 22, C/O, Sadan Traders, Panch Rasta Supela, Bhilai",English,,,,,,Ashoka,,,16/06/2126
+4057,,I,C,Ravindra Sahu,Mr. Yuwraj Sahu,Mrs. Sarnee Devvi,4.5.12,Male,OBC,9752985398,,,,,"Jay Printers Near Gayatri Mandir, Shakuntala Road, Ram Nagar",English,,,,,,Ashoka,,,16/06/2127
+4105,,I,C,Prince Sao,Mr. Umesh Sao,Mrs. Manju Davi Sao,31.3.12,Male,OBC,9993376973,,,,,"Shastri Nagar, Tiranga Chowk, Supela, Bhilai",English,,,,,,Ashoka,,,16/06/2128
+4295,,I,C,Ujjwal Sahu,Mr. Rajkumar Sahu,Mrs. Sunita Sahu,27.11.12,Male,OBC,9981408734,,878882544064,,,"Ramnagar, Muktidham, Pragti Sport Club, Bhilai",English,,,,,,Ashoka,,,16/06/2129
+4538,,I,C,Varun Ku. Sahu,Mr. Kewal Ku. Sahu,Mrs. Rameshwari Sahu,26.7.11,Male,OBV,8085350213,,675474065767,,,"Adarsh Nagar, Camp-1, Bhilai",English,,,,,,Ashoka,,,16/06/2130
+4316,,I,C,Vinit Kumar,Mr. Vijay Ku. Sao,Mrs. Sarita Devi,8.5.12,Male,OBC,9993020304,,644441897225,,,"Lal Bahadur Floormill, Shastri Chowk, Camp-1, Bhilai",English,,,,,,Ashoka,,,16/06/2131
+4384,,I,C,Yagyavalkya prakhar Pragya,Mr. Petamber Kurrey,Mrs. Prabha kurrey,12.5.12,Male,SC,9752435236,,906052410517,,,"P.L. Kurrey C/O Pskapse House No- 328, Ram Nagar, Bhilai",English,,,,,,Ashoka,,,16/06/2132
+4667,,I,C,Vanshika Singh,Mr. Pravir Ku. Singh,Mrs. Richa Singh,6.5.12,Female,Gen.,9907780499,,720697653873,,,"H.No. 175, W.No.11, Ramnagar",English,,,,,,Ashoka,,,16/06/2133
+4750,,I,C,Aliya Parveen ,Lt. Shamsad Aalam,Mrs. Husn ara Khatoon,1.1.12,Female,Gen.,7587105048,,,,,"Laxmi Market Near, V.N. Public School (C.G.)",English,,,,,,Ashoka,,,16/06/2134
+4770,,I,C,Rahul singh,Mr. Rajesh Singh,Mrs Rekha Rajpoot,5.11.12,Male,Gen.,8103666926,,,,,"Industrial Area Chhawani Bhilai, Near Radha Krishna Temple, Ward No.-28",English,,,,,,Ashoka,,,16/06/2135
+4857,,I,C,Saksham Singh,Ram Prakash Singh,Shanti Singh,25.6.12,Male,Gen,9009059366,,348920138432,,,"373, pragati peeth, Ramnagar Supela",English,,,,,,Ashoka,,,16/06/2136
+4863,,I,C,Lakshya Dewangan,Sunil dewangan,Durga Dewangan,15.6.12,Male,OBC,7389136021,,704103917342,,,"108, W-4, Sanjay Nagar, Dewangan Para, Supela",English,,,,,,Ashoka,,,16/06/2137
+4946,,I,C,Yusi Shah,Deepak Kumar Shah,Baby Shah,22.10.09,Female,OBC,9340421658,,340637002661,,,"H. No-184, Ward-17, Shramit Nagar, Chhavani",English,,,,,,Ashoka,,,16/06/2138
+4919,,I,C,Avi Dewangan,Sampat Dewangan,Nutan Dewangan,11.3.12,Male,OBC,7828169009,,502224460098,,,"New Police line, Behind Indira Para, Bhilai 3",English,,,,,,Ashoka,,,16/06/2139
+4959,,I,C,Kumud Dewangan,Suresh Dewangan,Hem Kumari Dewangan,22.2.13,Female,OBC,7725099712,,545398958230,,,"C/o Dewangan Cycle store, Gurudwara road, Ganesh Market Road, Supela",English,,,,,,Ashoka,,,16/06/2140
+5013,,I,C,Shristi,Lal chand,Sangeeta Sonkar,22.9.12,Female,SC,9589513748,,662262816188,,,"Mahatnma Gandhi Nagar, Camp-2, 4900001",English,,,,,,Ashoka,,,16/06/2141
+5023,,I,C,Shreya Sav,Dinesh Sav,Savita Sav,20.5.12,Female,OBC,8982799583,,454753920292,,,Rajeev Nagar Ward no-13/,English,,,,,,Ashoka,,,16/06/2142
+5210,,I,c,Vansh Dongre,Tarachand Dongre,Pratibha Dongre,4/10/2011,m,sc,9752819187,,502861065493,,,hno-43/e camp 1 supela,English,,,,,,Ashoka,,,16/06/2143
+5224,,I,C,Leena Sahu,Dinesh kumar Sahu,Neera Sahu,11/11/2011,f,gen,9303656956,,798379781507,,,hno-411 ward no12 mukti dham supela,English,,,,,,Ashoka,,,16/06/2144
+5228,,I,C,Ritika,Ravi Kumar ,Kavita,12/11/2012,f,gen,9771010495,,296161452149,,,hno-122 shastri nagar caMP-1 WARD NO10 SUPELA,English,,,,,,Ashoka,,,16/06/2145
+5267,,I,C,Shobhraj Thakur,Khemlal Thakur,Nilima Thakur,22/11/12,m,gen,9755110090,,565795411596,,,hno-9 shastri nagar camp-1 ward -18 supela,English,,,,,,Ashoka,,,16/06/2146
+5034,,I,C,Mahwish Sheikh,Abdul Shajeed Sheikh,Kahkasha Parveen,29/10/11,f,gen,9981639108,,979166694388,,,hno224 aman Road farid Nagar,English,,,,,,Raman,,,16/06/2147
+5311,,I,C,Chetna Thakur,Khemlal Thakur,Neelima Thakur,22.12.11,f,obc,9755110090,,714583128951,,,hno-09 shastri nagar camp-01 ward 18,English,,,,,,Ashoka,,,16/06/2148
+4091,,I,D,Anshu Choudhary,Mr. Rajesh Choudhary,Late Manisha Choudhary,22.9.12,Female,OBC,9770520380,,483738561697,,,"Block -03, Plot 10, Ward No-4, New Krishna, Nagar, Bhilai",English,,,,,,Raman,,,16/06/2149
+3913,,I,D,Ankita Lohe,Mr. Vinod Lohe,Mrs. Mamta Lohe,14.11.11,Female,OBC,9630793525,,666627189099,,,"Camp-1, Shastri Nagar",English,,,,,,Raman,,,16/06/2150
+3980,,I,D,Harshita Patel,Mr. Suresh Kumar Patel,Mrs. Durga Patel,5.11.12,Female,OBC,9827905564,,906781393330,,,Contractor Colony Supela Bhilai,English,,,,,,Raman,,,16/06/2151
+3774,,I,D,Zaina Siddiqui,Badruzama ,Mrs. Nazia Siddiqui,29.12.11,Female,Gen.,8878408556,,,,,"Shop No.-9, Shastri Market, Power House",English,,,,,,Raman,,,16/06/2152
+3708,,I,D,Priya Sethi ,Mr. Mahendra Sethi,Mrs. Soni Sethi,21.6.12,Female,SC,9300511521,,670533406610,,,"Indra Nagar, Supela, Ram Nagar, Bhilai",English,,,,,,Raman,,,16/06/2153
+3830,,I,D,Khushboo,Mr. Navin Chhati ,Mrs. Anuradha Chhatti,20.2.12,Female,ST,9691143854,,350162629488,,,"Contractor Colony ,Supela Bhilai",English,,,,,,Raman,,,16/06/2154
+3587,,I,D,Shahi Sharma ,Mr. Tarkeshwar Prasad,Mrs. Tripti Sharma,17.7.12,Female,Gen.,9303674844,,,,,"E.W.S. 1635 M.P., H.B. Bhilai",English,,,,,,Raman,,,16/06/2155
+4066,,I,D,Kunjal Verma,Mr. Nand Kumar Verma,Mrs. Mithleshwari Verma,30.11.12,Female,OBC,8085849640,,521195277312,,,"Sinhagali Ward-13, H.No. 29, Ram Nagar, Muktidham, Bhilai ",English,,,,,,Raman,,,16/06/2156
+4365,,I,D,Manvi Kumari,Mr. Mukesh Kumar,Mrs. Sadhna Devi,15.11.12,Female,OBC,8827293530,,331091354170,,,"Ward No- 13, Supela, Azad Chowk",English,,,,,,Raman,,,16/06/2157
+4023,,I,D,Md. Numan,Md Ismail,Mrs. Shamshad Begum,26.7.12,Male,OBC,7869162407/ 7869231334,,520979698620,,,"Ayappa Nagar, Plot No. 130, Enayat Manzil Supela",English,,,,,,Raman,,,16/06/2158
+3653,,I,D,Samar Ku. Nayak,Mr. Pramod Kumar Nayak,Mrs. Pinky Nayak,6.1.12,Male,Gen.,9329601177/ 9893195504,,,,,Maa Bamleshwari  Steel Indus. Ganesh Market  B/No.-2,English,,,,,,Raman,,,16/06/2159
+4072,,I,D,Ankit Kumar,Mr. Ajay Prasad ,Mrs. Rinky ,22.1.13,Male,SC,9993833425,,670493697289,,,"H.No. 104/A, Camp-1, Post, Supela, Bhilai, Durg",English,,,,,,Raman,,,16/06/2160
+3632,,I,D,Mayank Manikpuri,Mr. Panchram Manikpuri,Mrs. Pratima Manikpuri,16.12.11,Male,OBC,9826141747,,,,,"Infront of G.JJT Shahid Veer Narayan Nagar, W.3,8 PH, Bhiali",English,,,,,,Raman,,,16/06/2161
+3948,,I,D,Sameer Chouhan,Mr. Sanjeev Chauhan,Mrs. Suman Chouhan,5.5.11,Male,Gen.,9584907011,,,,,"Laxmi Nagar, Ward No. Supela Bhilai",English,,,,,,Raman,,,16/06/2162
+4045,,I,D,Akshat Kushwaha,Mr. Vijay Kushwaha,Mrs. Asha Kushwaha.,14.11.12,Male,Gen.,9301121994,,,,,"Kripal Nagar, Kohka Near, Sadbhavna Chowk, Bhilai",English,,,,,,Raman,,,16/06/2163
+4287,,I,D,Prince Gupta,Mr. Rajiv Gupta,Mrs. Shavita Gupta,21.7.12,Male,Gen.,9300699948,,310350333219,,,"Sharda Para, Ravidas Nagar, Camp-II",English,,,,,,Raman,,,16/06/2164
+3919,,I,D,Md. Tanveer Alam,Mr. Khursid Alam,Mrs. Shaira Begum,17.3.12,Male,OBC,9753555980,,,,,"Ramnagar,Purani Basti Supela",English,,,,,,Raman,,,16/06/2165
+4060,,I,D,Nikhil Sahu,Mr. Pikeshwar Sahu,Mrs. Nandini Sahu,12.12.12,Male,OBC,9752036655,,,,,"H.No. 167, W.No. 5, Laxmi Nagar, Supela",English,,,,,,Raman,,,16/06/2166
+4271,,I,D,Akshat Tiwari ,Mr. Ashutosh Tiwari,Mrs. Anju Tiwari,16.9.12,Male,Gen.,7869094893,,,,,"Near Durgamandir Ward No. 13, Ram Nagar, Supela, Bhilai",English,,,,,,Raman,,,16/06/2167
+3931,,I,D,Bhushan Meshram,Mr. Radheshyam Meshram,Mrs. Geeta Radheshyam Meshram,18.3.12,Male,obc,7879348295,,,,,"305/5 Shahid Nagar, Bhagad Singh, Ward-13",English,,,,,,Raman,,,16/06/2168
+3611,,I,D,Shreyash Sharma,Mr. Rohit Sharma,Mrs. Tanuja Sharma,16.5.13,Male,Gen.,8827406333,,,,,"Sanatan Nagar, Gayatri Nagar, Kohka",English,,,,,,Raman,,,16/06/2169
+4031,,I,D,Nikunj Ku. Sahu,Mr. Dipesh Ku. Sahu,Mrs. Anjali Sahu,28.7.12,Male,OBC,9981375954,,,,,"H.No. 131, Azad Chowk, Ram Nagar, Bhilai",English,,,,,,Raman,,,16/06/2170
+3822,,I,D,Vivek Ku. Das,Mr. Sapan Das,Mrs. Sakshi Das,1.4.12,Male,Gen.,7828415647,,,,,"Arjun Nagar, Camp-1, Ward -19",English,,,,,,Raman,,,16/06/2171
+4075,,I,D,Amar Sao,Mr. Ramnivas Sao,Mrs. GUDiya Sao,24.12.12,Male,,9981029503,,444065233126,,,"Contractor Colony, Supela, Bhilai",English,,,,,,Raman,,,16/06/2172
+4510,,I,D,Ansh Kumar,Mr. Mile Nath,Mrs. Sangeeta,4.7.12,Male,Gen.,7898679951,,588698971044,,,"Camp-1, Vrinda Nagar, House No. 538",English,,,,,,Raman,,,16/06/2173
+4385,,I,D,Md. Shoeb,Mr. Sirajul Hasan,Mrs. Sajda Begam,19.10.12,Male,Gen.,9575359512,,709492980993,,,"Camp-1, Brindanagar, Road No- 18, Near Balganesh Utsav Smiti",English,,,,,,Raman,,,16/06/2174
+4438,,I,D,Sejal Mandavi ,Mr. Phool Singh Mandavi,Mrs. Anita Mandavi,1.9.12,Female,ST,9406081548,,499466395819,,,"H.No. 612, St-7, Shanti Nagar, Bhilai",English,,,,,,Raman,,,16/06/2175
+4469,,I,D,Pawani Sahu,Mr. Sanjay Kumar,Mrs. Rameshwari Sahu,5.5.12,Female,OBC,8720846696,,604794648216,,,Kohka Road Kurrud Bhilai (Purani Basti) Ward -16,English,,,,,,Raman,,,16/06/2176
+4613,,I,D,Yakshit Lade,Mr. Pappu Lade,Mrs. Kiran lade,9.8.11,Male,SC,8305330740,,637780673343,,,"H.No. 32 Ward 24, Camp- 2, Vivekanand Nagar, Sharma Colony Khursipar",English,,,,,,Raman,,,16/06/2177
+4736,,I,D,Tejash Sharma,Mr. Rajkamal Sharma,Mrs. Sangeeta Sharma,5.9.11,Male,Gen.,8962666406,,794372696513,,,"Near of Anil Floor milk Gautam Nagar, Zone-1, Ward 36, Khursipar, Bhilai",English,,,,,,Raman,,,16/06/2178
+4760,,I,D,Rameshwari  Singh,Mr. Ramayan Singh,Mrs. Indramala Singh,7.6.12,Female,Gen.,9893218112,,551108714929,,,"Saraswati Kirana Store Ward No. 25, Nandini Road, Power House, Bhilai",English,,,,,,Raman,,,16/06/2179
+4844,,I,D,Samar Mourya,Shesh Nath Mourya,Girija Mourya,19.11.12,Male,OBC,9993795943,,811345565795,,,"Guru nanak Nagar, Ward-13, Supela",English,,,,,,Raman,,,16/06/2180
+4927,,I,D,Lohitaksh Rout,Anant ku. Rao,Anita Rout,9.8.12,Male,OBC,89624301629,,882933351491,,,"Guru kripa Bhwan, Ward-11, Ramnagar, near Hanuman Mandir",English,,,,,,Raman,,,16/06/2181
+4939,,I,D,Asad Ahmad,Jamil Ahmad,Amreen Ahmad,8.3.13,Male,Gen,7247602428,,568057365014,,,Inafar Coloney Chhavani Bhilai,English,,,,,,Raman,,,16/06/2182
+4988,,I,D,Md. Hamza,Ameer Ahmad,Rizwana Anjum,29.12.11,Male,Gen,9827721219,,,,,"H-178, Ward-07, Imam Bada chowk, fareed nagar Supela",English,,,,,,Raman,,,16/06/2183
+4848,,I,D,Devyani Singh,Dharmendra Ku. Singh,Deepa Singh,13.12.12,Female,OBC,9089688648,,234327720965,,,"LIG-1/628, dhancha bhawan main road Kurud",English,,,,,,Raman,,,16/06/2184
+4883,,I,D,Harsh Sahu,Ravi Ku. Sahu,laxmi,11.2.12,Male,OBC,9669866884,,384349529272,,,"MIG-2, plot 7/16, jawahar nagar supela",English,,,,,,Raman,,,16/06/2185
+4996,,I,D,Shourya Singh,Pramod Ku.,Supriya,30.11.11,Male,Gen,7566662000,,758630417353,,,"c/0 LIG-1/817, ward-15, housing board, bhilai",English,,,,,,Raman,,,16/06/2186
+5209,,1,D,Manyata Yadav,Kishor Yadav,Meera Yadav,20/6/12,Female,obc,9285441884,,860829914073,,,hno-00 ward -19 camp-1 supela,English,,,,,,Ashoka,,,16/06/2187
+5191,,1,D,Sarthak ku.Ghosh,Shrikant kumar Ghosh,Pramila Ghosh,5/3/2013,Male,gen,7415966730,,609419932446,,,maina bai kapse shaheed bhagat singh marg,English,,,,,,Raman,,,16/06/2188
+5213,,1,D,Mehul Das Sahu,Pritam das Sahu,Roshni Sahu,7/3/2012,Male,obc,9098922880,,471913908946,,,camp-1 arjun nagar ward no-17 supela,English,,,,,,Raman,,,16/06/2189
+5253,,1,D,Arpita Kumari,Manoj kumar Sao ,Shobha Devi,7/7/2012,Male,obc,7999016029,,459515043656,,,ward no-14 ramnagar supela,English,,,,,,Raman,,,16/06/2190
+3317,,II,A,Aditi,Mr. Sunil Ku.,Mrs.Rajshree Kushawaha,27/09/2011,,General,9111107733,,235050075112,,,"Kushawaha flour mill Ramnagar, Bhilai",English,,,,,,,,,16/06/2191
+3158,,II,A,Afrin Parveen,Haseeb Ahmad,Neelu Begam,10/4/2010,,General,9977806611,,267060930179,,,"In front of sparsh Hospital Shriram, Market Sirsha road",English,,,,,,,,,16/06/2192
+3997,,II,A,Aanchal Singh,Mr. Arun ku Singh,Mrs. Anjali Devi,14/01/2011,,General,9406298147,,636449123793,,,"Kailash Nagar Bhilai, H.B Near Dilip Parisar",English,,,,,,,,,16/06/2193
+4539,,II,A,Anshika Singh,Mr. Chandan Singh,Mrs. Anamika Singh,13/04/2011,,General,9425564047,,307960287862,,,"HN. 528, Road N-8, Gurunanak Nagar, Supela",English,,,,,,,,,16/06/2194
+4594,,II,A,Anushka Verma,Mr. Ramesh Kumar Verma,Mrs. Khileshwari Verma,14/10/2011,,General,9826541389,,768741744877,,,"Q.R. No. -135, Sundar vihar colony face-2 Kurud , Bhilai",English,,,,,,,,,16/06/2195
+3590,,II,A,Chanchal Sahu,Mr. Gopal Sahu,Mrs.Meena Sahu,1/5/2011,,OBC,9039086964,,348567593433,,,"LIG -79C, DDHB Colony Charoda Durg.",English,,,,,,,,,16/06/2196
+4015,,II,A,Fayeja Fatima,Mr.Abdul Mazeed,Mrs.Saleha Begam,17/12/2010,,General,7580818247,,238406540526,,,Tata line camp -1 qr No 23,English,,,,,,,,,16/06/2197
+3315,,II,A,Gurjala Tamanna,Mr.Prakash Kumar,Mrs G. Ranju,27/12/2011,,OBC,9826105062,,903659032144,,,"New Khursipara Jagir chowk Near, Shiv Mandir Bhilai",English,,,,,,,,,16/06/2198
+4424,,II,A,Ishrat parveen,Mr.Irfan Ahmad Warsi,Mrs. Aamna Khatun,30/03/2011,,General,9754649698,,372269593587,,,"Indirawati Nagar, Kohka Bhilai",English,,,,,,,,,16/06/2199
+3627,,II,A,Prachi Sahu,Mr. Pramod Sahu,Mrs.Basanti sahu,28/12/2010,,OBC,"7587263149, 7828902763",,706752112098,,,"C/O Tanuram Sahu, Vrinda Nagar, Camp-1",English,,,,,,,,,16/06/2200
+3981,,II,A,Abhay Agrawal,Mr. Santosh Agrawal,Mrs.Rekha Agrawal,29/09/2009,,General,"9300510024, 9329028543",,456554379290,,,"Lakhami Chand Adarsh Nagar, Camp-1",English,,,,,,,,,16/06/2201
+3529,,II,A,Abhay Singh,Mr. Satpal Singh,Mrs.Laxmi,14/09/2010,,General,"8109255158, 8871287480",,271641502654,,,"Q.No. 2 H, St. No. 31, Khursipur Zone -2, Bhilai",English,,,,,,,,,16/06/2202
+2910,,II,A,Akshat Sao,Mr.Ram Ashish,Mrs. Anjali Sao,8/4/2011,,SC,9301326695,,290139340270,,,"Sanjana Medical Store, Shastri Chowk,Camp-1, Bhilai",English,,,,,,,,,16/06/2203
+3575,,II,A,Alok Verma,Mr. Mahendra Verma,Mrs Neetu Verma,9/10/2011,,OBC,9691421699,,819226779705,,,"Rashi Kirana Store, Anand Chowk, Panch Rasta Bhilai",English,,,,,,,,,16/06/2204
+3507,,II,A,Aryan Verma,Mr. Rajesh Verma,Mrs. Manju Verma,20/09/2010,,General,"9329956875, 7689038333",,210218548076,,,"Near Gayatri Mandir , Indira Nagar Camp-2, Power House.",English,,,,,,,,,16/06/2205
+4432,,II,A,Aryan Vishwakarma,Mr. Manish Vishwakarma,Mrs.Pinky Manish Vishkarma,24/11/2010,,OBC,"9111964246, 8962256919",,489974276240,,,"Teen Darshan, Mandir Camp-1, Ward-18",English,,,,,,,,,16/06/2206
+3874,,II,A,Bishwajeet Maity,Mr. Amar Maity,Mrs.Barnali Maity,16/06/2011,,General,8.35E+19,,532614229763,,,"Vifvekanand Nagar, camp-2, Ward-25",English,,,,,,,,,16/06/2207
+4285,,II,A,Harshit Rai,Mr. Ratneesh Rai,Mrs.Reeta Rai,20/12/2011,,General,8871097514,,922585765371,,,"Vrinda Nagar, Camp- 1, Ward- 19, Bhilai",English,,,,,,,,,16/06/2208
+3155,,II,A,Kanak Verma,Mr. Anirruddh Kumar Verma,Mrs Beena Verma,14/11/2011,,OBC,9301293888,,729268869426,,,"Hous4e N0-362, pragati path, Dewangan Para, Ramnagar, Ward-13",English,,,,,,,,,16/06/2209
+3588,,II,A,Kushagra Dongre,Mr. Sandeep Dongre,Mrs. Rashmi Dogre,25/08/2011,,General,"9425556428, 8109149653",,512966318931,,,"B.No. 75/E, Camp-1 Supela, Bhilai",English,,,,,,,,,16/06/2210
+3437,,II,A,Naitick Dogra,Mr. Umesh Dogra,Mrs.Ruma Dogra,8/4/2010,,General,"8602287372,,7828996718",,767492281057,,,"House No. 297, Ram Nagar, Bhilai",English,,,,,,,,,16/06/2211
+3358,,II,A,Paras,Mr. Gautam Prasad Bedua,Mrs.Reeta Bedua,19/03/2011,,OBC,8269183073,,923927296008,,,Contractor Colony Supela,English,,,,,,,,,16/06/2212
+3503,,II,A,Shreyesh Tiwari,Mr. Vinod Tiwari,Mrs.Aruna Tiwari,1/5/2011,,General,9827917253,,698898308571,,,"Ward-19, Camp-1, Vrindra Nagar",English,,,,,,,,,16/06/2213
+4010,,II,A,Dimpal Thakur,Mr. Hemendranath Thakur,Mrs.Kirti Thakur,24/12/2010,,ST,7587105043,,267806752366,,,"H.N. 91/K, Arjun Nagar, Camp-I, Ward No-19",English,,,,,,,,,16/06/2214
+4482,,II,A,Anant Kumar Yadav,MR. Dinesh Kumar Yadav,Mrs Prerna Yadav,7/2/2011,,OBC,9300282414,,845459458916,,,"S/O 188, Ambedkar Nagar, Kohka Road , Supela Bhilai",English,,,,,,,,,16/06/2215
+2941,,II,A,Ritesh Kumar Sinha,Mr. Chandra Prakash,Mrs Puspha Sinha,19/04/2011,,OBC,"9827906359, 8085984255",,924307567368,,," Ward -19,Arjun Nagar, Supela",English,,,,,,,,,16/06/2216
+4422,,II,A,Gaurav Singh,Mr. Manohar Singh,Mrs.Sandhya Singh,19/07/2011,,General,"9907405586, 9981519843",,733079485379,,,"233,Behind S.K. Kirana Stores, Muktidham, ward 13 ram nagar",English,,,,,,,,,16/06/2217
+3227,,II,A,Shrejal Chakraborty,Mr Sanjay Chakraborty,Mrs Anjana Chakraborty,9/2/2011,,General,9826444078,,581286843262,,,"EWS-1215, Ward-16, Housing Board I- E, Bhilai",English,,,,,,,,,16/06/2218
+4450,,II,A,Shrishti Shambharkar,Mr. Rajesh Kumar,Mrs Rachna,9/5/2011,,SC,8103341196,,383229851649,,,"Plot No. 86 W.N. 13, Near Thakre road shakuntala vidyalaya ",English,,,,,,,,,16/06/2219
+3308,,II,A,Sujal Pandey,Nirbhay Pandey,Mrs Neelu Pandey,25/01/2011,,General,8305188575,,250160909246,,,"Beside Krishna Vidyalaya, Gayatri Mandir, Ward-13, Ramnagar, Supela.",English,,,,,,,,,16/06/2220
+3174,,II,A,Trisha Sinha,Giriraj Sinha,Mrs Amrita Sinha,3/4/2011,,OBC,9926170628,,764760798169,,,"Near Five Temple H.No. 611, Ramnagar, Bhilai",English,,,,,,,,,16/06/2221
+4007,,II,A,Darsh Dewangan,Mr. Rajendra Dewangan,Mrs Madhu Dewangan,24/06/2011,,OBC,9329318169,,658963994236,,,ram nagar sahu para bhilai,English,,,,,,,,,16/06/2222
+4905,,II,A,Lakshya Verma,Mr. Bhuneshwar Verma,Mrs Pooja Verma,3/1/2012,,OBC,8889872382,,698390044532,,,"Gandhi Chowk, W.No.23, Shardapara , Camp-2, Power House",English,,,,,,,,,16/06/2223
+4950,,II,A,Pratishtha Mahule,Praveen Mahule,Rushali Mahule,,,,,,868143165937,,,,English,,,,,,,,,16/06/2224
+4506,,II,A,Ayush Gendre,kartik ram Gendre,Prabha Gendre,27.07.11,,SC,6261761110,,736554293305,,,near muslim kabristan durga timber ramnagar ,English,,,,,,,,,16/06/2225
+2939,,II,A,Maulik Bajpai,,Mrs Sujata Bajpai,11/10/2011,,General,9302681500,,463775315186,,,"Vijay hardware Store infront of  chotu Sweets, H.No. 175, road no18 shukla gali Ramnagar, Supela",English,,,,,,,,,16/06/2226
+3540,,II,A,Naveen Chouhan,Mr. Santosh Chauhan,Mrs Seema Chauhan,20/05/2011,,General,9981400407,,809169653797,,,"Kohka Road, Indira Nagar, Supela ward no. 6",English,,,,,,,,,16/06/2227
+2533,,II,A,Nayan Dewangan,Mr. Leelam Kumar,Mrs Deepika,15/11/2011,,OBC,7879612295,,388031226987,,,Hno.42 contractor colony ward 12 anmol bhawan supela,English,,,,,,,,,16/06/2228
+4243,,II,A,Rahul Sinha,Mr Raj Kumar Sinha,Mrs Kavita Sinha,2/12/2010,,General,9926201460,,224013222450,,,Shahid Bhagat Singh Marg. Ramnagar.,English,,,,,,,,,16/06/2229
+4744,,II,A,Vivek Gupta,Mr. Vijay Gupta,Mrs Rinky ,1/7/2011,,General,"9754009595,",,969321296919,,,"Plot No. 16, Gandhi Colony, Sirsa Road, Kohka",English,,,,,,,,,16/06/2230
+3686,,II,A,Ansh Diwan,Mr. Shrikant Diwan,Mrs Uma Diwan,20/112010,,General,7869190695,,940576195235,,,New soni flour mill pragati path ram nagar,English,,,,,,,,,16/06/2231
+4498,,II,B,Rukhsar Hussain,Mr. Mubarak Hussain,Mrs Asmat Ara,2/10/2011,,OBC,9827189218,,313944373186,,,"Near Shakh sharata Shastri Nagar, Camp-1",English,,,,,,,,,16/06/2232
+4173,,II,B,Ashna Bisen,Mr. Jitendra Kumar Bisen,Mrs. Chhaya Bisen,2/10/2012,,General,9826162727,,493320222173,,,"H.No. 31/G, Camp-1, Ward- 20, Prem Nagar, Supela",English,,,,,,,,,16/06/2233
+2978,,II,B,Disha Thakur,Late Shri Nand Kumar Thakur,Smt.Dulari,25/06/2011,,ST,9098771602,,508022673209,,,Ramnagar Mukti Dham Adarsh Street Ward No- 13,English,,,,,,,,,16/06/2234
+4372,,II,B,Ayush Ku. Sahu,Mr. Tej Kumar Sahu,Mrs Nirmala Sahu,11/4/2011,,OBC,"7566035621, ",,690731700938,,,"Tej Kumar Sahu C/o, Ganga Dhan Sahu, Near Paragati Sport Club.",English,,,,,,,,,16/06/2235
+4008,,II,B,Chhavindra Kumar Dhruw,Mr. Sushil Dhruw,Mrs. Reena Dhruw,10/4/2011,,General,9754925751,,740174012615,,,"St.-1, Indra Gandhi Adarsh Nagar, Zone-3",English,,,,,,,,,16/06/2236
+3631,,II,B,Pranay Manikpuri,Mr. Nirmal Das Manikpuri,Mrs.Deepti Manikpuri,3/1/2011,,OBC,9302461816,,208603114994,,,"H.No. 1705, Near Maldar Bhawan Ganesh Chowk, Krishna Nagar.",English,,,,,,,,,16/06/2237
+4622,,II,B,Umang Kumar Sahu,Mr. Raj Kumar Sahu,Mrs. Sunita Sahu,14/07/2011,,OBC,7415682329,,988166777078,,,"Pragati Sport club muktidham, Ramnagar",English,,,,,,,,,16/06/2238
+3197,,II,B,Abhay Kumar,Mr. Surendra Kumar,Mrs. Jyoti,14/04/2012,,OBC,9907668118,,881908522001,,,"House No. 378,  Ward 13, Mukti Dham Ramnagar.",English,,,,,,,,,16/06/2239
+4430,,II,B,Akansha Dewangan,Mr. Bharat Dewangan,Mrs.Madhu Dewangan,10/3/2011,,General,9755305448,,469895805414,,,"Shahid Veer Narayan Singh Nagar, Khursipar , Bhilai",English,,,,,,,,,16/06/2240
+3363,,II,B,Avdharna Sahu,Mr. Gautam Ram Sahu,Mrs.Sudha Sahu,1/8/2011,,OBC,9993602139,,459240728736,,,"Santoshi Para Near. Dr. S.P. Nirala Camp.-2, Ward No. 25 Durg",English,,,,,,,,,16/06/2241
+4553,,II,B,Lawanya Sahu,Mr. Awadh Kishore Sahu,Mrs.Manju Sahu,15/10/2010,,OBC,9406420013,,583800456597,,,"W.No. 19 Camp-I Teen Darshan Mandir, Behind Nandu Kirana Stores.",English,,,,,,,,,16/06/2242
+3640,,II,B,Pustee Dewangan,Mr. Jitendra Dewangan,Mrs.Surekha Dewangan,25/01/2011,,OBC,9302160845,,683941998226,,,Pardeshi Chowk Ward 13 House No. 243,English,,,,,,,,,16/06/2243
+3548,,II,B,Ch. Srikirti,Mr. Ch. Sreedhar,Mrs.Ch.Devi,4/5/2011,,OBC,9329026529,,317082574819,,,"Qr. 3/8, St-31, Zone -2, Sec.- 11 Khursipar Ward-30",English,,,,,,,,,16/06/2244
+4199,,II,B,Abhijit Biswas,Mr. Bishwajit Biswas,Mrs.Poly Biswas,4/1/2012,,SC,9993313754,,372025485505,,,"Panch Rasta Supela, Bhilai",English,,,,,,,,,16/06/2245
+3799,,II,B,Arjun Singh,Mr. Ashok Ku. Singh,Mrs.Rekha  Singh ,25/06/2010,,General,9300231545,,928594332772,,,"Near Patel Bakery Supela, Market",English,,,,,,,,,16/06/2246
+4306,,II,B,Ayush Choudhary,Mr. Hare Ram Choudhary,Mrs. Rita Devi,9/12/2011,,General,9893773766,,846286698720,,,"Mishri lal Pan Bhandar Shop No.-54/B, Shastri Market , Ward-27, Bhilai Power House",English,,,,,,,,,16/06/2247
+3518,,II,B,Ishan Sharma,Mr. Deepak Sharma,Mrs.Vidhi Sharma,16/07/2011,,General,982766195,,582038339300,,,"RamNagar, Pardeshi  chowk Supela, Bhilai",English,,,,,,,,,16/06/2248
+4158,,II,B,Mayank Dubey,Mr. Ghanshyam Dubey,Mrs.Rinky Dubey,10/2/2012,,General,9827645340,,652056726779,,,"On Fruit Company Vijay Complex, Camp-2, Power House, Bhilai",English,,,,,,,,,16/06/2249
+4467,,II,B,Naman Kumar Sao,Mr. Leman Sao,Mrs Sunita Devi Sao,27/03/2011,,OBC,9039767838,,547934534732,,,"Camp- 1 Ward No.-18, MR. Pradeep Kirana Stores, Bhilai",English,,,,,,,,,16/06/2250
+3666,,II,B,Vidhan Singh,Mr. Krishna ku. Singh,Mrs.Mamta singh,16/08/2010,,General,7898203735,,320766046700,,,"H.No. 870, St-13, Ward-11, Shanti Nagar, Bhilai Durg",English,,,,,,,,,16/06/2251
+3604,,II,B,Yuvraj ku sao,Mr. Mahesh Lal,Mrs. Gayatri Devi,19/05/2011,,OBC,7898358217,,704290179659,,,"Laxmi Kunj, Sharda Para , Road Near Hanuman Temple, Shankar Samaj Camp- II",English,,,,,,,,,16/06/2252
+4645,,II,B,Aarush Sahu,Mr. Brinda Ban Sahu,Mrs.Sunita Sahu,22/08/2011,,General,9098789446,,810499188341,,,"Kohka, MIG- II,  Qt- 44, Bhilai housing board",English,,,,,,,,,16/06/2253
+3944,,II,B,Pooja Sahu,Mr. Churaman Singh Sahu,Mrs. Geeteshwari Sahu,14/05/2011,,OBC,7869369238,,805496589846,,,"Gayatri Mandir, Ram Nagar, Bhilai",English,,,,,,,,,16/06/2254
+3217,,II,B,Anukriti Mishra,Mr. Sanjay Mishra,Mrs Kanchan  Mishra,8/4/2012,,General,8319393266,,,,,1297 Mishra Bhavan Ramnagar,English,,,,,,,,,16/06/2255
+4113,,II,B,Chanchal Tahlani,Mr. Naresh Ku. Tahlani,Mrs Ganga Tahlani,23/10/2010,,General," 9907445781, 8435150740",,350248065182,,,"H.No. 389 Ram Janki Mandir Road , W-13, Ram Nagar",English,,,,,,,,,16/06/2256
+3892,,II,B,Shreya Pandey,Mr. Ghanshyam Pandey,Mrs.Nisha Pandey,3/9/2010,,General,"8602373515, 8461807482",,262908108073,,,"Block No. 76/F, Camp-1, Jalebhi Chowk ward 21 pragati nagar",English,,,,,,,,,16/06/2257
+2902,,II,B,Stuti Tiwari,Mr. Ashutosh Tiwari,Mrs.Anju Tiwari,10/8/2010,,General,7869094893,,223306255256,,,"Near Durga Mandir, Rajeev Nagar, Ward -13, Supela, Bhilai",English,,,,,,,,,16/06/2258
+3903,,II,B,Anshuman Kumar,Mr. Ajay Kumar,Mrs. SwetaRani,19/08/2011,,OBC,"9977646560, 9575609295",,844869006241,,,"Ajay Kumar S/O- Ben Ku. Ramnagar, Mukti Dham, Bhilai",English,,,,,,,,,16/06/2259
+3780,,II,B,Arpit Yadav,Mr. Surendra Yadav,Mrs Seema Devi,31/05/2011,,OBC,8871236217,,929041349222,,,"Camp- 1 Virenda Nagar, Road No -18",English,,,,,,,,,16/06/2260
+3178,,II,B,Md. Aiyaz Khan,Md. Sajid Khan,Mrs.Shabnam Begam,14/07/2011,,OBC,9827935102,,859352337735,,,"TVS Repair Shop Near Shiv Mandir Sunar Nagar, Camp-1",English,,,,,,,,,16/06/2261
+4528,,II,B,Prem Saw,Mr. Mahendra Saw,Mrs. Sonia Saw,14/03/2010,,General,9685219550,,464557322124,,,"Ram Nagar, Ajad Chowk Bhilai",English,,,,,,,,,16/06/2262
+3313,,II,B,Siddharth Verma,Mr. Rajesh Verma,Mrs Savitri Verma,25/11/2010,,OBC,9977524726,,291993459343,,,"H.No. 260, Ward -12, Contractor Colony Near Bamleshwari Mandir, Supela",English,,,,,,,,,16/06/2263
+4649,,II,B,Tarun Rai,Mr. Vijay Ku. Rai,MrsSadhna Rai,3/2/2011,,General,7566332590,,350392954652,,,"Behind SV. Pragati Path , Ramnagar.Supela near w-13 soni flour mill",English,,,,,,,,,16/06/2264
+3411,,II,B,Harsh Kumar,Pramod Kumar,Mrs Kiran Devi,24/04/2011,,SC,"9402263100, 7470499074",,379308750718,,,"H.No. 63, Ambedkar Chowk Balaji Nagar, Sec.- 11 ward- 30, Khursipar, Bhilai",English,,,,,,,,,16/06/2265
+3682,,II,B,Afrin Nisha,Mr. Istikhar Ali, Mrs. Reshma Bano,1/5/2011,,General,7869915555,,769236957076,,,"Camp-1 Block No. 45/F, Maszid Road Ward-20",English,,,,,,,,,16/06/2266
+3199,,II,B,Anvesha Singh Chouhan,Arvind Singh Chouhan,Mrs Anju Singh Chouhan,12/5/2012,,General,"8269153945, 9179564762",,967006116130,,,"H.No. 200, Indrawati Bhawan, St.-2, Shanti Nagar",English,,,,,,,,,16/06/2267
+4471,,II,B,Pihoo Sharma,Mr. Rajesh Sharma,Mrs Beena Sharna,1/12/2011,,General,7489541159,,628767858348,,,"Near Shakuntala Vidyalaya, Subhash Road, Infront of Hanuman Temple, Supela",English,,,,,,,,,16/06/2268
+3711,,II,B,Sneha Mourya,Mr Surendra Mourya,Mrs Seema Mourya,24/10/2010,,OBC,"9981261251, 7772063251",,432366434188,,,LIG 1627 dhacha bhawan kurud ,English,,,,,,,,,16/06/2269
+3157,,II,B,Yashika,Mr Subhash Agrahari,Mrs Sonam,22/04/2011,,General,8827244000,,710966329247,,,"Roshni Maalaxmi Nagar, Supela",English,,,,,,,,,16/06/2270
+3196,,II,B,Akshat,Mr. Manoj Kumar,Mrs Jaishree ,16/06/2011,,SC,8103545321,,290139340270,,,"R.N Supela, Old SRJ Kokha Road, Opp. Bharti Vastralaya",English,,,,,,,,,16/06/2271
+3337,,II,B,Himesh Dewangan,Mr. Anand Dewangan,Mrs Bhuneshwari,2/7/2011,,General,"9752302846, 9752362846",,382065566802,,,"Shahid Veer Narayan Singh Nagar, Khursipar",English,,,,,,,,,16/06/2272
+3720,,II,B,Naman Choudhary,Mr. Ashok Choudhary,Mrs Saroj Choudhary,28/05/2010,,SC,9475235452,,376669338386,,,Subhash Nagar Nandini Road,English,,,,,,,,,16/06/2273
+4846,,II,B,Anant Dewangan,Mr.Ashwanee Dewangan,Mrs.Sandhya Dewangan,25/07/2011,,OBC,"9755501745, 8839066010",,970741828868,,,Bajrang para kohka ward no-08 limha talab bhilai,English,,,,,,,,,16/06/2274
+5018,,II,B,Zoya,Salim khan ,Noorjahan Begum,09.12.2010,,Gen,9303561425,,827624024984,,,House no. 1444 Street -3 Sundar Nagar Kohka west Bhilai  ,English,,,,,,,,,16/06/2275
+2896,,II,B,Rishi Yadav,Rakesh Yadav ,Sarita Yadav,9.04.2010,,Gen,9755361787/7893624161,,903453515302,,,Near Patel Bakery Supela chowk,English,,,,,,,,,16/06/2276
+3290,,II,C,Menhaaz Waarsi,MR. Sakoor Waarisi,Mrs.Noorjahan waarisi,20/09/2010,,General,9669970630,,377298522506,,,"Near National Public School, Krishna nagar, Ward -4, Supela",English,,,,,,,,,16/06/2277
+3311,,II,C,Dolly Dewangan,Mr. Raju Dewangan,Mrs.Sangeeta Dewangan,6/9/2010,,General,9977814010,,347653313460,,,"Santoshi Para Camp-2 Ganesh Chowk , Ward 24",English,,,,,,,,,16/06/2278
+4445,,II,C,Aditya Sharma,Mr. Nagendra Sharma,Mrs.Manju Sharma,10/11/2010,,OBC,"9893458230, 9479048347",,285405080262,,,"H.No. 192, Shankarpara, Supela Bhilai, Bhagat Singh Road",English,,,,,,,,,16/06/2279
+3516,,II,C,Devraj Singh,Mr. Devendra Singh,Mrs.Mamta kaur,18/11/2010,,General,"9893520855, 9109306921",,457243379035,,,"Camp-1 Sunder Nagar , H. No.52, Poleno-4, near Gurdwara",English,,,,,,,,,16/06/2280
+2930,,II,C,Sourabh Kushwaha,Mr. Santosh,Mrs. Shital,6/2/2010,,OBC,"8815214132, 9589264968",,539829042080,,,"Steel Nagar, Camp-1, Near Andhra School, Sangram chowk.",English,,,,,,,,,16/06/2281
+3312,,II,C,Yuvraj Singh,Mr. Pramod Singh,Mrs Rekha Singh,12/12/2010,,General,"8962616650, 7999328828",,930925096478,,,"Shop-3, Zone-1, Sec.- 11, Khursipar, Bhilai",English,,,,,,,,,16/06/2282
+3572,,II,C,Anjali Yadav,Mr. Munna Yadav,Mrs.Rekha yadav,28/12/2010,,OBC,7389871175,,266676074839,,,"Ram Nagar, Muktidham, Bhilai",English,,,,,,,,,16/06/2283
+4483,,II,C,Riya Sahu,Mr. Sanat Kumar Sahu,Mrs.Geeta Sahu,9/7/2011,,OBC,9300827755,,672155757907,,,"Gagan Vila , Pragati Sports Culb, Muktidham Ramnagar",English,,,,,,,,,16/06/2284
+3719,,II,C,Soniya Rahangdale,Mr. Hulas Ram Rahangdale,Mrs.Nisha Rahangdale,13/12/2010,,OBC,7805961234,,466457566456,,,Arjun Nagar Camp-1,English,,,,,,,,,16/06/2285
+3191,,II,C,Aayan Aalam,Mr. Shmshad Aalam,Mrs.Husnara Khatoon,20/06/2010,,General,7587105048,,925321876241,,,"Laxmi Nagar, Supela Near, V.N. Public School , Bhilai",English,,,,,,,,,16/06/2286
+4400,,II,C,Aryan Sao,Mr. Rajesh,Mrs.Shobha,8/12/2010,,OBC,9827176844,,603680939444,,,"Lal Bahadur Flour Mill Camp-1, Shastri Chowk, Bhilai",English,,,,,,,,,16/06/2287
+3316,,II,C,Chaitanya Sahu,Mr. Bhagwat Prasad,Mrs.Nandini Sahu,9/11/2011,,OBC,7489047776,,269548552787,,,Ward-25 Santoshi Para Camp-II Power House,English,,,,,,,,,16/06/2288
+3391,,II,C,Divyansh Sahu,Mr. Rajesh Sahu,Late Mrs. Sarika Sahu,18/11/2011,,OBC,"7838910201, 9301935378",,551093068446,,,"St. 6/B, House No. 582, Shanti Nagar, Supela",English,,,,,,,,,16/06/2289
+4563,,II,C,Jai Tandi,Mr. Sandeep Tandi,Mrs.Pinki Tandi,27/12/2010,,ST,9981360900,,352179139233,,,"Sahid Bagat Singh Road, Shankar Para, W.No. 5, Shivaji Chowk Supela",English,,,,,,,,,16/06/2290
+4749,,II,C,Rudra Pratap Sahu,Mr. Bhupendra Kumar Sahu,Mrs.Madhu Sahu,2/3/2011,,OBC,"9755952570, 7828326607",,881108908017,,,"Ramnagar, Mukti Dham School, Opp Bhojram Padsona Niwas, Supela Bhilai",English,,,,,,,,,16/06/2291
+4661,,II,C,Droni Shriwas,Mr. Puran Lal Shriwas,Mrs.Prabha Shriwas,14/09/2011,,General,9009809650,,245721555252,,,"Arjun Nagar, Camp-1, Ward-19, Prabhat Kirana Store",English,,,,,,,,,16/06/2292
+2932,,II,C,Nandani Jadhav,Mr. Sandeep Kumar Jadhav,Smt.Roshni Jadhav,15/09/2010,,General,8223972570,,705353653675,,,"H.No.434, Ward No.-13, Panch Mandir Road, Gurunank Nagar, Ramnagar, Supela, Bhilai",English,,,,,,,,,16/06/2293
+3536,,II,C,Bhumika Janghel,Mr. Gautam Janghel,Mrs Mamta Janghel,15/07/2011,,OBC,9302831734,,374816182180,,,"C/O, Apana Kirana Store, Ramnagar, Muktidham h.no 103 supela",English,,,,,,,,,16/06/2294
+4428,,II,C,Deepti Sahu,Mr. Sant Kumar Sahu,Mrs Mamta Sahu,4/3/2012,,OBC,9630474570,,218379344302,,,"Sri Ganesh Kirana Store, Camp-1, Vrinda Nagar, Bhilai",English,,,,,,,,,16/06/2295
+4196,,II,A,J. Pallavi,Mr. J. Dev Raju,Mrs.J.Padma,8/10/2010,,OBC,8109893620,,289966294983,,,"Sec.- 11 Ward No.- 37, St-5, Soniya Gandhi  Nagar, Zone-1, Khursipar Bhilai",English,,,,,,,,,16/06/2296
+3553,,II,C,Sakshi Maurya,Mr. Santosh Kumar Maurya,Mrs.Bindu Devi Maurya,11/3/2011,,General,"9827728585, 7415181055",,247512986292,,,"Ekta Nagar, Shanti Para Camp-1, Ward -20, Bhilai",English,,,,,,,,,16/06/2297
+3211,,II,C,Surabhi Shirekar,MR. Manish Shirekar,Mrs.Suwarna Shirekar,31/03/2012,,OBC,7389537212,,279458319387,,,"H.No. 273, St. No. 04, Shanti Nagar, Bhilai",English,,,,,,,,,16/06/2298
+3506,,II,C,Twinkle Pandey,Mr. Devendra Pandey,Mrs.Hemlata Pandey,2/8/2011,,General,9827174284,,911611598167,,,"Netaji Subhash Road NEAr SV. Ram nagar,",English,,,,,,,,,16/06/2299
+3917,,II,C,Anuj Kumar Mishra,Mr. Avinash,Mrs. Karuna ,9/12/2010,,General,8817186972,,960660828033,,,"Near Jai Ram Kirana Store, Purani Basti Supela",English,,,,,,,,,16/06/2300
+3664,,II,C,Bhavesh Chouhan,Mr. Netlal Chauhan,Mrs Chitra Rekha Chauhan,10/8/2011,,OBC,99261523001,,286759327419,,,"Arjun Nagar, Camp-1, Seetla Temple , Supela",English,,,,,,,,,16/06/2301
+4540,,II,C,Chitranjan Verma,Mr. Rishi Verma,Mrs Rahi Verma,9/2/2011,,OBC,9981928379,,851443007366,,,"H.No. 180 ward-12 st-20, contactor colony supela",English,,,,,,,,,16/06/2302
+3325,,II,C,Kavya Sonwani,Mr. Satish Sonwani,Mrs .Maheshwari Sonwani,31/03/2012,,OBC,"9522257325, 7389162235",,536993404007,,,"Near Shiva Londary Ram Nagar, Mukti Dham, Supela",English,,,,,,,,,16/06/2303
+4326,,II,C,Mohammad Isha,Mohammad Salim,Mrs  Shahin Parveen,18/01/2010,,OBC,9009074299,,816881444571,,,"H.No. 116/E, Camp-1, Ward No.-20",English,,,,,,,,,16/06/2304
+4457,,II,C,Prince Chouhan,Mr. Pramod,Mrs. Savita Devi,5/9/2010,,General,9993950123,,407873245345,,,"H.No. 123, Ward No.- 5, Chingri Para, Supela",English,,,,,,,,,16/06/2305
+4545,,II,C,Saurabh Sao,Mr. Ajay Kumar Sao,Mrs Sunita Devi,24/10/2011,,OBC,9993787234,,963979640474,,,"Lal Bhadur Aatachaki,Camp-1, Shastrichowk, Supela",English,,,,,,,,,16/06/2306
+4448,,II,C,Priya Shrivas,Mr. Sanjay Shrivas,Mrs Pinky Shrivas,8/2/2011,,OBC,9329665102,,981438443781,,,"Camp-1, Pragati Nagar , Near Aman Public School",English,,,,,,,,,16/06/2307
+3563,,II,C,Jahnavi Sahu,Mr. Bhuvneshwar Sahu,Mrs Shanti Sahu,9/12/2010,,OBC,"9098547948, 8305060193",,539303882900,,,hno 287 chandni chowk muktidham ram nagar supela,English,,,,,,,,,16/06/2308
+2946,,II,C,Shikha,Mr Raj Kumar Ojha,Mrs Priyanka ,20/09/2011,,General,"9826642407, 7024697409",,765330768848,,,"Arya Nagar, Kohka Ward No.7",English,,,,,,,,,16/06/2309
+3136,,II,C,Sneha Sahu,Mr Kamlesh Kumar,Mrs Leelandri Sahu,7/6/2011,,OBC,9303787695,,866980626150,,,"C/O, Sahu Kirana Store , Indira Chowk, Shahid, Bhagat Singh Marg",English,,,,,,,,,16/06/2310
+3599,,II,C,Stuti,Atul Ku.Dubey,Mrs Seema Dubey,11/9/2011,,General,"9589917724, 9691963454",,223306255256,,,"Vrinda Nagar , Camp-1, Ward-19, H.No. 393",English,,,,,,,,,16/06/2311
+2899,,II,C,Ajay Perkar,Mr. C.S. Perkar,Mrs Maya Perkar,28/07/2011,,SC,"8103768765, 94063232205",,419112566582,,,"G.E.Road, Aktha Nagar, Ward 34, Sec.-11, Zone 3",English,,,,,,,,,16/06/2312
+3405,,II,C,Ashish Kumar,Mr. Manoj Yadav,mrs Priyanka Devi,25/01/2011,,OBC,8349486548,,511882002522,,,LIG 101 Housing board umda near soni atta chaki ,English,,,,,,,,,16/06/2313
+3169,,II,C,Dipanshu Sinha,Mr Om Prakash Sinha,Mrs Nem Sinha,17/03/2011,,OBC,"9685536218, 9977602643",,480788081608,,,"Road No.-18, Camp-1, Nehru Chowk, Near Bajrang Mandir, Supela",English,,,,,,,,,16/06/2314
+4835,,II,C,Jagdeep Singh,Mr. Prabjoot Singh,Mrs Jasvinder Kour,19/04/2011,,OBC,9770496914,,896339217468,,,"Camp-1, Near Masjid Mangal",English,,,,,,,,,16/06/2315
+4963,,II,C,Ishant Sahu,Komal Sahu,Jiteshwari Sahu ,18.07.2009,,OBC,7987200274/9131936902,,940324395477,,,"Ramnagar,Shiva Loundry,Jai Hind Chowk",English,,,,,,,,,16/06/2316
+4987,,II,C,Amritpal,Avtar Singh,Pritpal Kour,3.032011,,Gen,7024143790/7415402395,,768427945945,,,"H.No.878,Near Jan Kalyan hospital,Kailash nagar",English,,,,,,,,,16/06/2317
+4990,,II,C,Sonam Parveen Ansari,Mohammad Najir,Noor Jahan Begum,09.01.2011,,Gen,9926707478/9713122714,,307141414615,,,"Farid nagar,Khankah Road,Kohka",English,,,,,,,,,16/06/2318
+3453,,II,C,Harshita Sahu,Santosh Kumar Sahu,Sarita Sahu,02.04.2012,,OBC,9797443902/8305060200,,992295327873,,,"H.No.91,Gayatri Cycle Stores,Azad chowk,Ramnagar",English,,,,,,,,,16/06/2319
+4446,,II,C,Tanmay Gupta,Mr Chhote Lal Gupta,Mrs Kalpana Gupta,3/11/2011,,General,9406107472,,758378341428,,,CH 984 dhacha bhawan kurud,English,,,,,,,,,16/06/2320
+4530,,II,D,Bhumika,Mr. Brijesh Arya,Mrs.Bhartamma,20/05/2011,,General,8889108813,,651763955333,,,"H.No. 109 Hyderabad Colony Camp-1, Ward-21, Supela",English,,,,,,,,,16/06/2321
+3528,,II,D,Purvi Sahu,Mr. Shravan Kumar Sahu,Mrs.Bhameshwari sahu,12/2/2012,,OBC,9300424133,,269777017877,,,"Shahid Bhagat Singh, Marg Indira Chowk",English,,,,,,,,,16/06/2322
+4660,,II,D,Tejash Kumar Soni,Mr. Manish Kumar Soni,Mrs. Raj Rajeshwari Soni,23/03/2011,,General,9303603200,,672258014091,,,H.No. 364 Near Soni Atta Chakki Ramnagar,English,,,,,,,,,16/06/2323
+4511,,II,D,Diyansh Sahu,Mr. Toman Sahu,Mrs. Gayatri sahu,3/4/2011,,OBC,9755556130,,787637754110,,,"H-No-49, Ward -12, Hanuman Chowk, Purani Basti , Supela",English,,,,,,,,,16/06/2324
+3446,,II,D,Aradhya Jaiswal,Mr. Rajesh Jaiswal,Mrs.Poonam Jaiswal,24/03/2011,,General,8602889000,,,,,"Mahatma Gandhi Nagar, H-No.-118 , Ward- 26, Camp-2, Bhilai.",English,,,,,,,,,16/06/2325
+3844,,II,D,Kritika Churendra,Mr. Kushal Singh,Mrs.Rekha Devi,25/11/2010,,ST,9755823524,,,,,"Near of Popular Cycle shop contractor colony, Rajiv Nagar",English,,,,,,,,,16/06/2326
+3601,,II,D,Navya Borkar,Mr. Dinesh Borkar,Mrs.Jyoti Borkar,27/10/2011,,General,9754413570,,251533959746,,,"Near Satnam Temple Vivekanand Nagar, Camp-2, Nandani Road, Power House",English,,,,,,,,,16/06/2327
+3202,,II,D,Shrish,Mr. Pawan Singh,Mrs.Asha Devi,20/10/2011,,General,9424129338,,576942752288,,,"Ram Nagar, Mukti Dham Road Post- Supela Ward-13",English,,,,,,,,,16/06/2328
+3805,,II,D,Tanya Mehra,Mr. Ashok Mehra,Mrs.Manisha Mehra,6/11/2010,,General,9993508450,,,,,"Q/N. 364,365 NR. Durga Mandir, Housing Board Kohka",English,,,,,,,,,16/06/2329
+3314,,II,D,Aditya Kumar Sinha,Mr. Kaushal Ku. Sinha,Mrs.Preeti Sinha,8/7/2011,,OBC,8817228999,,792345790397,,,"Arya Nagar, Kohka, Bhilai",English,,,,,,,,,16/06/2330
+4303,,II,D,Anusharan Bhagat,Mr. Ashok,Mrs.Sapna,24/03/2011,,OBC,9589546600,,833737486821,,,"Shastri Nagar, Ward 18, Camp-1 Lal Bahadur Floor Mill.",English,,,,,,,,,16/06/2331
+4454,,II,D,Mirza Asadullah Beg,Mirza Peer Beg,Mrs.Shakila Parveen,6/5/2011,,General,9752829512,,813935103242,,,"Rajiv Nagar Ward-13, Durg, Timber Supela",English,,,,,,,,,16/06/2332
+2947,,II,D,Avinash Kumar,Mr. Galeeshwar Ku. Dewangan,Mrs.Sadhana Dewangan,22/11/2010,,OBC,9691724843,,875171055855,,,"Ward-14 Shivaji Chowk Muktidham, Ramnagar, Supela",English,,,,,,,,,16/06/2333
+3226,,II,D,Deepu Chouhan,Mr. Ashok Chouhan,Mrs.Usha,17/02/2010,,General,8871375505,,233737530686,,,Panch Rasta Behind Kamla Medicine Store Supela,English,,,,,,,,,16/06/2334
+3585,,II,D,Manav Sahani,Mrs. Radhe Shyam Sahani,Mrs.Sarita Sahani,5/5/2010,,OBC,9827495463,,550221515880,,,"Mallah Para Ward No.5 Supela, Bhilai",English,,,,,,,,,16/06/2335
+3318,,II,D,Suraj Ku. Singh,Mr. Vijay Singh,Mrs. Anu Devi,20/02/2011,,General,8085989296,,629856240326,,,"Block No. 160/E, Subhash Chowk Camp-1, Bhilai",English,,,,,,,,,16/06/2336
+4569,,II,D,Yaditya Das Manikpuri,Mr. Shalik Das,Mrs. Armila,25/06/2010,,OBC,7828136664,,801933760298,,,"Ward- No. 5 Shankar Para, Ravan Bhata Supela",English,,,,,,,,,16/06/2337
+3443,,II,D,Kavya Masram, Mr.Hirav Masram,Mrs.Sarita Masram,19/03/2012,,ST,9993683692,,334377870309,,,H.No. 185 Patel Hotel Panch Rasta Supeal,English,,,,,,,,,16/06/2338
+4459,,II,D,Chanchal Sahu,Mr. Suresh Ku. Sahu,Mrs Tikeshwari Sahu,24/06/2011,,OBC,9893839627,,557462705274,,,Lal Bhadur Shastri Hospital Behind Hanuman Temple Panchrasta Supela,English,,,,,,,,,16/06/2339
+3452,,II,D,Mahi Chandrakar,Mr. Chandramani Chandrakar,Mrs. Manisha chandrakar,4/5/2011,,OBC,9589672597,,551456010421,,,"H-No. 181/1 Ward No. 06, Contractor coloney , Supela",English,,,,,,,,,16/06/2340
+3574,,II,D,Ajay Kumar,Mr. Ranjeet Sharma,Mrs. Babita Sharma,29/11/2011,,OBC,7509701161,,697844657446,,,"K-4/32, Khursipar, Sec-11, Zone -2, Bhilai Durg",English,,,,,,,,,16/06/2341
+4067,,II,D,Arshian Ali,Mr. Akhtar Ali,Mrs.Reshma Bibi,12/10/2010,,General,7415546586,,,,,"Purani Basti, Ramnagar, Supela, Bhilai",English,,,,,,,,,16/06/2342
+4456,,II,D,Bhupendra Kumar,Mr. Krishna Ku. Sharma,Mrs.Chanchal Sharma,18/12/2011,,General,9009763579,,291167712893,,,"Arjun Nagar, Camp-1, Bhilai sheetla temple supela",English,,,,,,,,,16/06/2343
+2901,,II,D,Gaurav Sao,Mr. Ajay Kumar Sao,Mrs Sunita Devi,24/10/2011,,OBC,9993787234,,967813467512,,,"Lal Bhadur Aatachaki, Camp-1, Shastrichowk, Supela",English,,,,,,,,,16/06/2344
+3319,,II,D,Lakshay Sahu,Mr. Ashok Sahu,Mrs .Gayatri Sahu,6/4/2011,,OBC,8103435567,,662804114085,,,"H.No. 27 Ramnagar, Near Ramjanki Mandir , Muktidham",English,,,,,,,,,16/06/2345
+4472,,II,D,Narayan Das Manikpuri,Mr. Yemen Das Manikpuri,Mrs. Meena Manikpuri,28/01/2011,,OBC,9179525662,,861891341519,,,"Shankar Para, Ward-5, Ravan Bhata Supela",English,,,,,,,,,16/06/2346
+3504,,II,D,Shubham Kumar Sao,Mr. Sudhir Ku. Sao,Mrs. Seema Devi,14/08/2011,,OBC,8602369438,,308051626591,,,"H.No. 82 Shastri Chowk Ward No. 19, Camp-1",English,,,,,,,,,16/06/2347
+4369,,II,D,Srijan,Mr. Santosh Sao,Mrs Fulo Devi,26/07/2011,,OBC,9893900219,,516353332344,,,"Camp-1, Shastrichowk, Supela ward no 18",English,,,,,,,,,16/06/2348
+4646,,II,D,Bhawesh Kumar,Mr. Raju Somkuwar,Mrs.Sulochana Somkuwar,26/09/2011,,SC,7898296575,,555441879534,,,"Near STM School, Baikunth Dham, Camp-2, House -105",English,,,,,,,,,16/06/2349
+4453,,II,D,Richa Shrivastav,Anurag Shrivastav,Mrs Vandana Shrivastav,1/12/2011,,General,8817760878,,786138078594,,,"New Krishna Nagar, Ward -4, Supela",English,,,,,,,,,16/06/2350
+3258,,II,D,Muskan Dubey,Mr. Anil Dubey,Mrs Pooja Dubey,25/09/2011,,General,8305305711,,672150935004,,,"H.No. 137, Ward No. 14, Ram Nagar, Supela",English,,,,,,,,,16/06/2351
+4036,,II,D,Shagun Sao,Mr Raj Kumar Sao,Mrs Rekha Devi,2/8/2011,,OBC,7400715412,,61544745736,,,"Purana Khursipar Railway Gate, B.S.P. Road , Raj Gift House.",English,,,,,,,,,16/06/2352
+3715,,II,D,Akash Choubey,Mr. Satendra Choubey,Mrs Reena Choubey,6/8/2010,,General,9302971143,,876040623396,,,"Camp-II, Back of Gurudwara, Bhilai",English,,,,,,,,,16/06/2353
+3177,,II,D,Ankit Paswan,Mr. RamBalak Paswan,Mrs Uma Devi Paswan,28/02/2011,,SC,9584295795,,211782848877,,,Ram nagar Sahu para bhilai,English,,,,,,,,,16/06/2354
+3961,,II,D,Ayush Saw,Mr. Deepak Saw,Mrs Jyoti Saw,14/11/2010,,General,7974240691,,993288348793,,,"Aazad Chowk, W.No. 13, Ram Nagar",English,,,,,,,,,16/06/2355
+4529,,II,D,Raj Kumar Kushwaha,Mr Arbind Ku. Singh,Mrs Sunita Devi,20/05/2011,,OBC,9200258897,,973185975669,,,"H.No. 140 Arjun Nagar, Camp-1, Bhilai , Yadav Cycle Store",English,,,,,,,,,16/06/2356
+4608,,II,D,Viraj Khanna,Mr. Subodh Khanna,Mrs Mamta Khanna,10/12/2011,,General,9826385808,,358619920280,,,"H.N.- 144 Near Teen Darshan Mandir, Ward -18, Camp- 1 Supela .",English,,,,,,,,,16/06/2357
+4607,,II,D,Ravi Kumar Sharma,Mr. Sanjay Kumar Sharma,Mrs Poonam Sharma,14/11/2010,,General,8962115567,,582616861811,,,"Azad Chowk Sharma, Hotel Ramnagar, Supela",English,,,,,,,,,16/06/2358
+3146,,II,D,Md. Farhan,Md. Shahid,Mrs Tabassum Parveen,20/02/2011,,General,9926707016,,659902033444,,,"Nizami Chowk Krishna Nagar Road, Farid Nagar, Bhilai",English,,,,,,,,,16/06/2359
+4926,,II,D,Gaurav Kumar Saw,Mr Achhay Lal,Mrs Hevanti Devi,19/12/2009,,OBC,9407902932,,734264768172,,,"Camp-1 ArjunNagar
+HanumanMandir
+W.no-19,Poleno-07",English,,,,,,,,,16/06/2360
+5009,,II,D,Md.Faiz Khan,Usman Gani,Farida Begum,30.09.2011,,Gen,8839240608/9617861245,,678963232436,,,"H.No. 188 , Chaman Road farid nagar,Supela,Bhilai",English,,,,,,,,,16/06/2361
+2519,,II,D,Sonal,Mohan,Dileshwari,21.09.2011,,SC,740654702/9329897702,,636848086004,,,Camp-2 Kanti Kirana Store Ghandhi Chowk H.No.-1429,English,,,,,,,,,16/06/2362
+4137,,III,A,Aarushi Verma,Mr. Jitendra Verma,Mrs. Hemlata Verma,4/8/2010,,General,9617149003,,542960478537,,,"H.No. 186, Contractar Colony, Sirsa road Bhilai",English,,,,,,,,,16/06/2363
+2736,,III,A,Anchal Jaiswal,Mr.Hari Prasad Jaiswal,Mrs. Soniya Jaiswal,15/08/2010,,General,9039101718,,907897853168,,,"New Basant Takies, Camp-1, Pragati Nagar, Bhilai",English,,,,,,,,,16/06/2364
+2733,,III,A,Diksha Banjare,Mr. Dhuman Lal Banjare,Mrs. Bindeshwari Banjare,17/02/2010,,SC,9329611363,,660031795374,,,"Qr. No. 110/6, Subhash Chowk ward-20, Camp-1",English,,,,,,,,,16/06/2365
+3880,,III,A,Esha,Mr. Gurmeet Singh,Mrs. Ranjeet Kaur,16/10/2009,,General,"7828699494, 7582018880",,551151142377,,,"Room No.58/B, Gauria Maszid , Camp-1",English,,,,,,,,,16/06/2366
+2732,,III,A,Gunjan Katare,Mr. Krishna Kant Katare,Mrs. Rina Katare,7/5/2010,,SC,9685879392,,318069206942,,,"H.No. 172/B 12, Laxmi Nagar, Supela",English,,,,,,,,,16/06/2367
+2660,,III,A,Jahnavi Sahu,Mr. Rajkumar Sahu,Mrs. Anita Sahu,22/11/2009,,General,9827818165,,892366206046,,,Hno 189 ward no.12 near sparsh hospital supela,English,,,,,,,,,16/06/2368
+3642,,III,A,Jhimpreet Kaur,Mr. Vikramjeet Singh,Mrs. Jagjeeta Kaur,3/7/2010,,SC,"8817168777, 9109166378",,759010438690,,,"Kale Niwas, Gayatri Mandir Road, Ramnagar",English,,,,,,,,,16/06/2369
+4273,,III,A,Nishi Naaz,Akram Khan,Mrs.Niyaz Parveen,8/12/2008,,General,9827483937,,991714729205,,,"Infront of BSBK House, Power House Nandini Road",English,,,,,,,,,16/06/2370
+2859,,III,A,Palak Chelani,Mrs.Haina Chelani,Mrs. Haina Chelani,12/10/2009,,General,7725039421,,678555968139,,,"EWS 342, Vaishali Nagar",English,,,,,,,,,16/06/2371
+2739,,III,A,Palak Joshi,Mr. Purushottam Joshi,Mrs.Poonam Joshi,15/06/2010,,General,9993540420,,,,,"Azad Chowk, W-13, Joshi Lakdi Tal, Ramnagar",English,,,,,,,,,16/06/2372
+3902,,III,A,Palak Thakur,Mr. Vinod Ku. Thakur,Mrs. Anju Thakur,17/07/2010,,ST,9754087016,,581555693656,,,"Dewangan Pan Bhandar, Mukti Dham Ram Nagar",English,,,,,,,,,16/06/2373
+3597,,III,A,Sivangi Yadav,Mr.Surendra Yadav,Mrs. Seema Devi,31/05/2010,,OBC,"8602153423, 8871236217",,283467562502,,,"Road No.-18, Virander Nagar, Camp-1",English,,,,,,,,,16/06/2374
+3525,,III,A,Vaishali Sharma,Mr. Santosh Sharma,Mrs. Aarti Sharma,28/04/2009,,General,9301335689,,266582418247,,,"H.N.-34, Contractor Colony, Supela",English,,,,,,,,,16/06/2375
+2911,,III,A,Arush Sharma,Mr.Amarendra Sharma,Mrs. Rinku Sharma,11/3/2010,,General,9300507100,,237343761456,,,"Subhash Chowk, Nandini Road, panch rasta supela bhilai",English,,,,,,,,,16/06/2376
+3999,,III,A,Arav Tamrakar,Mr.Ashish Kumar Tamrakar,Mrs. Sadhana Tamrakar,14/11/2010,,OBC,9329188976,,296230447878,,,"H.No. 102, Ajay Poultry farm, Tandan Bhavan, Supela",English,,,,,,,,,16/06/2377
+2862,,III,A,Arpan Sahu,Mr.Vikash Kumar Sahu,Mrs. Bisahin,17/09/2010,,OBC,"9303555686, 9589984442",,411917600245,,,"Mahamaya Para, Bhilai-3",English,,,,,,,,,16/06/2378
+2907,,III,A,Ayush Singh,Mr.Gyan Singh,Mrs. Seema Singh,3/10/2009,,SC,7389398563,,643717024475,,,Rajendra Prasad Nagar Purana Khursipar gate,English,,,,,,,,,16/06/2379
+3789,,III,A,Divyanshu Ku. Prajapati,Mr.Sunil Ku. Prajapati,Mrs. Poonam Devi,18/11/2010,,OBC,"8982082025, 9755791653",,903838794826,,,"H.N-93 near Maya Tailor Ganesh chowk Krishna nagar, Supela",English,,,,,,,,,16/06/2380
+4056,,III,A,Farhan Akhtar,Mr. Hakim Akhtar,Mrs. Gulfishan Jalal,17/05/2010,,OBC,9713535800,,712319922644,,,Qr. No-6 Gaffer colony Chhawani Chowk sant ravi das nagar bhilai,English,,,,,,,,,16/06/2381
+4041,,III,A,Gautam Prasad,Mr. Santosh Prasad,Mrs. Rinku Devi,23/07/2010,,OBC,9752683170,,880720353331,,,"Baikunth Nagar, Camp-2, W.No. 21, H.No. 2583",English,,,,,,,,,16/06/2382
+2485,,III,A,Harsh Patel,Mr.Jawahar Lal Patel,Mrs. Suman Patel,29/01/2011,,OBC,8602327507,,386400574666,,,"Indira Nagar, Near Sitaram Gupta Kirana Store, W.No.6, Supela",English,,,,,,,,,16/06/2383
+3963,,III,A,Jeet Kumar Sharma,Mr.Sachin,Mrs.Lata,11/6/2009,,General,8349840961,,766713190023,,,"Near Bhilai Timber, St.-9, Ram Nagar",English,,,,,,,,,16/06/2384
+3307,,III,A,Lakshya Pandey,Mr. Lalit Pandey,Mrs. Ruchi Pandey,3/4/2010,,General,7049084270,,543036421921,,,"Om Bhawan, H.N.-251, Ward-23, Camp-2, Prakash Atta Chakki, Sharda Para",English,,,,,,,,,16/06/2385
+3151,,III,A,Lukeshwar Sahu,Mr. Khomlal Sahu,Mrs. Chitrarekha Sahu,19/03/2010,,OBC,"9907462338, 9691793743",,524703184840,,,"Shastri Nagar, Camp-1, Ward No-18",English,,,,,,,,,16/06/2386
+4028,,III,A,Neil Premchandani,Mr.Pradeep Premchandani,Mrs. Sakshi Premchandani,4/2/2010,,General,"9826121251, 99007934811",,828410924718,,,MIG 18 near SBI MPHB I/E chawni bhilai,English,,,,,,,,,16/06/2387
+3455,,III,A,Palash Dewangan,Mr.Rajesh Kumar Dewangan,Mrs. Sarita Dewangan,26/04/2010,,General,9303418434,,636705174212,,,"EWS-133, Dhancha Bhawan, Near Water Tanky, Kurud",English,,,,,,,,,16/06/2388
+2948,,III,A,Pratik Sao,Mr.Maharana Pratap Sao,Mrs. Mamta Devi Sao,3/10/2010,,General,9691237011,,220067884213,,,"Azad Chowk , Ramnagar",English,,,,,,,,,16/06/2389
+3821,,III,A,Saurabh Ku.  Saw,Mr.Pintu Ku. Saw,Mrs. Rekha Saw,13/10/2010,,OBC,"9994381221, 7999362643",,339761679967,,,"Durga Timber, W-13, Rajeev Nagar",English,,,,,,,,,16/06/2390
+2515,,III,A,Toshan Kumar Deshmukh,Mr. Kuleshwar Prasad Deshmukh,Mrs. Pushpa Deshmukh,23/09/2009,,General,"7049277237, 7056215610",,376149742394,,,"Near Munna Kirana Store, Arya Nagar, Khoka",English,,,,,,,,,16/06/2391
+3975,,III,A,Tani Saw,Mr.Raju Saw,Mrs. Sharmila Devi,4/1/2011,,General,9098991688,,577783729456,,,"Contractore Coloney, Ramnagar",English,,,,,,,,,16/06/2392
+2524,,III,A,Ashish Kumar Sahu,Mr. Ganesh Ram Sahu,Mrs. Savita Sahu,12/6/2009,,OBC,9993788401,,692844639627,,,"C/O B.L. Soni, W.No-7, St. No. 9, Arya Nagar, Kohka",English,,,,,,,,,16/06/2393
+2737,,III,A,Md. Saeed Faizan,Md. Salam Ashrafi,Mrs. Zubeda Khatoon Ashrafi,4/9/2009,,General,8962278692,,790251452539,,,"W.No. 23 Gandhi Chowk, Sharda Para",English,,,,,,,,,16/06/2394
+4064,,III,A,Tanmay Thakur,Mr.Janeshwar Ku. Thakur,Mrs. Vijiya  Thakur,20/07/2010,,ST,"9981741968, 9685879328",,575980971693,,,"Shakuntala Vidyalaya, Gayatri Mandir, Ramnagar, Supela",English,,,,,,,,,16/06/2395
+2892,,III,A,Soumya Sarkar,Mr. Bivash Sarkar,Mrs. Barnali Sarkar,12/11/2009,,General,9926771149,,401937205513,,,Banglow 52 Rajmahal Green Town beside sundar Vihar Kailash Nagar,English,,,,,,,,,16/06/2396
+4037,,III,A,Miheer Garg,Mr. Jivendra Kumar,Mrs.Rekha devi Garg,26/12/2010,,SC,"9827154152, 9587321644",,476775375118,,,"Purani Basti Gandhi Chowk,  Supela",English,,,,,,,,,16/06/2397
+4501,,III,A,Ayush Gupta,Mr. Jay Prakash Gupta,Mrs. Anita Devi,2/10/2010,,General,9713343655,,390666331670,,,Milan Chowk Santoshi Para,English,,,,,,,,,16/06/2398
+3988,,III,A,Mitali Sahu,Mr. Heralal Sahu,Mrs. Chandrakala Sahu,31/01/2010,,OBC,9617165588,,954828457071,,,"Near Ramjanki Mandir, Ram Nagar, Bhilai",English,,,,,,,,,16/06/2399
+2740,,III,A,Sahil Chouksey,Mr. Sunil Chouksey,Mrs. Nisha Chouksey,29/07/2010,,OBC,"8966057419, 7747019165",,306411226708,,,Hno.137 ward no 19 st no 18 camp 1 bhilai,English,,,,,,,,,16/06/2400
+2498,,III,A,Gunjan Sahu,Mr.Chandrasen Sahu,Mrs.Huleshwari Sahu,18/10/2010,,OBC,9981639584,,707599756740,,,"Near S.R.Gupta Kirana Store , Indira nagar, Supela",English,,,,,,,,,16/06/2401
+2511,,III,B,Payal Sahu,Mr. Shailendra Ku. Sahu,Mrs. Bharti Sahu,10/12/2009,,General,9303884476,,490048685430,,,"W.No. -12, Mukti Dham, Near Pragati Sports",English,,,,,,,,,16/06/2402
+2507,,III,B,B. Sai Kumar,Mr.B.Joga Rao,Mrs. B. Sandhya,28/01/2010,,General,"9752491426, 8802355210",,413726156329,,,"Qr. No-1/E, st. Avnu. Sec-11 Zone-2, Khursipar",English,,,,,,,,,16/06/2403
+3168,,III,B,Shorya Sao,Mr.Raj Kumar Sao,Mrs. Rekha Devi,16/11/2009,,General,"7400715418, 7470343800",,,,,Old Khursipar Railway Gate,English,,,,,,,,,16/06/2404
+3488,,III,B,Bharti Lamte,Mr. Chait Ram Lamte,Mrs. Jiran Bai Lamte,3/1/2011,,ST,"9424115084, 9926438280, 9165775992",,797532426445,,,"Panch mandir Ramnagar, Supela",English,,,,,,,,,16/06/2405
+4310,,III,B,Divyansha Singh,Mr.Dinesh Singh,Mrs. Poonam Singh,24/06/2010,,General,9826163062,,626576813600,,,"B.K. 80/D Camp-1, Bhilai",English,,,,,,,,,16/06/2406
+2503,,III,B,J. Yashshwani,Mr.J. Venkat Rao,Mrs. J.Jyothi,13/04/2009,,General,9977779152,,286178613980,,,"Ahmad Nagar, Camp-2, Chiranjeevi Kirana Store",English,,,,,,,,,16/06/2407
+3284,,III,B,Kavya Verma,Mr. Rupendra,Mrs. Ragnee Verma,5/9/2010,,General,9981923278,,463736199839,,,"C/O Patel Kirana Store, Bajrang Para, Kohka , Bhilai",English,,,,,,,,,16/06/2408
+3075,,III,B,Sakshi Sahu,Mr.Dharmendra Kumar Sahu,Mrs. Pinki Sahu,19/01/2010,,OBC,9893433984,,719027081681,,,"Camp-1, Shastri Chowk, W.No. 18, Lal Bahadur Flour Mill",English,,,,,,,,,16/06/2409
+3129,,III,B,Simran Tehlani,Mr. Dheeraj Jehlani,Mrs. Manjusha Tehlani,13/10/2008,,General,9827495043,,656217697520,,,"H.No. 389, Ram Janki Mandir, Ramnagar,",English,,,,,,,,,16/06/2410
+3490,,III,B,Anshul Ku. Gupta,Mr. Abhishek Ku. Gupta,Mrs. Vidya Gupta,11/12/2009,,General,932994619,,307944372103,,,"Link Road, Camp-2, Jalabi Chowk",English,,,,,,,,,16/06/2411
+3234,,III,B,Ayan Malik,Mr. Nadeem Malik,Mrs. Shama,22/09/2010,,OBC,9329383905,,811807089448,,,"Lig 58, CG H.B. Bhilai near SBI Industrial Estate",English,,,,,,,,,16/06/2412
+2512,,III,B,Harsh Singh Rajput,Mr.Manish Singh Rajput,Mrs. Saroj Devi Rajput,16/10/2010,,General,"7771092936, 8236905112",,889605323118,,,"Santosh Kirana Store, Azad Chowk, Ram Nagar",English,,,,,,,,,16/06/2413
+2730,,III,B,Sumeet,Mr.Vijay Sao,Mrs. Sarita Devi,31/01/2010,,General,"9993020304, 8871143242",,942117351865,,,Lal Bahadur Atta Chakki Shastri Chowk Camp-1 ward 19,English,,,,,,,,,16/06/2414
+2912,,III,B,Tejasv Gendre,Mr.Pankaj Gendre,Mrs. Rita Gendre,23/06/2010,,SC,9302836984,,908329906100,,,near shakuntala vidyalaya ramnagar,English,,,,,,,,,16/06/2415
+2508,,III,B,Aaliya Parveen,Nodimuzzma Khan,Tabssum Nisha,4/12/2010,,General,"9752020999, 9009059668",,685464344721,,,Near bell Ice-Cream Shastri Nagar Camp,English,,,,,,,,,16/06/2416
+2518,,III,B,Shreya Bajpai,Mr. Vinayak Prasad Bajpai,Mrs. Sarojbala Bajpai,8/10/2009,,General,"9827472714, 9179771025",,668844664717,,,"Circular Market, Camp-2, Bhilai",English,,,,,,,,,16/06/2417
+4206,,III,B,Suhana Saw,Mr. Ram Nivas Saw,Mrs. Gudiya Saw,1/9/2010,,General,8253059324,,996162344365,,,W.No.- 18 Cont. Colony Near Shiv Mandir,English,,,,,,,,,16/06/2418
+2517,,III,B,Anjali,Mr. Aajad Sonkar,Mrs. Vandna Sonkar,19/05/2010,,SC,9828082248,,,,,"Pragati Nagar, Camp-1, Bhilai",English,,,,,,,,,16/06/2419
+4491,,III,B,Payal Sao,Mr. Shiv Kumar Sao,Mrs. Rupa Devi,14/12/2009,,General,7415425311,,,,,"Panch Rasta, Motilal Chowk, Supela",English,,,,,,,,,16/06/2420
+3994,,III,B,Naushin,Mr. Syed Hussain ,Mrs. Shaheda Begum,14/04/2010,,General,9039743083,,545314453019,,,"Shaheed Bhagat Singh Marg, Ram Nagar, Supela , Bhilai",English,,,,,,,,,16/06/2421
+3804,,III,B,Abhilash Singh,Mr. Arjun Singh,Mrs.Pinky Singh,6/12/2008,,General,8234085187,,254540019763,,,"Rajeev Nagar Sec. 11 Zone-2, Ashok chowk,  Khursipara Ward -33",English,,,,,,,,,16/06/2422
+2861,,III,B,Nihar Shambharkar,Mr. Rajkumar Shambharkar,Mrs. Neetu Shambharkar,5/4/2010,,General,"9098178610, 9131652957",,84092496113,,,"H.No. 316, Ward-13, Near Krishna Vidyalaya, Ramnagar",English,,,,,,,,,16/06/2423
+2885,,III,B,Rishabh Kumar Yadav,Mr. Sunil Kumar Yadav,Mrs Priyanka Yadav,8/10/2010,,General,"9752099034, 7898456964",,615532998751,,,"Behind Jahaj Building Yadav House, Ramnagar",English,,,,,,,,,16/06/2424
+4555,,III,B,Avani Gupta,Mr. Sudeep Kumar,Mrs Saroj Kumari,21/07/2010,,OBC,7489418494,,743842548636,,,"Arjun Nagar, W-17, Camp-1, near SKS",English,,,,,,,,,16/06/2425
+3457,,III,B,Naincy Gupta,Mr. Santosh Gupta,Mrs. Rubi Gupta,10/2/2010,,General,"9981898881, 9340649500",,864156201402,,,"H.No. 89, Ward- 13, Rajiv Nagar, Supela",English,,,,,,,,,16/06/2426
+4300,,III,B,Riya Sao,Mr. Pawan Sao,Mrs. Reema Sao,23/12/2010,,General,9993683215,,630303835368,,,Teen Darshan Mandir Camp-1,English,,,,,,,,,16/06/2427
+3235,,III,B,Shristhi singh,Mr. Vijay Bahadur Singh,Mrs. Usha Singh,26/03/2010,,General,"9407963628, 8871676362",,220046663596,,,"New Krishna Nagar, Supela, Ward -4",English,,,,,,,,,16/06/2428
+3132,,III,B,Sweta Prajapati,Mr. Ramnaresh Prajapati,Mrs. Lata Devi Prajapati,28/11/2009,,General,9907105116,,340492243547,,,"New Santosh Para, Camp-1, Baikunthdham",English,,,,,,,,,16/06/2429
+2950,,III,B,Sunita Singh,Mr. Bhushan Singh,Mrs. Anita Devi,26/03/2010,,General,9300648138,,,,,Baliram Singh Hardware line Supela,English,,,,,,,,,16/06/2430
+2729,,III,B,Aditya Sinha,Mr. Khemlal Sinha,Mrs. Kaushilya Bai,12/2/2011,,OBC,"7879249712, 9993263540",,,,,"Shanti Nagar, Camp-1, H.No. 69, WN- 18",English,,,,,,,,,16/06/2431
+4227,,III,B,Arman,Mr. Dushrath,Mrs. Urmila,5/9/2009,,SC,"9303398132, 9329357345",,,,,"Vrinda Nagar, W-19, camp-1",English,,,,,,,,,16/06/2432
+2509,,III,B,Harsh Sao,Mr.Maharaja Sao,Mrs. Babli Sao,3/3/2011,,OBC,9098607779,,473473611201,,,"Ramnagar, Azad Chowk, Ward 12/14",English,,,,,,,,,16/06/2433
+2523,,III,B,Khilendra Ku. Deshmukh,Mr. Jitendra Ku. Deshmukh,Mrs. Devki Deshmukh,8/4/2010,,OBC,9424106127,,933512049745,,,"Shankar Para W-5, Supela, Bhilai",English,,,,,,,,,16/06/2434
+3131,,III,B,Sahir Ali,Mr. Shabbir Ali,Mrs. Rukhsana Begum,7/11/2009,,OBC,"9685068124, 78692294275",,,,,"Azad chowk, Ramnagar, Bhilai",English,,,,,,,,,16/06/2435
+4862,,III,B,Tejash Yadav,Mr. Shesh Yadav,Mrs. Mamta Yadav,23/06/2010,,OBC,"9301056095, 7489034585",,595687548973,,,"Ramnagar Azad Chowk, Bhilai near santosh kirana store",English,,,,,,,,,16/06/2436
+2527,,III,B,Yash Dewangan,sunil Dewangan,Durga Dewangan,19.8.2010,,OBC,7389136021/9893170116,,388913499563,,,Sanjay Nagar Bhilai,English,,,,,,,,,16/06/2437
+2487,,III,C,Sanjana Saw,Mr. Deepak Saw,Mrs Jyoti Saw,7/2/2009,,General,788-4032875,,513327215307,,,"Ward No. -13, Azad Chowk, Ram Nagar",English,,,,,,,,,16/06/2438
+3556,,III,C,Harshit Sinha,Mr.Dhal Singh Sinha,Mrs. Khileshwari Sinha,26/02/2010,,OBC,9981392160,,352972163640,,,"Ward-12, Cont. colony, Supela",English,,,,,,,,,16/06/2439
+2742,,III,C,Tumendra Sahu,Mr. Om Prakash Sahu,Mrs. Vaijantee Sahu,29/11/2010,,OBC,9981560176,,358341745084,,,"Near Gayatri Mandir, MuktiDham , Ram Nagar",English,,,,,,,,,16/06/2440
+2917,,III,C,Khushi Verma,Mr. Kamaljeet Verma,Mrs. Pooja Verma,10/11/2009,,General,9907916539,,478798981191,,,"Gyatri Mandir, Ram nagar, Supela",English,,,,,,,,,16/06/2441
+2536,,III,C,Samiksha Tiwari,Mr. Lokesh Tiwari,Mrs. Swechchha ,26/03/2011,,General,9617868665,,490097396956,,,"C/O Vikash Chand Sharma, Near Govt. High School, Purani Basti Kohka",English,,,,,,,,,16/06/2442
+2829,,III,C,Samreen Fatima,Md. Dilshad Khan,Mrs. Gunnaz Bano,21/01/2010,,General,9329464161,,587150891208,,,"Camp-1, Mother Teresa Nagar, Block No.- 30, Flat No.- 3",English,,,,,,,,,16/06/2443
+2484,,III,C,Shrishti Vishwakarma,Mr. Gajendra Vishwakarma,Mrs.Monika vishwakarma,7/8/2010,,OBC,9827168822,,633478102917,,,"Shankar Nagar,Supela, Bhilai",English,,,,,,,,,16/06/2444
+3496,,III,C,Harsh Roy,Mr.Suvankar Roy,Mrs. Jaishree Roy,13/10/2009,,General,9617116920,,896811577307,,,"C/O P.S. Kapse, Shahid Bhagat Singh Marg, Ramangar, W-13",English,,,,,,,,,16/06/2445
+4603,,III,C,Imran Inayat,Inayat,Mrs. Reshma,13/10/2010,,General,9098771975,,776258820899,,,"Near Pump House, Pudki para, Nizami Chowk, Farida Nagar",English,,,,,,,,,16/06/2446
+3695,,III,C,Abhinav Soni,Mr.Tikam Chand Soni,Mrs Meera Soni,6/4/2010,,OBC,9300358322,,212526760440,,,"Ambedkar Chowk, Krishna Nagar, Ward No-5, Supela, Bhilai",English,,,,,,,,,16/06/2447
+2860,,III,C,Chanchal Sharma,Mr. Narendra Sharma,Mrs.Suman Sharma,15/07/2009,,OBC,9098957965,,22462962382,,,"Gautam Nagar, Ashish Kirana Store , Supela",English,,,,,,,,,16/06/2448
+3848,,III,C,Aprajita Bajpai,Dr. Yogesh Bajpai,Mrs. Sweta Bajpai,31/01/2010,,General,7587320765,,,,,"Link Road Camp-II, Bhilai",English,,,,,,,,,16/06/2449
+3783,,III,C,Tasleem,Mr. Idrish,Mrs Abida,7/8/2009,,General,9300700200,,825514842457,,,"Indira Nagar W.No. 25, Camp-2, Power House",English,,,,,,,,,16/06/2450
+2735,,III,C,Gulsharan Kaur,Mr. Harjeet Singh,Mrs. Poonam Kaur,11/2/2010,,General,7898700948,,,,,"Shanti Nagar, Supela",English,,,,,,,,,16/06/2451
+4587,,III,C,Sakshi Patel,Mr. Chandrahar Patel,Mrs. Priyanka Patel,9/1/2010,,OBC,"9893500511, 999300144",,807729862034,,,"Near Gayatri Mandir, Mukti Dham Ram Nagar",English,,,,,,,,,16/06/2452
+2538,,III,C,Bhumika Soni,Mr. Ramsharan Soni,Mrs. Ragini Soni,3/10/2011,,OBC,9301729524,,587249105661,,,"EWS- 546, Vaishali Nagar, Bhilai",English,,,,,,,,,16/06/2453
+3346,,III,C,Anshul Ku. Sahu,Mr. Santosh Ku.,Mrs. Amita Sahu,29/09/2009,,OBC,9329692981,,842163120608,,,"Santoshi Para , Camp-2, Ward No.- 23",English,,,,,,,,,16/06/2454
+2534,,III,C,Rishu Gupta,Mr. Rajiv Kumar Gupta,Mrs. Shavita Gupta,25/08/2010,,OBC,9300699948,,,,,"Sharda Para J P Nagar Camp-2, Bhilai",English,,,,,,,,,16/06/2455
+3406,,III,C,Deepanshu Dewangan,Mr.Jeevanlal Dewangan,Mrs. Jyoti Dewangan,28/10/2009,,OBC,9329070322,,471133507554,,,"Dewangan Pan Bhandar Ramnagar, Mukti Dham",English,,,,,,,,,16/06/2456
+2510,,III,C,Kunal Agase,Mr. Prem Ku. Agase,Mrs. Madhuri Agase,24/11/2010,,OBC,9589594112,,816316856341,,,"Contractor Colony, near Gajanan Electrical supela",English,,,,,,,,,16/06/2457
+3163,,III,C,Vaibhav Sahu,Mr. Prakash Sahu,Mrs. Pushpa Sahu,11/1/2010,,OBC,9753584073,,382758803618,,,"Q. R.No. 253, Contractor colony, Dr. Joshiline, Supela",English,,,,,,,,,16/06/2458
+3150,,III,C,Vinay Yadav,Mr. Manohar Yadav,Mrs. Urmila Yadav,17/08/2009,,General,8223839810,,235228685835,,,"W.No. 17 Near Bijli office chhawani , Bhilai",English,,,,,,,,,16/06/2459
+3973,,III,C,Hanshika Jaiswal,Mr. Aravind Jaiswal,Mrs. Rinki Jaiswal,11/3/2010,,OBC,7898674827,,990958606808,,,"Power House Near, Sapna Takies Sec. 11",English,,,,,,,,,16/06/2460
+3249,,III,C,Junera Tabbassum,Mr. Islamuddin,Mrs. Shajeda Khatun,18/03/2009,,General,7415977706,,,,,"Farid Nagar, H.No. 199, Ward No- 08, Bhilai",English,,,,,,,,,16/06/2461
+3458,,III,C,Nandini Dewangan,Mr. Purushottam Dewangan,Mrs. Gayatri Dewangan,29/01/2011,,OBC,9827949188,,800744655623,,,"Sharda Para Khailash Chowk, W.No.23, Camp-2",English,,,,,,,,,16/06/2462
+2558,,III,C,Sneha Verma,Mr. Nand Kishore Verma,Mrs. Rekha Verma,23/04/2010,,OBC,9753807183,,676240714702,,,"Contractor Colony Ward- No.-6, Supela",English,,,,,,,,,16/06/2463
+3684,,III,C,Sneha Yadav,Mr. Kalayan Ku. Yadav,Mrs. Rita Devi,22/04/2009,,General,9993829150,,913276159085,,,"Netaji Subhash Road Hawai Jahaj Building Ramnagar, Supela",English,,,,,,,,,16/06/2464
+3194,,III,C,Vanshika,Mr. Jay Prakash Shah,Mrs. Bindu Devi Shah,23/11/2010,,OBC,9329746189,,756256935602,,,"Gautam Nagar Supela Bhilai, Ward-4",English,,,,,,,,,16/06/2465
+3773,,III,C,Yushika Dibya,Mr. Vedram Dibya,Mrs. Teka Dibya,23/07/2010,,SC,7587796267,,597329304731,,,"House No- 8/A, Kohka",English,,,,,,,,,16/06/2466
+2520,,III,C,Azal Siddiqui,Mr. Badruzama,Mrs. Naziya Siddiqui,14/09/2009,,General,8878408556,,582771738944,,,"Shop no-9, Shastri Market, Power house",English,,,,,,,,,16/06/2467
+3451,,III,C,Ayush Paswan,Mr. Sanjay Paswan,Mrs. Madhulata,6/6/2010,,SC,7354400825,,593368153431,,,"Adarsh Nagar, New Masjid Supela",English,,,,,,,,,16/06/2468
+2813,,III,C,Mihir Sharma,Mr.Upendra Sharma,Mrs. Rinki Sharma,22/09/2010,,OBC,9827119098,,,,,"Rajeev Nagar, Supela",English,,,,,,,,,16/06/2469
+4639,,III,C,Vivek Verma,Mr. Bhupendra Verma,Mrs .RamKali Verma,2/12/2009,,OBC,9893500511,,533245655835,,,"Camp-2, Gandhi chowk, Ward-23, Power House",English,,,,,,,,,16/06/2470
+4666,,III,C,Ketan Nagvanshi,Mr. Yashwant Nagvanshi,Mrs. Archana,3/12/2009,,General,8103615271,,701016932067,,,"Arya Nagar, Khoka",English,,,,,,,,,16/06/2471
+2741,,III,C,Rishika Singh,Mr.Pravir Ku.Singh,Mrs.Richa Singh,4/7/2010,,General,9907780499,,502993513970,,,"House No.175,Shukla Gali,Ward No. 11,Ramnagar, Bhilai",English,,,,,,,,,16/06/2472
+2935,,III,C,Kavya Singh Chauhan,Mr. Alok Singh Chauhan,Mrs. Bharti Singh,9/9/2010,,General,9827489802,,670966640206,,,"H.N.184 ,Gayatri Mandir Road, Ram nagar,Bhilai",English,,,,,,,,,16/06/2473
+3770,,III,D,Saleha Bano,Mr. Mushtak Khan,Mrs. Sahana Bano,10/8/2010,,General,9098150373,,,,,Nizami Chowk Farid Chowk,English,,,,,,,,,16/06/2474
+3186,,III,D,Aditya Dubey,Mr.Sanjay Dubey,Mrs. Jaya Dubey,16/03/2011,,General,9826146676,,366390629057,,,"Block-12, P.No. -15, New Janta Gen. Store, Baikunth Nagar",English,,,,,,,,,16/06/2475
+4084,,III,D,Priyanshu Choudhary,Mr.Shiv Kumar Choudhary,Mrs. Rajni Choudhary,9/10/2009,,General,9826760275,,718712085704,,,"Santoshi Para, Camp-II, Choudhary Bhawan",English,,,,,,,,,16/06/2476
+2488,,III,D,Rehan Shah,Mr.Rocky Shah,Mrs. Mina Shah,16/11/2010,,General,"9039797139, 7771041031",,579789391295,,,"LIG-II/ 164 Housing Board, I/F",English,,,,,,,,,16/06/2477
+3769,,III,D,Anjali Rani,Mr. Vijay Saw,Mrs. Aarti Saw,25/09/2010,,General,9302176718,,937489226907,,,Lal Bhadur Atta Chhaki Shastri Chowk Camp-1,English,,,,,,,,,16/06/2478
+3505,,III,D,Himanshi Sahu,Mr.Shankarlal Sahu,Mrs. Tikeshwari Sahu,15/03/2011,,General,7805928312,,930830035766,,,"H.No. 330, Ward N.-3, Bajrang Chowk, Krishna Nagar, Supela , Bhilai",English,,,,,,,,,16/06/2479
+3450,,III,D,Sukanya Dubey,Mr.Jitendra Dubey,Mrs. Nisha Dubey,3/5/2010,,General,9753218355,,897832836162,,,"H.N.  49/4, Ward-9, Ramnagar",English,,,,,,,,,16/06/2480
+2738,,III,D,Supriya Chaurasiya,Mr.Upendra Chourasiya,Mrs. Pushpa Devi,29/01/2011,,OBC,"9479047358, 9907221159",,413760705798,,,Azad mohalla near panch mandir prem nagar,English,,,,,,,,,16/06/2481
+2537,,III,D,Yashika Sahu,Mr. Sunil Ku. Sahu,Mrs. Chandrakala Sahu,19/08/2010,,OBC,9993245622,,974087942512,,,"Sanatan Nagar, Kohka, Near- Kabir Vatika Supela",English,,,,,,,,,16/06/2482
+3107,,III,D,Aadarsh,Mr. Ajay Yadav,Mrs. Rachana Yadav,1/6/2010,,General,9302195128,,402254155139,,,"Behind Teendarshan Mandir, Nehru Chowk, Camp-1",English,,,,,,,,,16/06/2483
+4513,,III,D,Ankit Gupta,Mr.Kailash Gupta,Mrs. Archna Gupta,18/08/2009,,General,7898846914,,500677538713,,,"Ravan Bhatta , Supela Bhilai",English,,,,,,,,,16/06/2484
+3159,,III,D,Himanshu ku Sao,Mr.Rajesh Ku. Sao,Mrs. Priyanka Devi,18/06/2010,,OBC,9755852283,,979459297837,,,"Ramnagar, Muktidham Road, Supela",English,,,,,,,,,16/06/2485
+4221,,III,D,Prem Janghel,Mr.Deosharan Janghel,Mrs. Mamta Janghel,5/11/2010,,General,9926724404,,844799603992,,,"Contractor Colony Behind Alka Medical Store Supela, Bhilai, Durg",English,,,,,,,,,16/06/2486
+2348,,III,D,Sholk Kumar Sao,Mr.Rajesh Sao,Mrs Sanju Sao,9/2/2010,,OBC,7566677310,,220802070745,,,"Old Khursipar, BSP Road, Bhilai",English,,,,,,,,,16/06/2487
+3486,,III,D,Sumit Thakre,Mr.Babulal Thakre,Mrs Jhameshwari Thakre,29/07/2010,,OBC,9669338352,,776170002512,,,"Arjun Nagar, Camp-1, Ward-19",English,,,,,,,,,16/06/2488
+2949,,III,D,Tejaswi Mishra,Mr. BishnuKumar Mishra,Mrs. Premlata Mishra,13/09/2010,,General,"9179525020, 9179758944",,570358793644,,,Shankar Para Laxmi Nagar,English,,,,,,,,,16/06/2489
+2493,,III,D,M.Rashi,M. Raju,Mrs. Laxmi,5/11/2010,,General,"9827531764, 9907944328",,985447737879,,,"Gautam Nagar, Shyam Kirana Store",English,,,,,,,,,16/06/2490
+2521,,III,D,Prashansa Sahu,Mr. Vikas Sahu,Mrs. Alka Sahu,30/04/2010,,General,8109462035,,226290753438,,,"Ram Nagar, Mukti Dham, Jai Hind Chowk",English,,,,,,,,,16/06/2491
+3133,,III,D,Riya Thakur,Mr. Rakesh Thakur,Mrs. Aasha Thakur,9/10/2010,,ST,8120803653,,426997026416,,,"J.P. Nagar, Camp-II, Bhilai",English,,,,,,,,,16/06/2492
+2936,,III,D,Sangeeta Singh,Mr. Bhushan Singh,Mrs. Anita Devi,26/03/2010,,General,9300648138,,,,,"C/O Baliram Singh, Hardware line Supela",English,,,,,,,,,16/06/2493
+3207,,III,D,Muskan Singh,Mr. Purtaj Singh,Mrs. Chandrahuti Singh,22/11/2009,,General,8602607855,,205717187882,,,H. No. 201 chudi line supela Market,English,,,,,,,,,16/06/2494
+4132,,III,D,Shubham Pandey,Mr.Ghanshyam Pandey,Mrs.Nisha Pandey,22/06/2009,,General,8602373515,,786269500209,,,pragati nagar ward 28 camp 1 jalabi chowk,English,,,,,,,,,16/06/2495
+2522,,III,D,Ashish Sahani,Mr. Prakash Sahani,Mrs. Reema Sahani,31/08/2010,,General,8602108441,,533590836688,,,"Nehru Bhawan Road Near Durga Mandir, Supela , Bhilai",English,,,,,,,,,16/06/2496
+3610,,III,D,Tashu Sahu,Mr. Narayan Sahu,Mrs. Tarani Sahu,1/1/2011,,OBC,9826786120,,479749827686,,,"Apna Kirana Store, H.No. 78 R.Nagar Muktidham",English,,,,,,,,,16/06/2497
+3932,,III,D,Deependra Ku. Sharma,Mr. Rohit Ku. Sharma,Mrs. Taniya Sharma,13/07/2010,,General,8827406338,,,,,Sanatan Ng. Gayatri Mandir Kohka,English,,,,,,,,,16/06/2498
+3728,,III,D,Manjot Singh Khosa,Mr. Inderjeet Singh Khosa,Mrs. Ranjeet Kaur,13/07/2010,,General,9981400204,,414052773694,,,"Camp-1 Shanti Para Mourya Atta Chakki, Ward-21",English,,,,,,,,,16/06/2499
+2526,,III,D,Nitesh Ku. Sharma,Mr. Gauri Shankar Sharma,Mrs. Vishakha,13/12/2009,,General,9827159082,,,,,LIG 25/43 Jawahar Nagar,English,,,,,,,,,16/06/2500
+3976,,III,D,Neha Sahu,Mr. Doman Lal Sahu,Mrs. Deepak Bai Sahu,9/3/2010,,OBC,9691422340,,349734222249,,,"Near Patel Kirana Store, Bajran Para, Khoka, Durga Mandir",English,,,,,,,,,16/06/2501
+2743,,III,D,Riya Sinha,Mr.Dinesh Kumar Sinha,Mrs. Sudha Sinha,21/06/2010,,General,9826133154,,,,,"Ayush Petro Pump, Sinha Kirana Store ,Rajesh Bhawan , Bhilai- 3",English,,,,,,,,,16/06/2502
+2506,,III,D,Nisheeta Dewangan,Mr. Govind Dewangan,Mrs. Saraswati Dewangan,10/8/2009,,OBC,9755887742,,397346957942,,,"Plot No. 41/6, Radhika Nagar",English,,,,,,,,,16/06/2503
+2734,,III,D,Tejaswani Manikpuri,Mr. Toran Das Manikpuri,Mrs. Rameshwari Manikpuri,10/1/2010,,OBC,9752307068,,478369085932,,,Near Kabristan Mukti Dham Road Camp-1,English,,,,,,,,,16/06/2504
+4845,,III,D,Ansh Prasad,Mr. Ajit Prasad,Mrs. Smita Prasad,15/12/2009,,General,9302382688,,488305389869,,,"Ward -12, Cont. Colony, Near Shashtri Hospital Supela",English,,,,,,,,,16/06/2505
+4961,,III,D,Yashmit Sahu,Mr. Kamal Narayan Sahu,Mrs. Tulsi Sahu,25.6.10,,OBC,9198569177,,281905097530,,,"Shanti Para bus stand, ward-19, Bhilai 3 ",English,,,,,,,,,16/06/2506
+4439,,III,D,Arushi Kumari,Mr. Kaushal Kishor,Mrs. Renu Devi,30.6.10,,General,8349425829,,767624082458,,,"Ramnagar, near Shakuntala Vidyalaya",English,,,,,,,,,16/06/2507
+2489,,III,D,Arnav Biswas,Mr.Sujit Biswas,Mrs. Deepa Biswas,22/08/2010,,General,7049917620,,,,,"LIG- II/ 155, 32 Acre plot, C.G. H B, I.E Bhilai",English,,,,,,,,,16/06/2508
+2746,,III,D,Hariom Sahu,Mr. Poonam Kumar,Mrs. Rashmi Sahu,7/1/2010,,General,8519060149,,652495385444,,,"Shastri Nagar Camp-1, Bhilai",English,,,,,,,,,16/06/2509
+3214,,III,D,Samar Sahu,Mr. Jaipal  Sahu,Mrs. Yogeshwari,5/6/2010,,OBC,9301722906,,587696881250,,,"Near Gayatri Mandir, Ramnagar",English,,,,,,,,,16/06/2510
+3156,,III,D,Tilak Raj Verma,Mr. Rishi Ku. Verma,Mrs. Rahi Verma,3/7/2009,,OBC,9981928379,,291723383999,,,"Cont. Colony, H.No. 180, Ward-6, Supela",English,,,,,,,,,16/06/2511
+2549,,III,D,Md.Sufiyan,Md.Rafiq,Mrs. Shaheena Parveen,28/04/2010,,General,9827113975,,479535728957,,,"Sharda Para, kishan chowk , Camp-2",English,,,,,,,,,16/06/2512
+4195,,IV,A,Amrita Kumari,Mr.Chitranjan Sao,Mrs.Mamta devi,13/01/2009,,OBC,9893102070,,977962401844,,,"208, Behind naveen Prathmik Shala No.-2, W.No. 16 Con. Col. Mamta Nagar",English,,,,,,,,,16/06/2513
+3834,,IV,A,Aradhya Agrahari,Mr. Jay Agrahari,Mrs.Geeta Agrahari,25/07/2009,,General,"9300547585, 8770789579",,659896018257,,,"Mahatma Gandhi Nagar, Camp-2, Power House",English,,,,,,,,,16/06/2514
+3257,,IV,A,Harshita,Mr. Mile Nath,Mrs. Sangeeta,24/09/2009,,OBC,7898679951,,561487192846,,,"H.No. 538, Near R.S.S. Shringarika Shop, Vrinda nagar, Camp-1",English,,,,,,,,,16/06/2515
+3301,,IV,A,Jhalak Giriya,Mr. Premlal Giriya,Mrs.Shweta Giriya,31/01/2009,,OBC,9300540677,,829135270743,,,"St-1, Q.No. 159, Shanti Nagar, Bhilai (CG)",English,,,,,,,,,16/06/2516
+3061,,IV,A,Jiya,Mr. Dinesh Singh,Mrs.Jyoti Singh,28/07/2009,,General,"8103344672, 989160 9505",,414131246393,,,"Baikunth Dham Camp-2, Near Siddhartha SchoolWard-21, Pole no-41",English,,,,,,,,,16/06/2517
+2909,,IV,A,Kanishka Pandey,Lt. Narayan Prasad Pandey,Mrs.Pushpa Pandey,22/12/2009,,General,9752859212,,835938571315,,,"Bhim nagar, shankar chowk, supela.H.No-1621",English,,,,,,,,,16/06/2518
+4186,,IV,A,Kaanchanmala Sandey,Gajanand Sandey,Mrs.Radhika Sandey,14/12/2008,,SC,8821993768,,490291867728,,,"Rahul STD Ward -29, Pump House Gautam Nagar, Sec.-II Zone I",English,,,,,,,,,16/06/2519
+3753,,IV,A,Kavya Hinduja,Mritun Jay Hinduja,Mrs.Sheela Hinduja,16/11/2009,,SC,7566100099,,939142176228,,,"567, Ramnagar, Hanuman Mandir Road, Bhilai",English,,,,,,,,,16/06/2520
+3047,,IV,A,Laxmi Jaiswal,Vijay Bahadur Jaiswal,Mrs.Ranjana,5/11/2009,,OBC,8959064390,,364375967273,,,"Vijay Kirana Store Shastri Nagar, Ward No.- 18, Camp-1, Bhilai",English,,,,,,,,,16/06/2521
+3643,,IV,A,Naushin Fatima,Abdul Nasir,Mrs.Anwari Begum,10/8/2009,,General,9329633186,,801340058813,,,"Ahmed Nagar, Camp-2, Bhilai",English,,,,,,,,,16/06/2522
+2799,,IV,A,P. Poojita,Mr. P. Laxman Rao,Mrs. P. Lalitha,8/7/2009,,OBC,9827971049,,343562743766,,,"C/O , Mukesh Tailor Steel Nagar, Camp-1, Road No-18",English,,,,,,,,,16/06/2523
+3414,,IV,A,Sakshi Rathore,Mr. Sunil Singh Rathore,Mrs.Lata Rathore,29/08/2008,,General,9993090279,,678702464973,,,"H.No. 211, Dewangan Para, Ward-4, Supela",English,,,,,,,,,16/06/2524
+3609,,IV,A,Sabiya Parveen,Mumtaz,Mrs.Ameera Begum,21/05/2009,,General,9755819100,,563244902536,,,"Block No.- 4/A, Camp-1, Bhilai",English,,,,,,,,,16/06/2525
+3112,,IV,A,Siddhi Baghel,Mr.Raj Kumar Baghel,Mrs. Ashima Baghel,18/07/2009,,General,9827935488,,434515245467,,,"Ward No-24, Sharma Colony",English,,,,,,,,,16/06/2526
+3336,,IV,A,Shweta Singh,Mr.Aditya Pratap Singh,Mrs.Smita Singh,6/1/2010,,General,9993364921,,562295261979,,,"Near Ram Janki Mandir, Ramnagar",English,,,,,,,,,16/06/2527
+3671,,IV,A,Sameeksha Patel,Mr.Suresh Kumar Patel,Mrs.Durga Patel,29/01/2009,,OBC,9827905564,,338354757162,,,"Near Maruti Tailor, Contractor Colony, Supela",English,,,,,,,,,16/06/2528
+2812,,IV,A,Samriddhi Dubey,Mr.Ishwar Dubey,Mrs.kiran Dubey,17/10/2009,,General,8770586771,,474239530646,,,"Qr. No. 17/B, St.-14, Sec.- 4",English,,,,,,,,,16/06/2529
+2542,,IV,A,Surbhi Mishra,Mr.Pramod Mishra,Mrs.Shashikala Mishra,8/11/2009,,General,9827493649,,566747264003,,,"Qr. No. 79/C, Camp-1, Jalebi Chowk Pragati Nagar.",English,,,,,,,,,16/06/2530
+3064,,IV,A,Adarsh Jaishwal,Mr. Anil Jaishwal,Mrs.Priyanka Jaiswal,2/1/2008,,OBC,9713185599,,614463378932,,,"Line road, Camp-2, Fruit Market",English,,,,,,,,,16/06/2531
+3110,,IV,A,Adarsh Ku. Singh,Mr.Gyan Singh,Mrs.Seema Singh,31/07/2008,,General,7389398563,,77054508643,,,"Qr. No. 10/A, St. MPR Zone -2, Sec-11, Khursipar",English,,,,,,,,,16/06/2532
+3543,,IV,A,Anurag Sahu,Radheshyam Sahu,Mrs.Sandhya Sahu,26/06/2008,,OBC,9977462206,,790718213791,,,"C/O Fernandez 02/9, Shastri Nagar, supela",English,,,,,,,,,16/06/2533
+3038,,IV,A,Arya Sharma,Mr.Dinesh Sharma,Mrs.Supriya Sharma,23/06/2009,,General,9826113485,,752927386152,,,"C/ON.S. Banchor, St-15, Qr.No 6/A, Sec.- 10",English,,,,,,,,,16/06/2534
+3067,,IV,A,Ayush Chand,Mr.Umesh Chand,Mrs.Savitri Devi,23/11/2009,,SC,9630248113,,207601520232,,,"Ward- 18, Shastri Nagar, Camp-1",English,,,,,,,,,16/06/2535
+3062,,IV,A,Ayush Chandrawanshi,Mr.Praveen Kumar Chandrawanshi,Mrs.Nisha Chandrawanshi,22/08/2009,,OBC,9098302311,,433518189522,,,"Behind Shakuntala Vidyalaya, ramnagar",English,,,,,,,,,16/06/2536
+3377,,IV,A,Divyanshu Prajapati,Mr.Rajesh Kumar Prajapati,Mrs.Renu Prajapati,23/02/2009,,General,"9981400407, 9425235800",,912631148274,,,"H.No. 219, Near As CB/1a, Camp- 1, Shanti Para , Bhilai",English,,,,,,,,,16/06/2537
+3567,,IV,A,Mayank Kumar Ojha,Mr.Deepak Kumar Ojha,Mrs.Bindu Ojha,22/12/2008,,General,9074689452,,464313452893,,,"Qr. No. 5/13, st. Avenue chowk, Sec.- 1, Bhilai",English,,,,,,,,,16/06/2538
+3068,,IV,A,Md. Anas,Md. Amiruddin,Mrs.Akbari khatoon,30/05/2009,,OBC,9303905928,,230044675563,,,"Danish Commercial institue, 18 No. Road Camp-1",English,,,,,,,,,16/06/2539
+3594,,IV,A,Rohit Kol,Mr.Manmohan Kol,Mrs.Mamta Kol,18/03/2009,,ST,8871988974,,436611246332,,,"27/B, Gandhi Chowk Camp-1, Bhilai",English,,,,,,,,,16/06/2540
+3028,,IV,A,Sahil Sahu,Mr.Somnath Sahu,Mrs.Khameshwari Sahu,1/10/2009,,OBC,9770140472,,625009683275,,,Model Town Bhilai near old Primary School,English,,,,,,,,,16/06/2541
+2546,,IV,A,Amrit Kaur,Mr.Hardev Singh,Mrs.Sonaljeet Kaur,11/3/2009,,General,9074951523,,721895383524,,,"157/D, Camp- Bhilai near Sai Nagar",English,,,,,,,,,16/06/2542
+3027,,IV,A,Chetna Sinha,Mr.Rajkumar Sinha,Mrs.Kavita Sinha,29/11/2009,,OBC,9926201460,,373174689233,,,"Shahid Bhagat Singh Marag , Near Indira Chowk Ram Nagar",English,,,,,,,,,16/06/2543
+3802,,IV,A,Minakshi Mandavi,Mr.Manish Kumar Mandavi,Mrs.Veena Mandavi,26/09/2008,,ST,"9926113579, 7389957386",,269404005653,,,Staff Qr.No. H Near Supela Thana Radhika Nagar,English,,,,,,,,,16/06/2544
+2531,,IV,A,Abid Beg,Vaheed Beg,Mrs.Naeema Begum,2/6/2009,,OBC,"9977328063, 7974487215",,590639469841,,,"Qr. No. 18/B, St. MPR Zone -2, Sec.-11, Khursipara",English,,,,,,,,,16/06/2545
+3125,,IV,A,Posan Singh Verma,Mr.Krishna Ku. Verma,Mrs.Saraswati Verma,3/6/2009,,General,9893347943,,894892803707,,,Ward- 6 Near Satrang Vihar,English,,,,,,,,,16/06/2546
+3024,,IV,A,Shubham,Mr.Arun Kumar,Mrs. Nisha Devi,11/12/2009,,OBC,9893197379,,382639902993,,,"Near Tadi Shop Camp-2, Bhilai",English,,,,,,,,,16/06/2547
+3113,,IV,A,Yash Deulkar,Mr.Ramesh Deulkar,Mrs. Varsha Deulkar,1/4/2009,,General,9039186359,,433624904577,,,"Subhash Road Ramnagar, Supela",English,,,,,,,,,16/06/2548
+3524,,IV,A,Drishti Nayak,Mr.Pramod Nayak,Pinky,6/12/2009,,General,9893195504,,618724546281,,,"Maa Bamleshwari Steel Industry, Supela",English,,,,,,,,,16/06/2549
+3440,,IV,A,Jasmeet Kaur,Mr.Jaspal Singh,jyoti kaur,23/08/2009,,General,9479071563,,221560520251,,,"Behind Masjid, Camp-1",English,,,,,,,,,16/06/2550
+3069,,IV,A,Md. Sarfraj,Md. Shakil,Mrs. Naseema Bano,20/04/2009,,OBC,9755786898,,392870166974,,,"Gandhi Chowk, Sharda Para, Camp-2",English,,,,,,,,,16/06/2551
+4588,,IV,A,Ayush Kumar Nagvanshi,Mr. Pramod Kumar  Nagvanshil,Mrs.Kavita Nagvanshi,2/5/2007,,SC,7067379251,,264840182098,,,"New Krishna Nagar, Raju Kirana Store, Ward-3, Supela",English,,,,,,,,,16/06/2552
+4942,,IV,A,Ashutosh Tripathi,Mr.Parijat Tripathi,Mrs.Sangeeta Tripathi,20/04/2009,,General,9826710920,,619694648700,,,"H.No. 237, St-3, Shanti Nagar, Supela, Bhilai",English,,,,,,,,,16/06/2553
+4902,,IV,A,Aariz Ahmed,Shakil Ahmed,Ayesha Tarannum,22.04.2009,,,8770310359,,379036720815,,,Gaffar Colony Chawani Chowk Bhilai,English,,,,,,,,,16/06/2554
+4851,,IV,A,Aryan Sharad,Sharad Babu,Renjini. M. R,22.12.2008,,,8349482462,,957526968158,,,MIG-1/824 MPHB Colny Industrial  estate \,English,,,,,,,,,16/06/2555
+3710,,IV,A,Tejshwi Prasad Sinha,Manohar Prasad Sinha,Rakhi Sinha,05.02.2009,,,9907542089,,597174892058,,,H.NO.303 Ward -17 Camp -1 Vrindanagar,English,,,,,,,,,16/06/2556
+3576,,IV,B,Niyati Mahanande,Mr.Sohan,Mrs.Kusumlata,14/10/2009,,SC,7898082676,,217836299270,,,C/O Kanti Kirana Store Gandhi Chowk,English,,,,,,,,,16/06/2557
+3547,,IV,B,Lakshya Soni,Mr.Ram Sharan Soni,Mrs.Ragini Soni,2/2/2009,,OBC,8085894655,,573042979694,,,"EWS, 546 , Vaishali Nagar",English,,,,,,,,,16/06/2558
+3095,,IV,B,Chanchal Sahu,Sagar Singh Sahu,Mrs.Tejeshwari Sahu,4/1/2009,,OBC,9907823369,,748010140513,,,"Shanti Nagar , Bhilai-3, Palika Road near Sky College",English,,,,,,,,,16/06/2559
+4172,,IV,B,Shiwani Bhagat,Mr.Durga Prasad Bhagat,Mrs. Nirmala Bhagat,18/05/2009,,General,9826141260,,123456789042,,,"Near Ahmad Bhavan, Contractor Colony",English,,,,,,,,,16/06/2560
+3044,,IV,B,Vani Thakur,Lt. Nand Kumar Thakur,Mrs.Dulari Thakur,1/7/2008,,ST,8871716748,,615797767321,,,"Ram Nagar, Mukti Dham, Adarsh Street Ward No.13",English,,,,,,,,,16/06/2561
+3928,,IV,B,Ashish Kumar Chouhan,Mr.Santosh Chouhan,Mrs.Seema Chouhan,29/09/2008,,General,9981400407,,660650410886,,,"Indra Nagar, Shyam Timber, Kohka road, Supela",English,,,,,,,,,16/06/2562
+3714,,IV,B,Aanchal Kumari,Mr. Sanjay Kumar Sao,Mrs.Poonam Sao,25/06/2009,,OBC,7869790887,,983730146577,,,"Shastri Nagar, Camp-1",English,,,,,,,,,16/06/2563
+3889,,IV,B,Gayatri Sahu,Mr.Sukram Sahu,Mrs Kanti Sahu.,12/9/2008,,General,8349720910,,655122486436,,,"Kirana Store, D/O Sukhram Sahu, Nehru Chowk camp-1",English,,,,,,,,,16/06/2564
+4061,,IV,B,Jiya Puri,Mr.Prakash Chand Puri,Mrs. Hemlata Puri,13/01/2010,,General,9039073605,,924728845326,,,"Camp-1, Subhash Chowk, Qr. No-119/A, Shanti Nagar, Supela",English,,,,,,,,,16/06/2565
+3612,,IV,B,Shilpa Chakrabarty,Mr.Sambal Chakraborty,Mrs Rinku Chakraborty,19/01/2009,,General,7898528266,,606832450241,,,"Surya Nagar, Camp-2, Bhilai Ward No- 26",English,,,,,,,,,16/06/2566
+4052,,IV,B,Abhinav Shripad,Mr.Praveen Ku. Shripad,Mrs.Priti Shripad,3/7/2009,,ST,7389900473,,369450758126,,,"Block 4- H, St- NPA Zone -1, Sec.- 11 Khursipar",English,,,,,,,,,16/06/2567
+3616,,IV,B,Akhil Verma,Mr.Bhawar Lal Verma,Mrs.Anju Verma,15/10/2009,,General,9752277162,,932284708484,,,Arya Nagar Kokha Bhilai near Jain Timber,English,,,,,,,,,16/06/2568
+3058,,IV,B,Arsalaan Yaseen Khan,Yaseen Khan,Mrs.Asma Khan,18/07/2008,,General,9826331998,,272581531161,,,"Near National Public School, Kohka Road Farid Nagar",English,,,,,,,,,16/06/2569
+2816,,IV,B,Gopi Gupta,Mr.Manoj Gupta,Mrs.Meena Gupta.,1/1/2009,,General,9826982944,,932269939338,,,"H.No. 209, Ward No.- 24 Santoshi Para Ganesh Chowk",English,,,,,,,,,16/06/2570
+2804,,IV,B,Md. Rehan  Ansari,Md. Tanveer Alam,Mrs. Nazrana,23/11/2009,,General,9302538662,,788433242987,,,"Mandir Colony , Supela, Near Panjab Bag 4 , Ramnagar, Bhilai",English,,,,,,,,,16/06/2571
+3527,,IV,B,Utkarsh Dewangan,Mr.Gopal Dewangan,Mrs. Santoshi Dewangan,30/03/2009,,OBC,9300451704,,723461744022,,,"Radhika Nagar Plot No.47/2, Supela",English,,,,,,,,,16/06/2572
+3072,,IV,B,Yashraj Tiwari,Lt. Rajkumar Tiwari,Mrs.Manisha Tiwari.,22/11/2009,,General,9644244648,,277744091979,,,"Uttar Vasundara Nagar,         Bhilai- 3",English,,,,,,,,,16/06/2573
+3441,,IV,B,Akansha Sahu,Mr. Chandrasen Sahu,Huleshwari Sahu,23/06/2009,,OBC,9901639584,,437457653042,,,"Near S.R. Gupta, Kirana Store, Indra Nagar, Supela",English,,,,,,,,,16/06/2574
+3295,,IV,B,Noorjhat Parveen,Mohd. Vakil,Mrs. Lajeena Bano,24/08/2009,,OBC,7772886972,,843237627559,,,"Gandhi Chowk, Near Shanti Nagar",English,,,,,,,,,16/06/2575
+3182,,IV,B,Riya Kumari,Mr.Rajesh Ku. Sao,Mrs. Simpee devi,7/7/2009,,OBC,8358058702,,746087937195,,,"Lal Bahadur Atta Chakki, Shastri Chowk, Camp-1",English,,,,,,,,,16/06/2576
+3996,,IV,B,Kanak Parihar,Mr.Rajesh Parihar,Mrs. Madhu Parihar,5/11/2008,,General,8878205484,,804493087599,,,"Mahatma Gandhi, Nagar, Camp-2, Bhilai",English,,,,,,,,,16/06/2577
+2766,,IV,B,Shreya Singh,Mr.Bhim Singh,Mrs. Aarti singh,15/11/2008,,General,9407792834,,241250703093,,,"Rajeev Nagar Sector-11, Zone-2, Ashok Chowk, Kursipar",English,,,,,,,,,16/06/2578
+3054,,IV,B,Aditya Kashyap,Mr. Rajesh Kashyap,Mrs. Asha devi,15/12/2009,,OBC,8109429158,,654519269550,,,"Ashok Kirana, Shastri Nagar, Camp-1, Bhilai",English,,,,,,,,,16/06/2579
+2727,,IV,B,Sameer Sahu,Mr. Chandrahas Sahu,Mrs. Dropati bai shau,24/03/2009,,OBC,9754422663,,277708157588,,,"H.No-419, Contractor colony, Supela",English,,,,,,,,,16/06/2580
+3063,,IV,B,Aditya Yadav,Mr.Raju Ku. Yadav,Mrs. Manisha yadav,8/9/2009,,OBC,7489368281,,975779426356,,,"Ashok Kirana, Baikunthdham, Camp-2",English,,,,,,,,,16/06/2581
+3251,,IV,B,Aryan Ku. Sao,Mr. Manoj Ku. Sao,Mrs. Shobha devi,23/02/2009,,General,9329448120,,788525639434,,,"Ramnagar, Mukti Dham, Supela",English,,,,,,,,,16/06/2582
+3160,,IV,B,Nihal Sahu,Mr. Neel Kamal Sahu,Mrs. Vinika Sahu,27/11/2008,,OBC,9827125236,,893918256473,,,Kailash Nagar,English,,,,,,,,,16/06/2583
+3693,,IV,B,V. Kavyansh,Mr. V. Kam Raju,Mrs. V. Suhasini,31/08/2009,,OBC,9039069601,,677270782791,,,"Road No.-18, Steel Nagar, Camp-1",English,,,,,,,,,16/06/2584
+3569,,IV,B,Harshika Vishwakarma,Mr. Deenanath,Mrs.sita,15/12/2008,,General,9981983406,,123456789153,,,"H.No. 21/B, Camp-1, 18 No. Road",English,,,,,,,,,16/06/2585
+3032,,IV,B,Khushboo Sahu,Mr. Jitendra Kumar Sahu,Mrs Meera Sahu,27/01/2009,,OBC,8817615603,,295607680438,,,"Ajay Poultry Farm, Purani Basti, Supela",English,,,,,,,,,16/06/2586
+2539,,IV,B,Naina Sahani,Mr. Bharat Sahani,Mrs.Madhuri Sahani,22/06/2009,,General,7828048993,,913895336343,,,"Near Bamleshwari Mandir, Nandini Road, Subhash Nagar",English,,,,,,,,,16/06/2587
+3055,,IV,B,Neha,Mr.Anil Sao,Mrs.Anita Devi,29/03/2009,,General,9993376972,,123456789160,,,"Tiranga Chowk, Shastri Nagar, Ward-18",English,,,,,,,,,16/06/2588
+3102,,IV,B,Rukhmani Sinha,Mr.Om Prakash Sinha,Mrs. Ishwari sinha,29/10/2008,,General,9098171658,,484262241689,,,"Contractor Colony, Supela",English,,,,,,,,,16/06/2589
+4039,,IV,B,Aditya Soni,Mr. Bharat Soni,Mrs.Bindu Soni,4/8/2009,,General,9827936242,,218546780580,,,"Ch-66, Near Water Tank, Housing Board, Kohka",English,,,,,,,,,16/06/2590
+3053,,IV,B,Aman Sheikh,Arif Sheikh,Mrs.Nida,2/9/2009,,General,9406104151,,359142363338,,,"Q.No. LIG II 2482, Housing Board Bhilai, Industrial Area",English,,,,,,,,,16/06/2591
+3071,,IV,B,Anas Malik,Shahid Malik,Mrs.Zeeshan Begum,21/10/2007,,General,9926152035,,725911268344,,,"LIG-3, 32 A, CG HB",English,,,,,,,,,16/06/2592
+2982,,IV,B,Naman Vishwakarma,Mr.Vinod Vishwakarma,Mrs.Anita Vishwakarma,17/02/2009,,General,9993859433,,123456789181,,,"Rajiv Nagar, Supela",English,,,,,,,,,16/06/2593
+3179,,IV,B,Sahil Choudhary,Mr. Ashok Kumar Choudhary,Mrs.Saroj Choudhary,7/7/2008,,OBC,9425235452,,123456789186,,,"Nandini Nagar, Subhash Nagar",English,,,,,,,,,16/06/2594
+3747,,IV,B,Vedant Dewangan,Mr. Raj Kumar,Mrs.Kalpana Dewangan,26/05/2009,,General,9179835053,,360738754275,,,"Rajiv Nagar, C/O Popular Cycle Store, Supela",English,,,,,,,,,16/06/2595
+2942,,IV,B,Vivek Kumar,Mr.Dinesh Kumar Sao,Mrs.Sangeeta Sao,24/02/2009,,OBC,9300259445,,,,,"Lal Bahadur Shastri Hospital Road, Naag Mandir Ke Pass, Supela",English,,,,,,,,,16/06/2596
+3039,,IV,B,Fardin Imam,Imam Uddin,Nazmin Imam,15/10/2009,,General,8103556990,,123456780907,,,Farid Nagar Nizami Chowk,English,,,,,,,,,16/06/2597
+4383,,IV,C,Aachal Kushwaha,Mr.Raj Kumar Prasad Kushwaha,Mrs.Pushpa devi Kushwaha,28/11/2008,,General,9827487089,,886118065657,,,"Kripal Nagar, Kohka",English,,,,,,,,,16/06/2598
+2815,,IV,C,Kumari Ashwini Sajal Shraddha,Mr.Peetambar Lal Kurrey,Mrs.Prabh kurrey,4/12/2009,,SC,9752435236,,340293692398,,,"C/O-P.S. Kapse, H.No.-328 Shaheed Bhagat Marg, Ramnagar",English,,,,,,,,,16/06/2599
+3031,,IV,C,Ashish Soni,Mr.Sanjay Kumar Soni, Mrs. Arti Soni,22/05/2009,,General,9827943525,,423533142321,,,"Janta Colony , Shop-26, T- Market Power House",English,,,,,,,,,16/06/2600
+3613,,IV,C,Sujal Soni,Mr.Sunil Soni,Mrs.Anjana Soni,14/12/2008,,General,7869281576,,399197610161,,,"Behind Sapna Talkies, Power House, Durga Nagar",English,,,,,,,,,16/06/2601
+2541,,IV,C,Anam Parveen,Khaliluddin,Mrs.Shabana Parveen,20/08/2009,,General,9993252519,,937404631927,,,"Qr. No. 218 P.C. 1/34 Vrinda Nagar, Camp-1",English,,,,,,,,,16/06/2602
+2980,,IV,C,Baljeet Kaur,Mr.Joginder Singh,Mrs.kuldeep Kuar,9/9/2009,,General,9301001048,,,,,Camp-I Q.No-26/T B.S.P Quarter Bhilai,English,,,,,,,,,16/06/2603
+3603,,IV,C,Harshita Garg,Mr.Rupender Garg,Mrs. Nisha Garg,1/1/2010,,General,8966333918,,528238715142,,,Purani Basti Gandhi Chowk Supela,English,,,,,,,,,16/06/2604
+3201,,IV,C,Muskan Sahu,Mr.Brinda Ban,Mrs.Sunita Sahu,2/5/2008,,General,9098789446,,718056611278,,,"Qr. No. 44, Kohka Housing Board MIG- 2",English,,,,,,,,,16/06/2605
+3103,,IV,C,Nidhi Mehra,Mr.Ashok Mehra,Mrs.Manisha,10/8/2008,,General,9993001811,,,,,"Q.No. 364, 365 Near Durga Mandir, Kohka Housing Board",English,,,,,,,,,16/06/2606
+3659,,IV,C,Pratika Langiwal,Mr. Jitendra Langiwal,Mrs. Deergha Langiwal,13/03/2009,,General,9827475159,,835838967135,,,"Qr-No.5/C, St.-12, Sec.- 5, Bhilai",English,,,,,,,,,16/06/2607
+3108,,IV,C,Shama Parween,Liyakat Ali,Mrs.Jameela,17/07/2009,,General,8109957274,,615609718387,,,Sangram Chowk Camp-1,English,,,,,,,,,16/06/2608
+3697,,IV,C,Anmol,Mr.Satnam Singh,Mrs.Jagdish Kaur,5/11/2009,,General,7999470671,,879518261452,,,"Camp-1, 101/4 Near Subhash Behind C. G.",English,,,,,,,,,16/06/2609
+3126,,IV,C,Ayush Verma,Mr.Bhushan Lal Verma,Mrs.Bhagwati Verma,16/07/2009,,OBC,8109471137,,328423916241,,,Bajrang Para Kohka near Patel Kirana Store.,English,,,,,,,,,16/06/2610
+3930,,IV,C,Mayank Prasad,Mr.Chatur Prasad,Mrs. Savita Prasad,26/04/2009,,General,9039774654,,,,,"Rajeev Nagar Ward No-4, Supela , Bhilai",English,,,,,,,,,16/06/2611
+2800,,IV,C,Sahil Verma,Mr.Jitesh Verma,Mrs.Deepa Verma,5/11/2008,,OBC,9893589951,,550926988409,,,59/13 Radhika Nagar Supela,English,,,,,,,,,16/06/2612
+3100,,IV,C,Nihal Sahani,Mr.Sunil Sahani,Mrs.Sheela Devi,6/9/2008,,General,9300634579,,318449804717,,,"Nehru Road Malloh Para, Supela Durga Mandir.",English,,,,,,,,,16/06/2613
+3676,,IV,C,Minakshi Ku. Singh,Mr.Manoj Ku. Singh,Mrs. Santosh kumar singh,6/11/2008,,General,9229859332,,417347242191,,,"Bhilai Provision Store Camp-1, Sangram Chowk",English,,,,,,,,,16/06/2614
+3045,,IV,C,Sima Kumari,Mr.Lalji Gupta,Mrs. Jai devi,8/12/2008,,OBC,7389307154,,866293430888,,,"Dr. Ambedkar Nagar, Camp-1, Ward-21",English,,,,,,,,,16/06/2615
+2545,,IV,C,Janvi Sahu,Mr.Suresh Ku. Sahu,Tikeshwari sahu,2/7/2009,,OBC,8109845608,,614800512990,,,"Lal Bahadur Shashtri Hospital Near Hanuman Temple, Supela",English,,,,,,,,,16/06/2616
+4040,,IV,C,Deepa Mourya,Mr.Harindra Prasad Mourya,Sheela  Mourya,16/10/2009,,General,9893555841,,838054286270,,,"42/25 Mother Taresa Nagar, Camp-2, Bhilai",English,,,,,,,,,16/06/2617
+3283,,IV,C,Palak Patel,Mr.Jawahar Lal Patel,Mrs. suman patel ,18/12/2009,,General,9039162955,,694288974542,,,"Near Sitaram Kirana Store, Indra Nagar",English,,,,,,,,,16/06/2618
+3111,,IV,C,Aditya Sahu,Mr.Dharmendra Sahu,Mrs. pinki devi sahu,13/03/2009,,OBC,9893433984,,405128927006,,,"Lal Bahadur Floor Mill, Shashri Chowk, Camp-1",English,,,,,,,,,16/06/2619
+4160,,IV,C,Nikhil Bisen,Mr.Yograj Bisen,Mrs. seema bisen,9/6/2009,,General,9179358082,,77059814614,,,"Laxmi Nagar, Ward-4, Supela",English,,,,,,,,,16/06/2620
+2530,,IV,C,Arpan Jawade,Mr.Virendra Jawde,Mrs. Vijaya jawade,10/8/2009,,OBC,9479046596,,375320712251,,,"H.No. 793, Kailash Nagar, Bhilai",English,,,,,,,,,16/06/2621
+3081,,IV,C,Piyush Singh,Mr.Arun Singh,Mrs. Saroj singh,22/12/2008,,General,9893951196,,253420806799,,,"Block No- 156/D, Camp-1, Sai Nagar",English,,,,,,,,,16/06/2622
+3104,,IV,C,Gagan Madharia,Mr.Manish Madharia,Mrs. Devshri Madharia,30/05/2009,,OBC,9981313556,,,,,"Panch Rasta, Supela, Bhilai",English,,,,,,,,,16/06/2623
+3651,,IV,C,Kunal Meshram,Ramesh Meshram,Mrs. Isha Meshram,10/1/2009,,SC,9893218232,,480264692827,,,"Behind Janta Boaring, Contractor Colony, Bhilai",English,,,,,,,,,16/06/2624
+4716,,IV,C,Vedansh Ku. Yadav,Mr. Kailash Ku. Yadav,Mrs. Nutan yadav,4/6/2009,,General,9691569904,,617856312325,,,"H.No. 1412, Ward-7, Kripal Nagar, Kohka",English,,,,,,,,,16/06/2625
+2540,,IV,C,Saniya Ali,Sayyed,Mrs. Reshma Bano,27/08/2008,,OBC,9009217660,,595685695883,,,"H.No.71, Near Gada Chowk, Laxmi Nagar, Supela, Bhilai",English,,,,,,,,,16/06/2626
+2905,,IV,C,Khemeswari Verma,Mr. Sanjay Verma,Mrs Savita Verma,6/11/2008,,OBC,9300614440,,202753450562,,,"Contractor Colony, Supela",English,,,,,,,,,16/06/2627
+3109,,IV,C,Nidhi Vishwakarma,Mr. Narsingh,Mrs.Bindu Vishwakarma,24/05/2009,,General,9752444536,,511793110308,,,"Verma Kirana Store, Nehru Chowk, Ward No-18",English,,,,,,,,,16/06/2628
+3118,,IV,C,Roshani Kumari,Mr.Arbind Kumar Singh,Mrs Sunita Devi,7/6/2009,,OBC,9200258879,,,,,"Arjun Nagar, Camp-1, Bhilai",English,,,,,,,,,16/06/2629
+3809,,IV,C,Syeda Namrah,Syed Shabbir Ali,Mrs Gousiya Nooree,20/04/2009,,General,9229201921,,335093370886,,,Shahid Bhagat Singh Marg,English,,,,,,,,,16/06/2630
+3297,,IV,C,Simran Kumari,Mr. Vinod  Kumar Sao,Mrs.Sarita Devi,31/10/2009,,OBC,9993010333,,971621527655,,,"Shastri Nagar, Camp-1, Ward No. -18, Supela",English,,,,,,,,,16/06/2631
+3127,,IV,C,Arsh Sharma,Mr.Ashok Sharma,Mrs.Ranju Sharma,27/12/2009,,General,9981130140,,219927459476,,,"Mamta Nivas, Near Krishna Vidyalaya, Ramnagar",English,,,,,,,,,16/06/2632
+2802,,IV,C,Ayush Tiwari,Mr.Rahul Tiwari,Mrs.Poonam Tiwari,15/03/2009,,General,9691821379,,619075108569,,,"Bhim Nagar, Supela , Bhilai",English,,,,,,,,,16/06/2633
+2547,,IV,C,Mahtah Haider Ansari,Eftekhar Ahmed,Mrs.Jaitoon Khatoon,15/12/2009,,General,9031006898,,582065194003,,,"OLC Qu- No. 53/J, Camp-I, Bhilai",English,,,,,,,,,16/06/2634
+3600,,IV,C,Nihal,Nazim Raza,Mrs.Nasrin ,9/4/2009,,General,8602949567,,497973256448,,,"Indira Nagar, Supela",English,,,,,,,,,16/06/2635
+3534,,IV,C,Prince Choudhary,Mr.Bharat Lal Chaudhary,Mrs.Uma Chaudhary,3/3/2010,,OBC,9826107960,,450456982125,,,"Arjun Nagar, Camp-1, Ward-19, Bhilai",English,,,,,,,,,16/06/2636
+2548,,IV,C,Shubham Chelak,Mr.Jitendra Kumar,Mrs.Kanti Chelak,3/10/2009,,SC,9697145973,,720372696030,,,"Qu. No. 47/H, Sec.- 2, Str-16",English,,,,,,,,,16/06/2637
+3050,,IV,D,Bhavya Manikpuri,Mr. Panch Ram ManikPuri,Mrs.Pratima Manikpuri,17/04/2009,,General,9826141747,,357213125267,,,Infront of Govt. ITI Shahid Veer Narayan Singh Nagar,English,,,,,,,,,16/06/2638
+3673,,IV,D,Palak Kumari,Mr.Vijay Kumar,Mrs.Pratima Devi,2/12/2008,,General,9893267230,,204543816129,,,"Q.No. 104/8 Camp-1, Prem Nagar, Bhilai",English,,,,,,,,,16/06/2639
+2898,,IV,D,Trisha,Mr.J.J. Rao,Mrs.Hemlata,20/05/2009,,General,7828567208,,393907425988,,,"Ward No-21, Shanti Para, Camp-1",English,,,,,,,,,16/06/2640
+3692,,IV,D,Vikas Kumar,Mr.Manoj Yadav,Mrs.Priyanka Devi,29/11/2007,,OBC,8349486548,,656799464051,,,"Yuva Ankush Chowk Ward-17, Chhavni",English,,,,,,,,,16/06/2641
+4396,,IV,D,Bhavya,Mr.Girdhari Nihal,Mrs.Anjana Nihal,19/03/2010,,SC,7828451096,,610005932773,,,"Ward No-4 Gautam Nagar, Supela Bhilai",English,,,,,,,,,16/06/2642
+3662,,IV,D,Chetna Gahlot,Mr.Ramesh Kumar Gahlot,Mrs.Mamta Gahlot,22/01/2009,,General,9300187702,,901089414764,,,"Adarsh Nagar, Sundernagar Ward-22, Camp-1, Bhilai",English,,,,,,,,,16/06/2643
+3036,,IV,D,Nehal Bhandarkar,Mr.Mahendra Ku. Bhandarkar,Mrs. Rashmi Bhandarkar,14/02/2010,,General,7400713700,,551923705366,,,"House No - 41 Near Sharda Vidyalaya, Ramnagar Bhilai",English,,,,,,,,,16/06/2644
+3562,,IV,D,Priyanshi Sahu,Mr.Droni Kumar Sahu,Mrs Bhagwati Sahu.,13/03/2009,,OBC,9009234307,,348127061438,,,"Shri Ram Market, Ramnagar, Supela",English,,,,,,,,,16/06/2645
+3645,,IV,D,Sakshi Ojha,Mr.Rajkumar Ojha,Mrs.Praiyanka Ojha,24/07/2009,,General,9826642407,,409492158223,,,"Arya Nagar, Kohka Ward No-07",English,,,,,,,,,16/06/2646
+2762,,IV,D,Swati Sahu,Mr.Onkarlal Sahu,Mrs.Godawari Sahu,19/01/2010,,OBC,9691024858,,879054161585,,,"H.No.763 Purani Basti, Kohka near Ajay Store work Bhilai",English,,,,,,,,,16/06/2647
+2979,,IV,D,Anuj Singh Parihar,Mr.Raghvendra Singh Parihar,Mrs.Vandana Singh Parihar,5/2/2009,,General,8103098119,,,,,"Behind Chhattishgarh Hospital, Shastri Nagar",English,,,,,,,,,16/06/2648
+3033,,IV,D,Tanmay Gupta,Mr. Dilip Gupta,Mrs.Jyoti Gupta,20/01/2009,,General,9907166557,,766719498912,,,"Bajran Para, Khoka , Bhilai",English,,,,,,,,,16/06/2649
+3665,,IV,D,Ekansh Sharma,Mr.Rajesh Sharma,Mrs.Beena Sharma,14/08/2009,,General,7489541159,,353523691784,,,"Ward-06, Panch Rasta, Supela",English,,,,,,,,,16/06/2650
+4328,,IV,D,Komal Prasad,Mr.Santosh Prasad Saw,Mrs. Seema Devi,15/11/2008,,OBC,9893541994,,554745673193,,,"Ward-06, Anand Chowk, Panch Rasta",English,,,,,,,,,16/06/2651
+3026,,IV,D,Sheetal Lahri,Mr.Manoj Lahri,Mrs. pinki devi,7/4/2008,,General,9301554436,,,,,"Shastri Nagar, Camp-1",English,,,,,,,,,16/06/2652
+3120,,IV,D,Harpreet Kaur Sokhi,Mr.Ranjit Singh Sokhi,Ranjini kour sokhi,8/2/2009,,General,9489345127,,535312326021,,,"Q. 105/B, Camp-1, Bhilai",English,,,,,,,,,16/06/2653
+3578,,IV,D,Nikita Kengrani,Mr.Vasudev Kengrani,Mrs. Payal kengrani,18/03/2009,,General,9907916566,,788911163204,,,"35/7A, Nehru Nagar, (East) , Bhilai",English,,,,,,,,,16/06/2654
+3759,,IV,D,Vaishnavi Dewangan,Mr.Gajendra Ku. Dewangan,Mrs. Swarnalata dewangan,25/07/2009,,OBC,8817754006,,352511877975,,,"Santa Nagar, Behind Gyatri Mandir, Ward-8, Kohka",English,,,,,,,,,16/06/2655
+2550,,IV,D,Komal Pandey,Mr.Sanjay Pandey,Kiran pandey,20/05/2008,,General,9735079446,,847795321413,,,"Sankar Para, Supela",English,,,,,,,,,16/06/2656
+3577,,IV,D,Atithya Sohani,Mr. AlanKar Sohani,Mrs. Monika sohani,31/05/2009,,General,7587687882,,903758645339,,,"St-4, Shanti Nagar, H.No.314",English,,,,,,,,,16/06/2657
+3298,,IV,D,Yashdeep Shrivas,Mr.Raju Shrivas,Mrs. Hemlata shrivas,14/04/2009,,OBC,8085075454,,238277712424,,,"H.No. 13/D, St-3, Zone-3, Khursipar",English,,,,,,,,,16/06/2658
+2801,,IV,D,Leshank Yadav,Mr.Narendra Yadav,Mrs. Veena yadav,3/2/2009,,OBC,8305415713,,871402467165,,,"Shastri Nagar, Near Govt. School, Camp-2",English,,,,,,,,,16/06/2659
+3230,,IV,D,Tanveer Singh Gill,Mr.Harphul Singh Gill,Mrs. Pritam kaur,19/12/2008,,General,8103532834,,410048380253,,,"Q.No. 105/E, Camp-1",English,,,,,,,,,16/06/2660
+3828,,IV,D,Abdul Anas,Abdul Latif,Mrs. Naseema khanam,14/05/2009,,General,9993219186,,671766265618,,,"Camp-1, Sundar Nagar",English,,,,,,,,,16/06/2661
+3735,,IV,D,Ansh Singh,Mr.Amit Ku. Singh,Mrs. Sarita singh,25/01/2010,,General,9993840173,,855330317799,,,"Jaypee Cement Sec.- 5, Chowk, Bhilai",English,,,,,,,,,16/06/2662
+3732,,IV,D,Pranav Singh,Mr.Digvijay Ku. Singh,Mrs. Anju singh,26/03/2010,,General,7024566694,,,,,"Q.r-5/A, St-8, Sec-6, HSCL Colony",English,,,,,,,,,16/06/2663
+3056,,IV,D,Anshika Soni,Mr. Pawan Soni,Mrs Anjani soni,25/07/2009,,General,9907492408,,448438571826,,,"H.No.-957, St-18, Mahadev Colony, Shanti Nagar, Supela",English,,,,,,,,,16/06/2664
+3781,,IV,D,Ekta Sahu,Mr. Ashok Sahu,Mrs.Gayatri Sahu,5/2/2009,,OBC,9301371229,,842988607632,,,"Near Ram Janki Mandir, Ram nagar",English,,,,,,,,,16/06/2665
+3106,,IV,D,Jasmeet,Mr. Harjeet Singh,Mrs.Punam Kaur,1/4/2008,,General,7724013137,,,,,"Camp-1, Subhash H.No. -334, St.No. 5A, Qu.No. 119/A, Shanti Nagar",English,,,,,,,,,16/06/2666
+2814,,IV,D,Niharika Kumari,Mr. Navieet Kumar,Mrs.priti Devi,18/10/2009,,General,7869050203,,950290937363,,,"Shastri Nagar, Camp-1, Road No.- 18, Bhilai",English,,,,,,,,,16/06/2667
+3128,,IV,D,Purvashi Dewangan,Mr. Raju Dewangan,Mrs SangeetaDewangan,9/4/2009,,General,9977814010,,765815733205,,,"Santoshi Para, Ganesh Chowk, Ward No.-24, Camp-1",English,,,,,,,,,16/06/2668
+3592,,IV,D,Sanvi Yadav,Mr. Sunil Kumar Yadav,Mrs.priyanka Yadav,9/10/2009,,General,9752099034,,123456789165,,,"Behind Jahaj Building, Azad chowk, Ramnagar",English,,,,,,,,,16/06/2669
+2811,,IV,D,Shubhi Singh,Mr. Jitendra Singh,Mrs.Renu Singh,29/06/2009,,General,9993560168,,9993560168,,,"Chandra Nagar, St- 26, Ward-11, Kohka",English,,,,,,,,,16/06/2670
+3537,,IV,D,Aryan Kumar Jha,Mr.Sudhir Kumar Jha,Mrs.Aarti Jha,14/11/2009,,General,8109500005,,414221109760,,,"H.No. 82/ B Smriti Sanket Bhawan, Shubham Road, Ramnagar",English,,,,,,,,,16/06/2671
+3029,,IV,D,Amesh Tandulkar,Mr.Prabhakar Tandulkar,Mrs.Manju Tandulkar,5/4/2009,,General,9926251567,,919837961149,,,"H. No. 1438, Plot No.- 29, St-30 Shanti Nagar",English,,,,,,,,,16/06/2672
+3724,,IV,D,Gagandeep Singh,Mr.Prabjoot Singh,Mrs.Jasvender Kaur,2/12/2008,,General,9770494914,,945780992102,,,"In front of Block Noble Camp-1, near Masjid , Bhilai,",English,,,,,,,,,16/06/2673
+2529,,IV,D,Lokesh Gupta,Mr.Santosh Ku Gupta,Mrs.Sangeeta Devi,23/11/2007,,General,8871089582,,762997807036,,,"Laxmi Nagar, Sabji Market",English,,,,,,,,,16/06/2674
+3030,,IV,D,Gaurav,Mr.Gyanlal,Mrs.Pingla,24/02/2009,,General,9993327055,,857511058491,,,"C/O, Sr. Gupta Kirana Store, Indira Nagar, Supela",English,,,,,,,,,16/06/2675
+3034,,IV,D,Rounak Kumar,Mr.Vijay Kumar Thakur,Mrs.Nutan Thakur,29/05/2009,,General,9893897982,,296253452050,,,"Arjun Nagar, Camp-1, Bhilai",English,,,,,,,,,16/06/2676
+3077,,IV,D,Rishabh Sinha,Mr. Roshan Lal Sinha,Mrs.KhushbooSinha,10/4/2009,,OBC,9981679300,,280170260625,,,"Ward No-19, Brinda Nagar",English,,,,,,,,,16/06/2677
+4570,,IV,D,Taranjeet Verma,Mr.Naresh Kumar Verma,Mrs Manpreet Verma.,18/12/2008,,General,9827198413,,611937539083,,,"Shyamlal Dairy Farm, Gaytri Mandir Road",English,,,,,,,,,16/06/2678
+4897,,IV,D,Rudra Prasad,Mr.Rajesh Prasad,Mrs.Mamta Devi,15/09/2009,,General,9893215213,,252459029119,,,"Milan Chowk, Camp-2, Adarsh Hospital, Bhilai",English,,,,,,,,,16/06/2679
+2916,,IV ,D,Janhavi Jaiswal,Sanjay Jaiswal,Kalpana Jaiswal ,4.05.2009,,Gen,9827463553,,,,,Street no.-2 Kripal Nagar Kohka Road Bhilai,English,,,,,,,,,16/06/2680
+2952,,V,A,Devika Deshmukh,Raju Deshmukh, Sangita Deshmukh,26/06/2008,,OBC,9926436082,,226573598467,,,"H.No. 192, St.2, Shanti Nagar",English,,,,,,,,,16/06/2681
+2973,,V,A,Isha Umesh Deulkar,Umesh Deulkar, Deepali Umesh Deulkar,12/12/2007,,General,7806055027,,599361609745,,,"Near Adivasi Bhawan Subhash Road, Ramnagar, Supela",English,,,,,,,,,16/06/2682
+3078,,V,A,Kanchan Sahu,Rajesh Sahu,Anita Sahu,8/5/2008,,General,9685703451,,804302783650,,,"Near Western Tailor, Ramnagar, Muktidham, Ward-12",English,,,,,,,,,16/06/2683
+3089,,V,A,Laiba Malik,Sharafat Malik,Afseen Malik,15/01/2008,,General,9826083208,,278820106162,,,"LIG- II- 231, 32 CGHB",English,,,,,,,,,16/06/2684
+3166,,V,A,Laxmi Nigam,Shambhu Dayal Nigam,Manki Nigam,7/10/2007,,General,9826810554,,252218839848,,,"Ravan Bhata, Supela",English,,,,,,,,,16/06/2685
+3005,,V,A,Minal Verma,Arvind Verma,Mamta Verma,15/04/2008,,OBC,9617677566,,327048735525,,,"Q.No. E-70 CSEB Colcony, Bijali Nagar",English,,,,,,,,,16/06/2686
+2972,,V,A,Pallavi Deshmukh,Ramesh Kumar Deshmukh,Priti Deshmukh,26/01/2008,,OBC,9926132864,,624629694958,,,"Kumhar Para , Sanjay Nagar, Supela",English,,,,,,,,,16/06/2687
+2893,,V,A,Priyanee Sahu,Prakash Sahu,Pushpa Sahu,21/03/2008,,OBC,9753584073,,856206848504,,,"Dr. Joshi Line, Contractor Colony , Supela ward 30 khursipara",English,,,,,,,,,16/06/2688
+2858,,V,A,Rishika Chakraborty,Deepak Chakraborty,Kalpana Chakraborty,19/02/2009,,General,9713511600,,694505488168,,,"Netaji Subhash Nagar, Nandini Road",English,,,,,,,,,16/06/2689
+2984,,V,A,Samriddhi Singh,Arvind Kumar,Vinita Singh,25/09/2008,,General,9302780090,,863224482561,,,near sharda vidyalaya ram nagar bhilai,English,,,,,,,,,16/06/2690
+2921,,V,A,Sanjana Yadav,Sunil Kumar Yadav,Priyanka Yadav,5/11/2007,,OBC,9752099034,,700540825914,,,"Behind Jahaj Building, Ramnagar",English,,,,,,,,,16/06/2691
+3593,,V,A,Shifa Naaz,Nasir Ahmed,Rizwana Tarannum,14/01/2008,,General,8817657916,,783744811972,,,"Nizami Chowk, Krishna Nagar, Supela",English,,,,,,,,,16/06/2692
+2992,,V,A,Shreya Singh,Jitendra Kumar Singh,Renu Singh,10/10/2007,,General,9893335226,,715228318184,,,"Chandra Nagar, St-26, Ward-11, Kohka",English,,,,,,,,,16/06/2693
+3051,,V,A,Shristi,Santosh Sao,Fulo Devi,31/01/2008,,General,9893900219,,762814707271,,,"Camp-1, Shastri Chowk, Ward-18, Bhilai",English,,,,,,,,,16/06/2694
+2959,,V,A,Srishti Choudhary,Shiv Kumar Choudhary,Rajanee Choudhary,30/03/2008,,OBC,9826760275,,712384426896,,,Santoshi para camp II near tanki no. 15,English,,,,,,,,,16/06/2695
+2903,,V,A,Tripti Sahu,Sant Kumar Sahu,Mamta Sahu,16/12/2008,,OBC,9630474570,,715183847436,,,"Shri Ganesh Kirana Store, Camp-1, Vrinda Nagar",English,,,,,,,,,16/06/2696
+2717,,V,A,Yashaswini Sandey,Gajanand Sandey,Radhika Sandey,26/07/2007,,SC,9340785029,,248773438545,,,"Rahul STD, Ward-29, Pump House Road, Zone-1, Khursipar",English,,,,,,,,,16/06/2697
+3303,,V,A,Aadarsh Singh,Puranjay Singh,Pushpa Devi,9/6/2008,,General,8349310351,,824082591236,,,"Yuva Ankush Chowk Chhawni, W.No. 17",English,,,,,,,,,16/06/2698
+2904,,V,A,Adarsh Vishwakarma,Surya Narayan Vishwakarma,Sunita Vishwakarma,22/10/2007,,OBC,8871686570,,566577723233,,,"Block -98/A, KLC, Sec.-11, Zone-2, Khursipar",English,,,,,,,,,16/06/2699
+2963,,V,A,Aditya Chourasiya,Rajesh Kumar Chourasiya,Saroja Chourasiya,3/8/2008,,OBC,9893457065,,981507080204,,,"M.G. Nagar, Camp-2, Power House, Bhilai",English,,,,,,,,,16/06/2700
+2969,,V,A,Aman Ku. Singh,Arun Kumar Singh,Anjali Devi,30/04/2008,,General,9406298147,,320274333105,,,near dilip parisar kailash nagar housing board bhilai,English,,,,,,,,,16/06/2701
+3379,,V,A,Anurag Sahu,Panna Sahu,Neeta Sahu,13/11/2007,,OBC,9893542240,,482169812728,,,Sahupara Muktidham Near Neha Kirana Store,English,,,,,,,,,16/06/2702
+2955,,V,A,Ayush Kumar,Sanjay Kumar,Neetu Devi,16/08/2008,,OBC,9303602352,,985564531889,,,"Pradeep Kirana Store, Shastri Chowk, Camp-1",English,,,,,,,,,16/06/2703
+2940,,V,A,Devesh Sahu,Rajesh Sahu,Reena Sahu,18/12/2007,,General,9685789967,,644641835338,,,"H.No. 166, Modikunj, Sunder Nagar",English,,,,,,,,,16/06/2704
+2971,,V,A,Divyansh Nayak,Santosh Nayak,Japaswini Nayak,23/01/2008,,OBC,8982376768,,972027609748,,,"Azad Chowk , H.No. 1874, Bhilai-3",English,,,,,,,,,16/06/2705
+3122,,V,A,Krish Thakur,Ravi Kumar Thakur,Sadhana Thakur,1/1/2008,,ST,9407780643,,864127767008,,,"Dewangan Pan Bhandar, Muktidham, Ram Nagar",English,,,,,,,,,16/06/2706
+3164,,V,A,Pushpendra Kr. Sahu,Narayan Sahu,Tarani Sahu,10/7/2008,,OBC,9826786120,,289946319233,,,"Pragati Sports Club Ramnagar, Muktidham",English,,,,,,,,,16/06/2707
+3149,,V,A,Rahul Kumar,Anand Kumar,Babita,17/11/2007,,SC,8085164901,,321443962370,,,"Behind Maszid Azad Mohalla , Camp-1",English,,,,,,,,,16/06/2708
+2924,,V,A,Sushanth A,Ajith Kumar V.,Asha T,10/2/2008,,General,7828664888,,299355252281,,,"LIG-172, Deen Dayal, Housing Board Colony, Near Shankaracharya, College",English,,,,,,,,,16/06/2709
+4392,,V,A,Yashjeet Sahu,Devi Prasad Sahu,Laxmi Sahu,4/10/2008,,OBC,9993095033,,984251676212,,,"H.No. 645, LIG-2 Dhacha Bhawan, Bhilai",English,,,,,,,,,16/06/2710
+3734,,V,A,Balmukund Singh, Ritesh Kumar,Priyanka Singh,2/1/2009,,General,9752491520,,632016029964,,,"C/O Gurdeep Singh, Road No.-7, Near Shakuntala Vidyalaya,Ram Nagar, Bhilai",English,,,,,,,,,16/06/2711
+2988,,V,A,Jeet Verma,Mr.Nand Kumar Verma,Mrs Mithaleshwari Verma,21/03/2009,,OBC,9753010448,,522541704774,,,"Near New Gayatri, Mandir, Ramnagar, Muktidham",English,,,,,,,,,16/06/2712
+3299,,V,A,Lakshay Verma,Mr.Gurucharan Verma,Mrs Sheela Verma,4/6/2008,,General,7389377968,,697550680797,,,"Block No.- 79/O, Camp-1",English,,,,,,,,,16/06/2713
+2993,,V,A,Md. Naved,Md. Jafar,Mrs Nasim,11/7/2008,,General,8461801434,,448335222930,,,"E.W.S- 410, Vaishali, Nagar, Bhilai",English,,,,,,,,,16/06/2714
+2996,,V,A,Neeraj Rai,Mr.Sunil Rai,Mrs Kanti Devi,14/09/2007,,General,9685951169,,941629784779,,,"Q.No. 2B/L, St-18, Camp-1, Ward-20",English,,,,,,,,,16/06/2715
+2906,,V,A,Rehan Ali,Istikhar  Ali,Mrs Reshma Bano,16/01/2009,,General,9630222722,,972212451280,,,"Bl. No. 45/F, Masjid Road, Ward-20, Camp-1",English,,,,,,,,,16/06/2716
+4648,,V,A,Rishi Prasad Sinha,Mr.Dinesh Kumar Sinha,Mrs Sudha Sinha,14/06/2008,,OBC,9938401090,,724884812523,,,"Padumnagar, Back side of Petrol Pump, Bhilai-3",English,,,,,,,,,16/06/2717
+2976,,V,A,Sonam Kumari,Mr.Pramod Kumar,Mrs Kiran Devi,18/01/2007,,SC,"9402263100, 7470499074",,638658862663,,,"H.No. 63, Amedkar Chowk, Balaji Nagar, Zone -II, Sec.-11, Ward-30, Khursipar",English,,,,,,,,,16/06/2718
+3978,,V,A,Ritika Dhabarde,Mr.Manoj Kumar,Mrs.Vinita Dhabarde,24/03/2008,,SC,8085930608,,329420348841,,,Adarsh Nagar Camp-1,English,,,,,,,,,16/06/2719
+4050,,V,A,Prathamesh Chaurey,Mr.Sandeep Chaurey,Mrs.Savita Chaurey,3/9/2008,,SC,8223960007,,799813641690,,,"EVS- 2064, Housing Board, Industrial Estate bhilai",English,,,,,,,,,16/06/2720
+2956,,V,A,Vidhi Torle,Mr.Vinod Torle,Mrs Uma Torle,18/10/2008,,General,8871245926,,899749707386,,,"Ward-13, Durga Manch, Adiwasi Mandal, Ramnagar, Nishta Mahila Mandal",English,,,,,,,,,16/06/2721
+4004,,V,A,Jayant Kumar Netam,Mr.Kamlesh Kumar Netam,Mrs Sunita Netam,15/08/2008,,ST,9575328861,,631232626566,,,"Ward-12, Near Western Tailor, Ramnagar",English,,,,,,,,,16/06/2722
+2945,,V,A,Sunny Kumar,Mr.Santosh Kumar Sao,Mrs. Surbhi Devi,21/07/2007,,General,9893459666,,617539073917,,,"Indira Nagar, Ward-6, Supela, Bhilai",English,,,,,,,,,16/06/2723
+4765,,V,A,Harsh,Mr.Tikam Patel,Mrs Durga Patel,29/11/2007,,General,9302927548,,258239875571,,,"Mangal Bazar, Chhawani P/O H-B",English,,,,,,,,,16/06/2724
+4980,,V,A,Mahak Gautam,Lt. Dharmendra  Gautam,Mrs Laxmi Gautam,28/09/2008,,General,9098108628,,394179699848,,,"Rameshwar Bhavan, near Shakuntala Vidyalaya",English,,,,,,,,,16/06/2725
+4853,,V,A,juberiya Khatoon ,meraj Ali ,Kaisari Bano,25.08.2006,,Gen,8103654122/9340801943,,857104994635,,,Farid Nagar kohka road Bhilai House No.-231,English,,,,,,,,,16/06/2726
+3035,,V,A,Gaurav Banjare,Rohit Banjare,Shyama Banjare,20.07.2008,,SC,9009058199,,607306622373,,,Near Guru Ghasidas Mandir SEC-II Zone II Khursipara Bhilai,English,,,,,,,,,16/06/2727
+3019,,V,B,Aaliya Ali,Ahmed Ali, Shama Parveen,26/12/2008,,General,7869510856,,338371329889,,,"Farid Nagar, Nizami Chowk, Supela",English,,,,,,,,,16/06/2728
+2943,,V,B,Sakshi Singh,Amit Kumar Singh,Ranjana Singh,11/5/2008,,General,9229859332,,962885420873,,,"Bhilai Provision store camp-1, Sangram Chowk",English,,,,,,,,,16/06/2729
+3327,,V,B,Yogyata Sahu,Gopal Sahu,Godawari Sahu,3/2/2008,,OBC,9755699852,,435723954684,,,"Q.No. 1/G, St- 15/A, Sec-2",English,,,,,,,,,16/06/2730
+3879,,V,B,Avinash Dewangan,Anand Dewangan,Vishakha Dewangan,10/4/2008,,OBC,9827904332,,557515762991,,,"Near SSV,Beena Nagar",English,,,,,,,,,16/06/2731
+2725,,V,B,Md. Sahil,Abdul Sadiq,Shahnaz Begum,31/07/2007,,General,8962192955,,386095380119,,,"Qr. No. 56, Tataline, Camp-2",English,,,,,,,,,16/06/2732
+3884,,V,B,Anshika Soni,Mr.Sanjay Kumar Soni,Mrs Arti Soni,2/3/2008,,General,9827943525,,461818778783,,,"26 T- Market, Janta coal, Shop, Near Uttam cinema, Power House",English,,,,,,,,,16/06/2733
+3080,,V,B,Anushka Kumari,Mr.Siyaram Rai,Mrs Saroj Devi,18/11/2007,,General,9977165572,,,,,"Camp-1, Ward No. 20, Bhilai",English,,,,,,,,,16/06/2734
+3370,,V,B,Hitisha Jha,Mr.Santosh Jha,Mrs Aarti Jha,30/05/2008,,General,9009317102,,332208830336,,,"135, Arjun Nagar, Camp-1, Near Yadav, Cycle Store",English,,,,,,,,,16/06/2735
+3083,,V,B,Navshaba Khan,Ismail Khan,Mrs Anisha Khan,26/12/2007,,OBC,8103764863,,267131145308,,,"Gautam Nagar, Supela",English,,,,,,,,,16/06/2736
+2937,,V,B,Pragati Sahu,Mr.Kaushal Ku. Sahu,Mrs Vijaylaxmi Sahu,4/7/2008,,General,9827102850,,432072367663,,,"Near Gayatri Mandir, Azad Chowk, Ramnagar",English,,,,,,,,,16/06/2737
+2965,,V,B,Shreya,Mr.Krishna Kumar,Mrs Baby,20/11/2007,,General,9755890696,,979053362628,,,"Near Bhilai Chicken corner,sachbawana",English,,,,,,,,,16/06/2738
+3096,,V,B,Aditya Tamrakar,Mr. Rajeev Tamrakar,Mrs Radha Tamrakar,19/11/2007,,OBC,,,249523475011,,,"Ajay Poultry farm Near, Tandan Kirana",English,,,,,,,,,16/06/2739
+3066,,V,B,Chandra Bhushan,Mr.Subhash Kumar,Mrs pushpa Devi,12/11/2008,,SC,9893969481,,873076284227,,,"Azad Chowk, Ramnagar, Supela",English,,,,,,,,,16/06/2740
+4079,,V,B,Chetanay Thakre,Mr.Ravindra Thakre,Mrs Vaishali Thakre,18/09/2008,,OBC,9575651364,,538894443917,,,"7/B Maitri Vihar, Radhika Nagar",English,,,,,,,,,16/06/2741
+2989,,V,B,Lakshya Sahu,Mr.Dineshwar Ku. Sahu,Mrs Anita Devi,11/3/2008,,OBC,8236879624,,581363869807,,,"Jawahar Nagar, Near Durga Mandir, Q.No. 30/55, Ward No. 14",English,,,,,,,,,16/06/2742
+3042,,V,B,Ranveer Singh,Mr.Gurmeet Singh,Mrs Ranjeet Kour,24/08/2009,,General,7828699494,,867998108477,,,"Qr. 58/B, Near Mosque Camp-1",English,,,,,,,,,16/06/2743
+3084,,V,B,Rohit Kumar Sahu,Mr. Poonam Kumar Sahu,Mrs Rashmi Sahu,7/5/2008,,General,7566083871,,631202876451,,,"Ward -No.- 18, Shastri Nagar, Camp-1",English,,,,,,,,,16/06/2744
+3022,,V,B,Yash Sharma,Mr.Rajesh Sharma,Mrs Sushma Sharma,2/6/2007,,General,9303564064,,207116703814,,,"Pragati Nagar, Fayar Auto Dil Camp-1",English,,,,,,,,,16/06/2745
+3137,,V,B,Aditi Jaiswar,Mr.Anup Jaiswar,Mrs.Indu Jaiswar,5/11/2008,,General,9301130182,,638651416727,,,Qr. No. 105/A Camp- 1,English,,,,,,,,,16/06/2746
+3170,,V,B,Akansha Sahu,Mr.Bhagchand Sahu,Mrs.Anita Sahu,14/03/2009,,OBC,9754877698,,250844981316,,,"H.No. 201, Muktidham, Infront of S.V. Ward No. 13",English,,,,,,,,,16/06/2747
+3116,,V,B,Anushka Sharma,Mr.Rajeev Ranjan Sharma,Mrs.Rita Devi Sharma,27/03/2008,,OBC,9755791676,,231914588573,,,"M/S Diamond Furniture Nandini Road, Chhawani Chowk",English,,,,,,,,,16/06/2748
+3979,,V,B,Goury Nishad,Mr. Chandmal Nishad,Mrs.Usha Nishad,14/09/2007,,General,9893051048,,258219684549,,,"Raja Ram Engg. Work Road No.-18, Camp-1",English,,,,,,,,,16/06/2749
+2986,,V,B,Sushma Yadav,Mr.Rammurat Yadav,Mrs.Urmila Yadav,12/10/2006,,OBC,7509549239,,740155359373,,,"Dr. Rajendra Prasad Nagar, Khursipar",English,,,,,,,,,16/06/2750
+3015,,V,B,Akash Chouhan,Mr.Vikas Chouhan,Mrs.Suman Chouhan,12/3/2008,,General,9691156151,,678899884001,,,"Chauhan Kirana Store, Supela, Chuddi line",English,,,,,,,,,16/06/2751
+3057,,V,B,Jaydeep Singh,Mr.Mukesh Kumar Verma,Mrs.Shruti Verma,31/01/2008,,General,9827172943,,929737746575,,,"Gayatri Mandir road H.No-112, Ramnagar,Bhilai",English,,,,,,,,,16/06/2752
+2974,,V,B,Kunal Dewangan,Mr.Tilak Ram Dewangan,Mrs.Bharti Dewangan,22/01/2008,,OBC,9893059709,,270442848393,,,"Popular cycle store, contractor colony, Supela",English,,,,,,,,,16/06/2753
+3021,,V,B,Vedank Sahu,Mr.Amar Nath Sahu,Mrs.Hanshmati Sahu,26/06/2008,,OBC,9826138080,,491554794237,,,"Near Ram Janki Mandir, Ram Nagar",English,,,,,,,,,16/06/2754
+4090,,V,B,Shubham Kumar Gupta,Mr.Sandeep Kumar Gupta,Mrs/Reena Devi Gupta,4/3/2008,,General,7869839300,,583587919420,,,"Sharda Para Camp-2, J.P. Nagar",English,,,,,,,,,16/06/2755
+4380,,V,B,Aashutosh Chaudhari,Mr.Rajesh Chaudhari,Late. Manisha Chaudhari,11/3/2007,,OBC,9770520380,,495716043597,,,"Block-3, Plot-101, Ward No-04, new Krishna nagar, Supela, Bhilai",English,,,,,,,,,16/06/2756
+4468,,V,B,Shaily Soni,Mr.Ashish Soni,Mrs.Minakshi Soni,29/09/2008,,OBC,9300207776,,266734508892,,,"St-03, Tata Line Kohka , Bhilai Near Post office",English,,,,,,,,,16/06/2757
+4715,,V,B,Muskan Sahu,Mr.Sanjay Kumar Sahu,Mrs.Rameshwari Sahu,30/08/2008,,General,8720846696,,297638754161,,,"Kohka Road Kurud Bhilai, Ward-16, (Purani Basti Kurud)",English,,,,,,,,,16/06/2758
+3419,,V,B,Sara Ali,Sayyed Nawab Ali,Mrs.Reshma Bano,29/10/2007,,General,9009217660,,244976198427,,,"House No- 717 Ward-5, Rajendra Prasad Chowk, Supela, Bhilai",English,,,,,,,,,16/06/2759
+3070,,V,B,Deepika Kaur Bhasula,Mr.Pursottam Kumar,Mrs. Baksho Devi,24/07/2008,,General,7697289333,,701746629988,,,"Baba Balak Nath Mandir, Zone-2",English,,,,,,,,,16/06/2760
+3117,,V,B,Riha Anjum,Mr.Riyajul Haque,Mrs Sahina Parveen,31/12/2008,,General,7752121010,,,,,"Azad Mohallah, Near Masjid Camp-1,",English,,,,,,,,,16/06/2761
+4077,,V,B,Ritika Sahu,Mr.Deepak Sahu,Mrs Kavita Sahu,25/03/2009,,General,9907106795,,697559523116,,,"Near Ram Janki Mandir, Ram Nagar",English,,,,,,,,,16/06/2762
+3011,,V,B,Abhyuday Kumar,Mr.Suraj Ku. Singh,Mrs Rita Singh,29/10/2008,,General,7566677454,,240325140718,,,"Q.No. 92/6, K.L. C. Zone-2, Sec-11, Khursipara",English,,,,,,,,,16/06/2763
+3010,,V,B,Aditya Choudhary,Mr.Sirendra Choudhary,Mrs Sunita Devi,14/12/2007,,OBC,9907919434,,552876506123,,,"Adarsh Nagar, Santipara , Bhilai",English,,,,,,,,,16/06/2764
+2951,,V,B,Akash Singh,Mr.Pramod Kumar Singh,Mrs Rekha singh,6/6/2007,,General,9202255366,,676366349416,,,"Shop-3, Zone-1, Market, Khursipar",English,,,,,,,,,16/06/2765
+3087,,V,B,Harman Singh,Mr.Shiv Singh,Mrs Ravinder  Kour,12/6/2008,,General,9826480805,,892258011341,,,"Near Aman Punjab Hotel Camp-1, Jalebi Chowk",English,,,,,,,,,16/06/2766
+2726,,V,B,Lucky Shrivastav,Mr.Sanjay Shrivastav,Mrs  Vibha Devi,1/6/2008,,General,9039214011,,281638213252,,,"Baikunth Dham , Camp-2",English,,,,,,,,,16/06/2767
+4109,,V,B,Owaish Raza,Md. Aslam Jahri,Mrs .Kamar Jahan,2/6/2007,,General,9752078768,,712295334637,,,"Behind Dr. Madaria, Krishna Nagar, Kohka",English,,,,,,,,,16/06/2768
+3059,,V,B,Pranjal Sawarkar,Mr.Somnath Swarkar,Mrs Archana  Sawarkar,6/2/2007,,General,9827485210,,785648706597,,,"Swarkar Villa Contractor colony, ward no-6",English,,,,,,,,,16/06/2769
+3193,,V,B,Prince Kumar Patel,Mr.Ramesh Patel,Mrs .  Shashikala Patel,31/12/2008,,General,9229077738,,789710567949,,,"Rajendra Prasad Chowk, Indira Nagar",English,,,,,,,,,16/06/2770
+4629,,V,B,Raj Choudhary,Mr.Prashant Popat Chourdhary,Mrs. Sapana Prashant Chourdhary,24/05/2008,,OBC,9893253558,,757647167182,,,"H. No. 294, St.No. 4, Shanti Nagar, Supela,",English,,,,,,,,,16/06/2771
+4966,,V,B,Md. Zaid,Mohammad Mugesh,Mrs Rafiya Bano,6/5/2007,,General,9300654765,,421164454877,,,"H.No.- 14, Asharfi Road, Farid Nagar",English,,,,,,,,,16/06/2772
+4986,,V,B,Mayank Lahare,Sunder Lal Lahare,Gangotri Lahare,07.10.2007,,SC,9424118972,,998025659278,,,Ward no.08 near Sharddha Suman School kohka road Bhilai,English,,,,,,,,,16/06/2773
+3092,,V,D,Alfi Nikhar Ansari ,Md.Najir Hussain,Noor Jahan Begum,18.4.08,,General,9926707478,,695486721431,,,Khanka Road Farid Nagar Bhilai,English,,,,,,,,,16/06/2774
+2966,,V,C,Akbari Sultana,S.K. Akbar Ali, Manjuman Begam,3/5/2007,,General,9584313033,,443466139153,,,"Ashok Kirana Store, Shastri Nagar, Camp-1",English,,,,,,,,,16/06/2775
+3006,,V,C,Tanishta Dubey,Abhay Dubey,Archana Dubey,22/01/2009,,General,9589917725,,375682591037,,,"P.No. 53/3, Radhika Nagar,Supela, Bhilai",English,,,,,,,,,16/06/2776
+3048,,V,C,Yukti,Naveen Chhati,Anuradha Chhati,2/2/2008,,SC,9691143854,,866620023393,,,"Satnami Basti (Purani) Ravan Bhata, Supela",English,,,,,,,,,16/06/2777
+3079,,V,C,Dhruv Ku. Sahu,Kamlesh Prasad Sahu,Kalavati Sahu,30/11/2007,,OBC,8959978423,,726845098912,,,"Rajendra Prasad Chowk, Indranagar, Supela",English,,,,,,,,,16/06/2778
+2954,,V,C,Md. Qazim,Md. Mustaq,Zubaida Begam,19/09/2008,,OBC,9827170405,,859594575534,,,"Gulam Building Stores, Ramnagar",English,,,,,,,,,16/06/2779
+3017,,V,C,Adeeba Bano,Abdul Wahid,Mrs Sharba Kausar,7/6/2008,,General,9302263309,,694944274834,,,"Nizami Manjil, Camp-1, Nagar Bhilai, Vivenda",English,,,,,,,,,16/06/2780
+3306,,V,C,Diksha Singh,Mr.Raj Kishore Singh,Mrs Jaymala Singh,27/01/2009,,General,9685136566,,363712517674,,,"Ward-3, Sanjay Nagar, Supela",English,,,,,,,,,16/06/2781
+3003,,V,C,Kajal Bharti,Mr.Poshan Ku. Bharti,Mrs Sangita Bharti,28/10/2007,,SC,"9406447477, 8817335593",,910988894710,,,"Supela 5 Rasta Kajal furniture, Bhilai",English,,,,,,,,,16/06/2782
+3121,,V,C,Pratigya,Mr.Jai Kishore Singh,Mrs Meena Singh,10/1/2009,,General,"9977560884, 8103620200",,401395534598,,,"Devlal Hardware Line,Q-1633, St.- No-16 B, Shantinagar , Supela",English,,,,,,,,,16/06/2783
+3800,,V,C,Tanya Dubey,Mr.Jitendra Ku. Dubey,Mrs Nisha Dubey,13/07/2008,,General,7089533015,,853575789067,,,"Ramnagar, Supela",English,,,,,,,,,16/06/2784
+4427,,V,C,Aditya Kumar Pandey,Mr.Jata Shankar Pandey,Mrs Mansu Devi,5/9/2008,,General,7000490843,,848924916621,,,"Punch Rasta, Anand Chowk, Supela",English,,,,,,,,,16/06/2785
+3014,,V,C,Anurag Jangde,Mr. Jalesh Jangde,Mrs Sandhya Jangde,7/8/2007,,SC,"9893634602, 8319769517",,359198266890,,,"Arya Nagar Kohka , Bhilai Nagar",English,,,,,,,,,16/06/2786
+2964,,V,C,Bhupesh Thakur,Mr.Hem ray Thakur,Mrs Sangeeta Thakur ,8/1/2008,,General,9669633495,,997812806874,,,"Radha Krishna, Mandir, Purani Basti",English,,,,,,,,,16/06/2787
+3224,,V,C,Harsh Singh,Mr.Thakur Manoj Kumar Singh,Mrs Rinku Singh,1/8/2008,,General,"0788-2291394, 9770177723",,812842867322,,,"MIG- 770, VishwaBank, Colony, Kurud",English,,,,,,,,,16/06/2788
+3279,,V,C,Naman Giri,Mr.Chandan Giri,Mrs Neelam Giri,4/5/2009,,General,8827422043,,877248454050,,,Near Gayatri Mandir Shukla Gali Ramnagar,English,,,,,,,,,16/06/2789
+2997,,V,C,Rohit Prasad,Mr.Ramkumar Prasad,Mrs Asha Devi,2/4/2008,,OBC,8349445075,,438507651772,,,"Pole No-5, Dashara Maidan , Arjun Nagar, Camp-1",English,,,,,,,,,16/06/2790
+3435,,V,C,Trilochan Verma,Mr.Deepak Kumar Verma,Mrs Anju Verma,21/04/2008,,General,9301986175,,702671452153,,,"Satsang Vihar, H.No. 130, Contractor , Colony",English,,,,,,,,,16/06/2791
+3060,,V,C,Chandra Shikha Sahu,Mr.Gautam Ram Sahu,Mrs.Sudha Sahu,24/07/2008,,OBC,9302777308,,429081511696,,,"Dr.  S.P.Nirala, Santoshi Para, Camp-2, Bhilai",English,,,,,,,,,16/06/2792
+3698,,V,C,Esha Singh,Mr.Raja Singh,Mrs.Vidya Devi,30/10/2008,,General,8889665724,,940089256637,,,"Azad Chowk, Ramnagar, Supela, Bhilai",English,,,,,,,,,16/06/2793
+3190,,V,C,Hiba Alam,S.M. Tanveer Alam,Mrs.Khursheed Jahan,6/12/2007,,General,9993649705,,756087332991,,,"Alam Manzil H.No-266, Ward- 8 Farid Nagar",English,,,,,,,,,16/06/2794
+2985,,V,C,Shikha Markandey,Mr.Jitendra Kumar,Mrs.Anju Markandey,30/01/2009,,SC,"7389193464, 9993395891",,,,,"Sharda para, J.P chwok, Ward-22, Camp-2, Bhilai",English,,,,,,,,,16/06/2795
+3082,,V,C,Priya Dewangan,Mr. Sheshmani Dewangan,Mrs.Dhaneshwari Dewangan,26/04/2008,,General,9165161031,,338500733433,,,"Near Sahu Tall, santoshi Para Camp-2, Power House",English,,,,,,,,,16/06/2796
+3000,,V,C,Shalini,Mr.Pikeshwar Sahu,Mrs.Nandani Sahu,5/12/2008,,OBC,9752036655,,959826088753,,,"Ward No. 5, Laxmi Nagar, Supela",English,,,,,,,,,16/06/2797
+2961,,V,C,Abhinav Soni,Mr.Manoj Soni,Mrs.Anita Soni,24/07/2008,,General,7869107098,,483325876842,,,Kashyap Bhawan Ramnagar,English,,,,,,,,,16/06/2798
+3250,,V,C,Anant Prasad,Mr.Ajit Prasad,Mrs.Sunita Prasad,17/09/2007,,SC,9302382688,,574528475441,,,ward no.6 H No. 185 panch rasta supela bhilai,English,,,,,,,,,16/06/2799
+3016,,V,C,Mukul Sahu,Mr.Neel Kumar Sahu,Mrs.Vinita Sahu,15/11/2006,,OBC,9826825236,,511669336500,,,"Nehru Nagar, Biroudjanve, Raipur",English,,,,,,,,,16/06/2800
+2551,,V,C,Mayank Gupta,Mr.Ranjith Gupta,Mrs.Shobha Gupta,26/01/2008,,General,9303169918,,234454015809,,,"Shastri Chowk Camp-1, Bhilai",English,,,,,,,,,16/06/2801
+4155,,V,C,Prince Kumar Sao,Mr.Shiv Kumar Sao,Mrs.Rupa Devi,4/1/2008,,General,7024991320,,804824707261,,,"Panch Rasta , Motilal Chowk, Supela",English,,,,,,,,,16/06/2802
+2957,,V,C,Deepanshu Manikpuri,Mr.Chandan Das Manikpuri,Mrs.Shanti Manikpuri,5/4/2008,,General,9098304246,,328707198515,,,"Q.No- 5 E , St. No-2, Zone-3, New Khursipar, Bhilai , Durg",English,,,,,,,,,16/06/2803
+4414,,V,C,Kussal Chouhan,Mr.Sanjay Chouhan,Mrs.Anita Chouhan,30/05/2007,,General,9691633256,,792842732653,,,"Aadalat Aaro, Machine nehru road, Supela",English,,,,,,,,,16/06/2804
+3549,,V,C,Aayushi Sharma,Mr.Manmohal Lal Sharma,Mrs.Kamaksha Sharma,23/12/2008,,General,9827425616,,640358595901,,,"E.W.S. 1224, M.P. Housing Board, Bhilai Dist- Durg, (C.G)",English,,,,,,,,,16/06/2805
+4279,,V,C,Alisha Parveen,Abdul Mazid,Shahida Parveen,30/01/2009,,General,9827461950,,670546829144,,,"Plot no-22, Ulash Nagar, Kohka",English,,,,,,,,,16/06/2806
+2967,,V,C,Giteeka,Mr.Janakdhari Prasad,Mrs Seema Chowrasiya,12/9/2008,,OBC,9752425388,,886884023671,,,"H.No. 46, Purani Basti, Hanuman Chowk, Supela",English,,,,,,,,,16/06/2807
+2555,,V,C,Isha Deshmukh,Mr.Dharmendra Deshmukh,Mrs .Dropadi Deshmukh,30/06/2008,,General,9827481124,,404581779601,,,"Deshmukh kirana bhandar, Muktidham",English,,,,,,,,,16/06/2808
+3085,,V,C,Mahi Bansad,Mr.Manoj Bansod,Mrs Sangeeta Bansod,13/03/2008,,General,9993314157,,536755851762,,,"Q,No.- 94, Tata line Camp-2, Near Radhika Palace kohka, Bhilai",English,,,,,,,,,16/06/2809
+3041,,V,C,Thaneshwari Verma,Mr.Rajesh Verma,Mrs Savitri Verma,18/12/2007,,General,9977524726,,474090285528,,,"Near Bamleshwari Mandir Supela, Contractor Colony",English,,,,,,,,,16/06/2810
+2983,,V,C,Versha Perker,Mr.Chandra Shekhar Perkar,Mrs Maya Perkar,25/08/2008,,SC,8103768765,,788003065773,,,"W-34, Ekta Nagar, Manish Furniture G.E. Road",English,,,,,,,,,16/06/2811
+2886,,V,C,Aniket Kumar,Mr.Gautam Saw,Mrs Goldy Devi,1/1/2008,,General,9300408706,,555566668888,,,"B-4/ F, St-46, Sec.6, Bhilai Nagar",English,,,,,,,,,16/06/2812
+2658,,V,C,Ashutosh Singh,Mr.R.P. Singh,Mrs Anita Singh,13/06/2008,,General,9407977574,,858302069256,,,"Singh Kiran Store H.No221, Camp-1",English,,,,,,,,,16/06/2813
+2962,,V,C,Lokesh Kumar Desh lahre,Mr.Dharamraj Deshlahre,Mrs  Yashoda Deshlahre,22/11/2007,,SC,9755982666,,865074555891,,,Panch Rasta Supela,English,,,,,,,,,16/06/2814
+3090,,V,C,Meet Singh,Mr.Kalvinder Singh,Mrs Kashmir Kour,26/07/2008,,General,7869698799,,300852170066,,,"Verma Kirana Store, Contractor colony, Supela",English,,,,,,,,,16/06/2815
+3105,,V,C,Naman Nigam,Mr.Dindayal Nigam,Mrs Rekha Nigam,5/3/2009,,General,"9826810554, 9753055538",,552956006206,,,"Ravan Bhatta , Supela",English,,,,,,,,,16/06/2816
+3007,,V,C,Rishabh Raj Soni,Mr.Ashu Ranjan Soni,Mrs. Khushboo Devi,9/9/2008,,General,9669053054,,666339234839,,,"Shastri Chowk Camp-1, Bhilai",English,,,,,,,,,16/06/2817
+4389,,V,C,Yashwant Kumar Sahu,Mr.Chaman Das Sahu,Mrs Nemin Bai Sahu,9/12/2007,,OBC,9993397537,,899262206537,,,"Rajiv Nagar, Ward-13, Supela",English,,,,,,,,,16/06/2818
+4930,,V,C,Shalini ,Mr.T.Shrini Vasan,Mrs Rajeswari,8/11/2008,,General,7389962611,,879075034634,,,"Block 60/I Ward-20, Premnagar, Camp-1",English,,,,,,,,,16/06/2819
+3130,,V,C,kavin Singh ,Anil kumar Singh,Raginee Singh ,08.09.2008,,Gen,9827486122,,,,,C/o Hare Ram Singh Sangram Chowk Camp-1,English,,,,,,,,,16/06/2820
+3049,,V,D,Pallavi Yadav,Shesh Kumar Yadav,Mamta Yadav,1/1/2008,,OBC,9301056095,,876440493231,,,"Azad Chowk , Ramnagar, near santosh kirana store",English,,,,,,,,,16/06/2821
+3990,,V,D,Tanya Sahu,RaJKumar Sahu,Sunita Sahu,13/11/2008,,OBC,9981408734,,747693616045,,,"Ramnagar Muktidham, Pragati Sports Club",English,,,,,,,,,16/06/2822
+3074,,V,D,Anhad Sahu,Bhagwat Prasad Sahu,Nandini Sahu,6/8/2008,,OBC,8349342998,,690399233328,,,"Ward- 25, Near Nirala Clinic Santoshi Para, Camp-2, Bhilai",English,,,,,,,,,16/06/2823
+3244,,V,D,Mehul Ashatkar,Santosh Ashatkar,Kavita Ashatkar,3/8/2008,,General,9826804136,,500589916606,,,"H.No. 22, C/O- Sadanand Traders, Supela",English,,,,,,,,,16/06/2824
+4100,,V,D,Bhumika Sao,Mr. Rajesh Sao,Mrs. Sanju Devi Sao,2/6/2008,,OBC,7566677310,,,,,"Railway Gate, B.S.P. Road, old khursipar",English,,,,,,,,,16/06/2825
+2553,,V,D,Deepanshi Dewangan,Mr.Premlal Dewangan,Mrs Madhu Dewangan,13/10/2008,,OBC,9827469082,,417946047807,,,"H.401, Hanuman Mandir Road, Ward-13, Ramanagar",English,,,,,,,,,16/06/2826
+3680,,V,D,Kajal Dewangan,Mr.Chandu lal Dewangan,Mrs Radha Dewangan,26/08/2008,,OBC,9300267776,,835411936900,,,"Laxmi Nagar, Durga para, Supela",English,,,,,,,,,16/06/2827
+3040,,V,D,Radhika Dewangan,Mr.Rajkumar Dewangan,Mrs Soniya Dewangan,19/03/2009,,OBC,9644455828,,437342534591,,,"Behind Venkteshwar Talkies, Near Bajrang Kirana, Ward-3, Supela",English,,,,,,,,,16/06/2828
+3065,,V,D,Zara Imran Khan,Mr.Imran Khan,Mrs Shabana Khan ,14/11/2007,,General,9907014816,,927664664779,,,"Nizami chowk, Farid, Nagar, Supela",English,,,,,,,,,16/06/2829
+4355,,V,D,Aditya Narayan Singh,Mr.Arvind Kumar Singh,Mrs Babita Singh,7/6/2008,,General,7089158590,,707254936334,,,Ekta chowk to lohiya road infront of bhawani kirana store kailash nagar,English,,,,,,,,,16/06/2830
+3683,,V,D,Akash Kumar,Mr.Raju Singh,Mrs Indu Singh,19/07/2007,,OBC,9926105720,,801925052463,,,"Shastri Nagar, Camp-1, Bhilai",English,,,,,,,,,16/06/2831
+3046,,V,D,Anush Singh,Mr.Shashi Shekhar Singh,Mrs Shanu Singh,7/12/2007,,General,9584171400,,612016852231,,,vaishali nagar supela,English,,,,,,,,,16/06/2832
+2958,,V,D,Chandan Sahu,Mr.Bhikham Chand Sahu,Mrs Kavita Sahu ,21/08/2008,,OBC,9630475615,,395775762750,,,"Farid Nagar, satpuda chowk ward 1",English,,,,,,,,,16/06/2833
+2975,,V,D,Gourav Bhuyan,Mr.Jitendra Bhuyan,Mrs Parichita Bhuyan,27/06/2008,,General,9301193940,,946950357593,,,"Camp-1, Adarsh Nagar, Bhilai",English,,,,,,,,,16/06/2834
+3009,,V,D,Krishna Kumar Sahu,Mr.Nutanlal Sahu,Mrs Sheetal Sahu,8/5/2008,,OBC,9827494629,,674157560462,,,"Near Sahu Lakhri Tall, W.No-23, Camp-II",English,,,,,,,,,16/06/2835
+3091,,V,D,Nikhil Verma,Mr.Bhawarlal Verma,Mrs Anju Verma,17/03/2008,,General,9752277162,,614463835710,,,"Arya Nagar, Kohka, Near jain mandir, sirsa",English,,,,,,,,,16/06/2836
+4790,,V,D,Piyush Nigam,Mr.Brijesh Nigam,Mrs Archana Nigam,27/10/2008,,General,9826710836,,266683766867,,,shanti nagar 6b bhilai,English,,,,,,,,,16/06/2837
+3101,,V,D,Tanish Soni,Mr.Ramesh Soni,Mrs Manorama Soni,1/9/2009,,General,9827195364,,,,,"60 T Market, P.o- Khursipar, Power House, Bhilai",English,,,,,,,,,16/06/2838
+2970,,V,D,Mithila Kumari Singh,Mr.Manoj Kumar Singh,Mrs.Santosh Kumari Singh,6/11/2008,,General,9229859332,,927363666427,,,"Bhilai Provision store Sangram chowk camp-1,",English,,,,,,,,,16/06/2839
+3266,,V,D,Kirti Lodhi,Lt. Paltan Verma,Mrs.Parvati Verma,28/10/2007,,OBC,8871862636,,572837375563,,,"Road No-18, near BSP, School, Camp-1",English,,,,,,,,,16/06/2840
+3878,,V,D,Minal Sahu,Mr.Gajendra Sahu,Mrs.Demin Sahu,19/12/2008,,OBC,9893498473,,916405323170,,,"Village Kutela Bhatta, Jewra sirsa",English,,,,,,,,,16/06/2841
+3615,,V,D,Sonakshi Singh,Mr.Subhash Singh,Mrs.Sushma Devi,1/1/2008,,General,9713875542,,,,,"Near Manik Hotel, Ramnagar, Bhilai",English,,,,,,,,,16/06/2842
+2706,,V,D,Tanya Yadav,Lt. Sh. Deepak Yadav,Mrs.Sunita Yadav,19/05/2008,,OBC,9691527605,,488288897194,,,"Near Venkateshwar, Talkies, Sanjay Nagar",English,,,,,,,,,16/06/2843
+3369,,V,D,Ajit Chouhan,Mr.Kailash Chouhan,Mrs.Kadalti Chouhan,26/03/2006,,General,"9123498670, 9713378606",,673966949575,,,"Adalat Saw mill near, Nehru road",English,,,,,,,,,16/06/2844
+3004,,V,D,Divyansh,Mr.Phool Singh Mandavi,Mrs.Anita Mandavi,9/7/2008,,ST,9406081548,,664329201089,,,EWS 368 gol market road vaishali nagar bhilai,English,,,,,,,,,16/06/2845
+3533,,V,D,Om Dubey,Mr.Rakesh Dubey,Mrs.Sunita Dubey,1/8/2008,,General,7898688944,,291366124397,,,"Krishna Nagar Ganesh chowk,harikesh bhawan w.5 HB ",English,,,,,,,,,16/06/2846
+2968,,V,D,Pranjal Vishwakarma,Mr.Narendra Vishwakarma,"Mrs,Kamini Vishwakarma",27/01/2008,,OBC,9827866560,,727633242607,,,shanti nagar bhilai 3 near nagar nigam chandani chowk ,English,,,,,,,,,16/06/2847
+3356,,V,D,Shivam Kumar Mishra,Mr.Ram Kumar Mishra,Mrs.Heera Devi,16/11/2008,,General,9630874067,,304632853760,,, Near Gayatri Shakti Peeth shukla gali w-11 ram nagar,English,,,,,,,,,16/06/2848
+2981,,V,D,Naveen Kumar Kuldeep,Mr.Rajendra Kumar Kuldeep,Mrs.Seema Kuldeep,28/06/2008,,SC,9098473338,,584078121753,,,"Lal Bahadur Floor mill, Shastri chowk, Camp-1",English,,,,,,,,,16/06/2849
+3008,,V,D,Reshant Shriwas,Mr.Mohan Lal Shriwas,Mrs.Gayatri Shriwas,14/06/2008,,General,9179678264,,226392334636,,,"Shahid Bhagat Singh, Marg, Ram nagar",English,,,,,,,,,16/06/2850
+4078,,V,D,Aniket Sharma,Mr.Krishna Sharma,Mrs.Poonam Sharma,22/12/2007,,General,9827119098,,308197794664,,,"H.No. 0057/Ward- 5, Rajeev Nagar, Supela",English,,,,,,,,,16/06/2851
+2960,,V,D,Anish Kurian,Mr. Daniel Kurian,Mrs.Shakuntala Kurian,11/4/2008,,General,9754064633,,891089728159,,,shanti nagar street 27 Hno.1103,English,,,,,,,,,16/06/2852
+2919,,V,D,Angelina Das,Mr.Francis Das,Mrs Santoshi Das,19/05/2008,,General,7869469713,,392286066981,,,Kohka Housing board Near Water,English,,,,,,,,,16/06/2853
+4224,,V,D,Junaira Bano,Md. Kafil,Mrs Rubina Bano,11/2/2008,,General,7389275134,,827740822456,,,Nizami Chowk Farid Nagar,English,,,,,,,,,16/06/2854
+2990,,V,D,M. Vaishanavi,Mr.M. Rama Rao,Mrs M. Usha,24/08/2007,,General,9993367587,,844767440926,,,"Laxmi nivas, Camp-1, 18 No. Road Ward-19",English,,,,,,,,,16/06/2855
+3355,,V,D,Palak Singh,Mr.Sanjay Singh,Mrs Priyanka Singh,8/1/2008,,General,9691337869,,881741964878,,,"Azad chowk, Near Santosh Kirana Store , Ram Nagar",English,,,,,,,,,16/06/2856
+4152,,V,D,Sonali Singh,Mr.Rukmeksh Singh,Mrs Rinu Singh,20/09/2007,,General,9827905457,,401559212279,,,"Q. No.- 22/ 6 , St.- 53, Zone II, Khursipar",English,,,,,,,,,16/06/2857
+3076,,V,D,Uma Dhruw,Mr.Sushil Dhruw,Mrs Reena Dhruw,20/09/2008,,General,"9165161031, 9754925751",,778223728258,,,"St-1, Block-2, Indira Gandhi, Aadarsh Nagar sector 11",English,,,,,,,,,16/06/2858
+2934,,V,D,Amit Kumar Paswan,Mr.Ram Balak Paswan,Mrs Uma Devi  Paswan,13/10/2008,,OBC,9584295795,,362725632344,,,near soni atta chaki ramnagar bhilai sahu para,English,,,,,,,,,16/06/2859
+2927,,V,D,Ayush Kumar Singh,Mr.Awdhesh Singh,Mrs Dhramsheela Singh,11/1/2008,,General,9329883986,,792720479794,,,"Behind Yahoo Internet, Kailash Nagar, (H.B)",English,,,,,,,,,16/06/2860
+2552,,V,D,Gagan Dewangan,Mr.Shiv Kumar Dewangan,Mrs Ram Kumari Dewangan,6/3/2006,,General,7489039493,,365296021282,,,"Near Govt. H.School, Ward no- 14, Kurud",English,,,,,,,,,16/06/2861
+3349,,V,D,Priyanshu Dewangan,Mr.Jeevan Lal Dewangan,Mrs. Jyoti Dewangan,5/8/2008,,OBC,9827866560,,916156015086,,,"C/O Dewangan Pan Bhandar , Ramnagar, Mukti Dham",English,,,,,,,,,16/06/2862
+3475,,V,D,Raja Shinde,Mr.Babu Shinde,Mrs  Jyothi Shinde,18/03/2007,,General,"7566083871, 8319537799",,543443742509,,,"Ward No-3, Sanjay Nagar Venkateshwar talkies",English,,,,,,,,,16/06/2863
+2913,,V,D,Tarun Bhagat,Mr.Niranjan,Mrs Nutan Devi,25/10/2007,,OBC,9581546500,,906118475386,,,"Niranjan Kumar, Ward No- 18, Lal Bahadure Shastinagar",English,,,,,,,,,16/06/2864
+5042,,V,D,Vignesh Kumar Reddy,Mr.Umapati Reddy,Mrs Dileshwari,4/8/2008,,General,9329583389,,47261878292,,,"St-52, 3D, Zone-2, Khursipar",English,,,,,,,,,16/06/2865
+,,,,Khosika ,Mr. Ravishankar Deshmukh,Mrs. Kamakshi Deshmukh,4.12.08,,OBC,9691420531,,912842088503,,,"H. No-186, Azad Chowk, Ramnagar Mukti Dham, Ward-14, Bhilai",English,,,,,,,,,16/06/2866
