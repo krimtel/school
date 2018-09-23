@@ -7,7 +7,7 @@ class Teacher_model extends CI_Model {
 		$e_marks;
 		switch($data['type']){
 			case 1 :
-				$e_marks = 50;
+				$e_marks = 20;
 				break;
 			case 4 :
 				$e_marks = 80;
@@ -93,17 +93,17 @@ class Teacher_model extends CI_Model {
                     if($data['type'] == 4 || $data['type'] == 9){
 						$min = 27;
 					}else{
-						$min = 17;
+						$min = 7;
 					}
 					
 					if($data['type'] == 1 || $data['type'] == 6){
 					    if($result['marks'] < $min){
 					        $fail = $fail + 1;
 					    }
-					    else if($result['marks'] >= $min && $result['marks'] <= 22){
+					    else if($result['marks'] >= $min && $result['marks'] <= 8){
 					        $thirddiv = $thirddiv + 1;
 					    }
-					    else if($result['marks'] > 22 && $result['marks'] <= 29){
+					    else if($result['marks'] > 8 && $result['marks'] <= 11){
 					        $seconddiv = $seconddiv + 1;
 					    }
 					    else{
