@@ -89,19 +89,7 @@ class Student_model extends CI_Model {
 			$this->db->where('stu.fit', $data['fit'],false);
 		}
 		$students = $this->db->get_where('student stu',array('stu.class_id'=>$data['class_id'],'stu.section'=>$data['section'],'stu.school_id'=>$data['school_id'],'am.medium'=>$data['medium'],'stu.medium'=>$data['medium'],'stu.session'=>$data['session'],'am.term' => 'Mid','am.status'=>1,'stu.status'=>1))->result_array();
-		
-		if($term == 'Pre'){
-		    $this->db->select('stu.*,c.name as cname,s.name as secname');
-		    $this->db->join('class c','c.c_id = stu.class_id');
-		    $this->db->join('section s','s.id = stu.section');
-		    $this->db->order_by('roll_no','ASC');
-		    if($data['class_id'] == 12 || $data['class_id'] == 13){
-		        $this->db->where('stu.fit', $data['fit'],false);
-		    }
-		    $students = $this->db->get_where('student stu',array('stu.class_id'=>$data['class_id'],'stu.section'=>$data['section'],'stu.school_id'=>$data['school_id'],'stu.medium'=>$data['medium'],'stu.session'=>$data['session'],'stu.status'=>1))->result_array();
-		    
-		}
-		
+
 		$this->db->select('s.*');
 		$this->db->join('subject s','s.sub_id = cs.subject_id');
 		$subject_lists = $this->db->get_where('class_sujects cs',array('cs.class_id'=>$data['class_id'],'s.subj_type'=>'Scholastic','cs.status'=>1))->result_array();
