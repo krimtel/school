@@ -1,5 +1,4 @@
 var baseUrl = $('#base_url').val();
-
 /*Class Wise report generation*/
 /*class wise pre result*/
 var formvalid = true;
@@ -113,7 +112,7 @@ $(document).on('click','.classwise_pre',function(){
 												x = x + '<th class="stu-info"><b>'+ value.subject_name +' [40]</b></th>';
 											}
 											else{
-												x = x + '<th class="stu-info"><b>'+ value.subject_name +' [50]</b></th>';
+												x = x + '<th class="stu-info"><b>'+ value.subject_name +' [20]</b></th>';
 											}
 										}
 										else if(type == 'mid'){
@@ -201,7 +200,7 @@ $(document).on('click','.classwise_pre',function(){
 												$.each(value.marks,function(k,v){
 													if(v.subject_id != 13){
 														if(type == 'pre'){
-															if(v.marks == 0 || v.marks == 'A' || v.marks < 17){
+															if(v.marks == 0 || v.marks == 'A' || v.marks < 7){
 																pf_flag = 0;
 															}
 														}

@@ -188,7 +188,7 @@ class Student_model extends CI_Model {
 								}
 							}
 							else{
-								if($m['marks'] < 17){
+								if($m['marks'] < 7){
 									$temp['p_f'] = 1;
 								}
 							}
@@ -343,10 +343,10 @@ class Student_model extends CI_Model {
 			$flag = 0;
 			foreach($data['s_list'][0]['marks'] as $mrk){
 				if($mrk['subject_id'] == 13){
-					$flag = 50;
+					$flag = 20;
 				}
 			}
-			$data['out_of'] = (int)count($data['s_list'][0]['marks']) * 50 - $flag; 
+			$data['out_of'] = (int)count($data['s_list'][0]['marks']) * 20 - $flag; 
 		}
 		else{
 			$flag = 0;
@@ -357,6 +357,7 @@ class Student_model extends CI_Model {
 			}
 			$data['out_of'] = (int)count($data['s_list'][0]['marks']) * 80 - $flag;
 		}
+		//print_r($data); die;
 		return $data;
 	}
 	
