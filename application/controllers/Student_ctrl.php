@@ -1359,12 +1359,7 @@ else {
 		$data['type'] = $this->input->post('type');
 		$data['fit'] = $this->input->post('fit');
 		
-		if($data['type'] == 'pre'){
-		    $this->load->model('Ravi_student_model');
-		    $result = $this->Ravi_student_model->classwise_pre($data);
-		}
-		
-		//$result = $this->Student_model->classwise_pre($data);
+	    $result = $this->Student_model->classwise_pre($data);
 
 		if(count($result) > 0){
 			echo json_encode(array('data'=>$result,'status'=>200));
