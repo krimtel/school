@@ -167,7 +167,7 @@ class Ravi_student_model extends CI_Model {
                    } 
                }
            }
-           print_r($student); die;
+          // print_r($student); die;
         
     }//----end of function-------
 }//---end of class-----------

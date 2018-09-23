@@ -56,10 +56,11 @@ class Student_model extends CI_Model {
 		else{
 			$class_category = 'primary';
 		}
-		
-		$this->db->select('days');
-		$result = $this->db->get_where('session_attendance',array('school_id'=>$data['school_id'],'class_category'=>$class_category,'term'=>$term,'status'=>1))->result_array();
-		$days = $result[0]['days'];
+		if($term == 'Mid' || $term == 'Final'){
+			$this->db->select('days');
+			$result = $this->db->get_where('session_attendance',array('school_id'=>$data['school_id'],'class_category'=>$class_category,'term'=>$term,'status'=>1))->result_array();
+			$days = $result[0]['days'];
+		}
 		
 		if($term == 'Final'){
 			$this->db->select('days');
@@ -76,20 +77,30 @@ class Student_model extends CI_Model {
 			$this->db->join('student_atttendance sa','sa.a_master_id = am.a_id');
 			$annual_atten = $this->db->get_where('attendance_master am',array('am.session_id'=>$data['session'],'am.medium'=>$data['medium'],'am.class_id'=>$data['class_id'],'am.term'=>'Annual','am.section_id'=>$data['section']))->result_array();  
 		}
-		
-		$this->db->select('stu.*,c.name as cname,s.name as secname,concat('.$annual_atten[0]['present'].' - sa.present,"/'.$days.'") as present');
-		$this->db->join('class c','c.c_id = stu.class_id');
-		$this->db->join('section s','s.id = stu.section');
-		$this->db->join('attendance_master am','am.class_id = stu.class_id');
-		$this->db->join('student_atttendance sa','sa.a_master_id = am.a_id');
-		$this->db->order_by('roll_no','ASC');
-		$this->db->where('am.section_id','stu.section',false);
-		$this->db->where('sa.student_id', 'stu.s_id',false);
-		if($data['class_id'] == 12 || $data['class_id'] == 13){
-			$this->db->where('stu.fit', $data['fit'],false);
+		if($term == 'Mid' || $term == 'Final'){
+			$this->db->select('stu.*,c.name as cname,s.name as secname,concat('.$annual_atten[0]['present'].' - sa.present,"/'.$days.'") as present');
+			$this->db->join('class c','c.c_id = stu.class_id');
+			$this->db->join('section s','s.id = stu.section');
+			$this->db->join('attendance_master am','am.class_id = stu.class_id');
+			$this->db->join('student_atttendance sa','sa.a_master_id = am.a_id');
+			$this->db->order_by('roll_no','ASC');
+			$this->db->where('am.section_id','stu.section',false);
+			$this->db->where('sa.student_id', 'stu.s_id',false);
+			if($data['class_id'] == 12 || $data['class_id'] == 13){
+				$this->db->where('stu.fit', $data['fit'],false);
+			}
+			$students = $this->db->get_where('student stu',array('stu.class_id'=>$data['class_id'],'stu.section'=>$data['section'],'stu.school_id'=>$data['school_id'],'am.medium'=>$data['medium'],'stu.medium'=>$data['medium'],'stu.session'=>$data['session'],'am.term' => 'Mid','am.status'=>1,'stu.status'=>1))->result_array();
 		}
-		$students = $this->db->get_where('student stu',array('stu.class_id'=>$data['class_id'],'stu.section'=>$data['section'],'stu.school_id'=>$data['school_id'],'am.medium'=>$data['medium'],'stu.medium'=>$data['medium'],'stu.session'=>$data['session'],'am.term' => 'Mid','am.status'=>1,'stu.status'=>1))->result_array();
-
+		else{
+			$this->db->select('stu.*,c.name as cname,s.name as secname');
+			$this->db->join('class c','c.c_id = stu.class_id');
+			$this->db->join('section s','s.id = stu.section');
+			$this->db->order_by('roll_no','ASC');
+			if($data['class_id'] == 12 || $data['class_id'] == 13){
+				$this->db->where('stu.fit', $data['fit'],false);
+			}
+			$students = $this->db->get_where('student stu',array('stu.class_id'=>$data['class_id'],'stu.section'=>$data['section'],'stu.school_id'=>$data['school_id'],'stu.medium'=>$data['medium'],'stu.session'=>$data['session'],'stu.status'=>1))->result_array();
+		}
 		$this->db->select('s.*');
 		$this->db->join('subject s','s.sub_id = cs.subject_id');
 		$subject_lists = $this->db->get_where('class_sujects cs',array('cs.class_id'=>$data['class_id'],'s.subj_type'=>'Scholastic','cs.status'=>1))->result_array();
@@ -199,7 +210,12 @@ class Student_model extends CI_Model {
 				$temp['marks'] = 0;
 				$temp['total_marks'] = 0;
 			}
-			$temp['present'] = $student['present'];
+			if(isset($student['present'])){
+				$temp['present'] = $student['present'];
+			}
+			else{ 
+				$temp['present'] = '';
+			}
 			$temp['roll_no'] = $student['roll_no'];
 			$temp['admission_no'] = $student['admission_no'];
 			$temp['name'] = $student['name'];
