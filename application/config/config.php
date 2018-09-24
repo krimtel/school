@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 //$config['base_url'] = 'http://localhost/smis';
-$config['base_url'] = 'http://localhost/test_smis/trunk';
+$config['base_url'] = 'http://localhost/school_2/trunk';
 //$config['base_url'] = '//smis/smis';
 /*
 |--------------------------------------------------------------------------

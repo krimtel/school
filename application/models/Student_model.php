@@ -648,20 +648,13 @@ class Student_model extends CI_Model {
 		else{
 			$class_category = 'primary';
 		}
-		$this->db->select('days');
-		$result = $this->db->get_where('session_attendance',array('school_id'=>$data['school_id'],'class_category'=>$class_category,'term'=>'Mid','status'=>1))->result_array();
-		$days = $result[0]['days'];
 	
-		$this->db->select('stu.*,c.name as cname,s.name as secname,concat(sa.present,"/'.$days.'") as present, DATE_FORMAT(stu.dob, "%d/%m/%Y") dob,DATE_FORMAT(stu.admission_date, "%d/%m/%Y") admission_date');
+		$this->db->select('stu.*,c.name as cname,s.name as secname, DATE_FORMAT(stu.dob, "%d/%m/%Y") dob,DATE_FORMAT(stu.admission_date, "%d/%m/%Y") admission_date');
 		$this->db->join('class c','c.c_id = stu.class_id');
 		$this->db->join('section s','s.id = stu.section');
-		$this->db->join('attendance_master am','am.class_id = stu.class_id');
-		$this->db->join('student_atttendance sa','sa.a_master_id = am.a_id');
 		$this->db->order_by('roll_no','ASC');
-		$this->db->where('am.section_id','stu.section',false);
-		$this->db->where('sa.student_id', 'stu.s_id',false);
-		$students = $this->db->get_where('student stu',array('stu.class_id'=>$data['class_id'],'stu.section'=>$data['section'],'stu.school_id'=>$data['school_id'],'stu.medium'=>$data['medium'],'stu.session'=>$data['session'],'stu.subject_group'=>$data['s_group'],'am.term' => 'Mid','am.status'=>1,'stu.status'=>1))->result_array();
-		
+		$students = $this->db->get_where('student stu',array('stu.class_id'=>$data['class_id'],'stu.section'=>$data['section'],'stu.school_id'=>$data['school_id'],'stu.medium'=>$data['medium'],'stu.session'=>$data['session'],'stu.subject_group'=>$data['s_group'],'stu.status'=>1))->result_array();
+	
 		$this->db->select('id');
 		if($data['type'] == 'pre'){
 			$this->db->where('e_type',1);
