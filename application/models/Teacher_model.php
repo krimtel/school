@@ -284,13 +284,13 @@ class Teacher_model extends CI_Model {
 		$e_marks;
 		switch($data['e_type']){
 			case 1 :
-				$e_marks = 50;
+				$e_marks = 20;
 				break;
 			case 4 :
 				$e_marks = 80;
 				break;
 			case 6 :
-				$e_marks = 50;
+				$e_marks = 20;
 				break;
 			case 9 :
 				$e_marks = 80;
@@ -466,6 +466,7 @@ class Teacher_model extends CI_Model {
 				$new_final[] = $temp;
 			}
 		}
+		
 		return $new_final;
 		
 	}
@@ -1112,6 +1113,7 @@ class Teacher_model extends CI_Model {
 	            $new_final[] = $final;
 	        }
 	    }
+	    $new_final = array_map("unserialize", array_unique(array_map("serialize", $new_final)));
 	    return $new_final;
 	}
 	

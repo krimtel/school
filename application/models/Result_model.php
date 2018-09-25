@@ -2732,6 +2732,7 @@ else {
 	}
 	
 	function student_deatil_high_class_final_loop($data){
+	    
 		if($data['class_id'] > 3 && $data['class_id'] < 9){
 			$class_category = '1-5';
 		}

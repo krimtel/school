@@ -44,6 +44,8 @@ $route['sharda/reports/log-report'] = 'Admin_ctrl/log_report';
 $route['sharda/transaction-record/marks_entry_high_class'] = 'Admin_ctrl/marks_entry_high_class';
 $route['sharda/production-reporting/high-class-marksheet-generation'] = 'Admin_ctrl/high_class_marksheet_generation';
 $route['sharda/production-reporting/marks-entry-check'] = 'Admin_ctrl/marks_entry_check';
+$route['sharda/production-reporting/marks-entry-check-high-class'] = 'Admin_ctrl/marks_entry_check_high_class';
+
 $route['sharda/web/student_record'] = 'Admin_webctrl';
 $route['sharda/transaction-record/compart_marks_entry'] = 'Admin_ctrl/compart_marks_entry';
 $route['sharda/production-reporting/compart_marksheet_generation'] = 'Admin_ctrl/compart_marksheet_generation';
@@ -97,6 +99,8 @@ $route['shakuntala/transaction-record/compart_marks_entry_high_class'] = 'Admin_
 $route['shakuntala/production-reporting/high-class-marksheet-generation'] = 'Admin_ctrl/high_class_marksheet_generation';
 $route['shakuntala/production-reporting/compart_high-class-marksheet-generation'] = 'Admin_ctrl/compart_high_class_marksheet_generation';
 $route['shakuntala/production-reporting/marks-entry-check'] = 'Admin_ctrl/marks_entry_check';
+$route['shakuntala/production-reporting/marks-entry-check-high-class'] = 'Admin_ctrl/marks_entry_check_high_class';
+
 $route['shakuntala/web/student_record'] = 'Admin_webctrl';
 $route['shakuntala/web/bus'] = 'Admin_webctrl/bus';
 

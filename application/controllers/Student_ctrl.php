@@ -1358,8 +1358,8 @@ else {
 		$data['session'] = $this->input->post('session');
 		$data['type'] = $this->input->post('type');
 		$data['fit'] = $this->input->post('fit');
-		
-	    $result = $this->Student_model->classwise_pre($data);
+
+		$result = $this->Student_model->classwise_pre($data);
 
 		if(count($result) > 0){
 			echo json_encode(array('data'=>$result,'status'=>200));

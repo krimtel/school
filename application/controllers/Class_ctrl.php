@@ -111,6 +111,200 @@ class Class_ctrl extends CI_Controller {
     
     
     
+    public function getsection(){
+        $this->db->select('*');
+        $result = $this->db->get_where('section',array('status'=>1))->result_array();
+        if(count($result) > 0){
+            echo json_encode(array('result'=>$result,'status'=>200));
+        }else{
+            echo json_encode(array('status'=>500));
+        }
+    }
+    
+    public function rd_check_marks_entry(){
+        $session = $this->input->post('session');
+        $medium = $this->input->post('medium');
+        $class = $this->input->post('class');
+        $section = $this->input->post('section');
+        $exam_type = $this->input->post('exam_type');
+        $school_id = $this->session->userdata('school_id');
+
+        $this->db->select('subject_id');
+        $subjects = $this->db->get_where('class_sujects',array('class_id'=>$class,'status'=>1))->result_array();
+    
+        if(count($subjects) > 0){
+            if(count($subjects)){
+                $students_id = array();
+                foreach($subjects as $subject){
+                    $temp = array();
+                    $temp['subject_id'] = $subject['subject_id'];
+                    $students_id[] = $temp;
+                }
+                $data = array_column($students_id,'subject_id'); //-----convert to single array----------
+                $sub_id = implode(', ', $data); // ------ convert to string-----
+            }
+            //----------------------------------------------------------------------------------------------------
+            
+            $this->db->select('DISTINCT(sub_id) as subject_id');
+            $this->db->where('sub_id IN ('.$sub_id.')');
+            $result = $this->db->get_where('mark_master',array('session_id'=>$session,'school_id'=>$school_id,'medium'=>$medium,'e_type'=>$exam_type,'class_id'=>$class,'section'=>$section,'status'=>1))->result_array();
+            
+            if(count($result)){
+                //--------------------------------------------------------------------------------------
+                if(count($result)){
+                    $matchsubjects = array();
+                    foreach($result as $res){
+                        $temp = array();
+                        $temp['subject_id'] = $res['subject_id'];
+                        $matchsubjects[] = $temp;
+                    }
+                    $data = array_column($matchsubjects,'subject_id'); //-----convert to single array----------
+                    $matchsub = implode(', ', $data); // ------ convert to string-----
+                }
+                
+                //---------------------------------------------------------------------------------------
+                
+                $this->db->select('*');
+                $this->db->where('sub_id IN ('.$matchsub.')');
+                $matchsub = $this->db->get_where('subject')->result_array();
+                   
+                $diff = array_diff_assoc($subjects, $result);
+                
+                $notmatchsubjects = array();
+                foreach($diff as $res){
+                    $temp = array();
+                    $temp['subject_id'] = $res['subject_id'];
+                    $notmatchsubjects[] = $temp;
+                }
+                $data = array_column($notmatchsubjects,'subject_id'); //-----convert to single array----------
+                $notmatchsub = implode(', ', $data); // ------ convert to string-----
+                
+                $this->db->select('*');
+                $this->db->where('sub_id IN ('.$notmatchsub.')');
+                $notmatchsub = $this->db->get_where('subject')->result_array();
+                
+                $notmatchsubject = array();
+                foreach($matchsub as $match){
+                    foreach($notmatchsub as $notmatch){
+                        if(($match['name'] != $notmatch['name']) && ($match['subj_type'] != $notmatch['subj_type'])){
+                            $temp = array();
+                            $temp['sub_id'] = $notmatch['sub_id'];
+                            $temp['name'] = $notmatch['name'];
+                            $temp['subj_type'] = $notmatch['subj_type'];
+                            $temp['subj_type'] = $notmatch['subj_type'];
+                            $temp['subj_group'] = $notmatch['subj_group'];
+                            $notmatchsubject[] = $temp;
+                        }
+                    } 
+                }
+                $result = array_map("unserialize", array_unique(array_map("serialize", $notmatchsubject)));
+              
+                echo json_encode(array('matchsub'=>$matchsub,'notmatchsub'=>$result,'status'=>200));
+            }else{
+                echo json_encode(array('msg'=>'Marks are not on any Subjects.!','status'=>500));
+            }
+        }else{
+            echo json_encode(array('msg'=>'This class subject Not allocated.!','status'=>500));
+        }
+        //----------------------------------------------------------------------------------------------------
+        
+        
+    }
+    
+    public function marks_entry_check_heigh_class(){
+            $session = $this->input->post('session');
+            $medium = $this->input->post('medium');
+            $class = $this->input->post('class');
+            $section = $this->input->post('section');
+            $exam_type = $this->input->post('exam_type');
+            $school_id = $this->session->userdata('school_id');
+            $sub_group = $this->input->post('s_group');
+
+            $this->db->select('DISTINCT(subject_id)');
+            $subjects = $this->db->get_where('subject_allocation',array('medium'=>$medium,'school_id'=>$school_id,'class_id'=>$class,'section_id'=>$section,'s_group'=>$sub_group,'status'=>1))->result_array();
+           
+            if(count($subjects) > 0){
+             
+            //----------------------------------------------------------------------------------------------------
+            if(count($subjects)){
+                $students_id = array();
+                foreach($subjects as $subject){
+                    $temp = array();
+                    $temp['subject_id'] = $subject['subject_id'];
+                    $students_id[] = $temp;
+                }
+                $data = array_column($students_id,'subject_id'); //-----convert to single array----------
+                $sub_id = implode(', ', $data); // ------ convert to string-----
+            }
+            
+            //----------------------------------------------------------------------------------------------------
+            if($sub_group == 'comm'){
+                $sub_group = 'commer';
+            }
+            $this->db->select('DISTINCT(subject) as subject_id');
+            $this->db->where('subject IN ('.$sub_id.')');
+            $result = $this->db->get_where('high_class_mark_master',array('session_id'=>$session,'school_id'=>$school_id,'medium'=>$medium,'e_type'=>$exam_type,'class_id'=>$class,'section_id'=>$section,'s_group'=>$sub_group))->result_array();
+            
+            if(count($result)){
+                //--------------------------------------------------------------------------------------
+                if(count($result)){
+                    $matchsubjects = array();
+                    foreach($result as $res){
+                        $temp = array();
+                        $temp['subject_id'] = $res['subject_id'];
+                        $matchsubjects[] = $temp;
+                    }
+                    $data = array_column($matchsubjects,'subject_id'); //-----convert to single array----------
+                    $match = implode(', ', $data); // ------ convert to string-----
+                }
+                //---------------------------------------------------------------------------------------
+                
+                $this->db->select('*');
+                $this->db->where('id IN ('.$match.')');
+                $matchsub = $this->db->get_where('subjects_11_12')->result_array();
+
+                $diff = array_diff_assoc($subjects, $result);
+                
+                $notmatchsubjects = array();
+                foreach($diff as $res){
+                    $temp = array();
+                    $temp['subject_id'] = $res['subject_id'];
+                    $notmatchsubjects[] = $temp;
+                }
+                $data = array_column($notmatchsubjects,'subject_id'); //-----convert to single array----------
+                $notmatchsub = implode(', ', $data); // ------ convert to string-----
+                
+                
+                $this->db->select('*');
+                $this->db->where('id IN ('.$notmatchsub.')');
+                $notmatchsub = $this->db->get_where('subjects_11_12')->result_array();
+                
+                $notmatchsubject = array();
+                foreach($matchsub as $match){
+                    foreach($notmatchsub as $notmatch){
+                        if(($match['subject'] != $notmatch['subject']) && ($match['type'] != $notmatch['type'])){
+                            $temp = array();
+                            $temp['id'] = $notmatch['id'];
+                            $temp['subject'] = $notmatch['subject'];
+                            $temp['type'] = $notmatch['type'];
+                            $notmatchsubject[] = $temp;
+                        }
+                    }
+                }
+                
+                $result = array_map("unserialize", array_unique(array_map("serialize", $notmatchsubject)));
+                
+                echo json_encode(array('matchsub'=>$matchsub,'notmatchsub'=>$result,'status'=>200));
+            }else{
+                echo json_encode(array('msg'=>'Marks are not on any Subjects.!','status'=>500));
+            }
+            }else{
+                echo json_encode(array('msg'=>'This class Subjects not allocated.!','status'=>500));
+            }
+       }
+    
+    
+    
     function section_list_class_teacher(){
     	$class_id = $this->input->get('c_id');
     	$u_id = $this->session->userdata('user_id');
@@ -151,8 +345,7 @@ class Class_ctrl extends CI_Controller {
     	}
     }
     
-    
-    
+  
     function class_subject(){
     	$data['c_id'] = $this->input->post('c_id');
     	$data['t_id'] = $this->input->post('t_id');

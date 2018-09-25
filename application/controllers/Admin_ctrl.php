@@ -2306,6 +2306,36 @@ class Admin_ctrl extends CI_Controller {
 		$this->load->view('pages/index',$data);
 	}
 	
+	function marks_entry_check_high_class(){
+	    $data['power'] = $this->power();
+	    if($this->session->userdata('utype') == 'Teacher') {
+	        $data['class_teacher'] = $this->is_class_teacher();
+	        $data['entry_11_12'] = $this->entry_11_12();
+	        $data['entry_1_10'] = $this->entry_1_10();
+	    }
+	    else{
+	        $data['class_teacher'] = 1;
+	        $data['entry_11_12'] = 1;
+	        $data['entry_1_10'] = 1;
+	    }
+	    $data['title'] = $this->session->userdata('school') .' | Marksheet Generation';
+	    $data['header'] = $this->load->view('pages/common/header',$data,true);
+	    $data['topbar'] = $this->load->view('pages/common/topbar','',true);
+	    $data['aside'] = $this->load->view('pages/common/aside','',true);
+	    $data['footer'] = $this->load->view('pages/common/footer','',true);
+	    $data['classes'] = $this->Admin_model->classes();
+	    if($this->session->userdata('utype') == 'Teacher'){
+	        $data['classes'] = $this->Admin_model->teacher_classes();
+	    }else{
+	        $data['classes'] = $this->Admin_model->classes();
+	    }
+	    $data['sessions'] = $this->Admin_model->sessions();
+	    $data['electives'] = $this->Admin_model->elective_subjects();
+	    $data['page'] = $this->load->view('pages/production/marks_entry_check_high_class',$data,true);
+	    $this->load->view('pages/index',$data);
+	}
+	
+	
 	
 	public function compart_marks_entry(){
 		$data['power'] = $this->power();

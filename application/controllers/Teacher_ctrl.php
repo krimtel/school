@@ -360,7 +360,7 @@ class Teacher_ctrl extends CI_Controller {
 		$data['medium'] = $this->input->post('medium');
 		$data['session'] = $this->Admin_model->current_session();
 		$data['e_type'] = $this->input->post('e_type');
-
+        
 		if($this->session->userdata('utype') == 'Teacher'){
 			$result = $this->Teacher_model->teacher_abstract_new($data);
 		}
@@ -368,7 +368,10 @@ class Teacher_ctrl extends CI_Controller {
 			 $result = $this->Teacher_model->teacher_abstract_new($data);
 		}
 		$result1 = $this->Teacher_model->teacher_abstract_new_high_class($data);
-		$result = array_merge($result,$result1);
+		
+		$result = array_merge($result, $result1);
+		
+		
 		if(count($result)>0){
 			echo json_encode(array('data'=>$result,'status'=>200,'school_id'=>$data['school_id']));
 		}

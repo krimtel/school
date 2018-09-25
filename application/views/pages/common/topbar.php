@@ -202,6 +202,11 @@
 					<a href="<?php echo base_url();?><?php echo strtolower($this->session->userdata('school'));?>/production-reporting/marks-entry-check">
 					<i class="fa fa-circle-o text-yellow"></i> Marks Entry check</a>
 				</li>
+				
+					<li>
+					<a href="<?php echo base_url();?><?php echo strtolower($this->session->userdata('school'));?>/production-reporting/marks-entry-check-high-class">
+					<i class="fa fa-circle-o text-yellow"></i> Marks Entry check 11th-12th</a>
+				</li>
 				<?php } ?>
 				<li>
 					<a href="<?php echo base_url();?><?php echo strtolower($this->session->userdata('school'));?>/production-reporting/marksheet_generation">
