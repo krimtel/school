@@ -271,7 +271,7 @@
 			</ul>
 		</li>
 	<?php } ?>
-	
+	<li><a href="<?php echo base_url();?><?php echo strtolower($this->session->userdata('school'));?>/health_activity">Health Activity</a></li>
 	<li><a href="<?php echo base_url();?><?php echo strtolower($this->session->userdata('school'));?>/logout">LOGOUT</a></li>
 
 </ul>

@@ -100,6 +100,7 @@ $route['shakuntala/production-reporting/high-class-marksheet-generation'] = 'Adm
 $route['shakuntala/production-reporting/compart_high-class-marksheet-generation'] = 'Admin_ctrl/compart_high_class_marksheet_generation';
 $route['shakuntala/production-reporting/marks-entry-check'] = 'Admin_ctrl/marks_entry_check';
 $route['shakuntala/production-reporting/marks-entry-check-high-class'] = 'Admin_ctrl/marks_entry_check_high_class';
+$route['shakuntala/health_activity'] = 'Helth_ctrl/health_activity';
 
 $route['shakuntala/web/student_record'] = 'Admin_webctrl';
 $route['shakuntala/web/bus'] = 'Admin_webctrl/bus';
