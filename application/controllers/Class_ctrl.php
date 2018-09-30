@@ -220,9 +220,9 @@ class Class_ctrl extends CI_Controller {
             $school_id = $this->session->userdata('school_id');
             $sub_group = $this->input->post('s_group');
 
-            $this->db->select('DISTINCT(subject_id)');
-            $subjects = $this->db->get_where('subject_allocation',array('medium'=>$medium,'school_id'=>$school_id,'class_id'=>$class,'section_id'=>$section,'s_group'=>$sub_group,'status'=>1))->result_array();
-           
+            $this->db->select('id as subject_id');
+            $subjects = $this->db->get_where('subjects_11_12',array('status'=>1))->result_array();
+            
             if(count($subjects) > 0){
              
             //----------------------------------------------------------------------------------------------------
@@ -245,9 +245,9 @@ class Class_ctrl extends CI_Controller {
             $this->db->where('subject IN ('.$sub_id.')');
             $result = $this->db->get_where('high_class_mark_master',array('session_id'=>$session,'school_id'=>$school_id,'medium'=>$medium,'e_type'=>$exam_type,'class_id'=>$class,'section_id'=>$section,'s_group'=>$sub_group))->result_array();
             
-            if(count($result)){
+            if(count($result) > 0){
                 //--------------------------------------------------------------------------------------
-                if(count($result)){
+             
                     $matchsubjects = array();
                     foreach($result as $res){
                         $temp = array();
@@ -256,45 +256,48 @@ class Class_ctrl extends CI_Controller {
                     }
                     $data = array_column($matchsubjects,'subject_id'); //-----convert to single array----------
                     $match = implode(', ', $data); // ------ convert to string-----
-                }
+                    
                 //---------------------------------------------------------------------------------------
                 
                 $this->db->select('*');
                 $this->db->where('id IN ('.$match.')');
                 $matchsub = $this->db->get_where('subjects_11_12')->result_array();
-
+               
                 $diff = array_diff_assoc($subjects, $result);
+               
+                if(count($diff) > 0 ){
                 
-                $notmatchsubjects = array();
-                foreach($diff as $res){
+                    $notmatchsubjects = array();
+                    foreach($diff as $res){
                     $temp = array();
                     $temp['subject_id'] = $res['subject_id'];
                     $notmatchsubjects[] = $temp;
                 }
                 $data = array_column($notmatchsubjects,'subject_id'); //-----convert to single array----------
                 $notmatchsub = implode(', ', $data); // ------ convert to string-----
-                
-                
-                $this->db->select('*');
-                $this->db->where('id IN ('.$notmatchsub.')');
-                $notmatchsub = $this->db->get_where('subjects_11_12')->result_array();
-                
-                $notmatchsubject = array();
-                foreach($matchsub as $match){
-                    foreach($notmatchsub as $notmatch){
-                        if(($match['subject'] != $notmatch['subject']) && ($match['type'] != $notmatch['type'])){
-                            $temp = array();
-                            $temp['id'] = $notmatch['id'];
-                            $temp['subject'] = $notmatch['subject'];
-                            $temp['type'] = $notmatch['type'];
-                            $notmatchsubject[] = $temp;
+               
+                    $this->db->select('*');
+                    $this->db->where('id IN ('.$notmatchsub.')');
+                    $notmatchsub = $this->db->get_where('subjects_11_12')->result_array();
+                    
+                    $notmatchsubject = array();
+                    foreach($matchsub as $match){
+                        foreach($notmatchsub as $notmatch){
+                            if(($match['subject'] != $notmatch['subject']) && ($match['type'] != $notmatch['type'])){
+                                $temp = array();
+                                $temp['id'] = $notmatch['id'];
+                                $temp['subject'] = $notmatch['subject'];
+                                $temp['type'] = $notmatch['type'];
+                                $notmatchsubject[] = $temp;
+                            }
                         }
                     }
+                    
+                    $notmatchresult = array_map("unserialize", array_unique(array_map("serialize", $notmatchsubject)));
                 }
                 
-                $result = array_map("unserialize", array_unique(array_map("serialize", $notmatchsubject)));
                 
-                echo json_encode(array('matchsub'=>$matchsub,'notmatchsub'=>$result,'status'=>200));
+                echo json_encode(array('matchsub'=>$matchsub,'notmatchsub'=>$notmatchresult,'status'=>200));
             }else{
                 echo json_encode(array('msg'=>'Marks are not on any Subjects.!','status'=>500));
             }

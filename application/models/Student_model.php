@@ -748,14 +748,14 @@ class Student_model extends CI_Model {
                     $total_marks = $total_marks + $mark['marks'];
                     $out_of = $out_of + $mark['subj_marks'];
                 }
-                if($mark['marks'] < 17 && $mark['marks'] != '-'){
+                if($mark['marks'] < 7 && $mark['marks'] != '-'){
                     $temp['flag'] = 0;
                 }
             }
             $temp['total'] = $total_marks;
             $temp['marks'] = $marks;
             $temp['out_of'] = $out_of;
-            $temp['percent'] = $total_marks / $out_of;
+            $temp['percent'] = (($total_marks *100 )/$out_of);
             $student_mark_n_detail[] = $temp;
         }
         $only_pass_student = array();

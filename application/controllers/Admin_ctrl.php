@@ -476,6 +476,48 @@ class Admin_ctrl extends CI_Controller {
 		$data['page'] = $this->load->view('pages/production/marks_preview',$data,true);
 		$this->load->view('pages/index',$data);
 	}
+	
+	
+	public function general_information(){
+	    $data['power'] = $this->power();
+	    if($this->session->userdata('utype') == 'Teacher'){
+	        $data['class_teacher'] = $this->is_class_teacher();
+	        $data['entry_11_12'] = $this->entry_11_12();
+	        $data['entry_1_10'] = $this->entry_1_10();
+	        $data['medium'] = $this->teacher_medium();
+	    }
+	    else{
+	        $data['class_teacher'] = 1;
+	        $data['entry_11_12'] = 1;
+	        $data['entry_1_10'] = 1;
+	    }
+	    
+	    $data['title'] = $this->session->userdata('school') .' | General Information';
+	    $data['header'] = $this->load->view('pages/common/header',$data,true);
+	    $data['topbar'] = $this->load->view('pages/common/topbar','',true);
+	    $data['aside'] = $this->load->view('pages/common/aside','',true);
+	    $data['footer'] = $this->load->view('pages/common/footer','',true);
+	    
+	    if($this->session->userdata('utype') == 'Teacher'){
+	        $data['classes'] = $this->Admin_model->class_teacher();
+	    }else{
+	        $data['classes'] = $this->Admin_model->classes();
+	    }
+	    
+	    $classes = array();
+	    foreach($data['classes'] as $class){
+	        if($class['c_id'] < 14){
+	            $classes[] = $class;
+	        }
+	    }
+	    $data['classes'] = $classes;
+	    $data['sessions'] = $this->Admin_model->sessions();
+	    $data['current_session'] = $this->Admin_model->current_session();
+	    $data['page'] = $this->load->view('pages/helth/general_info',$data,true);
+	    $this->load->view('pages/index',$data);
+	}
+	
+	
 
 	public function students_report(){
 		$data['power'] = $this->power();

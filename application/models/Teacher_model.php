@@ -584,9 +584,9 @@ class Teacher_model extends CI_Model {
 				foreach($results as $result){
 					//$result['marks'] = ($result['marks'] / 50 )* 100 ;
 
-					    $min = 17;
-					    $third_min = 22;
-					    $sec_min = 29;
+					    $min = 7;
+					    $third_min = 7;
+					    $sec_min = 9;
 					
 					if($result['marks'] <= $min){
 						$fail = $fail + 1;
@@ -652,7 +652,7 @@ class Teacher_model extends CI_Model {
 				$temp['max'] = $max;
 				$temp['notapper'] = $no_of_students - $notapper;
 				$temp['get_max'] = $max_marks_get;
-				$temp['pi'] = round(($total / (($no_of_students - $notapper) * 50))*100,2);
+				$temp['pi'] = round(($total / (($no_of_students - $notapper) * 20))*100,2);
 				$final[] = $temp;
 			}
 		}
