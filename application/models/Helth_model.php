@@ -27,12 +27,14 @@ class Helth_model extends CI_Model {
             $data['sub_group'] = 'Arts';
         }
         
-        $this->db->select('*');
-        $result = $this->db->get_where('student', array('session'=>$data['session'],'school_id'=>$data['school'],'class_id'=>$data['class_id'],'section'=>$data['section'],'medium'=>$data['medium'],'status'=>1))->result_array();
-        
+        $this->db->select('s.*, c.name as class_name, sec.name as section_name');
+        $this->db->join('class c','c.c_id=s.class_id','innor');
+        $this->db->join('section sec','sec.id=s.section','innor');
         if($data['sub_group'] != NULL){
-            $result = $this->db->get_where('student', array('session'=>$data['session'],'school_id'=>$data['school'],'class_id'=>$data['class_id'],'section'=>$data['section'],'medium'=>$data['medium'],'subject_group'=>$data['sub_group'],'status'=>1))->result_array();
+            $this->db->where('s.subject_group',$data['sub_group']);
         }
+        $result = $this->db->get_where('student s', array('s.session'=>$data['session'],'s.school_id'=>$data['school'],'s.class_id'=>$data['class_id'],'s.section'=>$data['section'],'s.medium'=>$data['medium'],'s.status'=>1))->result_array();
+        
         return $result;
     }
     

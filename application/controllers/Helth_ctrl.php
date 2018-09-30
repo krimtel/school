@@ -7,7 +7,7 @@ class Helth_ctrl extends CI_Controller{
         $this->load->helper(array('form', 'url'));
         $this->load->library(array('form_validation','session'));
         $this->load->database();
-        $this->load->model(array('helth_model','Admin_model'));
+        $this->load->model(array('Admin_model','helth_model'));
     }
 		
 	function power(){
@@ -121,6 +121,99 @@ class Helth_ctrl extends CI_Controller{
 				print_r($data); die;
 	}
     
+    public function editData(){
+        $data = array();
+        $data['school_id'] = (int)$this->session->userdata('school_id');
+        $data['session_id'] = (int)$this->Admin_model->current_session();
+        $data['admission_no'] = (int)$this->input->post('admission_no');
+        $data['s_id'] = (int)$this->input->post('s_id');
+        $data['medium'] = $this->input->post('medium');
+        $data['class_id'] = (int)$this->input->post('class_id');
+        $data['section'] = (int)$this->input->post('section');
+        $data['sub_group'] = $this->input->post('subject_group');
+
+        
+        $this->db->select('
+                            gt.g_id as g_id,
+                            gt.session_id as session_id,
+                            gt.school_id as school_id,
+                            gt.medium as medium,
+                            gt.subject_group as subject_group,
+                            gt.activity_date as activity_date,
+                            gt.student_admission_no as admission_no,
+                           	gt.student_student_id as s_id,
+                            gt.student_name as name,
+                            gt.student_aadhar_card_no as adhar_no,
+                            gt.student_dob as dob,
+                            gt.student_sex as mft,
+                            gt.student_blood_group as blood_group,
+                            gt.mother_name as m_name,
+                            gt.mother_dob as m_dob,
+                            gt.mother_weight as m_weight,
+                            gt.mother_height as m_height,
+                            gt.mother_blood_group as m_blood_group,
+                            gt.mother_aadhar_card_no as m_adhar,
+                            gt.father_name as f_name,
+                            gt.father_dob as f_dob,
+                            gt.father_weight as f_weight,
+                            gt.father_height as f_height,
+                            gt.father_blood_group as f_blood_group,
+                            gt.father_aadhar_card_no as f_adhar,
+                            gt.monthly_income as month_income,
+                            gt.address as address,
+                            gt.phone_no as phone,
+                            gt.mobile_no as mobile,
+                            gt.children_special_needs as cwsn_specify
+                      ');
+        if($data['sub_group'] != NULL){
+            $this->db->where('gt.subject_group',$data['sub_group']);
+        }
+        $result = $this->db->get_where('general_table gt', array('gt.session_id'=>$data['session_id'],'gt.school_id'=>$data['school_id'],'gt.student_admission_no'=>$data['admission_no'],'gt.student_student_id'=>$data['s_id'],'gt.status'=>1))->result_array();
+        if(count($result) > 0){
+            echo json_encode(array('result'=>$result, 'status'=>200));
+        } 
+        else{
+            
+            $this->db->select('s.s_id as s_id,
+                              s.session as session_id,
+                              s.school_id as school_id,
+                              s.medium as medium,
+                              s.admission_no as admission_no,
+                              s.subject_group as subject_group,
+                              s.name as name,
+                              s.aadhar as adhar_no,
+                              s.dob as dob,
+                              s.gender as mft,
+                              s.blood_group as blood_group,
+                              s.mother_name as m_name,
+                              s.father_name as f_name,
+                              s.address as address,
+                              s.contact_no as mobile');
+            
+            if($data['sub_group'] != NULL){
+                $this->db->where('s.subject_group',$data['sub_group']);
+            }
+            $student_table = $this->db->get_where('student s', array('s.s_id'=>$data['s_id'],'s.session'=>$data['session_id'],'s.school_id'=>$data['school_id'],'s.admission_no'=>$data['admission_no'],'s.status'=>1))->result_array();
+            echo json_encode(array('result'=>$student_table,'status'=>200));
+        }
+    }
+    
+    public function general_activity(){
+        $data = $this->input->post();
+        
+        if($data['g_id'] != NULL){
+           $this->db->where('g_id',$data['g_id']);
+            unset($data['g_id']);
+           $result = $this->db->update('general_table', $data);
+           echo json_encode(array('result'=>$result,'msg'=>'Update Successfully','status'=>200));
+        }else{
+            $data['created_at'] = date('Y-m-d H:i:s');
+            $data['created_by'] = $this->session->userdata('user_id');
+            $result = $this->db->insert('general_table', $data);
+            echo json_encode(array('result'=>$result,'msg'=>'Insert Successfully','status'=>200));
+        }
+    }
+       
 }//end of class..........
 
 
