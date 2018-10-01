@@ -448,7 +448,7 @@ if(formvalid){
 						        '<td>'+value.section_name+'</td>'+
 						        '<td>'+value.subject_group+'</td>'+
 						        '<td><button type="button" data-s_id="'+value.s_id+'" data-admiss_no="'+value.admission_no+'" data-medium="'+value.medium+'" data-class_id="'+value.class_id+'" data-section="'+value.section+'" data-subject_group="'+value.subject_group+'" class="btn btn-primary btn-sm editbtn"><span class="glyphicon glyphicon-edit"></span> Edit </button> &nbsp;'+
-		    					'<button type="button" id="'+value.admission_no +'" class="btn btn-success btn-sm print"><span class="glyphicon glyphicon-print"></span> Print </button></td>'+
+		    					'<button type="button" data-s_id="'+value.s_id+'" data-admiss_no="'+value.admission_no+'" data-medium="'+value.medium+'" data-class_id="'+value.class_id+'" data-section="'+value.section+'" data-subject_group="'+value.subject_group+'" class="btn btn-success btn-sm print"><span class="glyphicon glyphicon-print"></span> Print </button></td>'+
 						        '</tr>';
 				        i++;
 					});
@@ -461,6 +461,67 @@ if(formvalid){
 }
 	
 });
+//--------------print section ----------------------------------------
+$(document).on('click','.print', function(){
+	var s_id = $(this).data('s_id');
+	var admission_no = $(this).data('admiss_no');
+	var class_id = $(this).data('class_id');
+	var section = $(this).data('section');
+	var subject_group = $(this).data('subject_group');
+	var medium = $(this).data('medium');
+	$.ajax({
+			type:'POST',
+			url:'<?php echo base_url();?>Helth_ctrl/print_data',
+			dataType:'json',
+			 data:{
+				   s_id : s_id,
+				   admission_no : admission_no,
+				   class_id : class_id,
+				   section : section,
+				   subject_group : subject_group,
+				   medium : medium
+				   },
+			beforeSend:function(){},
+			success:function(response){
+				var win = window.open('<?php echo base_url();?>/hello', "myWindowName", "scrollbars=1,width=1200, height=600");
+				var x ='';
+				if(response.status == 200){
+					$.each(response.result, function(key, value){
+						x = x +'<h1>HEALTH AND ACTIVITY CARD</h1>'+
+						       '<h1>GENERAL INFORMATION</h1>'+
+						       '<P>Aadhar Card no. of students(optional): <span>'+value.adhar_no+'</span></P>'+ 
+						       '<P>NAME: <span>'+value.name+'</span></P>'+
+						       '<P>ADMISSION NO: <span>'+value.admission_no+'</span> <span>DATE OF BIRTH:'+ value.dob +'</span></P>'+
+						       '<P>GENEDER <span>'+value.mft+'</span><span>BLOOD GROUP:'+value.blood_group+'</span></P>'+
+						       '<P><b>MOTHERS NAME:</b><span>'+value.m_name+'</span></P>'+
+						       '<P>YOB:<span>'+value.m_dob+'</span>WEIGHT:<span>'+value.m_weight+'</span>HEIGHT:<span>'+value.m_height+'</span> BLOOD GROUP:<span>'+value.m_blood_group+'</span></P>'+
+						       '<p>AADHAR CARD NO:<span>'+value.m_adhar+'</span></p>'+
+						       '<p>FATHER NAME:<span>'+value+f_name+'</span></p>'+
+						       '<P>YOB:<span>'+value.f_dob+'</span>WEIGHT:<span>'+value.f_weight+'</span>HEIGHT:<span>'+value.f_height+'</span> BLOOD GROUP:<span>'+value.f_blood_group+'</span></P>'+
+						       '<p>AADHAR CARD NO:<span>'+value.f_adhar+'</span></p>'+
+						       '<p>FAMILY MONTHLY INCOME:<span>'+value.month_income+'</span></p>'+
+						       '<p>ADDRESS:'+value.address+'</p>'+
+						       '<P>PHONE NO:<span>'+value.phone+'</span> MOBILE:'+value.mobile+'</P>'+
+						       '<P>CWSN, SPECIFY:<span>'+value.cwsn_specify+'</span></P>'+
+						       '<P>DATE:<span>'+value.activity_date+'</span></P>';
+								});
+
+				  with(win.document){
+				      open();
+				      write(x);
+					  close();
+				    }
+				}else{
+					alert(response.msg);
+				}
+		},
+	});
+});
+
+
+
+
+
 //-----------------work on edit button--------------------------------
 $(document).on('click', '.editbtn', function(){
 	var s_id = $(this).data('s_id');
@@ -569,7 +630,7 @@ $(document).on('click','#submit',function(){
 			success:function(response){
 					if(response.status == 200){
 						alert(response.msg);
-						location.reload();
+						//location.reload();
 						}else{
 							alert("Process Failed.!");
 							}
@@ -582,11 +643,6 @@ $(document).on('click','#submit',function(){
 
 	
 });
-
-
-
-
-
 
 </script>
   

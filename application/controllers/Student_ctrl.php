@@ -1818,7 +1818,7 @@ else {
     				's_group' => $this->input->post('s_group'),
     				'e_type' => (int)$etype,
     				'sub_id'=>(int)$data['subject']))->result_array();
-    	
+    	   
     		if($subject_detail[0]['practical'] == 1){
     			$s_marks = $subject_detail[0]['subj_marks'];
     			$p_marks = $subject_detail[0]['practical_mark'];
