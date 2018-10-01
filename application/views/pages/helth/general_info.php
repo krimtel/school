@@ -448,7 +448,7 @@ if(formvalid){
 						        '<td>'+value.section_name+'</td>'+
 						        '<td>'+value.subject_group+'</td>'+
 						        '<td><button type="button" data-s_id="'+value.s_id+'" data-admiss_no="'+value.admission_no+'" data-medium="'+value.medium+'" data-class_id="'+value.class_id+'" data-section="'+value.section+'" data-subject_group="'+value.subject_group+'" class="btn btn-primary btn-sm editbtn"><span class="glyphicon glyphicon-edit"></span> Edit </button> &nbsp;'+
-		    					 '<button type="button" id="'+value.admission_no +'" class="btn btn-success btn-sm print"><span class="glyphicon glyphicon-print"></span> Print </button></td>'+
+		    					'<button type="button" id="'+value.admission_no +'" class="btn btn-success btn-sm print"><span class="glyphicon glyphicon-print"></span> Print </button></td>'+
 						        '</tr>';
 				        i++;
 					});

@@ -271,7 +271,19 @@
 			</ul>
 		</li>
 	<?php } ?>
-	<li><a href="<?php echo base_url();?><?php echo strtolower($this->session->userdata('school'));?>/health_activity">Health Activity</a></li>
+	
+	<li class="dropdown">
+		<a href="" href="#" data-toggle="dropdown"> <i class="fa fa-"></i> Health Activity <b class="caret"></b></a>
+			<ul class="dropdown-menu">
+	<?php if($power == 5){ ?>			
+				<li>
+					<a href="<?php echo base_url();?><?php echo strtolower($this->session->userdata('school'));?>/general_info">
+					<i class="fa fa-circle-o text-aqua"></i>General Information</a>
+				</li>
+	<?php } ?>
+			</ul>
+		</li>
+	
 	<li><a href="<?php echo base_url();?><?php echo strtolower($this->session->userdata('school'));?>/logout">LOGOUT</a></li>
 
 </ul>

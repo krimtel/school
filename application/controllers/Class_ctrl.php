@@ -219,12 +219,25 @@ class Class_ctrl extends CI_Controller {
             $exam_type = $this->input->post('exam_type');
             $school_id = $this->session->userdata('school_id');
             $sub_group = $this->input->post('s_group');
-
-            $this->db->select('id as subject_id');
-            $subjects = $this->db->get_where('subjects_11_12',array('status'=>1))->result_array();
+           
+            if($exam_type == 1){
+                $type = 'pre';
+            }else if($exam_type == 4){
+                $type = 'mid';
+            }else if($exam_type == 6){
+                $type = 'post';
+            }else if($exam_type == 9){
+                $type = 'final';
+            }
+            if($sub_group == 'comm'){
+                $sub_group = 'commer';
+            }
+            
+            $this->db->select('DISTINCT(s.id) as subject_id');
+            $this->db->join('subjects_11_12 s','s.id=sf.sub_id','innor');
+            $subjects = $this->db->get_where('subject_format_11_12 sf', array('sf.e_type'=>$type,'sf.s_group'=>$sub_group,'sf.status'=>1))->result_array();
             
             if(count($subjects) > 0){
-             
             //----------------------------------------------------------------------------------------------------
             if(count($subjects)){
                 $students_id = array();
@@ -238,13 +251,9 @@ class Class_ctrl extends CI_Controller {
             }
             
             //----------------------------------------------------------------------------------------------------
-            if($sub_group == 'comm'){
-                $sub_group = 'commer';
-            }
             $this->db->select('DISTINCT(subject) as subject_id');
             $this->db->where('subject IN ('.$sub_id.')');
             $result = $this->db->get_where('high_class_mark_master',array('session_id'=>$session,'school_id'=>$school_id,'medium'=>$medium,'e_type'=>$exam_type,'class_id'=>$class,'section_id'=>$section,'s_group'=>$sub_group))->result_array();
-            
             if(count($result) > 0){
                 //--------------------------------------------------------------------------------------
              
