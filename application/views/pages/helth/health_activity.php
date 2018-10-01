@@ -484,13 +484,16 @@
   
   $(document).on('click','#health_record',function(){
 	  alert( $('#student_id_popup').val());
-	  return false;
 	  $.ajax({
 			type: 'POST',
 			url: baseUrl+'Helth_ctrl/health_insert',
 			dataType: "json",
 			data: {
 				'stu_id' : $('#student_id_popup').val(),
+				'session_id' : $('#session').val(),
+				'medium' : $('#medium').val(),
+				'class' : $('#class').val(),
+				'section_id' : $('#section').val(), 
 				'question_1' : $('#question_1').val(),
 				'question_2' : $('#question_2').val(),
 				'question_3' : $('#question_3').val(),

@@ -118,9 +118,37 @@ class Helth_ctrl extends CI_Controller{
 				$data['question_10_2'] = $this->input->post('question_10_2');
 				$data['question_10_3'] = $this->input->post('question_10_3');
 				$data['question_10_4'] = $this->input->post('question_10_4');
-				print_r($data); die;
+				$data['school_id'] = $this->session->userdata('school_id');
+				$data['class_id'] = $this->input->post('class');
+				$data['section_id'] = $this->input->post('section_id');
+				$data['session_id'] = $this->input->post('session_id');
+				$data['medium'] = $this->input->post('medium');
+				
+				$this->db->select('*');
+				$result = $this->db->get_where('health_activity',array(
+						'stu_id'=>$data['stu_id'],
+						'school_id'=>$data['school_id'],
+						'session_id'=> $data['session_id'],
+						'medium' => $data['medium'],
+						'status'=>1
+				))->result_array();
+				if(count($result)>0){
+					$this->db->where(array(
+							'stu_id'=>$data['stu_id'],
+							'school_id'=>$data['school_id'],
+							'session_id'=> $data['session_id'],
+							'medium' => $data['medium'])
+							);
+					$this->db->update('health_activity',$data);
+				}
+				else{
+					$data['created_at'] = date('d-m-y h:i:s');
+					$data['created_by'] = $this->session->userdata('user_id');
+					
+					$this->db->insert('health_activity',$data);
+				}
 	}
-    
+    	
     public function editData(){
         $data = array();
         $data['school_id'] = (int)$this->session->userdata('school_id');
