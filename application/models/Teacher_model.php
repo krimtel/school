@@ -280,7 +280,6 @@ class Teacher_model extends CI_Model {
 		$this->db->join('class c','c.c_id = s.class_id');
 		$this->db->join('section sec','sec.id = s.section_id');
 		$classes = $this->db->get_where('subject_allocation s',array('s.class_id <'=>14,'s.teacher_id'=>$data['t_id'],'s.school_id'=>$data['school_id'],'s.medium'=>$data['medium'],'s.status'=>1))->result_array();
-		
 		$e_marks;
 		switch($data['e_type']){
 			case 1 :
@@ -776,8 +775,10 @@ class Teacher_model extends CI_Model {
 				$thirddiv = 0;
 				$seconddiv = 0;
 				$firstdiv = 0;
+				
+				
 				foreach($results as $result){
-					$result['marks'] = ($result['marks'] / $hight_mark )* 100 ;
+					//$result['marks'] = ($result['marks'] / $hight_mark )* 100 ;
 					if($hight_mark == 100){
 						$min = 32;
 						$third_min = 44;
@@ -804,7 +805,7 @@ class Teacher_model extends CI_Model {
 						$sec_min = 29;
 					}
 					
-					if($result['marks'] <= $min){
+					if($result['marks'] < $min){
 						$fail = $fail + 1;
 					}
 					else if($result['marks'] >= $min && $result['marks'] <= $third_min){
@@ -892,7 +893,7 @@ class Teacher_model extends CI_Model {
 	       $this->db->join('subjects_11_12 s','s.id = sa.subject_id');
 	       $this->db->order_by('sa.section_id');
 	       $subjects = $this->db->get_where('subject_allocation sa',array('sa.medium'=>$data['medium'],'sa.school_id'=>$data['school_id'],'sa.class_id'=>$class['class_id'],'sa.section_id'=>$class['section_id'],'sa.teacher_id'=>$data['t_id'],'s.type'=>'scholastic'))->result_array();
-	       
+	       print_r($this->db->last_query()); die;
 	       $SUBJECTS = array();
 	       foreach($subjects as $subject){
 	           $temp = array();

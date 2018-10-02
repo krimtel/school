@@ -125,30 +125,34 @@ $(document).on('click','#teachers_abstract_result',function(){
 		},
 		beforeSend: function(){},
 		success:  function (response) {
-			var x = '<thead><tr><th>Class</th><th>Section</th><th>Subjects</th><th>Total Student</th><th>Total App.</th><th>Pass</th><th>Pass(%)</th><th>First Div.</th><th>First Div(%)</th><th>Second Div.</th><th>Third Div.</th><th>Fail</th><th>Max/No. of Student</th><th>Pi</th></tr></thead>';
-			console.log(response);
-			var max = response.data.length;
-			for (i = 0; i < max; i++) { 
-			$.each(response.data[i],function(key,value){
-				x = x +'<tr>'+
-							'<td>'+ value.class_id +'</td>'+
-							'<td>'+ value.section +'</td>'+
-							'<td>'+ value.subject +'</td>'+
-							'<td>'+ value.total_student +'</td>'+
-							'<td>'+ value.notapper  +'</td>'+
-							'<td>'+ value.total_pass +'</td>'+
-							'<td>'+ value.pass_percent +'</td>'+
-							'<td>'+ value.first_div +'</td>'+
-							'<td>'+ value.first_percent +'</td>'+
-							'<td>'+ value.second_div +'</td>'+
-							'<td>'+ value.third_div +'</td>'+
-							'<td>'+ value.fail +'</td>'+
-							'<td>'+ value.max +'/'+ value.get_max +'</td>'+
-							'<td>'+ value.pi +'</td>'+
-					  +'</tr>';
-			});
-		}
-			$('#teacher_abstract').html(x);
+			if(response.status == 200){
+    			var x = '<thead><tr><th>Class</th><th>Section</th><th>Subjects</th><th>Total Student</th><th>Total App.</th><th>Pass</th><th>Pass(%)</th><th>First Div.</th><th>First Div(%)</th><th>Second Div.</th><th>Third Div.</th><th>Fail</th><th>Max/No. of Student</th><th>Pi</th></tr></thead>';
+    			console.log(response);
+    			var max = response.data.length;
+    			for (i = 0; i < max; i++) { 
+    			$.each(response.data[i],function(key,value){
+    				x = x +'<tr>'+
+    							'<td>'+ value.class_id +'</td>'+
+    							'<td>'+ value.section +'</td>'+
+    							'<td>'+ value.subject +'</td>'+
+    							'<td>'+ value.total_student +'</td>'+
+    							'<td>'+ value.notapper  +'</td>'+
+    							'<td>'+ value.total_pass +'</td>'+
+    							'<td>'+ value.pass_percent +'</td>'+
+    							'<td>'+ value.first_div +'</td>'+
+    							'<td>'+ value.first_percent +'</td>'+
+    							'<td>'+ value.second_div +'</td>'+
+    							'<td>'+ value.third_div +'</td>'+
+    							'<td>'+ value.fail +'</td>'+
+    							'<td>'+ value.max +'/'+ value.get_max +'</td>'+
+    							'<td>'+ value.pi +'</td>'+
+    					  +'</tr>';
+    			});
+    		}
+    			$('#teacher_abstract').html(x);
+    		}
+			else{
+			}
 		}
 	});
 });

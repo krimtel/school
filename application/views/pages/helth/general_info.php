@@ -198,9 +198,9 @@
 							</div>
 							
 							<div class="form-group">
-								<label class="col-sm-3 control-label">DOB*</label>
+								<label class="col-sm-3 control-label">YOB*</label>
 								<div class="col-sm-6">
-									<input type="date" name="m_dob" id="m_dob" value="" class="form-control" placeholder="DOB">
+									<input type="date" name="m_dob" id="m_dob" value="" class="form-control" placeholder="YOB">
 								</div>
 							</div>
 							
@@ -243,9 +243,9 @@
 							</div>
 							
 							<div class="form-group">
-								<label class="col-sm-3 control-label">DOB*</label>
+								<label class="col-sm-3 control-label">YOB*</label>
 								<div class="col-sm-6">
-									<input type="date" name="f_dob" id="f_dob" value="" class="form-control" placeholder="DOB">
+									<input type="date" name="f_dob" id="f_dob" value="" class="form-control" placeholder="YOB">
 								</div>
 							</div>
 							
@@ -347,7 +347,7 @@ var baseUrl = $('#base_url').val();
 			
 			if(response.status == 200){
 					$.each(response.result.session, function(key, value){
-						x = x + '<option value="'+value.session_id+'">'+value.name+'</option>';
+						x = x + '<option value="'+value.session_id+'" selected>'+value.name+'</option>';
 					});
 					$('#session').html(x);
 
@@ -442,12 +442,19 @@ if(formvalid){
 					var x='';
 					var i = 1;
 					$.each(response.result, function(key, value){
+
+						var sub_group = value.subject_group;
+				        if(sub_group == null){
+				        	sub_group = "";
+					        }
+				        
 						x = x + '<tr>'+
         						'<td>'+i+'</td>'+
         				        '<td>'+value.name+'</td>'+
 						        '<td>'+value.class_name+'</td>'+
 						        '<td>'+value.section_name+'</td>'+
-						        '<td>'+value.subject_group+'</td>'+
+						        
+						        '<td>'+sub_group+'</td>'+
 						        '<td><button type="button" data-s_id="'+value.s_id+'" data-admiss_no="'+value.admission_no+'" data-medium="'+value.medium+'" data-class_id="'+value.class_id+'" data-section="'+value.section+'" data-subject_group="'+value.subject_group+'" class="btn btn-primary btn-sm editbtn"><span class="glyphicon glyphicon-edit"></span> Edit </button> &nbsp;'+
 		    					'<button type="button" data-s_id="'+value.s_id+'" data-admiss_no="'+value.admission_no+'" data-medium="'+value.medium+'" data-class_id="'+value.class_id+'" data-section="'+value.section+'" data-subject_group="'+value.subject_group+'" class="btn btn-success btn-sm print"><span class="glyphicon glyphicon-print"></span> Print </button></td>'+
 						        '</tr>';
@@ -484,19 +491,19 @@ $(document).on('click','.print', function(){
 				   },
 			beforeSend:function(){},
 			success:function(response){
-				var win = window.open('<?php echo base_url();?>/hello', "myWindowName", "scrollbars=1,width=1200, height=600");
-				var x ='';
 				if(response.status == 200){
+					var win = window.open('', "myWindowName", "scrollbars=1,width=1200, height=600");
+					var x ='';
 					$.each(response.result, function(key, value){
 						x = x + '<link rel="stylesheet" type="text/css" href="'+ baseUrl +'assest/bootstrap/css/bootstrap.min.css">'+
 						'<link rel="stylesheet" type="text/css" href="'+ baseUrl +'assest/css/marksheet-result.css">'+
 						'<link rel="stylesheet" type="text/css" media="print" href="'+ baseUrl +'assest/css/marksheet-result-print.css">'+
 						'<style>.table tr td{border:1px solid #eee;}</style>'+
 						  '<div class="modal-content p-head-sec-f">';
-						if('school_id' == 2){
+						if(value.school_id == 2){
 							  x = x +'<img src="../../assest/images/sharda/result_bg_logo-w.png" style="position:absolute;top:35%;left:30%;margin:0 auto; background-size:cover; background-position:center;">';
 					 		}
-					 		if('school_id' == 1){
+					 		if(value.school_id == 1){
 								  x = x +'<img src="../../assest/images/shakuntala/result_bg_logo-w.png" style="position:absolute;top:35%;left:30%;margin:0 auto; background-size:cover; background-position:center;">';
 						 		}
 					      				x = x +'<div class="modal-header p-header">'+
@@ -504,42 +511,38 @@ $(document).on('click','.print', function(){
 												'<div class="col-md-6 p-logo-sec text-center">'+
 													'<div class="p-school-name-sec">'+
 													'<h2>HEALTH & ACTIVITY CARD</h2>'+
-													'<h3>General Informations</h3>'+
+													'<h3 style="margin-top:0px;font-size:18px;">General Informations</h3>'+
 													'</div></div>'+
 												'<div class="col-md-3 p-school-logo">';
-													if('school_id' == 2){
+													if(value.school_id == 2){
 															x = x + '<img class="p-logo pull-right" src="../../assest/images/sharda/logo.png" />'; }
 														else{ x = x + '<img class="p-logo pull-right" src="../../assest/images/shakuntala/logo.png" />'; }
 														x = x +
 												'</div>'+
 										'</div>'+
-										'<style>.student-per-info{padding:20px;} .student-per-info p{font-size:13px;margin-bottom:15px;}</style>'+
+										'<style>.student-per-info{padding:20px;}.student-per-info .table{background-color:#f9f6f6;border:2px solid #eee;margin-bottom:20px !important;}.student-per-info .table tr td{font-size:16px;} .student-per-info p{font-size:13px;margin-bottom:15px;}</style>'+
 										'<div class="modal-body p-student-body student-per-info">'+
-										'<div class="student-per-info">'+
-						       '<P>Aadhar Card no. of students(optional): <span>'+value.adhar_no+'</span></P>'+ 
-						       '<P>NAME: <span>'+value.name+'</span></P>'+
-						       '<P>ADMISSION NO: <span>'+value.admission_no+'</span> <span>DATE OF BIRTH:'+ value.dob +'</span></P>'+
-						       '<P>GENEDER <span>'+value.mft+'</span><span>'+
-						       'BLOOD GROUP:'+value.blood_group+'</span></P>'+
-						       '<P><b>MOTHERS NAME:</b><span>'+value.m_name+'</span></P>'+
-						       '<P>YOB:<span>'+value.m_dob+'</span>WEIGHT:<span>'+value.m_weight+'</span>HEIGHT:<span>'+value.m_height+'</span> BLOOD GROUP:<span>'+value.m_blood_group+'</span></P>'+
-						       '<p>AADHAR CARD NO:<span>'+value.m_adhar+'</span></p>'+
-						       '<p><b>FATHER NAME:</b><span>'+value+f_name+'</span></p>'+
-						       '<P>YOB:<span>'+value.f_dob+'</span>WEIGHT:<span>'+value.f_weight+'</span>HEIGHT:<span>'+value.f_height+'</span> BLOOD GROUP:<span>'+value.f_blood_group+'</span></P>'+
-						       '<p>AADHAR CARD NO:<span>'+value.f_adhar+'</span></p>'+
-						       '<p>FAMILY MONTHLY INCOME:<span>'+value.month_income+'</span></p>'+
-						       '<p>ADDRESS:'+value.address+'</p>'+
-						       '<P>PHONE NO:<span>'+value.phone+'</span> MOBILE:'+value.mobile+'</P>'+
-						       '<P>CWSN, SPECIFY:<span>'+value.cwsn_specify+'</span></P>'+
-						       '<P>DATE:<span>'+value.activity_date+'</span></P>'+
+										'<div class="student-per-info health-report-sec">'+
+						       '<table class="table"><tbody><tr><td style="width:26%;">AADHAR CARD NO OF STUDENT:</td><td colspan="3"> <span>'+value.adhar_no+'</span></td></tr>'+ 
+						       '<tr><td>NAME:</td> <td colspan="3"><b>'+value.name+'</b></td></tr>'+
+						       '<tr><td>ADMISSION No.:</td><td> <span>'+value.admission_no+'</span></td><td> <span>DATE OF BIRTH:</td><td>'+ value.dob +'</span></td></tr>'+
+						       '<tr><td>GENDER</td><td><span>'+value.mft+'</span></td><td><span>'+
+						       'BLOOD GROUP:</td><td>'+value.blood_group+'</span></td></tr></tbody></table>'+
+						       '<table class="table"><tbody><tr><td style="width:26%;"><b>MOTHERS NAME:</b></td><td colspan="7">'+value.m_name+'</td></tr>'+
+						       '<tr><td>YOB:</td><td style="width:15%;">'+value.m_dob+'</td><td>WEIGHT:</td><td>'+value.m_weight+'</td><td>HEIGHT:</td><td>'+value.m_height+'</td><td> BLOOD GROUP:</td><td>'+value.m_blood_group+'</td></tr>'+
+						       '<tr><td>AADHAR CARD NO:</td><td colspan="7">'+value.m_adhar+'</td></tr></tbody></table>'+
+						       '<table class="table"><tbody><tr><td style="width:26%;"><b>FATHER NAME:</b></td><td colspan="7">'+value.f_name+'</td></tr>'+
+						       '<tr><td>YOB:</td><td style="width:15%;">'+value.f_dob+'</td><td>WEIGHT:</td><td>'+value.f_weight+'</td><td>HEIGHT:</td><td>'+value.f_height+'</td><td> BLOOD GROUP:</td><td>'+value.f_blood_group+'</td></tr>'+
+						       '<tr><td>AADHAR CARD NO:</td><td colspan="7">'+value.f_adhar+'</td></tr></tbody></table>'+
+						       '<table class="table"><tr><td style="width:26%;">FAMILY MONTHLY INCOME:</td><td colspan="5">'+value.month_income+'</td></tr>'+
+						       '<tr><td>ADDRESS:</td><td colspan="5">'+value.address+'</td></tr>'+
+						       '<tr><td>PHONE NO:</td><td>'+value.phone+'</td><td> MOBILE:</td><td>'+value.mobile+'</td>'+
+						       '<td>CWSN, SPECIFY:</td><td>'+value.cwsn_specify+'</td></tr></tbody></table><br>'+
+						       '<p><span style="text-align:left;float:left;">SIGNATURE OF PARENTS/ GUARDIAN</span><span style="text-align:right;float:right;">DATE: '+value.activity_date+'</span></P>'+
 						       '</div></div>';
 								});
-
-				  with(win.document){
-				      open();
-				      write(x);
-					  close();
-				    }
+				     with(win.document){open(); write(x);close();}
+				     
 				}else{
 					alert(response.msg);
 				}
@@ -659,7 +662,7 @@ $(document).on('click','#submit',function(){
 			success:function(response){
 					if(response.status == 200){
 						alert(response.msg);
-						//location.reload();
+						$('#myModal').modal('hide');
 						}else{
 							alert("Process Failed.!");
 							}

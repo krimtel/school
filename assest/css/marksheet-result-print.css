@@ -157,7 +157,8 @@ table{margin-bottom:0 !important;}
 .page-break	{page-break-before: always; }
 
 
-
+.health-report-sec p{font-size:18px;}
+.health-report-sec .table{background-color:#f9f6f6;}
 
 
 

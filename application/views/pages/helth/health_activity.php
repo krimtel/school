@@ -486,7 +486,7 @@
   
   
   $(document).on('click','#health_record',function(){
-	  alert( $('#student_id_popup').val());
+	  //alert( $('#student_id_popup').val());
 	  $.ajax({
 			type: 'POST',
 			url: baseUrl+'Helth_ctrl/health_insert',
@@ -516,6 +516,7 @@
 				'question_9_3' : $('#question_9_3').val(),
 				'question_9_4' : $('#question_9_4').val(),
 				'question_9_5' : $('#question_9_5').val(),
+				'question_10' : $('#question_10').val(),
 				'question_10_1' : $('#question_10_1').val(),
 				'question_10_2' : $('#question_10_2').val(),
 				'question_10_3' : $('#question_10_3').val(),
@@ -525,248 +526,173 @@
 				
 			},
 			success:  function (response) {
+				if(response.status == 200){
+					alert(response.msg);
+					$('#helth_edit').modal('hide');
+					
+					}
 			}
 	  });
   });
   
+$(document).on('click','.student_activity_print', function(){
+	var student_id = $(this).data('sid');
+	var medium = $('#medium').val();
+	var sub_group = $('#s_group').val();
+
+	$.ajax({
+		   type:'POST',
+		   url:'<?php echo base_url();?>Helth_ctrl/health_record_fetch',
+		   dataType:'json',
+		   data:{
+			   student_id:student_id,
+			   medium:medium,
+			   sub_group:sub_group
+			   },
+		  beforeSend:function(){},
+		  success:function(response){
+			  console.log(response);
+				if(response.status == 200){
+					  var win = window.open(baseUrl+'application/views/pages/production/mid_result', "myWindowName", "scrollbars=1,width=1200, height=600");
+					  var x = '<link rel="stylesheet" type="text/css" href="'+ baseUrl +'assest/bootstrap/css/bootstrap.min.css">'+
+						'<link rel="stylesheet" type="text/css" href="'+ baseUrl +'assest/css/marksheet-result.css">'+
+						'<link rel="stylesheet" type="text/css" media="print" href="'+ baseUrl +'assest/css/marksheet-result-print.css">'+
+						'<style>.table tr td{border:1px solid #eee;}</style>'+
+						  '<div class="modal-content p-head-sec-f">';
+						if('school_id' == 2){
+							  x = x +'<img src="../../assest/images/sharda/result_bg_logo-w.png" style="position:absolute;top:35%;left:30%;margin:0 auto; background-size:cover; background-position:center;">';
+					 		}
+					 		if('school_id' == 1){
+								  x = x +'<img src="../../assest/images/shakuntala/result_bg_logo-w.png" style="position:absolute;top:35%;left:30%;margin:0 auto; background-size:cover; background-position:center;">';
+						 		}
+					      				x = x +'<div class="modal-header p-header">'+
+												'<div class="col-md-3 c-logo-section"><img class="c-logo" style="width:80px;" src="../../assest/images/sharda/cbse-logo.png" /></div>'+
+												'<div class="col-md-6 p-logo-sec text-center">';
+													if('school_id' == 2){
+														x = x + '<div class="p-school-name-sec">'+
+													'<h2>SHARDA VIDYALAYA</h2>'+
+													'<p>Risali Sector, Bhilai, Chhattisgarh</p></div>';
+													}
+													else{
+													x = x + '<div class="p-school-name-sec">'+
+													'<h2>SHAKUNTALA VIDYALAYA</h2>'+
+													'<p>Ram Nagar, Bhilai, Chhattisgarh</p></div>';
+													}
+													x = x +'</div>'+
+												'<div class="col-md-3 p-school-logo">';
+													if('school_id' == 2){
+															x = x + '<img class="p-logo pull-right" src="../../assest/images/sharda/logo.png" />'; }
+														else{ x = x + '<img class="p-logo pull-right" src="../../assest/images/shakuntala/logo.png" />'; }
+														x = x +
+												'</div>'+
+										'</div>'+
+										'<div class="modal-body p-student-body student-per-info">'+
+										'<div class="student-per-info">'+
+											'<table class="table">'+
+											'<tr><td><b>Name:</b>'+response.student[0].name+'</td><td><b>Adm. No.:</b>'+response.student[0].admission_no+'</td><td><b>Section:</b>'+response.student[0].section_name+'</td></tr>'+
+											'</table>'+
+										'</div>'+
+										'<div style="text-align:center;margin-top:5px;float:left;width:100%;"><b>HEALTH & ACTIVITY RECORD</b></div>'+
+						  '<table class="table" style="margin-top:3px;float:left;width:100%;">'+
+						  '<tbody><tr><td><b>Components</b></td><td><b>Parameters</b></td><td style="width:15%;"><b>'+response.student[0].class_name+'</b></td></tr>'+
+							'<tr><td>Vision</td><td>RE/LE</td>'+
+						'<td>'+response.health_activity[0].question_1+'</td>'+
+						'</tr>'+
+					'<tr><td>Ears</td><td>Left/Right</td>'+
+					'<td>'+response.health_activity[0].question_2+'</td>'+
+					'</tr>'+
+					'<tr><td>Teeth Occlusion</td><td>Caries/Tonsils/ Gums</td>'+
+					'<td>'+response.health_activity[0].question_3+'</td>'+
+					'</tr>'+
+					'<tr><td rowspan="2">General Body measurements</td><td>Height</td><td>'+response.health_activity[0].question_4_1+'</td></tr>'+
+					'<tr><td>Weight</td><td>'+response.health_activity[0].question_4_2	+'</td></tr>'+
+					'<tr><td rowspan="2">Circumferences</td><td>Hip</td><td>'+response.health_activity[0].question_5_1+'</td></tr>'+
+					'<tr><td>Waist</td><td>'+response.health_activity[0].question_5_2+'</td></tr>'+
+					'<tr><td rowspan="2">Health Status</td><td>Pulse</td><td>'+response.health_activity[0].question_6_1+'</td></tr>'+
+					'<tr><td>Blood Pressure</td><td>'+response.health_activity[0].question_6_2+'</td></tr>'+
+					'<tr><td>Posture Evaluation</td><td><p><u>If any:</u></br>Head Forward/Sunken Chest/Round</br>'+
+									'Shoulders/Kyphisis/Lordosis/Adominal</br>'+
+									'Ptosis/Body Lean/Tilted Head/ Shoulders Uneven/Scholiosis/ Flat Feet/Knock Knees/ Bow Legs</p></td>'+
+						'<td>'+response.health_activity[0].question_7+'</td></tr>'+
+					'<tr><td rowspan="3"><p><b>Sporting Activities(HPE)</b><br>(For details, see HPE manual available on CBSE website www.cbseacademic.in)</td>'+
+						'<td><p><u>Strand1:</u></br>'+ 
+								'Any one of following:</br>'+
+								'1.	Athletics/Swimming </br>'+
+								'2.	Team Game</br>'+
+								'3.	Individual Game</br>'+
+								'4.	Adventure sports'+
+							'</p></td>'+
+						'<td>'+response.health_activity[0].question_8_1+'</td></tr>'+	
+					'<tr><td><p><u>Strand 2:</u></br>'+ 
+							'<b>Health and Fitness</b>'+
+							'(Mass PT, Yoga, Dance, Calisthenics, Jogging, Cross Country Run, Working outs using weights/gym equipment, Taichi etc)</p>'+
+						'</td>'+
+						'<td>'+response.health_activity[0].question_8_2+'</td></tr>'+
+					'<tr><td><p><u>Strand 3:</u></br> '+
+							'<b>SEWA</b>'+
+							'</p>'+
+						'</td>'+
+						'<td>'+response.health_activity[0].question_8_3+'</td></tr></tbody></table>'+
+						'<table style="margin-top:0px;float:left;width:100%;" class="table">'+
+							'<tbody><tr>'+
+								'<td><b>Fitness Components</b></td>'+
+								'<td colspan="2"><b>Fitness Parameters</b></td>'+
+								'<td><b>Test Name</b></td>'+
+								'<td><b>What does it Measure</b></td>'+
+								'<td style="width:22%;"><b>Result</b></td>'+
+							'</tr>	'+
+							'<tr>'+
+								'<td rowspan="6">Health Components</td><td>Body Composition</td><td></td><td>BMI</td><td>Body Mass Index for Specific Age and Gender </td>'+
+								'<td>'+response.health_activity[0].question_9+'</td></tr>'+
+								'<tr>'+
+								'<td rowspan="2">Muscular Strength</td><td>Core</td><td>Partial Curl up</td><td>Abdominal Muscular Endurance</td>'+
+								'<td>'+response.health_activity[0].question_9_1+'</td></tr>'+
+							'<tr><td>Upper Body</td><td>Flexed/Bent Arm Hang</td><td>Muscular Endurance / Functional Strength </td>'+
+							'<td>'+response.health_activity[0].question_9_2+'</td>'+
+							'</tr>'+
+							'<tr><td>Flexibility </td><td> </td><td>Sit and Reach </td><td>Measures the flexibility of the lower back and hamstring muscles </td>'+
+							'<td>'+response.health_activity[0].question_9_3+'</td>'+
+						'</tr>'+	
+						'<tr><td>Endurance  </td><td> </td><td>600 Mtr Run </td><td>Cardiovascular Fitness/ Cardiovascular Endurance </td>'+
+							'<td>'+response.health_activity[0].question_9_4+'</td>'+
+						'</tr>'+
+						'<tr><td>Balance  </td><td>Static Balance  </td><td>Flamingo Balance Test </td><td>Ability to balance successfully on a single leg </td>'+
+							'<td>'+response.health_activity[0].question_9_5+'</td>'+
+						'</tr>'+
+							
+							'<tr><td rowspan="5">Skill Components</td><td>Agility </td><td></td><td>Shuttle Run </td><td>Test of speed and agility </td>'+
+								'<td>'+response.health_activity[0].question_10+'</td>'+
+							'</tr>'+
+							'<tr><td>Speed </td><td></td><td>Sprint/Dash </td><td>Determines acceleration and speed  </td>'+
+								'<td>'+response.health_activity[0].question_10_1+'</td></tr>'+
+							'<tr><td>Power </td><td></td><td>Standing Vertical Jump </td><td>Measures the Leg Muscle Power </td>'+
+								'<td>'+response.health_activity[0].question_10_2+'</td></tr>'+
+							'<tr><td>Coordination</td><td></td><td>Plate Tapping</td>'+
+								'<td>Tests speed and coordination of limb movement</td>'+
+								'<td>'+response.health_activity[0].question_10_3+'</td></tr>'+
+							'<tr><td></td><td></td><td>Alternative Hand Wall Toss Test </td>'+
+								'<td>Measures hand –eye coordination</td>'+
+								'<td>'+response.health_activity[0].question_10_4+'</td>'+
+								'</tr></tbody>'+
+						'</table></div>';
+					  
+					  with(win.document){
+					      open();
+					      write(x);
+						      close();
+					    }
+					
+					}else{
+						  alert(response.msg);
+						}
+			  },
+		});
+});
+
+
+
   
-  $(document).on('click','.student_activity_print',function(){
-	  var win = window.open(baseUrl+'application/views/pages/production/mid_result', "myWindowName", "scrollbars=1,width=1200, height=600");
-	  var x = '<link rel="stylesheet" type="text/css" href="'+ baseUrl +'assest/bootstrap/css/bootstrap.min.css">'+
-		'<link rel="stylesheet" type="text/css" href="'+ baseUrl +'assest/css/marksheet-result.css">'+
-		'<link rel="stylesheet" type="text/css" media="print" href="'+ baseUrl +'assest/css/marksheet-result-print.css">'+
-		'<style>.table tr td{border:1px solid #eee;}</style>'+
-		  '<div class="modal-content p-head-sec-f">';
-		if('school_id' == 2){
-			  x = x +'<img src="../../assest/images/sharda/result_bg_logo-w.png" style="position:absolute;top:35%;left:30%;margin:0 auto; background-size:cover; background-position:center;">';
-	 		}
-	 		if('school_id' == 1){
-				  x = x +'<img src="../../assest/images/shakuntala/result_bg_logo-w.png" style="position:absolute;top:35%;left:30%;margin:0 auto; background-size:cover; background-position:center;">';
-		 		}
-	      				x = x +'<div class="modal-header p-header">'+
-								'<div class="col-md-3 c-logo-section"><img class="c-logo" style="width:80px;" src="../../assest/images/sharda/cbse-logo.png" /></div>'+
-								'<div class="col-md-6 p-logo-sec text-center">';
-									if('school_id' == 2){
-										x = x + '<div class="p-school-name-sec">'+
-									'<h2>SHARDA VIDYALAYA</h2>'+
-									'<p>Risali Sector, Bhilai, Chhattisgarh</p></div>';
-									}
-									else{
-									x = x + '<div class="p-school-name-sec">'+
-									'<h2>SHAKUNTALA VIDYALAYA</h2>'+
-									'<p>Ram Nagar, Bhilai, Chhattisgarh</p></div>';
-									}
-									x = x +'</div>'+
-								'<div class="col-md-3 p-school-logo">';
-									if('school_id' == 2){
-											x = x + '<img class="p-logo pull-right" src="../../assest/images/sharda/logo.png" />'; }
-										else{ x = x + '<img class="p-logo pull-right" src="../../assest/images/shakuntala/logo.png" />'; }
-										x = x +
-								'</div>'+
-						'</div>'+
-						'<div class="modal-body p-student-body student-per-info">'+
-						'<div class="student-per-info">'+
-							'<table class="table">'+
-							'<tr><td><b>Name:</b> ...........................</td><td><b>Adm. No.:</b> ........................</td><td><b>Section:</b> ........................</td></tr>'+
-							'</table>'+
-						'</div>'+
-						'<div style="text-align:center;margin-top:5px;float:left;width:100%;"><b>HEALTH & ACTIVITY RECORD</b></div>'+
-		  '<table class="table" style="margin-top:3px;float:left;width:100%;">'+
-		  '<tbody><tr><td><b>Components</b></td><td><b>Parameters</b></td><td style="width:15%;"><b>Class II</b></td></tr>'+
-			'<tr><td>Vision</td><td>RE/LE</td>'+
-		'<td>'+
-			'<select id="question_1"><option value="0">-Select-</option><option value="good">Good</option><option value="bad">Bad</option></select>'+
-		'</td></tr>'+
-	'<tr><td>Ears</td><td>Left/Right</td>'+
-		'<td>'+
-			'<select id="question_2"><option value="0">-Select-</option><option value="good">Good</option><option value="bad">Bad</option></select>'+
-		'</td></tr>'+
-	'<tr><td>Teeth Occlusion</td><td>Caries/Tonsils/ Gums</td>'+
-		'<td>'+
-			'<select id="question_3"><option value="0">-Select-</option><option value="good">Good</option><option value="bad">Bad</option></select>'+
-		'</td></tr>'+
-	'<tr><td rowspan="2">General Body measurements</td><td>Height</td><td><input type="text" id="question_4_1"></td></tr>'+
-	'<tr><td>Weight</td><td><input type="text" id="question_4_2"></td></tr>'+
-	'<tr><td rowspan="2">Circumferences</td><td>Hip</td><td><input type="text" id="question_5_1"></td></tr>'+
-	'<tr><td>Waist</td><td><input type="text" id="question_5_2"></td></tr>'+
-	'<tr><td rowspan="2">Health Status</td><td>Pulse</td><td><input type="text" id="question_6_1"></td></tr>'+
-	'<tr><td>Blood Pressure</td><td><input type="text" id="question_6_2"></td></tr>'+
-	'<tr><td>Posture Evaluation</td><td><p><u>If any:</u></br>Head Forward/Sunken Chest/Round</br>'+
-					'Shoulders/Kyphisis/Lordosis/Adominal</br>'+
-					'Ptosis/Body Lean/Tilted Head/ Shoulders Uneven/Scholiosis/ Flat Feet/Knock Knees/ Bow Legs</p></td>'+
-		'<td><select id="question_7">'+
-				'<option value="0">-Select-</option>'+
-				'<option value="yes">YES</option>'+
-				'<option value="no">NO</option>'+
-			'</select></td></tr>'+
-	'<tr><td rowspan="3"><p><b>Sporting Activities(HPE)</b><br>(For details, see HPE manual available on CBSE website www.cbseacademic.in)</td>'+
-		'<td><p><u>Strand1:</u></br>'+ 
-				'Any one of following:</br>'+
-				'1.	Athletics/Swimming </br>'+
-				'2.	Team Game</br>'+
-				'3.	Individual Game</br>'+
-				'4.	Adventure sports'+
-			'</p></td>'+
-		'<td>'+
-			'<select id="question_8_1">'+
-				'<option value="0">-Select-</option>'+
-				'<option value="good">Good</option>'+
-				'<option value="bad">Bad</option>'+
-			'</select></td></tr>'+	
-	'<tr><td><p><u>Strand 2:</u></br>'+ 
-			'<b>Health and Fitness</b>'+
-			'(Mass PT, Yoga, Dance, Calisthenics, Jogging, Cross Country Run, Working outs using weights/gym equipment, Taichi etc)</p>'+
-		'</td>'+
-		'<td>'+
-			'<select id="question_8_2">'+
-				'<option value="0">-Select-</option>'+
-				'<option value="good">Good</option>'+
-				'<option value="bad">Bad</option>'+
-			'</select>'+
-		'</td></tr>'+
-	'<tr><td><p><u>Strand 3:</u></br> '+
-			'<b>SEWA</b>'+
-			'</p>'+
-		'</td>'+
-		'<td>'+
-			'<select id="question_8_3">'+
-				'<option value="0">-Select-</option>'+
-				'<option value="good">Good</option>'+
-				'<option value="bad">Bad</option>'+
-			'</select>'+
-		'</td></tr></tbody></table>'+
-		'<table style="margin-top:0px;float:left;width:100%;" class="table">'+
-			'<tbody><tr>'+
-				'<td><b>Fitness Components</b></td>'+
-				'<td colspan="2"><b>Fitness Parameters</b></td>'+
-				'<td><b>Test Name</b></td>'+
-				'<td><b>What does it Measure</b></td>'+
-				'<td style="width:22%;"><b>Result</b></td>'+
-			'</tr>	'+
-			'<tr>'+
-				'<td rowspan="6">Health Components</td><td>Body Composition</td><td></td><td>BMI</td><td>Body Mass Index for Specific Age and Gender </td>'+
-				'<td>'+
-					'<select id="question_9">'+
-						'<option value="0">-Select-</option>'+
-						'<option value="average">Average</option>'+
-						'<option value="above_average">Above Average</option>'+
-					'</select>'+
-				'</td></tr>'+
-				'<tr>'+
-				'<td rowspan="2">Muscular Strength</td><td>Core</td><td>Partial Curl up</td><td>Abdominal Muscular Endurance</td>'+
-				'<td>'+
-					'<select id="question_9_1">'+
-						'<option value="0">-Select-</option>'+
-						'<option value="pass">Pass</option>'+
-						'<option value="fail">Fail</option>'+
-					'</select>'+
-				'</td></tr>'+
-			'<tr><td>Upper Body</td><td>Flexed/Bent Arm Hang</td><td>Muscular Endurance / Functional Strength </td>'+
-			'<td>'+
-					'<select id="question_9_2">'+
-						'<option value="0">-Select-</option>'+
-						'<option value="pass">Pass</option>'+
-						'<option value="fail">Fail</option>'+
-					'</select>'+
-				'</td>'+
-			'</tr>'+
-			'<tr><td>Flexibility </td><td> </td><td>Sit and Reach </td><td>Measures the flexibility of the lower back and hamstring muscles </td>'+
-				'<td>'+
-					'<select id="question_9_3">'+
-						'<option value="0">-Select-</option>'+
-						'<option value="pass">Pass</option>'+
-						'<option value="fail">Fail</option>'+
-					'</select>'+
-				'</td>'+
-			'</tr>'+	
-			'<tr><td>Endurance  </td><td> </td><td>600 Mtr Run </td><td>Cardiovascular Fitness/ Cardiovascular Endurance </td>'+
-				'<td><select id="question_9_4">'+
-						'<option value="0">-Select-</option>'+
-						'<option value="average">Average</option>'+
-						'<option value="above_average">Above Average</option>'+
-					'</select>'+
-				'</td>'+
-			'</tr>'+
-			'<tr><td>Balance  </td><td>Static Balance  </td><td>Flamingo Balance Test </td><td>Ability to balance successfully on a single leg </td>'+
-				'<td>'+
-					'<select id="question_9_5">'+
-						'<option value="0">-Select-</option>'+
-						'<option value="average">Average</option>'+
-						'<option value="above_average">Above Average</option>'+
-					'</select>'+
-				'</td>'+
-			'</tr>'+
-			
-			'<tr><td rowspan="5">Skill Components</td><td>Agility </td><td></td><td>Shuttle Run </td><td>Test of speed and agility </td>'+
-				'<td>'+
-					'<select id="question_10">'+
-						'<option value="0">-Select-</option>'+
-						'<option value="excellent">Excellent</option>'+
-						'<option value="good">Good</option>'+
-						'<option value="above_average">Above Average</option>'+
-						'<option value="average">Average</option>'+
-						'<option value="below_average">Below Average</option>'+
-						'<option value="poor">Poor</option>'+
-					'</select>'+
-				'</td>'+
-			'</tr>'+
-			'<tr><td>Speed </td><td></td><td>Sprint/Dash </td><td>Determines acceleration and speed  </td>'+
-				'<td>'+
-					'<select id="question_10_1">'+
-						'<option value="0">-Select-</option>'+
-						'<option value="excellent">Excellent</option>'+
-						'<option value="good">Good</option>'+
-						'<option value="above_average">Above Average</option>'+
-						'<option value="average">Average</option>'+
-						'<option value="below_average">Below Average</option>'+
-						'<option value="poor">Poor</option>'+
-					'</select>'+
-				'</td></tr>'+
-			'<tr><td>Power </td><td></td><td>Standing Vertical Jump </td><td>Measures the Leg Muscle Power </td>'+
-				'<td>'+
-					'<select id="question_10_2">'+
-						'<option value="0">-Select-</option>'+
-						'<option value="excellent">Excellent</option>'+
-						'<option value="good">Good</option>'+
-						'<option value="above_average">Above Average</option>'+
-						'<option value="average">Average</option>'+
-						'<option value="below_average">Below Average</option>'+
-						'<option value="poor">Poor</option>'+
-					'</select>'+
-				'</td></tr>'+
-			'<tr><td>Coordination</td><td></td><td>Plate Tapping</td>'+
-				'<td>Tests speed and coordination of limb movement</td>'+
-				'<td>'+
-					'<select id="question_10_3">'+
-						'<option value="0">-Select-</option>'+
-						'<option value="excellent">Excellent</option>'+
-						'<option value="good">Good</option>'+
-						'<option value="above_average">Above Average</option>'+
-						'<option value="average">Average</option>'+
-						'<option value="below_average">Below Average</option>'+
-						'<option value="poor">Poor</option>'+
-					'</select>'+
-				'</td></tr>'+
-			'<tr><td></td><td></td><td>Alternative Hand Wall Toss Test </td>'+
-				'<td>Measures hand –eye coordination</td>'+
-				'<td>'+
-					'<select id="question_10_4">'+
-						'<option value="0">-Select-</option>'+
-						'<option value="excellent">Excellent</option>'+
-						'<option value="good">Good</option>'+
-						'<option value="above_average">Above Average</option>'+
-						'<option value="average">Average</option>'+
-						'<option value="below_average">Below Average</option>'+
-						'<option value="poor">Poor</option>'+
-					'</select>'+
-				'</td>'+
-			'</tr></tbody>'+
-		'</table></div>';
-	  
-	  with(win.document){
-	      open();
-	      write(x);
-		      close();
-	    }
+  $(document).on('click','#ravi',function(){
+
   });
   </script>

@@ -114,6 +114,7 @@ class Helth_ctrl extends CI_Controller{
 				$data['question_9_3'] = $this->input->post('question_9_3');
 				$data['question_9_4'] = $this->input->post('question_9_4');
 				$data['question_9_5'] = $this->input->post('question_9_5');
+				$data['question_10'] = $this->input->post('question_10');
 				$data['question_10_1'] = $this->input->post('question_10_1');
 				$data['question_10_2'] = $this->input->post('question_10_2');
 				$data['question_10_3'] = $this->input->post('question_10_3');
@@ -140,13 +141,40 @@ class Helth_ctrl extends CI_Controller{
 							'medium' => $data['medium'])
 							);
 					$this->db->update('health_activity',$data);
+					echo json_encode(array('msg'=>'Update Successfully','status'=>200));
 				}
 				else{
 					$data['created_at'] = date('d-m-y h:i:s');
 					$data['created_by'] = $this->session->userdata('user_id');
 					
 					$this->db->insert('health_activity',$data);
+					echo json_encode(array('msg'=>'Insert Successfully','status'=>200));
 				}
+				
+	}
+	
+	public function health_record_fetch(){
+	    $data['school_id'] = (int)$this->session->userdata('school_id');
+	    $data['session_id'] = (int)$this->Admin_model->current_session();
+	    $data['student_id'] = $this->input->post('student_id');
+	    $data['medium'] = $this->input->post('medium');
+	    
+	    $this->db->select('*');
+	    $health_activity = $this->db->get_where('health_activity',array('school_id'=>$data['school_id'],'session_id'=>$data['session_id'],'medium'=>$data['medium'],'stu_id'=>$data['student_id'],'status'=>1))->result_array();
+	   
+	    if(count($health_activity) > 0){
+	        $this->db->select('s.*, sec.name as section_name, cs.name as class_name');
+	        $this->db->join('section sec','sec.id=s.section','innor');
+	        $this->db->join('class cs','cs.c_id=s.class_id','innor');
+	        $sutdent = $this->db->get_where('student s',array('s.s_id'=>$health_activity[0]['stu_id'],'s.status'=>1))->result_array();
+	       
+	    }
+	    
+	    if(count($sutdent) > 0){
+	        echo json_encode(array('student'=>$sutdent,'health_activity'=>$health_activity,'status'=>200));
+	    }else{
+	        echo json_encode(array('msg'=>'record not submitted.!','status'=>500));
+	    }
 	}
     	
     public function editData(){
@@ -259,22 +287,22 @@ class Helth_ctrl extends CI_Controller{
                             gt.school_id as school_id,
                             gt.medium as medium,
                             gt.subject_group as subject_group,
-                            gt.activity_date as activity_date,
+                            DATE_FORMAT(gt.activity_date, "%d-%m-%Y") as activity_date,
                             gt.student_admission_no as admission_no,
                            	gt.student_student_id as s_id,
                             gt.student_name as name,
                             gt.student_aadhar_card_no as adhar_no,
-                            gt.student_dob as dob,
+                            DATE_FORMAT(gt.student_dob, "%d-%m-%Y") as dob,
                             gt.student_sex as mft,
                             gt.student_blood_group as blood_group,
                             gt.mother_name as m_name,
-                            gt.mother_dob as m_dob,
+                            DATE_FORMAT(gt.mother_dob, "%d-%m-%Y") as m_dob,
                             gt.mother_weight as m_weight,
                             gt.mother_height as m_height,
                             gt.mother_blood_group as m_blood_group,
                             gt.mother_aadhar_card_no as m_adhar,
                             gt.father_name as f_name,
-                            gt.father_dob as f_dob,
+                            DATE_FORMAT(gt.father_dob, "%d-%m-%Y") as f_dob,
                             gt.father_weight as f_weight,
                             gt.father_height as f_height,
                             gt.father_blood_group as f_blood_group,

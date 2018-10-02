@@ -367,7 +367,7 @@ $(document).on('click','#fetch_student',function(){
 						$('#max_mark').css('display','none');
 					}
 					if(response.p_marks > 0){
-						$('#max_practical').html('Maxium practical Mark : ' + response.p_marks).css('display','block');
+						$('#max_practical').html('Maxium practical/Asl Project Mark: ' + response.p_marks).css('display','block');
 					}
 					else{
 						$('#max_practical').css('display','none');
