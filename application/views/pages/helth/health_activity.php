@@ -559,14 +559,14 @@ $(document).on('click','.student_activity_print', function(){
 						'<link rel="stylesheet" type="text/css" media="print" href="'+ baseUrl +'assest/css/marksheet-result-print.css">'+
 						'<style>.table tr td{border:1px solid #eee;}</style>'+
 						  '<div class="modal-content p-head-sec-f">';
-						if('school_id' == 2){
-							  x = x +'<img src="../../assest/images/sharda/result_bg_logo-w.png" style="position:absolute;top:35%;left:30%;margin:0 auto; background-size:cover; background-position:center;">';
+						if(response.health_activity[0].school_id == 2){
+							  x = x +'<img src="'+ baseUrl +'assest/images/sharda/result_bg_logo-w.png" style="position:absolute;top:35%;left:30%;margin:0 auto; background-size:cover; background-position:center;">';
 					 		}
-					 		if('school_id' == 1){
-								  x = x +'<img src="../../assest/images/shakuntala/result_bg_logo-w.png" style="position:absolute;top:35%;left:30%;margin:0 auto; background-size:cover; background-position:center;">';
+					 		if(response.health_activity[0].school_id == 1){
+								  x = x +'<img src="'+ baseUrl +'assest/images/shakuntala/result_bg_logo-w.png" style="position:absolute;top:35%;left:30%;margin:0 auto; background-size:cover; background-position:center;">';
 						 		}
 					      				x = x +'<div class="modal-header p-header">'+
-												'<div class="col-md-3 c-logo-section"><img class="c-logo" style="width:80px;" src="../../assest/images/sharda/cbse-logo.png" /></div>'+
+												'<div class="col-md-3 c-logo-section"><img class="c-logo" style="width:80px;" src="'+ baseUrl +'assest/images/sharda/cbse-logo.png" /></div>'+
 												'<div class="col-md-6 p-logo-sec text-center">';
 													if('school_id' == 2){
 														x = x + '<div class="p-school-name-sec">'+
@@ -580,9 +580,9 @@ $(document).on('click','.student_activity_print', function(){
 													}
 													x = x +'</div>'+
 												'<div class="col-md-3 p-school-logo">';
-													if('school_id' == 2){
-															x = x + '<img class="p-logo pull-right" src="../../assest/images/sharda/logo.png" />'; }
-														else{ x = x + '<img class="p-logo pull-right" src="../../assest/images/shakuntala/logo.png" />'; }
+													if(response.health_activity[0].school_id == 2){
+															x = x + '<img class="p-logo pull-right" src="'+ baseUrl +'assest/images/sharda/logo.png" />'; }
+														else{ x = x + '<img class="p-logo pull-right" src="'+ baseUrl +'assest/images/shakuntala/logo.png" />'; }
 														x = x +
 												'</div>'+
 										'</div>'+

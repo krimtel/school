@@ -501,13 +501,13 @@ $(document).on('click','.print', function(){
 						'<style>.table tr td{border:1px solid #eee;}</style>'+
 						  '<div class="modal-content p-head-sec-f">';
 						if(value.school_id == 2){
-							  x = x +'<img src="../../assest/images/sharda/result_bg_logo-w.png" style="position:absolute;top:35%;left:30%;margin:0 auto; background-size:cover; background-position:center;">';
+							  x = x +'<img src="'+ baseUrl +'assest/images/sharda/result_bg_logo-w.png" style="position:absolute;top:35%;left:30%;margin:0 auto; background-size:cover; background-position:center;">';
 					 		}
 					 		if(value.school_id == 1){
-								  x = x +'<img src="../../assest/images/shakuntala/result_bg_logo-w.png" style="position:absolute;top:35%;left:30%;margin:0 auto; background-size:cover; background-position:center;">';
+								  x = x +'<img src="'+ baseUrl +'assest/images/shakuntala/result_bg_logo-w.png" style="position:absolute;top:35%;left:30%;margin:0 auto; background-size:cover; background-position:center;">';
 						 		}
 					      				x = x +'<div class="modal-header p-header">'+
-												'<div class="col-md-3 c-logo-section"><img class="c-logo" style="width:80px;" src="../../assest/images/sharda/cbse-logo.png" /></div>'+
+												'<div class="col-md-3 c-logo-section"><img class="c-logo" style="width:80px;" src="'+ baseUrl +'assest/images/sharda/cbse-logo.png" /></div>'+
 												'<div class="col-md-6 p-logo-sec text-center">'+
 													'<div class="p-school-name-sec">'+
 													'<h2>HEALTH & ACTIVITY CARD</h2>'+
@@ -515,9 +515,9 @@ $(document).on('click','.print', function(){
 													'</div></div>'+
 												'<div class="col-md-3 p-school-logo">';
 													if(value.school_id == 2){
-															x = x + '<img class="p-logo pull-right" src="../../assest/images/sharda/logo.png" />'; }
-														else{ x = x + '<img class="p-logo pull-right" src="../../assest/images/shakuntala/logo.png" />'; }
-														x = x +
+															x = x + '<img class="p-logo pull-right" src="'+ baseUrl +'assest/images/sharda/logo.png" />'; }
+														else{ x = x + '<img class="p-logo pull-right" src="'+baseUrl+'assest/images/shakuntala/logo.png" />'; }
+													x = x +
 												'</div>'+
 										'</div>'+
 										'<style>.student-per-info{padding:20px;}.student-per-info .table{background-color:#f9f6f6;border:2px solid #eee;margin-bottom:20px !important;}.student-per-info .table tr td{font-size:16px;} .student-per-info p{font-size:13px;margin-bottom:15px;}</style>'+
