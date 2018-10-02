@@ -333,6 +333,7 @@
 
 
 <script type="text/javascript">
+var baseUrl = $('#base_url').val();
 	$.ajax({
 		type:'POST',
 		url:'<?php echo base_url();?>Helth_ctrl/select_box_data',
@@ -487,23 +488,51 @@ $(document).on('click','.print', function(){
 				var x ='';
 				if(response.status == 200){
 					$.each(response.result, function(key, value){
-						x = x +'<h1>HEALTH AND ACTIVITY CARD</h1>'+
-						       '<h1>GENERAL INFORMATION</h1>'+
+						x = x + '<link rel="stylesheet" type="text/css" href="'+ baseUrl +'assest/bootstrap/css/bootstrap.min.css">'+
+						'<link rel="stylesheet" type="text/css" href="'+ baseUrl +'assest/css/marksheet-result.css">'+
+						'<link rel="stylesheet" type="text/css" media="print" href="'+ baseUrl +'assest/css/marksheet-result-print.css">'+
+						'<style>.table tr td{border:1px solid #eee;}</style>'+
+						  '<div class="modal-content p-head-sec-f">';
+						if('school_id' == 2){
+							  x = x +'<img src="../../assest/images/sharda/result_bg_logo-w.png" style="position:absolute;top:35%;left:30%;margin:0 auto; background-size:cover; background-position:center;">';
+					 		}
+					 		if('school_id' == 1){
+								  x = x +'<img src="../../assest/images/shakuntala/result_bg_logo-w.png" style="position:absolute;top:35%;left:30%;margin:0 auto; background-size:cover; background-position:center;">';
+						 		}
+					      				x = x +'<div class="modal-header p-header">'+
+												'<div class="col-md-3 c-logo-section"><img class="c-logo" style="width:80px;" src="../../assest/images/sharda/cbse-logo.png" /></div>'+
+												'<div class="col-md-6 p-logo-sec text-center">'+
+													'<div class="p-school-name-sec">'+
+													'<h2>HEALTH & ACTIVITY CARD</h2>'+
+													'<h3>General Informations</h3>'+
+													'</div></div>'+
+												'<div class="col-md-3 p-school-logo">';
+													if('school_id' == 2){
+															x = x + '<img class="p-logo pull-right" src="../../assest/images/sharda/logo.png" />'; }
+														else{ x = x + '<img class="p-logo pull-right" src="../../assest/images/shakuntala/logo.png" />'; }
+														x = x +
+												'</div>'+
+										'</div>'+
+										'<style>.student-per-info{padding:20px;} .student-per-info p{font-size:13px;margin-bottom:15px;}</style>'+
+										'<div class="modal-body p-student-body student-per-info">'+
+										'<div class="student-per-info">'+
 						       '<P>Aadhar Card no. of students(optional): <span>'+value.adhar_no+'</span></P>'+ 
 						       '<P>NAME: <span>'+value.name+'</span></P>'+
 						       '<P>ADMISSION NO: <span>'+value.admission_no+'</span> <span>DATE OF BIRTH:'+ value.dob +'</span></P>'+
-						       '<P>GENEDER <span>'+value.mft+'</span><span>BLOOD GROUP:'+value.blood_group+'</span></P>'+
+						       '<P>GENEDER <span>'+value.mft+'</span><span>'+
+						       'BLOOD GROUP:'+value.blood_group+'</span></P>'+
 						       '<P><b>MOTHERS NAME:</b><span>'+value.m_name+'</span></P>'+
 						       '<P>YOB:<span>'+value.m_dob+'</span>WEIGHT:<span>'+value.m_weight+'</span>HEIGHT:<span>'+value.m_height+'</span> BLOOD GROUP:<span>'+value.m_blood_group+'</span></P>'+
 						       '<p>AADHAR CARD NO:<span>'+value.m_adhar+'</span></p>'+
-						       '<p>FATHER NAME:<span>'+value+f_name+'</span></p>'+
+						       '<p><b>FATHER NAME:</b><span>'+value+f_name+'</span></p>'+
 						       '<P>YOB:<span>'+value.f_dob+'</span>WEIGHT:<span>'+value.f_weight+'</span>HEIGHT:<span>'+value.f_height+'</span> BLOOD GROUP:<span>'+value.f_blood_group+'</span></P>'+
 						       '<p>AADHAR CARD NO:<span>'+value.f_adhar+'</span></p>'+
 						       '<p>FAMILY MONTHLY INCOME:<span>'+value.month_income+'</span></p>'+
 						       '<p>ADDRESS:'+value.address+'</p>'+
 						       '<P>PHONE NO:<span>'+value.phone+'</span> MOBILE:'+value.mobile+'</P>'+
 						       '<P>CWSN, SPECIFY:<span>'+value.cwsn_specify+'</span></P>'+
-						       '<P>DATE:<span>'+value.activity_date+'</span></P>';
+						       '<P>DATE:<span>'+value.activity_date+'</span></P>'+
+						       '</div></div>';
 								});
 
 				  with(win.document){
