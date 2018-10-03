@@ -142,13 +142,6 @@
 						<input type="hidden" id="s_id" name="s_id">
 							
 							<div class="form-group">
-								<label class="col-sm-3 control-label">Activity Date</label>
-								<div class="col-sm-6">
-									<input type="date" name="activity_date" id="activity_date" value="" class="form-control" placeholder="Activity Date">
-								</div>
-							</div>
-							
-							<div class="form-group">
 								<label class="col-sm-3 control-label">Adhar card no</label>
 								<div class="col-sm-6">
 									<input type="text" name="adhar_no" id="adhar_no" value="" class="form-control" placeholder="Adhar Card Number">
@@ -172,7 +165,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">DOB</label>
 								<div class="col-sm-6">
-									<input type="text" name="dob" id="dob" value="" class="form-control" placeholder="Date of Birth">
+									<input type="date" name="dob" id="dob" value="" class="form-control" placeholder="Date of Birth">
 								</div>
 							</div>
 							
@@ -200,7 +193,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">YOB*</label>
 								<div class="col-sm-6">
-									<input type="date" name="m_dob" id="m_dob" value="" class="form-control" placeholder="YOB">
+									<input type="text" name="m_dob" id="m_dob" value="" class="form-control" placeholder="YOB">
 								</div>
 							</div>
 							
@@ -245,7 +238,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">YOB*</label>
 								<div class="col-sm-6">
-									<input type="date" name="f_dob" id="f_dob" value="" class="form-control" placeholder="YOB">
+									<input type="text" name="f_dob" id="f_dob" value="" class="form-control" placeholder="YOB">
 								</div>
 							</div>
 							
@@ -494,6 +487,19 @@ $(document).on('click','.print', function(){
 				if(response.status == 200){
 					var win = window.open('', "myWindowName", "scrollbars=1,width=1200, height=600");
 					var x ='';
+
+					var fullDate = new Date()
+					console.log(fullDate);
+					 
+					//convert month to 2 digits
+					var twoDigitMonth = ((fullDate.getMonth().length+1) === 1)? (fullDate.getMonth()+1) : + (fullDate.getMonth()+1);
+					 
+					var currentDate = fullDate.getDate() + "/" + twoDigitMonth + "/" + fullDate.getFullYear();
+					
+					//19/05/2011
+
+					
+					
 					$.each(response.result, function(key, value){
 						x = x + '<link rel="stylesheet" type="text/css" href="'+ baseUrl +'assest/bootstrap/css/bootstrap.min.css">'+
 						'<link rel="stylesheet" type="text/css" href="'+ baseUrl +'assest/css/marksheet-result.css">'+
@@ -501,10 +507,10 @@ $(document).on('click','.print', function(){
 						'<style>.table tr td{border:1px solid #eee;}</style>'+
 						  '<div class="modal-content p-head-sec-f">';
 						if(value.school_id == 2){
-							  x = x +'<img src="'+ baseUrl +'assest/images/sharda/result_bg_logo-w.png" style="position:absolute;top:35%;left:30%;margin:0 auto; background-size:cover; background-position:center;">';
+							// x = x +'<img src="'+ baseUrl +'assest/images/sharda/result_bg_logo-w.png" style="position:absolute;top:35%;left:30%;margin:0 auto; background-size:cover; background-position:center;">';
 					 		}
 					 		if(value.school_id == 1){
-								  x = x +'<img src="'+ baseUrl +'assest/images/shakuntala/result_bg_logo-w.png" style="position:absolute;top:35%;left:30%;margin:0 auto; background-size:cover; background-position:center;">';
+								//  x = x +'<img src="'+ baseUrl +'assest/images/shakuntala/result_bg_logo-w.png" style="position:absolute;top:35%;left:30%;margin:0 auto; background-size:cover; background-position:center;">';
 						 		}
 					      				x = x +'<div class="modal-header p-header">'+
 												'<div class="col-md-3 c-logo-section"><img class="c-logo" style="width:80px;" src="'+ baseUrl +'assest/images/sharda/cbse-logo.png" /></div>'+
@@ -538,7 +544,7 @@ $(document).on('click','.print', function(){
 						       '<tr><td>ADDRESS:</td><td colspan="5">'+value.address+'</td></tr>'+
 						       '<tr><td>PHONE NO:</td><td>'+value.phone+'</td><td> MOBILE:</td><td>'+value.mobile+'</td>'+
 						       '<td>CWSN, SPECIFY:</td><td>'+value.cwsn_specify+'</td></tr></tbody></table><br>'+
-						       '<p><span style="text-align:left;float:left;">SIGNATURE OF PARENTS/ GUARDIAN</span><span style="text-align:right;float:right;">DATE: '+value.activity_date+'</span></P>'+
+						       '<p><span style="text-align:left;float:left;">SIGNATURE OF PARENTS/ GUARDIAN</span><span style="text-align:right;float:right;">DATE: '+ currentDate +'</span></P>'+
 						       '</div></div>';
 								});
 				     with(win.document){open(); write(x);close();}
@@ -589,7 +595,6 @@ $(document).on('click', '.editbtn', function(){
 					   $('#mod_medium').val(value.medium);
 					   $('#mod_sub_group').val(value.subject_group);
 					   $('#s_id').val(value.s_id);
-					   $('#activity_date').val(value.activity_date);
 					   $('#adhar_no').val(value.adhar_no);
 					   $('#name').val(value.name);
 					   $('#admission_no').val(value.admission_no);
@@ -652,7 +657,6 @@ $(document).on('click','#submit',function(){
 	formdata.append('phone_no',$('#phone').val());
 	formdata.append('mobile_no',$('#mobile').val());
 	formdata.append('children_special_needs',$('#cwsn_specify').val());
-
 	$.ajax({
 			type:'POST',
 			url:'<?php echo base_url();?>Helth_ctrl/general_activity',

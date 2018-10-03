@@ -106,7 +106,10 @@ class Helth_ctrl extends CI_Controller{
 				$data['question_6_2'] = $this->input->post('question_6_2');
 				$data['question_7'] = $this->input->post('question_7'); 
 				$data['question_8_1'] = $this->input->post('question_8_1'); 
-				$data['question_8_2'] = $this->input->post('question_8_2');
+				
+				$question_8_2 = $this->input->post('question_8_2');
+				$data['question_8_2'] = implode(', ', $question_8_2); // ------ convert to string-----
+				
 				$data['question_8_3'] = $this->input->post('question_8_3'); 
 				$data['question_9'] = $this->input->post('question_9');  
 				$data['question_9_1'] = $this->input->post('question_9_1');
@@ -195,7 +198,6 @@ class Helth_ctrl extends CI_Controller{
                             gt.school_id as school_id,
                             gt.medium as medium,
                             gt.subject_group as subject_group,
-                            gt.activity_date as activity_date,
                             gt.student_admission_no as admission_no,
                            	gt.student_student_id as s_id,
                             gt.student_name as name,
@@ -287,7 +289,6 @@ class Helth_ctrl extends CI_Controller{
                             gt.school_id as school_id,
                             gt.medium as medium,
                             gt.subject_group as subject_group,
-                            DATE_FORMAT(gt.activity_date, "%d-%m-%Y") as activity_date,
                             gt.student_admission_no as admission_no,
                            	gt.student_student_id as s_id,
                             gt.student_name as name,
@@ -296,13 +297,13 @@ class Helth_ctrl extends CI_Controller{
                             gt.student_sex as mft,
                             gt.student_blood_group as blood_group,
                             gt.mother_name as m_name,
-                            DATE_FORMAT(gt.mother_dob, "%d-%m-%Y") as m_dob,
+                            gt.mother_dob as m_dob,
                             gt.mother_weight as m_weight,
                             gt.mother_height as m_height,
                             gt.mother_blood_group as m_blood_group,
                             gt.mother_aadhar_card_no as m_adhar,
                             gt.father_name as f_name,
-                            DATE_FORMAT(gt.father_dob, "%d-%m-%Y") as f_dob,
+                            gt.father_dob as f_dob,
                             gt.father_weight as f_weight,
                             gt.father_height as f_height,
                             gt.father_blood_group as f_blood_group,

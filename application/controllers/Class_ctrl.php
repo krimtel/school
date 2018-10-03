@@ -129,9 +129,10 @@ class Class_ctrl extends CI_Controller {
         $exam_type = $this->input->post('exam_type');
         $school_id = $this->session->userdata('school_id');
 
-        $this->db->select('subject_id');
+        $this->db->select('DISTINCT(subject_id)');
+        $this->db->where('subject_id is NOT NULL', NULL, FALSE);
         $subjects = $this->db->get_where('class_sujects',array('class_id'=>$class,'status'=>1))->result_array();
-    
+        
         if(count($subjects) > 0){
             if(count($subjects)){
                 $students_id = array();
