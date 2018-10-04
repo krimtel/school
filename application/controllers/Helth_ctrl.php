@@ -179,6 +179,26 @@ class Helth_ctrl extends CI_Controller{
 	        echo json_encode(array('msg'=>'record not submitted.!','status'=>500));
 	    }
 	}
+	
+	public function fetcheditdata(){
+	    $data['student_id'] = $this->input->post('student_id');
+	    $data['school_id'] = $this->input->post('school_id');
+	    $data['session'] = $this->input->post('session');
+	    $data['medium'] = $this->input->post('medium');
+	    $data['class_id'] = $this->input->post('class_id');
+	    
+	    $this->db->select('*');
+	    $result  = $this->db->get_where('health_activity',array('stu_id'=>$data['student_id'],'school_id'=>$data['school_id'],'session_id'=>$data['session'],'medium'=>$data['medium'],'class_id'=>$data['class_id'],'status'=>1))->result_array();
+	   
+	    if(count($result) > 0){
+	        echo json_encode(array('result'=>$result,'status'=>200));
+	    }else{
+	        echo json_encode(array('status'=>500));
+	    }
+	}
+	
+	
+	
     	
     public function editData(){
         $data = array();
@@ -324,7 +344,6 @@ class Helth_ctrl extends CI_Controller{
             echo json_encode(array('msg'=>'record not submited.!','status'=>500));
         }
     }
-    
        
 }//end of class..........
 

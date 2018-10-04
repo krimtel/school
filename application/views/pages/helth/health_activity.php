@@ -484,7 +484,7 @@
 									'<td>'+
 										'<input type="button" value="Print" data-sid="'+ value.s_id +'" data-admission_no="'+ value.admission_no +'" class="student_activity_print btn btn-info btn-md">'+
 									'</td><td>'+
-										'<input type="button" value="Edit" data-sid="'+ value.s_id +'" data-admission_no="'+ value.admission_no +'" class="student_activity_edit btn btn-info btn-md">'+
+										'<input type="button" value="Edit" data-school_id="'+value.school_id+'" data-class_id="'+value.class_id+'" data-session="'+value.session+'" data-medium="'+value.medium+'"  data-sid="'+ value.s_id +'" data-admission_no="'+ value.admission_no +'" class="student_activity_edit btn btn-info btn-md">'+
 									'</td>'+
 								'</tr>';
 					});
@@ -502,8 +502,64 @@
   $(document).on('click','.student_activity_edit',function(){
 	  var student_id = $(this).data('sid');
 	  var admission_no  = $(this).data('admission_no');
+	  var school_id  = $(this).data('school_id');
+	  var session  = $(this).data('session');
+	  var medium  = $(this).data('medium');
+	  var class_id  = $(this).data('class_id');
+	  
 		$('#helth_edit').modal({'show':true,'backdrop':false});
 		$('#student_id_popup').val(student_id);
+
+		$.ajax({
+			    type:'POST',
+			    url:'<?php echo base_url();?>Helth_ctrl/fetcheditdata',
+				dataType:'json',
+				data:{
+					student_id:student_id,
+					admission_no:admission_no,
+					school_id:school_id,
+					session:session,
+					medium:medium,
+					class_id:class_id,
+					},
+				beforeSend:function(){},
+				success:function(response){
+					if(response.status == 200){
+						var values = response.result[0].question_8_2;
+						$.each(values.split(","), function(key,value){
+							$('#question_8_2 option[value='+ value + ']').prop('selected', true);
+							});
+						$.each(response.result, function(key, value){
+    						$('#question_1').val(value.question_1);
+    						$('#question_2').val(value.question_2);
+    						$('#question_3').val(value.question_3);
+    						$('#question_4_1').val(value.question_4_1);
+    						$('#question_4_2').val(value.question_4_2);
+    						$('#question_5_1').val(value.question_5_1);
+    						$('#question_5_2').val(value.question_5_2);
+    						$('#question_6_1').val(value.question_6_1);
+    						$('#question_6_2').val(value.question_6_2);
+    						$('#question_7').val(value.question_7);
+    						$('#question_8_1').val(value.question_8_1);
+    						$('#question_8_3').val(value.question_8_3);
+    						$('#question_9').val(value.question_9);
+    						$('#question_9_1').val(value.question_9_1);
+    						$('#question_9_2').val(value.question_9_2);
+    						$('#question_9_3').val(value.question_9_3);
+    						$('#question_9_4').val(value.question_9_4);
+    						$('#question_9_5').val(value.question_9_5);
+    						$('#question_10').val(value.question_10);
+    						$('#question_10_1').val(value.question_10_1);
+    						$('#question_10_2').val(value.question_10_2);
+    						$('#question_10_3').val(value.question_10_3);
+    						$('#question_10_4').val(value.question_10_4);
+						});
+					}
+				},
+			    
+			});
+
+		
   });
 
   
@@ -711,10 +767,4 @@ $(document).on('click','.student_activity_print', function(){
 		});
 });
 
-
-
-  
-  $(document).on('click','#ravi',function(){
-
-  });
-  </script>
+</script>

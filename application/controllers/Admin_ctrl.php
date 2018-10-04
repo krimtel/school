@@ -516,8 +516,6 @@ class Admin_ctrl extends CI_Controller {
 	    $data['page'] = $this->load->view('pages/helth/general_info',$data,true);
 	    $this->load->view('pages/index',$data);
 	}
-	
-	
 
 	public function students_report(){
 		$data['power'] = $this->power();

@@ -51,11 +51,10 @@ $route['sharda/transaction-record/compart_marks_entry'] = 'Admin_ctrl/compart_ma
 $route['sharda/production-reporting/compart_marksheet_generation'] = 'Admin_ctrl/compart_marksheet_generation';
 $route['sharda/transaction-record/compart_marks_entry_high_class'] = 'Admin_ctrl/compart_marks_entry_high_class';
 $route['sharda/production-reporting/compart_high-class-marksheet-generation'] = 'Admin_ctrl/compart_high_class_marksheet_generation';
+$route['sharda/health_activity'] = 'Helth_ctrl/health_activity';
 $route['sharda/general_info'] = 'Admin_ctrl/general_information';
 
 ///////////////////////////////////////// shakuntala school /////////////////////////////////////////
-
-
 
 
 $route['shakuntala/dashboard'] = 'Admin_ctrl';
