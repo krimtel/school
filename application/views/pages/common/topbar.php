@@ -272,7 +272,18 @@
 		</li>
 	<?php } ?>
 	
-	<?php if($power == 5 || $power == 3){ ?>
+	<!------------------------------------health activity section -------------------------------------------------->
+	<?php 
+	$u_id = $this->session->userdata('user_id');
+	
+	$this->db->select('t_id');
+	$uid = $this->db->get_where('users', array('uid'=>$u_id,'status'=>1))->result_array();
+	$t_id = $uid[0]['t_id'];
+	
+	$this->db->select('designation');
+	$PTI_Teacher = $this->db->get_where('teacher', array('t_id'=>$t_id,'designation'=>'PTI','status'=>1))->result_array();
+	
+	if(count($PTI_Teacher) > 0 || $power == 5){ ?>
 	<li class="dropdown">
 		<a href="" href="#" data-toggle="dropdown"> <i class="fa fa-"></i> Health Activity <b class="caret"></b></a>
 			<ul class="dropdown-menu">
@@ -287,6 +298,7 @@
 			</ul>
 		</li>
 	<?php } ?>
+	<!------------------------------------end of health activity section -------------------------------------------------->
 	
 	<li><a href="<?php echo base_url();?><?php echo strtolower($this->session->userdata('school'));?>/logout">LOGOUT</a></li>
 

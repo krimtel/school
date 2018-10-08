@@ -128,6 +128,12 @@ class Subject_ctrl extends CI_Controller {
     	$sch_sub = array();
     	$cosch_sub = array();
     	foreach($result as $r){
+    	    if($r['class_id'] == 12){
+    	        if($r['sub_id'] == 13){
+    	            $r['name'] = 'Computer Application';
+    	        }
+    	    }
+    	    
     		if($r['subj_type'] == 'Scholastic'){
     			array_push($sch_sub, $r);
     		}

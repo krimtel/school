@@ -418,6 +418,14 @@ $(document).on('click','#fetch_student',function(){
 														'&nbsp;&nbsp;<td><input type="text" class="subj_assis" min="0" data-s_id="'+ value.s_id +'" data-max="'+ response.internal_marks +'" max="'+ response.internal_marks +'" value="'+ value.a_marks +'" required></td>';
 													}
 												}
+
+												if($('#e_type').val() == 4 && $('#class').val() == 12 || $('#e_type').val() == 9 && $('#class').val() == 12){
+													x = x + '&nbsp;&nbsp;<td><input type="text" class="practical_mark_box" min="0" data-s_id="'+ value.s_id +'" data-max="70" max="70" value="'+ value.p_marks +'" required></td>';
+													$('#max_notebook').hide();
+													$('#max_enrich').hide();
+													$('.notebook').hide();
+												}
+												
 												else{
 													if($('#e_type').val() == 9 && $('#subject').val() == 13){
 														$('#max_notebook').hide();
@@ -425,6 +433,8 @@ $(document).on('click','#fetch_student',function(){
 														$('.notebook').hide();
 														x = x + '&nbsp;&nbsp;<td><input type="text" class="practical_mark_box" min="0" data-s_id="'+ value.s_id +'" data-max="'+ response.p_mark +'" max="'+ response.p_mark +'" value="'+ value.p_marks +'" required></td>';
 													}
+
+													
 													else{
 														x = x + '<td><input type="text" class="notebook_mark" min="0" data-s_id="'+ value.s_id +'" data-max="'+ response.internal_marks +'" max="'+ response.internal_marks +'" value="" required></td>'+
 														'&nbsp;&nbsp;<td><input type="text" class="subj_assis" min="0" data-s_id="'+ value.s_id +'" data-max="'+ response.internal_marks +'" max="'+ response.internal_marks +'" value="" required></td>';

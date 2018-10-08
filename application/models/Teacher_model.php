@@ -584,10 +584,10 @@ class Teacher_model extends CI_Model {
 					//$result['marks'] = ($result['marks'] / 50 )* 100 ;
 
 					    $min = 7;
-					    $third_min = 7;
+					    $third_min = 8;
 					    $sec_min = 9;
 					
-					if($result['marks'] <= $min){
+					if($result['marks'] < $min){
 						$fail = $fail + 1;
 					}
 					else if($result['marks'] >= $min && $result['marks'] <= $third_min){

@@ -45,17 +45,11 @@
 				<div class="form-group col-sm-4">
                     <label class="col-sm-2 control-label">Medium</label>
 					<div class="col-sm-10">
-						<?php if(isset($medium)){ ?>
-							<select class="form-control" id="medium">
-								<option value="<?php echo $medium; ?>"><?php echo $medium; ?></option>
-							</select>
-						<?php } else { ?>
 						<select class="form-control" id="medium">
 							<option value="0">Select Medium</option>
 							<option value="Hindi">Hindi</option>
 							<option value="English">English</option>
 						</select>
-						<?php } ?>
 						<div class="text-danger" id="medium_err" style="display:none;"></div>
 					</div>
 				</div>
@@ -64,9 +58,6 @@
 					<div class="col-sm-10">
 						<select class="form-control" id="class">
 						<option value="0">Select Class</option>
-							<?php foreach($classes as $class){ ?>
-								 <option value="<?php echo $class['c_id']; ?>"><?php echo $class['name']; ?></option>
-							<?php } ?>
 						</select>
 						<div class="text-danger" id="class_err" style="display:none;"></div>
 					</div>
@@ -147,8 +138,8 @@
 				<td>
 					<select id="question_3">
 						<option value="0">-Select-</option>
-						<option value="good">Good</option>
-						<option value="bad">Bad</option>
+						<option value="good">Yes</option>
+						<option value="bad">No</option>
 					</select>
 				</td>
 			</tr>
@@ -296,8 +287,12 @@
 				<td>
 					<select id="question_9_1">
 						<option value="0">-Select-</option>
-						<option value="pass">Pass</option>
-						<option value="fail">Fail</option>
+						<option value="excellent">Excellent</option>
+						<option value="good">Good</option>
+						<option value="above_average">Above Average</option>
+						<option value="average">Average</option>
+						<option value="below_average">Below Average</option>
+						<option value="poor">Poor</option>
 					</select>
 				</td>
 			</tr>
@@ -309,9 +304,13 @@
 				<td>
 					<select id="question_9_2">
 						<option value="0">-Select-</option>
-						<option value="pass">Pass</option>
-						<option value="fail">Fail</option>
-					</select>
+						<option value="excellent">Excellent</option>
+						<option value="good">Good</option>
+						<option value="above_average">Above Average</option>
+						<option value="average">Average</option>
+						<option value="below_average">Below Average</option>
+						<option value="poor">Poor</option>
+						</select>
 				</td>
 			</tr>
 			<tr>
@@ -322,8 +321,12 @@
 				<td>
 					<select id="question_9_3">
 						<option value="0">-Select-</option>
-						<option value="pass">Pass</option>
-						<option value="fail">Fail</option>
+						<option value="excellent">Excellent</option>
+						<option value="good">Good</option>
+						<option value="above_average">Above Average</option>
+						<option value="average">Average</option>
+						<option value="below_average">Below Average</option>
+						<option value="poor">Poor</option>
 					</select>
 				</td>
 			</tr>	
@@ -453,11 +456,34 @@
   </div>
 </div>
 <!---- modal close -->
-  
-  
-<script src="<?php echo base_url();?>assest/bootstrap/js/mark_sheet_preview_high_class.js"></script>
+
   <script>
   var baseUrl = $('#base_url').val();
+
+	$.ajax({
+		type:'POST',
+		url:'<?php echo base_url();?>Helth_ctrl/select_box_data',
+		dataType:'json',
+		beforeSend:function(){},
+		success:function(response){
+			console.log(response);
+			var c = '<option value="">Select Class</option>';
+			var s = '<option value="">Select Section</option>';
+			
+			if(response.status == 200){
+					$.each(response.result.class, function(key, value){
+						c = c + '<option value="'+value.c_id+'">'+value.name+'</option>';
+					});
+					$('#class').html(c);
+
+					$.each(response.result.section, function(key, value){
+						s = s + '<option value="'+value.id+'">'+value.name+'</option>';
+					});
+					$('#section').html(s);
+				}
+			},
+		});
+
   
   $(document).on('click','.student_search',function(){
 	  $.ajax({
@@ -554,7 +580,32 @@
     						$('#question_10_3').val(value.question_10_3);
     						$('#question_10_4').val(value.question_10_4);
 						});
-					}
+					}else{
+						$('#question_1').val("");
+						$('#question_2').val("");
+						$('#question_3').val("");
+						$('#question_4_1').val("");
+						$('#question_4_2').val("");
+						$('#question_5_1').val("");
+						$('#question_5_2').val("");
+						$('#question_6_1').val("");
+						$('#question_6_2').val("");
+						$('#question_7').val("");
+						$('#question_8_1').val("");
+						$('#question_8_2').val("");
+						$('#question_8_3').val("");
+						$('#question_9').val("");
+						$('#question_9_1').val("");
+						$('#question_9_2').val("");
+						$('#question_9_3').val("");
+						$('#question_9_4').val("");
+						$('#question_9_5').val("");
+						$('#question_10').val("");
+						$('#question_10_1').val("");
+						$('#question_10_2').val("");
+						$('#question_10_3').val("");
+						$('#question_10_4').val("");
+						}
 				},
 			    
 			});
@@ -646,15 +697,15 @@ $(document).on('click','.student_activity_print', function(){
 					      				x = x +'<div class="modal-header p-header">'+
 												'<div class="col-md-3 c-logo-section"><img class="c-logo" style="width:80px;" src="'+ baseUrl +'assest/images/sharda/cbse-logo.png" /></div>'+
 												'<div class="col-md-6 p-logo-sec text-center">';
-													if('school_id' == 2){
+													if(response.health_activity[0].school_id == 2){
 														x = x + '<div class="p-school-name-sec">'+
 													'<h2>SHARDA VIDYALAYA</h2>'+
-													'<p>Risali Sector, Bhilai, Chhattisgarh</p></div>';
+													'<p>Risali Sector, Bhilai, Chhattisgarh</p><p>CBSE Affiliation No.: 3330088</p></div>';
 													}
 													else{
 													x = x + '<div class="p-school-name-sec">'+
 													'<h2>SHAKUNTALA VIDYALAYA</h2>'+
-													'<p>Ram Nagar, Bhilai, Chhattisgarh</p></div>';
+													'<p>Ram Nagar, Bhilai, Chhattisgarh</p><p>CBSE Affiliation No.: 3330091</p></div>';
 													}
 													x = x +'</div>'+
 												'<div class="col-md-3 p-school-logo">';

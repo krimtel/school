@@ -666,8 +666,8 @@ else {
 			$max_mark = $max_mark[0]['max'];
 			 
 			if($data['e_type'] == 9 && $data['fit'] == 'yes' && $data['subject'] == 13){
-			    $max_mark = 40;
-			    $prt_mark = 60;
+			    $max_mark = 30;
+			    $prt_mark = 70;
 			}
 			$sub_type = 'Scholastic';
 		}		

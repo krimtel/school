@@ -760,6 +760,7 @@ else {
 	
 	
 	function student_deatil_high_class($data){
+	    
 		if($data['class_id'] > 3 && $data['class_id'] < 9){
 			$class_category = '1-5';
 		}
@@ -795,15 +796,16 @@ else {
 			AND `am`.`class_id` = ".$data['class_id']."
 			AND `am`.`section_id` = ".$data['section_id']."
 			AND `s`.`section` = ".$data['section_id']."
-			AND `am`.`term` = 'Annual'
+			AND `am`.`term` = 'Mid'
 			AND `am`.`status` = 1
 			AND satt.class_category = '".$class_category."'
-			AND satt.term = 'Final'  
+			AND satt.term = 'Mid'  
 			AND s.s_id = '".$data['s_id']."'
 			AND s.medium = '".$data['medium']."'
 			AND s.subject_group = '".$data['sgroup']."'
 			AND satt.school_id = ".$data['school_id']."
 			AND satt.status = 1")->result_array();
+		
 		$result_1 = array();
 		foreach($result['student'] as $r){
 			$temp = array();

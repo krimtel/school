@@ -569,7 +569,7 @@ $(document).on('click', '.editbtn', function(){
 	var subject_group = $(this).data('subject_group');
 	var medium = $(this).data('medium');
 	
-	$('#myModal').find('.modal-title').text('Edit ');
+	$('#myModal').find('.modal-title').text('Geeneral Information');
 	$('#myModal').modal({'show':true, backdrop: false, keyboard: false});
 	
 	$.ajax({

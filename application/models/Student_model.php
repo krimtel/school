@@ -58,7 +58,7 @@ class Student_model extends CI_Model {
         }
         if($term == 'Mid' || $term == 'Final'){
             $this->db->select('days');
-            $result = $this->db->get_where('session_attendance',array('school_id'=>$data['school_id'],'class_category'=>$class_category,'term'=>$term,'status'=>1))->result_array();
+            $result = $this->db->get_where('session_attendance',array('school_id'=>$data['school_id'],'class_category'=>$class_category,'term'=>$term,'session'=>$data2['session'],'status'=>1))->result_array();
             $days = $result[0]['days'];
         }
         
@@ -68,7 +68,6 @@ class Student_model extends CI_Model {
             $mid_days = $result[0]['days'];
             $days = $result[0]['days'] - $mid_result[0]['days'];
         }
-        
         $school_id = $this->session->userdata('school_id');
         
         $annual_atten = 0;
@@ -78,7 +77,7 @@ class Student_model extends CI_Model {
             $annual_atten = $this->db->get_where('attendance_master am',array('am.session_id'=>$data['session'],'am.medium'=>$data['medium'],'am.class_id'=>$data['class_id'],'am.term'=>'Annual','am.section_id'=>$data['section']))->result_array();
         }
         if($term == 'Mid' || $term == 'Final'){
-            $this->db->select('stu.*,c.name as cname,s.name as secname,concat('.$annual_atten[0]['present'].' - sa.present,"/'.$days.'") as present');
+            $this->db->select('stu.*,c.name as cname,s.name as secname,concat('.$annual_atten[0]['present'].'sa.present,"/'.$days.'") as present');
             $this->db->join('class c','c.c_id = stu.class_id');
             $this->db->join('section s','s.id = stu.section');
             $this->db->join('attendance_master am','am.class_id = stu.class_id');
@@ -724,8 +723,10 @@ class Student_model extends CI_Model {
                         $mark['marks'] = $student_mark['marks'];
                         $marks[] = $mark;
                         $f = 0;
+                        
                     }
                 }
+                
                 if($f){
                     $mark['sub_id'] = $subject['id'];
                     $mark['sub_name'] = $subject['subject'];
@@ -735,6 +736,7 @@ class Student_model extends CI_Model {
                     $marks[] = $mark;
                 }
             }
+            
             $total_marks = 0;
             $out_of = 0;
             $temp = $student;

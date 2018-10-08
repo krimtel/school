@@ -259,14 +259,9 @@ $(document).on('change','#s_group',function(){
 					$('#practical').css('display','block');
 				}
 				var x = '<option value="0">Select Subject</option>';
+				
 				$.each(response.data,function(key,value){
-					if(value.sub_id == 13){
-						x = x + '<option value="'+ value.sub_id +'">General Study('+ value.type +')</option>';
-					}
-					else{
 						x = x + '<option value="'+ value.sub_id +'">'+ value.subject +'('+ value.type +')</option>';
-					}
-					 
 				});
 
 				$('#subject').html(x);
