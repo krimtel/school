@@ -104,7 +104,7 @@ $(document).on('click','.mid',function(){
 											'<tr>'+
 												'<th style="width:18%;">Subjects</th>'+
 												'<th>Pre Mid</th>'+
-												'<th>10% of Pre Mid</th>'+
+												'<th>Out of 5 (Pre Mid)</th>'+
 												
 												'<th colspan="2">Mid</th>'+
 												'<th>20% of Mid</th>'+
@@ -113,7 +113,7 @@ $(document).on('click','.mid',function(){
 										'<tbody>'+
 										'<tr>'+
 												'<td align="center">&nbsp;</td>'+
-												'<td align="center">MM 50</td>'+
+												'<td align="center">MM 20</td>'+
 												'<td align="center">&nbsp;</td>'+
 												
 												'<td align="center">MM</td>'+
@@ -129,7 +129,7 @@ $(document).on('click','.mid',function(){
 														}
 														else{
 															x = x +'<td align="center">'+ value.pre_mark +'</td>'+
-															'<td align="center">'+ (value.pre_mark/ 10).toFixed(2) +'</td>';
+															'<td align="center">'+ ( (parseInt(value.pre_mark)*parseInt(5)) / parseInt(20) ).toFixed(2) +'</td>';
 														}
 														x =x + '<td align="center">'+ value.max_sub_marks +'</td>';
 														if(value.mid_mark == 'A'){
@@ -311,7 +311,7 @@ $(document).on('click','.fullmarks',function(){
 							'<div class="academic-result-t"><b>ACADEMIC PERFORMANCE (Scholastic Areas)</b></div>'+
 							'<table class="table">'+
 								'<thead>'+
-									'<tr><th style="width:18%;text-align:center;" rowspan="4">Subjects</th><th rowspan="4">Post Mid<br/>(50 Marks)</th><th colspan="5">Session Ending Exam</th><th rowspan="4">Pre<br/>(Out of 5)</th><th rowspan="4">Mid <br/>(Out of 20)</th><th rowspan="4">Post Mid <br/>(Out of 5)</th><th colspan="3">Session Ending Exam <br/>(Therory + Practical) <br/>(Out of 60)</th><th rowspan="4">Academic Attention<br/>(Out of 10)</th><th rowspan="4">Grand Total 100</th><th rowspan="4">Over all Grade</th></tr>'+
+									'<tr><th style="width:18%;text-align:center;" rowspan="4">Subjects</th><th rowspan="4">Post Mid<br/>(50 Marks)</th><th colspan="5">Session Ending Exam</th><th rowspan="4">Pre<br/>(Out of 5 (Pre Mid) )</th><th rowspan="4">Mid <br/>(Out of 20)</th><th rowspan="4">Post Mid <br/>(Out of 5)</th><th colspan="3">Session Ending Exam <br/>(Therory + Practical) <br/>(Out of 60)</th><th rowspan="4">Academic Attention<br/>(Out of 10)</th><th rowspan="4">Grand Total 100</th><th rowspan="4">Over all Grade</th></tr>'+
 									'<tr><th colspan="2">Theory</th><th colspan="2">Practical</th><th>Total</th><th rowspan="3">Th</th><th rowspan="3">Pr</th><th rowspan="3">Total</th></tr>'+
 									'<tr></tr>'+
 									'<tr><th>MM</th><th>Marks Obt.</th><th>MM</th><th>Marks Obt.</th><th>&nbsp;</th></tr>'+
@@ -761,7 +761,7 @@ $(document).on('click','#mid_term_marksheet',function(){
 											'<tr>'+
 												'<th style="width:18%;">Subjects</th>'+
 												'<th>Pre Mid</th>'+
-												'<th>10% of Pre Mid</th>'+
+												'<th>Out of 5 (Pre Mid)</th>'+
 												'<th colspan="2">Mid</th>'+
 												'<th>20% of Mid</th>'+
 											'</tr>'+
@@ -769,7 +769,7 @@ $(document).on('click','#mid_term_marksheet',function(){
 										'<tbody>'+
 										'<tr>'+
 											'<td align="center">&nbsp;</td>'+
-											'<td align="center">MM 50</td>'+
+											'<td align="center">MM 20</td>'+
 											'<td align="center">&nbsp;</td>'+
 											
 											'<td align="center">MM</td>'+
@@ -785,7 +785,8 @@ $(document).on('click','#mid_term_marksheet',function(){
 														}
 														else{
 															x = x + '<td align="center">'+ v.pre_mark +'</td>'+
-															'<td align="center">'+ (v.pre_mark/ 10).toFixed(2) +'</td>';
+															'<td align="center">'+ ( (parseInt(v.pre_mark)*parseInt(5)) / parseInt(20) ).toFixed(2) +'</td>';
+															 
 														}
 														x = x +'<td align="center">'+ v.max_sub_marks +'</td>';
 														if(v.mid_mark == 'A'){

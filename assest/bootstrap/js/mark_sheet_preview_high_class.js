@@ -120,6 +120,10 @@ $(document).on('click','.classwise_pre',function(){
 								var c = 1;
 								var inner_loop = 1;
 								$.each(response.data.student_with_rank,function(key,value){
+									var present = value.present;
+									if(present == null){
+									    present = '';
+									}
 									x = x + '<tr>'+
 												'<td><div class="stu-info-s-no">'+ c +'</div></td>'+
 												'<td ><div class="stu-info-roll">'+ value.roll_no +'</div></td>'+
@@ -127,12 +131,12 @@ $(document).on('click','.classwise_pre',function(){
 												'<td><div class="stu-info">' + value.name.toUpperCase() + '</div></td>'+
 												'<td><div class="stu-info">'+ value.father_name.toUpperCase() +'</div></td>'+
 												'<td><div class="stu-info">'+ value.mother_name.toUpperCase() +'</div></td>'+
-												'<td><div class="stu-info-att">'+ value.present +'</div></td>';
+												'<td><div class="stu-info-att">'+ present +'</div></td>';
 												/*Result show */
 												var pf_flag = 1;
 												$.each(value.marks,function(k,v){
 													if(type == 'pre'){
-														if(v.marks == 0 || v.marks == 'A' || v.marks < 17){
+														if(v.marks == 0 || v.marks == 'A' || v.marks < 7){
 															pf_flag = 0;
 														}
 													}

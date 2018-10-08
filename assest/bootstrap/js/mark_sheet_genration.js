@@ -115,8 +115,8 @@ $(document).on('click','.mid',function(){
 															pre_marks = 0;
 														}
 														else{
-															pre_marks = ((value.pre_mark/ 50) * 10).toFixed(2);
-															x = x +'<td align="center">'+ ((value.pre_mark/ 50) * 10).toFixed(2) +'</td>';
+															pre_marks = ((value.pre_mark/ 20) * 10).toFixed(2);
+															x = x +'<td align="center">'+ ((value.pre_mark/ 20) * 10).toFixed(2) +'</td>';
 														}
 														if(value.notebook_mark == 'Abst'){
 															flag = 1;
@@ -852,8 +852,8 @@ $(document).on('click','#mid_term_marksheet',function(){
 																pre_marks = 0;
 															}
 															else{
-																pre_marks = (v.pre_mark/50)*10;
-																x = x + '<td style="background: rgba(241, 241, 241, 0.4 )" align="center">'+ ((v.pre_mark/50)*10).toFixed(2) +'</td>';
+																pre_marks = (v.pre_mark/20)*10;
+																x = x + '<td style="background: rgba(241, 241, 241, 0.4 )" align="center">'+ ((v.pre_mark/20)*10).toFixed(2) +'</td>';
 															}
 															if(v.notebook_mark == 'Abst'){
 																flag = 1;
