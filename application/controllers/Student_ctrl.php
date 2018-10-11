@@ -642,8 +642,9 @@ else {
 		$this->db->select('*');
 		$mark_master = $this->db->get_where('mark_master',array('school_id'=>$data['school_id'],'session_id'=>$data['session'],'class_id'=>$data['class'],'medium'=>$data['medium'],'section'=>$data['section'],'e_type'=>$data['e_type'],'sub_id'=>$data['subject'],'status'=>1))->result_array();
 		
-		$this->db->select('sub_id,subj_type');
+		$this->db->select('sub_id, subj_type');
 		$subject_type = $this->db->get_where('subject',array('sub_id'=>$data['subject']))->result_array();
+		
 		if($data['class'] < 12){
 			$internal_marks = 5;
 		}
@@ -665,9 +666,13 @@ else {
 			$max_mark = $this->db->get_where('exam_type',array('e_id'=>$data['e_type'],'status'=>1))->result_array();
 			$max_mark = $max_mark[0]['max'];
 			 
-			if($data['e_type'] == 9 && $data['fit'] == 'yes' && $data['subject'] == 13){
+			if($data['e_type'] == 4 && $data['class'] == 12 && $data['subject'] == 13 || $data['e_type'] == 9 && $data['class'] == 12 && $data['subject'] == 13){
 			    $max_mark = 30;
 			    $prt_mark = 70;
+			}
+			if($data['e_type'] == 4 && $data['class'] == 13 && $data['subject'] == 13 || $data['e_type'] == 9 && $data['class'] == 13 && $data['subject'] == 13){
+			    $max_mark = 40;
+			    $prt_mark = 60;
 			}
 			$sub_type = 'Scholastic';
 		}		
@@ -761,7 +766,7 @@ else {
 				}
 			}
 			if(count($final)>0){
-			    if($data['e_type'] == 9 && $data['fit'] == 'yes'){
+			    if($data['e_type'] == 4 && $data['fit'] == 'yes' || $data['e_type'] == 9 && $data['fit'] == 'yes'){
 			    	
 			        echo json_encode(array('data'=>$final,'msg'=>'all record.','status'=>200,'max'=>$max_mark,'p_mark'=>$prt_mark,'flag'=>0,'s_type'=>$sub_type,'internal_marks'=>$internal_marks));
 			    }
