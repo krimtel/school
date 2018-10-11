@@ -115,6 +115,14 @@ $(document).on('click','.classwise_pre',function(){
 												x = x + '<th class="stu-info"><b>'+ value.subject_name +' [20]</b></th>';
 											}
 										}
+										else if(type == 'mid' && response.data.class_id == 12){
+											if(value.subject_name == 'FIT'){
+												x = x + '<th class="stu-info"><b>Com. App.[30]</b></th>';
+											}
+											else{
+												x = x + '<th class="stu-info"><b>'+ value.subject_name +' [80]</b></th>';
+											}
+										}
 										else if(type == 'mid'){
 											if(value.subject_name == 'FIT'){
 												x = x + '<th class="stu-info"><b>'+ value.subject_name +' [40]</b></th>';
@@ -123,6 +131,7 @@ $(document).on('click','.classwise_pre',function(){
 												x = x + '<th class="stu-info"><b>'+ value.subject_name +' [80]</b></th>';
 											}
 										}
+										
 										else if(type == 'post_mid'){
 											if(value.subject_name == 'FIT'){
 												x = x + '<th class="stu-info"><b>'+ value.subject_name +' [50]</b></th>';
@@ -134,6 +143,14 @@ $(document).on('click','.classwise_pre',function(){
 										else if(type == 'final'){
 											if(value.subject_name == 'FIT'){
 												x = x + '<th class="stu-info"><b>'+ value.subject_name +' [40]</b></th>';
+											}
+											else{
+												x = x + '<th class="stu-info"><b>'+ value.subject_name +' [80]</b></th>';
+											}
+										}
+										else if(type == 'final' && response.data.class_id == 12){
+											if(value.subject_name == 'FIT'){
+												x = x + '<th class="stu-info"><b>Com. App.[30]</b></th>';
 											}
 											else{
 												x = x + '<th class="stu-info"><b>'+ value.subject_name +' [80]</b></th>';
