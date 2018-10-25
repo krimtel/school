@@ -910,6 +910,7 @@ else {
 		foreach($mid_marks_masters as $m){
 			array_push($mark_master_mid, $m['id']);
 		}
+		
 		if(count($pre_marks_masters) > 0) {
 			$this->db->select('sm.*,s.subject as sub_name');
 			$this->db->where_in('hm_id',$mark_master);
@@ -920,6 +921,7 @@ else {
 			$this->db->where_in('hm_id',$mark_master_mid);
 			$this->db->join('subjects_11_12 s','s.id = sm.subject_id');
 			$marks_mid = $this->db->get_where('student_marks_high_class sm',array('sm.e_type'=>4,'sm.student_id'=>$data['s_id'],'sm.status'=>1))->result_array();
+			
 			
 			if(count($marks) > 0) {
 				foreach($marks as $mark){
@@ -933,6 +935,7 @@ else {
 					$student_marks_pre[] = $temp;
 				}
 			}
+			
 			
 			if(count($marks_mid) > 0) {
 				foreach($marks_mid as $mark_mid){
@@ -975,7 +978,7 @@ else {
 			}
 		}
 		
-		$marks_final = array();
+ 		$marks_final = array();
 		$co_subjects = array('5','9','10','11','12','1','2','3','4','6','7','8','13','14','15','16','17');
 		foreach($co_subjects as $co_subject){
 			foreach($sub as $s){
@@ -984,6 +987,7 @@ else {
 				}
 			}
 		}
+		
 		$sub = $marks_final;
 		
 		$co_marks = array();
@@ -1036,6 +1040,8 @@ else {
 		$result['final_marks'] = $sub;
 		$result['co_marks'] = $final_co_marks;
 		return $result;
+		
+		
 	}
 	
 	

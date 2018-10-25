@@ -402,12 +402,12 @@ $(document).on('click','#fetch_student',function(){
 												
 												$('.notebook').show();
 												if(response.flag){
-													x = x + '<td><input type="text" class="notebook_mark" min="0" data-s_id="'+ value.s_id +'" data-max="'+ response.internal_marks +'" max="'+ response.internal_marks +'" value="" required disabled="disabled"></td>'+
-													'&nbsp;&nbsp;<td><input type="text" class="subj_assis" min="0" data-s_id="'+ value.s_id +'" data-max="'+ response.internal_marks +'" max="'+ response.internal_marks +'" value="" required disabled="disabled"></td>';
+													x = x + '<td><input type="text" class="notebook_mark" min="0" data-s_id="'+ value.s_id +'" data-max="'+ response.internal_marks +'" max="'+ response.internal_marks +'" value="'+ value.n_marks +'" required disabled="disabled"></td>'+
+													'&nbsp;&nbsp;<td><input type="text" class="subj_assis" min="0" data-s_id="'+ value.s_id +'" data-max="'+ response.internal_marks +'" max="'+ response.internal_marks +'" value="'+ value.a_marks +'" required disabled="disabled"></td>';
 												}
 												else{
 												if (typeof value.n_marks != 'undefined'){
-													if(($('#e_type').val() == 4 && $('#class').val() == 12 && $('#subject').val() == 13) || ($('#e_type').val() == 9 && $('#class').val() == 12 && $('#subject').val() == 13) || ($('#e_type').val() == 4 && $('#class').val() == 13 && $('#subject').val() == 13) || ($('#e_type').val() == 9 && $('#class').val() == 13 && $('#subject').val() == 13)){
+													if($('#e_type').val() == 9 && $('#subject').val() == 13){
 														x = x + '&nbsp;&nbsp;<td><input type="text" class="practical_mark_box" min="0" data-s_id="'+ value.s_id +'" data-max="'+ response.p_mark +'" max="'+ response.p_mark +'" value="'+ value.p_marks +'" required></td>';
 														$('#max_notebook').hide();
 														$('#max_enrich').hide();
@@ -418,19 +418,16 @@ $(document).on('click','#fetch_student',function(){
 														'&nbsp;&nbsp;<td><input type="text" class="subj_assis" min="0" data-s_id="'+ value.s_id +'" data-max="'+ response.internal_marks +'" max="'+ response.internal_marks +'" value="'+ value.a_marks +'" required></td>';
 													}
 												}
-												
 												else{
-													if(($('#e_type').val() == 4 && $('#class').val() == 12 && $('#subject').val() == 13) || ($('#e_type').val() == 9 && $('#class').val() == 12 && $('#subject').val() == 13) || ($('#e_type').val() == 4 && $('#class').val() == 13 && $('#subject').val() == 13) || ($('#e_type').val() == 9 && $('#class').val() == 13 && $('#subject').val() == 13)){
+													if($('#e_type').val() == 9 && $('#subject').val() == 13){
 														$('#max_notebook').hide();
 														$('#max_enrich').hide();
 														$('.notebook').hide();
-														x = x + '&nbsp;&nbsp;<td><input type="text" class="practical_mark_box" min="0" data-s_id="'+ value.s_id +'" data-max="'+ response.p_mark +'" max="'+ response.p_mark +'" value="" required></td>';
+														x = x + '&nbsp;&nbsp;<td><input type="text" class="practical_mark_box" min="0" data-s_id="'+ value.s_id +'" data-max="'+ response.p_mark +'" max="'+ response.p_mark +'" value="'+ value.p_marks +'" required></td>';
 													}
-
-													
 													else{
-														x = x + '<td><input type="text" class="notebook_mark" min="0" data-s_id="'+ value.s_id +'" data-max="'+ response.internal_marks +'" max="'+ response.internal_marks +'" value="" required></td>'+
-														'&nbsp;&nbsp;<td><input type="text" class="subj_assis" min="0" data-s_id="'+ value.s_id +'" data-max="'+ response.internal_marks +'" max="'+ response.internal_marks +'" value="" required></td>';
+														x = x + '<td><input type="text" class="notebook_mark" min="0" data-s_id="'+ value.s_id +'" data-max="'+ response.internal_marks +'" max="'+ response.internal_marks +'"  required></td>'+
+														'&nbsp;&nbsp;<td><input type="text" class="subj_assis" min="0" data-s_id="'+ value.s_id +'" data-max="'+ response.internal_marks +'" max="'+ response.internal_marks +'" required></td>';
 													}
 												}
 												}
@@ -567,9 +564,9 @@ function atten(stud_mark,notebook_mark,subj_anric_mark,practical_mark){
 			},
 			success:  function (response) {
 				if(response.status == 200){
-					openExcelfile(response.csv_download);
+					//openExcelfile(response.csv_download);
 					alert('Marks Submitted Successfully.');
-					//location.reload();
+					location.reload();
 				}
 			}
 	  });

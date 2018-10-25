@@ -97,6 +97,7 @@ class Attendance_ctrl extends CI_Controller {
 		}
 			
 		$result = $this->db->get_where('session_attendance',array('session'=>$data['session'],'term'=>$data['term'],'class_category'=>$data['class'],'school_id'=>$data['school_id'],'status'=>1))->result_array();
+		print_r($this->db->last_query()); die;
 		
 		if(count($result)>0){
 			echo json_encode(array('data'=>$result,'status'=>200));

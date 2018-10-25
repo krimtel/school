@@ -119,6 +119,7 @@ class Admin_ctrl extends CI_Controller {
 		$this->db->select('*');
 		$this->db->limit('1');
 		$result = $this->db->get_where('subject_allocation',array('teacher_id'=>$t_id,'status'=>1))->result_array();
+		
 		$teacher_medium = $result[0]['medium'];
 		return $teacher_medium; 
 	}
