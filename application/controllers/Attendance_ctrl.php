@@ -80,8 +80,11 @@ class Attendance_ctrl extends CI_Controller {
 		if($data['class'] > 3 && $data['class'] < 9){
 			$data['class'] = '1-5';
 		}
-		else if($data['class'] > 8 && $data['class'] < 13){
+		else if($data['class'] > 8 && $data['class'] < 12){
 			$data['class'] = '6-9';
+		}
+		else if($data['class'] == 12){
+		    $data['class'] = '9th';
 		}
 		else if($data['class'] == 13){
 			$data['class'] = '10th';
@@ -97,7 +100,6 @@ class Attendance_ctrl extends CI_Controller {
 		}
 			
 		$result = $this->db->get_where('session_attendance',array('session'=>$data['session'],'term'=>$data['term'],'class_category'=>$data['class'],'school_id'=>$data['school_id'],'status'=>1))->result_array();
-		print_r($this->db->last_query()); die;
 		
 		if(count($result)>0){
 			echo json_encode(array('data'=>$result,'status'=>200));

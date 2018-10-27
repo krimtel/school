@@ -1298,7 +1298,6 @@ else {
 	    	}
 	    	
 	    }
-	    print_r($final_array); die;
 	    if(count($final_array)>0){
 	        echo json_encode(array('data'=>$final_array,'msg'=>'all record','status'=>200,'date'=>$date));
 	    }

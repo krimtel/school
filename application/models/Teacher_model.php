@@ -87,6 +87,20 @@ class Teacher_model extends CI_Model {
 				    else{
 				        $e_marks = 40;
 				    }
+				}else{
+				    switch($data['type']){
+				        case 1 :
+				            $e_marks = 20;
+				            break;
+				        case 4 :
+				            $e_marks = 80;
+				            break;
+				        case 6 :
+				            $e_marks = 50;
+				            break;
+				        case 9 :
+				            $e_marks = 80;
+				    }
 				}
 				foreach($results as $result){
 					//$result['marks'] = ($result['marks'] /$e_marks)* 100 ;
@@ -114,10 +128,10 @@ class Teacher_model extends CI_Model {
     					if($result['marks'] < $min){
     						$fail = $fail + 1;
     					}
-    					else if($result['marks'] >= $min && $result['marks'] <= 44){
+    					else if($result['marks'] >= $min && $result['marks'] <= 35){
     						$thirddiv = $thirddiv + 1;
     					}
-    					else if($result['marks'] > 45 && $result['marks'] <= 59){
+    					else if($result['marks'] > 35 && $result['marks'] <= 47){
     						$seconddiv = $seconddiv + 1;
     					}
     					else{

@@ -41,8 +41,11 @@ class Student_model extends CI_Model {
         if($data['class_id'] > 3 && $data['class_id'] < 9){
             $class_category = '1-5';
         }
-        else if($data['class_id'] > 8 && $data['class_id'] < 13){
+        else if($data['class_id'] > 8 && $data['class_id'] < 12){
             $class_category = '6-9';
+        }
+        else if($data['class_id'] == 12){
+            $class_category = '9th';
         }
         else if($data['class_id'] == 13){
             $class_category = '10th';
@@ -385,8 +388,11 @@ class Student_model extends CI_Model {
         if($data['class_id'] > 3 && $data['class_id'] < 9){
             $class_category = '1-5';
         }
-        else if($data['class_id'] > 8 && $data['class_id'] < 13){
+        else if($data['class_id'] > 8 && $data['class_id'] < 12){
             $class_category = '6-9';
+        }
+        else if($data['class_id'] == 12){
+            $class_category = '9th';
         }
         else if($data['class_id'] == 13){
             $class_category = '10th';
@@ -632,8 +638,11 @@ class Student_model extends CI_Model {
         if($data['class_id'] > 3 && $data['class_id'] < 9){
             $class_category = '1-5';
         }
-        else if($data['class_id'] > 8 && $data['class_id'] < 13){
+        else if($data['class_id'] > 8 && $data['class_id'] < 12){
             $class_category = '6-9';
+        }
+        else if($data['class_id'] == 12){
+            $class_category = '9th';
         }
         else if($data['class_id'] == 13){
             $class_category = '10th';
@@ -856,9 +865,14 @@ class Student_model extends CI_Model {
         if($data['class_id'] > 3 && $data['class_id'] < 9){
             $class_category = '1-5';
         }
-        else if($data['class_id'] > 8 && $data['class_id'] < 13){
+        else if($data['class_id'] > 8 && $data['class_id'] < 12){
             $class_category = '6-9';
         }
+        
+        else if($data['class_id'] == 12){
+            $class_category = '9th';
+        }
+        
         else if($data['class_id'] == 13){
             $class_category = '10th';
         }
@@ -1092,8 +1106,11 @@ class Student_model extends CI_Model {
         if($data['class_id'] > 3 && $data['class_id'] < 9){
             $class_category = '1-5';
         }
-        else if($data['class_id'] > 8 && $data['class_id'] < 13){
+        else if($data['class_id'] > 8 && $data['class_id'] < 12){
             $class_category = '6-9';
+        }
+        else if($data['class_id'] == 12){
+            $class_category = '9th';
         }
         else if($data['class_id'] == 13){
             $class_category = '10th';
@@ -1448,8 +1465,11 @@ class Student_model extends CI_Model {
         if($data['class_id'] > 3 && $data['class_id'] < 9){
             $class_category = '1-5';
         }
-        else if($data['class_id'] > 8 && $data['class_id'] < 13){
+        else if($data['class_id'] > 8 && $data['class_id'] < 12){
             $class_category = '6-9';
+        }
+        else if($data['class_id'] == 12){
+            $class_category = '9th';
         }
         else if($data['class_id'] == 13){
             $class_category = '10th';
@@ -1748,8 +1768,11 @@ class Student_model extends CI_Model {
         if($data['class_id'] > 3 && $data['class_id'] < 9){
             $class_category = '1-5';
         }
-        else if($data['class_id'] > 8 && $data['class_id'] < 13){
+        else if($data['class_id'] > 8 && $data['class_id'] < 12){
             $class_category = '6-9';
+        }
+        else if($data['class_id'] == 12){
+            $class_category = '9th';
         }
         else if($data['class_id'] == 13){
             $class_category = '10th';

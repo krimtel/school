@@ -391,12 +391,14 @@ $result_1 = array();
 	}
 
 	function mid_result($data){
-		
 		if($data['class_id'] > 3 && $data['class_id'] < 9){
 			$class_category = '1-5';
 		}
-		else if($data['class_id'] > 8 && $data['class_id'] < 13){
+		else if($data['class_id'] > 8 && $data['class_id'] < 12){
 			$class_category = '6-9';
+		}
+		else if($data['class_id'] == 12){
+			$class_category = '9th';
 		}
 		else if($data['class_id'] == 13){
 			$class_category = '10th';
@@ -445,7 +447,7 @@ $result_1 = array();
 			AND s.medium = '".$data['medium']."'
 			AND satt.school_id = ".$school_id."
 			AND satt.status = 1")->result_array();
-			$result_1 = array();
+			$result_1 = array(); 
 		}	
 		else{
 			$result['student'] = $this->db->query("select s.s_id,s.admission_no,s.session,s.roll_no,s.school_id,s.class_id,s.section,s.name,s.father_name,s.mother_name,s.gender,s.cast,s.contact_no,s.email_id,s.aadhar,s.height,s.weight,s.address,s.medium,s.subject_group,s.fit,s.elective,s.house,s.hostler,s.blood_group,s.guardian,s.local_address,s.medical,s.tc,s.photo,s.admission_date,s.created_at,s.created_by,s.ip,DATE_FORMAT(s.dob,'%d-%m-%Y') as dob,c.name as cname,sec.name as sec_name,satt.days as working_days,sa.present as presentday
@@ -519,7 +521,7 @@ else {
 			}
 			$subjects = $temp;
 		}
-		else if($class_category == '6-9'){
+		else if($class_category == '6-9' || $class_category == '9th'){
 			$temp = array();
 			$sub_seq = array('31','5','9','6','7','12','18','13','19','20','21','22');
 			$i = 0;

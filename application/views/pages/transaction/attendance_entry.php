@@ -59,10 +59,11 @@
 							<option value="0">Select Class Category</option>
 							<option value="primary">Pre-Primary</option>
 							<option value="1-5">1-5</option>
-							<option value="6-9">6-9</option>
-							<option value="10th">10</option>
-							<option value="11th">11</option>
-							<option value="12th">12</option>
+							<option value="6-9">6-8</option>
+							<option value="9th">9th</option>
+							<option value="10th">10th</option>
+							<option value="11th">11th</option>
+							<option value="12th">12th</option>
 						</select>
 						<div id="class_category_err" class="text-danger" style="display:none;"></div>
 					</div>
@@ -116,7 +117,9 @@
                 		<td><?php echo $session_day['name']; ?></td>
                 		<?php if($session_day['class_category'] == 'primary'){ ?>
                 			<td>Pre-Primary</td>
-                		<?php } else { ?>
+                		<?php } else if($session_day['class_category'] == '6-9'){ ?>
+                			<td>6-8</td>
+                		<?php }else{?>
                 			<td><?php echo $session_day['class_category']; ?></td>
                 		<?php } ?>
                 		<td><?php echo $session_day['term']; ?></td>
