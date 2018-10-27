@@ -102,12 +102,13 @@ $(document).on('click','.mid',function(){
 										'</thead>'+
 										'<tbody>';
 											$.each(response.data.marks,function(key,value){
+												if(value.sub_id != 13){
 												var flag = 0;
 												var pre_marks = 0;
 												var n_marks = 0;
 												var su_marks = 0;
 												var mi_marks = 0;
-											x = x + '<tr>'+
+												x = x + '<tr>'+
 														'<td>'+ value.name +'</td>';
 														if(value.pre_mark == 'A'){
 															flag = 1;
@@ -145,8 +146,6 @@ $(document).on('click','.mid',function(){
 														}
 														else{
 															if(value.sub_id == 13){
-//																var fit =  ((value.mid_mark / 80) * 100);
-//																mi_marks = ((40 * fit)/100).toFixed(2);
 																mi_marks = value.mid_mark * 2;
 															}
 															else{
@@ -187,14 +186,7 @@ $(document).on('click','.mid',function(){
 			                                            	x = x +'<td>-</td>';
 			                                            }
 													x = x + '</tr>';
-//											x = x + '<tr>'+
-//														'<td>'+ value.subject +'</td>'+
-//														'<td align="center">'+ value.pre +'</td>'+
-//														'<td align="center">'+ (value.pre)* 10 / 100 +'</td>'+
-//														'<td align="center">'+ (value.pre)* 10 / 100 +'</td>'+
-//														'<td align="center">'+ value.mid +'</td>'+
-//														'<td align="center">'+ (value.mid)* 20 / 80 +'</td>'+
-//													'</tr>';
+												}
 											});
 										x = x + '</tbody>'+
 									'</table>'+
@@ -217,8 +209,85 @@ $(document).on('click','.mid',function(){
 											x =x + '</tbody>'+
 										'</table>'+
 								'</div>'+
-						'</div>'+
-						'<div class="modal-footer p-footer-sec">'+
+						'</div>';
+						////////////// Foit extra table
+						if(response.data.student[0].class_id == 12 || response.data.student[0].class_id == 13){
+							if(response.data.student[0].class_id == 12){
+								var subname = 'Computer Application';
+								var submarks = 30;
+							}
+							if(response.data.student[0].class_id == 13){
+								var subname = 'Foit';
+								var submarks = 40;
+							}
+							x = x + '<div class="results-information p-results-information-a col-md-8">'+
+							'<div class="academic-result-t"><b>'+ subname +'</b></div>'+
+							'<table class="table">'+
+								'<thead>'+
+									'<tr>'+
+										'<th style="width:18%;">Subjects</th>'+
+										'<th>Half Yearly: '+ submarks +'</th>'+
+										'<th>Grade</th>'+
+									'</tr>'+
+								'</thead>'+
+								'<tbody>';
+							$.each(response.data.marks,function(key,value){
+								if(value.sub_id == 13){
+								var flag = 0;
+								var pre_marks = 0;
+								var n_marks = 0;
+								var su_marks = 0;
+								var mi_marks = 0;
+								x = x + '<tr>'+
+										'<td>'+ subname +'</td>';
+										mi_marks = value.mid_mark;
+										if(value.mid_mark == 'Abst'){
+											flag = 1;
+											x = x + '<td align="center">Abst</td>';
+											mi_marks = 0;
+										}
+										x = x+ '<td align="center">'+ parseInt(mi_marks).toFixed(2)  +'</td>';
+										var number = parseInt(mi_marks);
+										 number = parseInt((number*100)/ parseInt(submarks));
+										
+										if(number > 90){
+											  x = x +'<td>A1</td>';
+										}
+										else if(number > 80){
+											x = x +'<td>A2</td>';
+										}
+										else if(number > 70){
+											x = x +'<td>B1</td>';
+										}
+										else if(number > 60){
+											x = x +'<td>B2</td>';
+										}
+										
+										else if(number > 50){
+											x = x +'<td>C1</td>';
+										}
+										else if(number > 40){
+											x = x +'<td>C2</td>';
+										}
+										else if(number > 32){
+											x = x +'<td>D</td>';
+										}
+										else if(number > 0){
+											x = x +'<td>E</td>';
+										}
+										else{
+											x = x +'<td>-</td>';
+										}
+									x = x + '</tr>';
+								}
+							});	
+								x = x +'</tbody>'+
+							'</table>'+
+						'</div>';
+						}
+						
+						
+						x = x +'<div class="modal-footer p-footer-sec">'+
 							'<div class="col-md-2 p-place-date">'+
 								'<b>Bhilai </b>'+ response.date +
 							'</div>'+
@@ -839,6 +908,7 @@ $(document).on('click','#mid_term_marksheet',function(){
 											'</thead>'+
 											'<tbody>';
 												$.each(value.marks,function(key,v){
+													if(v.sub_id != 13){
 													var flag = 0;
 													var pre_marks = 0;
 													var n_marks = 0;
@@ -920,6 +990,7 @@ $(document).on('click','#mid_term_marksheet',function(){
                                             	x = x +'<td style="background: rgba(241, 241, 241, 0.4 )">-</td>';
                                             }
 											x = x + '</tr>';
+										}
 										});
 											x = x + '</tbody>'+
 										'</table>'+
@@ -932,18 +1003,101 @@ $(document).on('click','#mid_term_marksheet',function(){
 												'</thead>'+
 												'<tbody>';
 												$.each(value.co_marks,function(key,v){
-if (typeof v.mark != 'undefined'){													
-    x = x +'<tr><td>'+ v.name +'</td><td align="center">'+ v.mark +'</td></tr>';  
-}
-else{
-    x = x +'<tr><td>'+ v.name +'</td><td align="center">-</td></tr>';
-}
+													if (typeof v.mark != 'undefined'){													
+														x = x +'<tr><td>'+ v.name +'</td><td align="center">'+ v.mark +'</td></tr>';  
+													}
+													else{
+														x = x +'<tr><td>'+ v.name +'</td><td align="center">-</td></tr>';
+													}
 												});
 												x =x + '</tbody>'+
 											'</table>'+
 									'</div>'+
-							'</div>'+
-							'<div class="modal-footer p-footer-sec">'+
+							'</div>';
+							
+							
+							
+							////////////// Foit extra table
+						if(value.student.class_id == 12 || value.student.class_id == 13){
+							if(value.student.class_id == 12){
+								var subname = 'Computer Application';
+								var submarks = 30;
+							}
+							if(value.student.class_id == 13){
+								var subname = 'Foit';
+								var submarks = 40;
+							}
+							x = x + '<div class="results-information p-results-information-a col-md-8">'+
+							'<div class="academic-result-t"><b>'+ subname +'</b></div>'+
+							'<table class="table">'+
+								'<thead>'+
+									'<tr>'+
+										'<th style="width:18%;">Subjects</th>'+
+										'<th>Half Yearly: '+ submarks +'</th>'+
+										'<th>Grade</th>'+
+									'</tr>'+
+								'</thead>'+
+								'<tbody>';
+							$.each(value.marks,function(key,val){
+								if(val.sub_id == 13){
+								var flag = 0;
+								var pre_marks = 0;
+								var n_marks = 0;
+								var su_marks = 0;
+								var mi_marks = 0;
+								x = x + '<tr>'+
+										'<td>'+ subname +'</td>';
+										mi_marks = val.mid_mark;
+										if(val.mid_mark == 'Abst'){
+											flag = 1;
+											x = x + '<td align="center">Abst</td>';
+											mi_marks = 0;
+										}
+										x = x+ '<td align="center">'+ parseInt(mi_marks).toFixed(2)  +'</td>';
+										var number = parseInt(mi_marks);
+										 number = parseInt((number*100)/ parseInt(submarks));
+										
+										if(number > 90){
+											  x = x +'<td>A1</td>';
+										}
+										else if(number > 80){
+											x = x +'<td>A2</td>';
+										}
+										else if(number > 70){
+											x = x +'<td>B1</td>';
+										}
+										else if(number > 60){
+											x = x +'<td>B2</td>';
+										}
+										
+										else if(number > 50){
+											x = x +'<td>C1</td>';
+										}
+										else if(number > 40){
+											x = x +'<td>C2</td>';
+										}
+										else if(number > 32){
+											x = x +'<td>D</td>';
+										}
+										else if(number > 0){
+											x = x +'<td>E</td>';
+										}
+										else{
+											x = x +'<td>-</td>';
+										}
+									x = x + '</tr>';
+								}
+							});	
+								x = x +'</tbody>'+
+							'</table>'+
+						'</div>';
+						}
+							
+							
+							
+							
+							
+							x = x + '<div class="modal-footer p-footer-sec">'+
 								'<div class="col-md-2 p-place-date">'+
 									'<b>Bhilai </b>'+ response.date +
 								'</div>'+
