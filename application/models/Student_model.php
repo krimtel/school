@@ -420,6 +420,7 @@ class Student_model extends CI_Model {
         $this->db->where('sa.student_id', 'stu.s_id',false);
         $students = $this->db->get_where('student stu',array('stu.class_id'=>$data['class_id'],'stu.section'=>$data['section'],'stu.school_id'=>$data['school_id'],'stu.medium'=>$data['medium'],'stu.session'=>$data['session'],'stu.subject_group'=>$data['s_group'],'am.term' => 'Mid','am.status'=>1,'stu.status'=>1))->result_array();
         
+        
         $this->db->select('id');
         if($data['type'] == 'pre'){
             $this->db->where('e_type',4);

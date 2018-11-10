@@ -45,6 +45,7 @@ class Result_model extends CI_Model {
 			AND `s`.`s_id` = ".$data['s_id']."
 			AND `am`.`session_id` = ".$data['session']."
 			AND `am`.`class_id` = ".$data['class_id']."
+            AND `s`.`class_id` = ".$data['class_id']."
 			AND `am`.`section_id` = ".$data['section_id']."
 			AND `s`.`section` = ".$data['section_id']."
 			AND `am`.`term` = 'Annual'
@@ -66,6 +67,7 @@ class Result_model extends CI_Model {
 			AND `s`.`s_id` = ".$data['s_id']."
 			AND `am`.`session_id` = ".$data['session']."
 			AND `am`.`class_id` = ".$data['class_id']."
+            AND `s`.`class_id` = ".$data['class_id']."
 			AND `am`.`section_id` = ".$data['section_id']."
 			AND `s`.`section` = ".$data['section_id']."
 			AND `am`.`term` = 'Mid'
@@ -94,6 +96,7 @@ class Result_model extends CI_Model {
 			AND `s`.`s_id` = ".$data['s_id']."
 			AND `am`.`session_id` = ".$data['session']."
 			AND `am`.`class_id` = ".$data['class_id']."
+            AND `s`.`class_id` = ".$data['class_id']."
 			AND `am`.`section_id` = ".$data['section_id']."
 			AND `s`.`section` = ".$data['section_id']."
 			AND `am`.`term` = 'Mid'
@@ -437,6 +440,7 @@ $result_1 = array();
 			AND `s`.`school_id` = ".$school_id."
 			AND `am`.`session_id` = ".$data['session']."
 			AND `am`.`class_id` = ".$data['class_id']."
+            AND `s`.`class_id` = ".$data['class_id']."
 			AND `am`.`section_id` = ".$data['section_id']."
 			AND `s`.`section` = ".$data['section_id']."
 			AND `am`.`term` = 'Mid'
@@ -461,6 +465,7 @@ $result_1 = array();
 			AND `s`.`school_id` = ".$school_id."
 			AND `am`.`session_id` = ".$data['session']."
 			AND `am`.`class_id` = ".$data['class_id']."
+            AND `s`.`class_id` = ".$data['class_id']."
 			AND `am`.`section_id` = ".$data['section_id']."
 			AND `s`.`section` = ".$data['section_id']."
 			AND `am`.`term` = 'Mid'
@@ -796,6 +801,7 @@ else {
 			AND `s`.`school_id` = ".$data['school_id']."
 			AND `am`.`session_id` = ".$data['session']."
 			AND `am`.`class_id` = ".$data['class_id']."
+            AND `s`.`class_id` = ".$data['class_id']."
 			AND `am`.`section_id` = ".$data['section_id']."
 			AND `s`.`section` = ".$data['section_id']."
 			AND `am`.`term` = 'Mid'
@@ -1080,6 +1086,7 @@ else {
 			AND `s`.`school_id` = ".$data['school_id']."
 			AND `am`.`session_id` = ".$data['session']."
 			AND `am`.`class_id` = ".$data['class_id']."
+            AND `s`.`class_id` = ".$data['class_id']."
 			AND `am`.`section_id` = ".$data['section_id']."
 			AND `s`.`section` = ".$data['section_id']."
 			AND `am`.`term` = 'Mid'
@@ -1371,6 +1378,7 @@ else {
 			AND `s`.`s_id` = ".$data['s_id']."
 			AND `am`.`session_id` = ".$data['session']."
 			AND `am`.`class_id` = ".$data['class_id']."
+            AND `s`.`class_id` = ".$data['class_id']."
 			AND `am`.`section_id` = ".$data['section_id']."
 			AND `s`.`section` = ".$data['section_id']."
 			AND `am`.`term` = 'Annual'

@@ -51,7 +51,7 @@ class Teacher_model extends CI_Model {
 			$this->db->select('count(*) as total');
 			$no_of_students = $this->db->get_where('student',array('session'=>$data['session'],'medium'=>$data['medium'],'class_id'=>$data['class'],'section'=>$data['section'],'school_id'=>$data['school_id'],'status'=>1))->result_array();
 			$no_of_students = $no_of_students[0]['total'];
-	
+	       
 			$this->db->select('*');
 			$mark_masters = $this->db->get_where('mark_master',array('school_id'=>$data['school_id'],'medium'=>$data['medium'],'class_id'=>$data['class'],'section'=>$data['section'],'sub_id'=>$sub_list,'e_type'=>$data['type'],'status'=>1))->result_array();
 			
@@ -60,6 +60,7 @@ class Teacher_model extends CI_Model {
 			if(count($mark_master)>0){
 				$this->db->select('*');
 				$results = $this->db->get_where('student_mark',array('session_id'=>$data['session'],'marks<>'=>'A','medium'=>$data['medium'],'class_id'=>$data['class'],'mm_id'=>$mark_master[0]['m_id'],'section_id'=>$data['section'],'subject_id'=>$sub_list,'e_type'=>$data['type']))->result_array();
+				
 				
 				$this->db->select('max(cast(marks as UNSIGNED)) as max ,sum(marks) as total');
 				$result = $this->db->get_where('student_mark',array('session_id'=>$data['session'],'medium'=>$data['medium'],'class_id'=>$data['class'],'section_id'=>$data['section'],'subject_id'=>$sub_list,'e_type'=>$data['type'],'mm_id'=>$mark_masters[0]['m_id']))->result_array();
@@ -80,14 +81,13 @@ class Teacher_model extends CI_Model {
 				$seconddiv = 0;
 				$thirddiv = 0;
 				
-				if($sub_list == 13){
-				    if($data['type'] == 6){
-				        $e_marks = 50;
+				if($sub_list == 13 && $results[0]['class_id'] == 12){
+				        $e_marks = 30;
 				    }
-				    else{
-				        $e_marks = 40;
-				    }
-				}else{
+			    else if($sub_list == 13 && $results[0]['class_id'] == 13){
+			        $e_marks = 40;
+			    }
+				else{
 				    switch($data['type']){
 				        case 1 :
 				            $e_marks = 20;
@@ -102,14 +102,13 @@ class Teacher_model extends CI_Model {
 				            $e_marks = 80;
 				    }
 				}
+				
 				foreach($results as $result){
-					//$result['marks'] = ($result['marks'] /$e_marks)* 100 ;
                     if($data['type'] == 4 || $data['type'] == 9){
 						$min = 27;
 					}else{
 						$min = 7;
-					}
-					
+					} 
 					if($data['type'] == 1 || $data['type'] == 6){
 					    if($result['marks'] < $min){
 					        $fail = $fail + 1;
@@ -121,6 +120,30 @@ class Teacher_model extends CI_Model {
 					        $seconddiv = $seconddiv + 1;
 					    }
 					    else{
+					        $firstdiv = $firstdiv + 1;
+					    }
+					}
+					else if($data['type'] == 4 && $sub_list == 13 && $result['class_id'] == 12){
+					    if($result['marks'] < 10){
+					        $fail = $fail + 1;
+					    }else if($result['marks'] >= 10 && $result['marks'] <= 13){
+					        
+					        $thirddiv = $thirddiv + 1;
+					    }else if($result['marks'] > 13 && $result['marks'] <= 17){
+					        
+					        $seconddiv = $seconddiv + 1;
+					    }else{
+					        $firstdiv = $firstdiv + 1;
+					    }
+					}
+					else if($data['type'] == 4 && $sub_list == 13 && $result['class_id'] == 13){
+					    if($result['marks'] < 14){
+					        $fail = $fail + 1;
+					    }else if($result['marks'] >= 14 && $result['marks'] <= 17){
+					        $thirddiv = $thirddiv + 1;
+					    }else if($result['marks'] > 17 && $result['marks'] <= 23){
+					        $seconddiv = $seconddiv + 1;
+					    }else{
 					        $firstdiv = $firstdiv + 1;
 					    }
 					}
@@ -138,8 +161,8 @@ class Teacher_model extends CI_Model {
     						$firstdiv = $firstdiv + 1;
     					}
 					}
+				
 				}
-			
 				$pass = ($no_of_students - $notapper) - $fail;
 				if($pass < 0 ){
 					$pass = 0;
@@ -294,6 +317,7 @@ class Teacher_model extends CI_Model {
 		$this->db->join('class c','c.c_id = s.class_id');
 		$this->db->join('section sec','sec.id = s.section_id');
 		$classes = $this->db->get_where('subject_allocation s',array('s.class_id <'=>14,'s.teacher_id'=>$data['t_id'],'s.school_id'=>$data['school_id'],'s.medium'=>$data['medium'],'s.status'=>1))->result_array();
+		
 		$e_marks;
 		switch($data['e_type']){
 			case 1 :
@@ -313,12 +337,14 @@ class Teacher_model extends CI_Model {
 			$this->db->select('cs.*');
 			$this->db->join('subject s','s.sub_id = cs.subject_id');
 			$this->db->join('subject_allocation sa','sa.subject_id = s.sub_id');
+			$this->db->group_by('class_id');
 			$subjects = $this->db->get_Where('class_sujects cs',array('cs.class_id'=>$class['class_id'],'s.subj_type'=>'Scholastic','cs.status'=>1,'sa.teacher_id'=>$data['t_id'],'sa.class_id'=>$class['class_id'],'sa.section_id'=>$class['section_id'],'sa.medium'=>$data['medium'],'sa.status'=>1))->result_array();
 			
 			$sub_lists = array();
 			foreach($subjects as $subject){
 				array_push($sub_lists, $subject['subject_id']);
 			}
+			
 			$final = array();
 			foreach($sub_lists as $sub_list){
 				$temp = array();
@@ -371,28 +397,87 @@ class Teacher_model extends CI_Model {
 					$seconddiv = 0;
 					$thirddiv = 0;
 					
-					if($sub_list == 13){
-					    if($data['e_type'] == 6){
-					        $e_marks = 50;
-					    }
-					    else{
-					        $e_marks = 40;
+					if($sub_list == 13 && $results[0]['class_id'] == 12){
+					    $e_marks = 30;
+					}
+					else if($sub_list == 13 && $results[0]['class_id'] == 13){
+					    $e_marks = 40;
+					}
+					else{
+					    switch($data['type']){
+					        case 1 :
+					            $e_marks = 20;
+					            break;
+					        case 4 :
+					            $e_marks = 80;
+					            break;
+					        case 6 :
+					            $e_marks = 50;
+					            break;
+					        case 9 :
+					            $e_marks = 80;
 					    }
 					}
+					
 					foreach($results as $result){
-						$result['marks'] = ($result['marks'] /$e_marks)* 100 ;
-						if($result['marks'] <= 32){
-							$fail = $fail + 1;
-						}
-						else if($result['marks'] >= 33 && $result['marks'] <= 44){
-							$thirddiv = $thirddiv + 1;
-						}
-						else if($result['marks'] > 45 && $result['marks'] <= 59){
-							$seconddiv = $seconddiv + 1;
-						}
-						else{
-							$firstdiv = $firstdiv + 1;
-						}
+					    if($data['type'] == 4 || $data['type'] == 9){
+					        $min = 27;
+					    }else{
+					        $min = 7;
+					    }
+					    if($data['type'] == 1 || $data['type'] == 6){
+					        if($result['marks'] < $min){
+					            $fail = $fail + 1;
+					        }
+					        else if($result['marks'] >= $min && $result['marks'] <= 8){
+					            $thirddiv = $thirddiv + 1;
+					        }
+					        else if($result['marks'] > 8 && $result['marks'] <= 11){
+					            $seconddiv = $seconddiv + 1;
+					        }
+					        else{
+					            $firstdiv = $firstdiv + 1;
+					        }
+					    }
+					    else if($data['type'] == 4 && $sub_list == 13 && $result['class_id'] == 12){
+					        if($result['marks'] < 10){
+					            $fail = $fail + 1;
+					        }else if($result['marks'] >= 10 && $result['marks'] <= 13){
+					            
+					            $thirddiv = $thirddiv + 1;
+					        }else if($result['marks'] > 13 && $result['marks'] <= 17){
+					            
+					            $seconddiv = $seconddiv + 1;
+					        }else{
+					            $firstdiv = $firstdiv + 1;
+					        }
+					    }
+					    else if($data['type'] == 4 && $sub_list == 13 && $result['class_id'] == 13){
+					        if($result['marks'] < 14){
+					            $fail = $fail + 1;
+					        }else if($result['marks'] >= 14 && $result['marks'] <= 17){
+					            $thirddiv = $thirddiv + 1;
+					        }else if($result['marks'] > 17 && $result['marks'] <= 23){
+					            $seconddiv = $seconddiv + 1;
+					        }else{
+					            $firstdiv = $firstdiv + 1;
+					        }
+					    }
+					    else{
+					        if($result['marks'] < $min){
+					            $fail = $fail + 1;
+					        }
+					        else if($result['marks'] >= $min && $result['marks'] <= 35){
+					            $thirddiv = $thirddiv + 1;
+					        }
+					        else if($result['marks'] > 35 && $result['marks'] <= 47){
+					            $seconddiv = $seconddiv + 1;
+					        }
+					        else{
+					            $firstdiv = $firstdiv + 1;
+					        }
+					    }
+					    
 					}
 	
 					$pass = ($no_of_students - $notapper) - $fail;
@@ -479,7 +564,7 @@ class Teacher_model extends CI_Model {
 				$new_final[] = $temp;
 			}
 		}
-		
+		$new_final = array_map("unserialize", array_unique(array_map("serialize", $new_final)));
 		return $new_final;
 		
 	}
@@ -907,7 +992,7 @@ class Teacher_model extends CI_Model {
 	       $this->db->join('subjects_11_12 s','s.id = sa.subject_id');
 	       $this->db->order_by('sa.section_id');
 	       $subjects = $this->db->get_where('subject_allocation sa',array('sa.medium'=>$data['medium'],'sa.school_id'=>$data['school_id'],'sa.class_id'=>$class['class_id'],'sa.section_id'=>$class['section_id'],'sa.teacher_id'=>$data['t_id'],'s.type'=>'scholastic'))->result_array();
-	       print_r($this->db->last_query()); die;
+	       
 	       $SUBJECTS = array();
 	       foreach($subjects as $subject){
 	           $temp = array();
