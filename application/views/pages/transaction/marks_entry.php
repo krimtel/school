@@ -407,7 +407,7 @@ $(document).on('click','#fetch_student',function(){
 												}
 												else{
 												if (typeof value.n_marks != 'undefined'){
-													if($('#e_type').val() == 9 && $('#subject').val() == 13){
+													if($('#e_type').val() == 4 && $('#subject').val() == 13 || $('#e_type').val() == 9 && $('#subject').val() == 13){
 														x = x + '&nbsp;&nbsp;<td><input type="text" class="practical_mark_box" min="0" data-s_id="'+ value.s_id +'" data-max="'+ response.p_mark +'" max="'+ response.p_mark +'" value="'+ value.p_marks +'" required></td>';
 														$('#max_notebook').hide();
 														$('#max_enrich').hide();
@@ -419,7 +419,7 @@ $(document).on('click','#fetch_student',function(){
 													}
 												}
 												else{
-													if($('#e_type').val() == 9 && $('#subject').val() == 13){
+													if($('#e_type').val() == 4 && $('#subject').val() == 13 || $('#e_type').val() == 9 && $('#subject').val() == 13){
 														$('#max_notebook').hide();
 														$('#max_enrich').hide();
 														$('.notebook').hide();
@@ -428,8 +428,8 @@ $(document).on('click','#fetch_student',function(){
 													else{
 														x = x + '<td><input type="text" class="notebook_mark" min="0" data-s_id="'+ value.s_id +'" data-max="'+ response.internal_marks +'" max="'+ response.internal_marks +'"  required></td>'+
 														'&nbsp;&nbsp;<td><input type="text" class="subj_assis" min="0" data-s_id="'+ value.s_id +'" data-max="'+ response.internal_marks +'" max="'+ response.internal_marks +'" required></td>';
+														}
 													}
-												}
 												}
 											}
 										}

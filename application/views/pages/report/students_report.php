@@ -598,7 +598,7 @@ function student_render(response){
 					'<a type="button" class="stu_edit btn btn-info btn-flat" data-sid="'+value.s_id+'" title="Edit"> <i class="fa fa-pencil"></i></a>' +
 					'<a type="button" class="stu_del btn btn-danger btn-flat" data-sid="'+value.s_id+'" title="Delete"> <i class="fa fa-trash-o"></i></a>' +
 				'</td>';
-				 x = x + '<td><img width="30" src="'+ baseUrl +'photos/students/<?php echo strtolower($this->session->userdata('school'));?>/'+ value.photo +'"></td>';
+				 x = x + '<td><img width="30" src="'+ baseUrl +'photos/students/<?php echo strtolower($this->session->userdata('school'));?>/'+value.photo+'"></td>';
 				//'<td><input class="dynamic numaric" style="width:90px;" data-column="aadhar" data-id="'+ value.s_id +'" type="text" id="stu_aadhar" value="'+ value.aadhar +'" disabled="disabled" maxlength="12" readonly></td>'+
 				x = x + '<td>'+ value.aadhar +'</td>'+
 				//'<td><input class="dynamic" data-column="name" data-id="'+ value.s_id +'" type="text" id="stu_name" value="'+ value.name +'" disabled="disabled"></td>'+

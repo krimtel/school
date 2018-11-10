@@ -152,6 +152,7 @@ $(document).on('click','#teachers_abstract_result',function(){
     			$('#teacher_abstract').html(x);
     		}
 			else{
+				$('#teacher_abstract').html("Not any Scholastic subjects");
 			}
 		}
 	});
