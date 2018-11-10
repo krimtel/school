@@ -76,6 +76,7 @@ class Class_ctrl extends CI_Controller {
     	//get teacher id
     	$result = $this->db->get_where('users',array('uid'=>$u_id))->result_array();
     	$teacher_id = $result[0]['t_id'];
+    	
     	//get school_id
     	$school_id = $this->session->userdata('school_id');
     	//get all section

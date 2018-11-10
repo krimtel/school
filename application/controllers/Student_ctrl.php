@@ -40,6 +40,8 @@ class Student_ctrl extends CI_Controller {
 
 
 	function add_student() {
+	    print_r($this->input->post()); die;
+	    
 		$data['admission_no'] = $this->input->post('admission_no');
 		$data['roll_no'] = $this->input->post('roll_no');
 		$data['name'] = $this->input->post('student_name');
@@ -320,8 +322,9 @@ class Student_ctrl extends CI_Controller {
 					$this->db->select('*');
 					$result = $this->db->get_where('student',array('admission_no'=>$data['admission_no'],'school_id'=>$data['school_id'],'status'=>1))->result_array();
 					
+					
 					if(count($result)>0){
-						$this->db->where('admission_no',$data['admission_no']);
+					    $this->db->where(array('admission_no'=>$data['admission_no'],'school_id'=>$data['school_id']));
 						$this->db->update('student',$data);
 					}
 					else{
@@ -842,7 +845,7 @@ else {
 		}
 		$this->db->order_by('s.roll_no','asc');
 		$students = $this->db->get_where('student s',array('s.medium'=>$data['medium'],'s.class_id'=>$data['class'],'s.section'=>$data['section'],'s.school_id'=>$data['school'],'s.status'=>1))->result_array();
-		 
+		
 		$this->db->select('*');
 		$att_master = $this->db->get_where('attendance_master',array('session_id'=>$data['session'],'school_id'=>$data['school'],'medium'=>$data['medium'],'class_id'=>$data['class'],'section_id'=>$data['section'],'term'=>$data['term'],'status'=>1))->result_array();
 		 
@@ -1582,8 +1585,8 @@ else {
 		
 		
 		else{
+		    
 			$result = $this->Student_model->classwise_mid_high_class($data);
-			
 		}
 	
 		if(count($result) > 0){
