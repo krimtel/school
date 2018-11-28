@@ -1772,6 +1772,7 @@ else {
     	if(count($marks_master) > 0){
     		$this->db->select('*');
     		$student_marks = $this->db->get_where('student_marks_high_class',array('hm_id'=>$marks_master[0]['id'],'school_id'=>$data['school_id'],'class_id'=>$data['class'],'section_id'=>$data['section'],'status'=>1))->result_array();
+    	    
     	}
     	else{
     		$student_marks = array();
@@ -1825,7 +1826,6 @@ else {
     				's_group' => $this->input->post('s_group'),
     				'e_type' => (int)$etype,
     				'sub_id'=>(int)$data['subject']))->result_array();
-    	   
     		if($subject_detail[0]['practical'] == 1){
     			$s_marks = $subject_detail[0]['subj_marks'];
     			$p_marks = $subject_detail[0]['practical_mark'];

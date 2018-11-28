@@ -1669,8 +1669,11 @@ else {
 	    if($data['class_id'] > 3 && $data['class_id'] < 9){
 	        $class_category = '1-5';
 	    }
-	    else if($data['class_id'] > 8 && $data['class_id'] < 13){
-	        $class_category = '6-9';
+	    else if($data['class_id'] > 8 && $data['class_id'] < 12){
+	        $class_category = '6-8';
+	    }
+	    else if($data['class_id'] == 12){
+	        $class_category = '9th';
 	    }
 	    else if($data['class_id'] == 13){
 	        $class_category = '10th';
@@ -1746,7 +1749,7 @@ else {
 	    }
 	    $subjects = $temp;
 	}
-	else if($class_category == '6-9'){
+	else if($class_category == '6-8' || $class_category == '9th'){
 	    $temp = array();
 	    $sub_seq = array('31','5','9','6','7','12','13','18','19','20','21','22');
 	    $i = 0;
@@ -1819,6 +1822,7 @@ else {
 	foreach($marks_masters as $marks_master){
 	    array_push($mm_ids, $marks_master['m_id']);
 	}
+	
 	
 	$this->db->select('sm.*,s.name');
 	$this->db->join('subject s','s.sub_id= sm.subject_id');

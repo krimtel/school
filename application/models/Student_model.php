@@ -27,7 +27,7 @@ class Student_model extends CI_Model {
                 $term = 'Mid';
                 break;
             case 'post_mid' :
-                $term = 'Mid';
+                $term = 'Post';
                 $e_type = 6;
                 break;
             case 'final' :
@@ -80,7 +80,7 @@ class Student_model extends CI_Model {
             $annual_atten = $this->db->get_where('attendance_master am',array('am.session_id'=>$data['session'],'am.medium'=>$data['medium'],'am.class_id'=>$data['class_id'],'am.term'=>'Annual','am.section_id'=>$data['section']))->result_array();
         }
         if($term == 'Mid' || $term == 'Final'){
-            $this->db->select('stu.*,c.name as cname,s.name as secname,concat('.$annual_atten[0]['present'].'sa.present,"/'.$days.'") as present');
+            $this->db->select('stu.*,c.name as cname,s.name as secname,concat(sa.present,"/'.$days.'") as present');
             $this->db->join('class c','c.c_id = stu.class_id');
             $this->db->join('section s','s.id = stu.section');
             $this->db->join('attendance_master am','am.class_id = stu.class_id');
@@ -91,7 +91,13 @@ class Student_model extends CI_Model {
             if($data['class_id'] == 12 || $data['class_id'] == 13){
                 $this->db->where('stu.fit', $data['fit'],false);
             }
-            $students = $this->db->get_where('student stu',array('stu.class_id'=>$data['class_id'],'stu.section'=>$data['section'],'stu.school_id'=>$data['school_id'],'am.medium'=>$data['medium'],'stu.medium'=>$data['medium'],'stu.session'=>$data['session'],'am.term' => 'Mid','am.status'=>1,'stu.status'=>1))->result_array();
+            if($term == 'Mid'){
+                $this->db->where('am.term','Mid');
+            }elseif($term == 'Final'){
+                $this->db->where('am.term','Annual');
+            }
+            $students = $this->db->get_where('student stu',array('stu.class_id'=>$data['class_id'],'stu.section'=>$data['section'],'stu.school_id'=>$data['school_id'],'am.medium'=>$data['medium'],'stu.medium'=>$data['medium'],'stu.session'=>$data['session'],'am.status'=>1,'stu.status'=>1))->result_array();
+            
         }
         else{
             $this->db->select('stu.*,c.name as cname,s.name as secname');
@@ -183,30 +189,46 @@ class Student_model extends CI_Model {
                         if($m['marks'] == 'A'){
                             $temp['p_f'] = 1;
                         }
+                        //----for mid and final furd fail criteria-------------
                         if($m['subject_id'] != 13){
                             if($e_type == 4 || $e_type == 9){
                                 if($m['marks'] < 27){
                                     $temp['p_f'] = 1;
                                 }
                             }
+                            //------for post furd fail criteria---------------
+                            elseif($e_type == 6){
+                                if($m['marks'] < 17){
+                                    $temp['p_f'] = 1;
+                                }
+                            }
+                            //-----for pre furd fail criteria-----------------
                             else{
                                 if($m['marks'] < 7){
                                     $temp['p_f'] = 1;
                                 }
                             }
-                        }
+                        }// -----end of else if condition------------
+                        
+                        
                         if($m['subject_id'] != 13){
                             $total = $total + $m['marks'];
                         }
-                    }
-                    $temp['marks'] = $marks;
-                    $temp['total_marks'] = $total;
-                }
+                        
+                    }// end of marks for loop
+                    
+                    
+                    $temp['marks'] = $marks; // assingn in temp array
+                    $temp['total_marks'] = $total; // assign in temp array
+                    
+                } //end of if condition-----------------
                 else{
                     continue;
                 }
                 $temp['student_id'] = $key;
             }
+            
+            
             if($flag_1){
                 $temp['student_id'] = $student['s_id'];
                 $temp['marks'] = 0;
@@ -341,7 +363,8 @@ class Student_model extends CI_Model {
         }
         
         $data['t_list'] = $top_student;
-        if($data['type'] == 'pre' || $data['type'] == 'post_mid'){
+        //------------for pre furd-----------------------------------------
+        if($data['type'] == 'pre'){
             $flag = 0;
             foreach($data['s_list'][0]['marks'] as $mrk){
                 if($mrk['subject_id'] == 13){
@@ -350,6 +373,17 @@ class Student_model extends CI_Model {
             }
             $data['out_of'] = (int)count($data['s_list'][0]['marks']) * 20 - $flag;
         }
+        
+        elseif($data['type'] == 'post_mid'){
+            $flag = 0;
+            foreach($data['s_list'][0]['marks'] as $mrk){
+                if($mrk['subject_id'] == 13){
+                    $flag = 20;
+                }
+            }
+            $data['out_of'] = (int)count($data['s_list'][0]['marks']) * 50 - $flag;
+        }
+       //------------------for mid furd-----------------------------------
         else{
             $flag = 0;
             foreach($data['s_list'][0]['marks'] as $mrk){

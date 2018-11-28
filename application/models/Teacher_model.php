@@ -106,10 +106,16 @@ class Teacher_model extends CI_Model {
 				foreach($results as $result){
                     if($data['type'] == 4 || $data['type'] == 9){
 						$min = 27;
-					}else{
+					}
+					
+					elseif($data['type'] == 6){
+					    $min = 17;
+					}
+					else{
 						$min = 7;
 					} 
-					if($data['type'] == 1 || $data['type'] == 6){
+					//----------for pre teacher abstract----------------------
+					if($data['type'] == 1){
 					    if($result['marks'] < $min){
 					        $fail = $fail + 1;
 					    }
@@ -117,6 +123,21 @@ class Teacher_model extends CI_Model {
 					        $thirddiv = $thirddiv + 1;
 					    }
 					    else if($result['marks'] > 8 && $result['marks'] <= 11){
+					        $seconddiv = $seconddiv + 1;
+					    }
+					    else{
+					        $firstdiv = $firstdiv + 1;
+					    }
+					}
+					//----------for Post teacher abstract----------------------
+					elseif($data['type'] == 6){
+					    if($result['marks'] < $min){
+					        $fail = $fail + 1;
+					    }
+					    else if($result['marks'] >= $min && $result['marks'] <= 18){
+					        $thirddiv = $thirddiv + 1;
+					    }
+					    else if($result['marks'] > 18 && $result['marks'] <= 29){
 					        $seconddiv = $seconddiv + 1;
 					    }
 					    else{
@@ -327,11 +348,12 @@ class Teacher_model extends CI_Model {
 				$e_marks = 80;
 				break;
 			case 6 :
-				$e_marks = 20;
+				$e_marks = 50;
 				break;
 			case 9 :
 				$e_marks = 80;
 		}
+		
 		$new_final = array();
 		foreach($classes as $class){
 			$this->db->select('cs.*');
@@ -363,7 +385,7 @@ class Teacher_model extends CI_Model {
 				$this->db->select('name');
 				$subject_name = $this->db->get_where('subject',array('sub_id'=>$sub_list))->result_array();
 				$subject_name = $subject_name[0]['name'];
-					
+				
 				$this->db->select('count(*) as total');
 				$no_of_students = $this->db->get_where('student',array('session'=>$data['session'],'medium'=>$data['medium'],'class_id'=>$class['class_id'],'section'=>$class['section_id'],'school_id'=>$data['school_id'],'status'=>1))->result_array();
 				$no_of_students = $no_of_students[0]['total'];
@@ -376,22 +398,22 @@ class Teacher_model extends CI_Model {
 				
 				if(count($mark_master)>0){
 					$this->db->select('*');
-					$results = $this->db->get_where('student_mark',array('session_id'=>$data['session'],'marks<>'=>'A','medium'=>$data['medium'],'class_id'=>$class['class_id'],'mm_id'=>$mark_master[0]['m_id'],'section_id'=>$class['section_id'],'subject_id'=>$sub_list,'e_type'=>$data['e_type']))->result_array();
+					$results = $this->db->get_where('student_mark',array('session_id'=>$data['session'],'marks<>'=>'A','medium'=>$data['medium'],'class_id'=>$class['class_id'],'mm_id'=>$mark_master[0]['m_id'],'section_id'=>$class['section_id'],'subject_id'=>$sub_list,'e_type'=>$data['e_type'],'status'=>1))->result_array();
 					
 					$this->db->select('max(cast(marks as UNSIGNED)) as max ,sum(marks) as total');
-					$result = $this->db->get_where('student_mark',array('session_id'=>$data['session'],'medium'=>$data['medium'],'class_id'=>$class['class_id'],'section_id'=>$class['section_id'],'subject_id'=>$sub_list,'e_type'=>$data['e_type'],'mm_id'=>$mark_masters[0]['m_id']))->result_array();
+					$result = $this->db->get_where('student_mark',array('session_id'=>$data['session'],'medium'=>$data['medium'],'class_id'=>$class['class_id'],'section_id'=>$class['section_id'],'subject_id'=>$sub_list,'e_type'=>$data['e_type'],'mm_id'=>$mark_masters[0]['m_id'],'status'=>1))->result_array();
 		
 					$this->db->select('count(*) as notapper');
-					$notapper = $this->db->get_where('student_mark',array('session_id'=>$data['session'],'marks'=>'A','medium'=>$data['medium'],'class_id'=>$class['class_id'],'section_id'=>$class['section_id'],'subject_id'=>$sub_list,'e_type'=>$data['e_type'],'mm_id'=>$mark_masters[0]['m_id']))->result_array();
+					$notapper = $this->db->get_where('student_mark',array('session_id'=>$data['session'],'marks'=>'A','medium'=>$data['medium'],'class_id'=>$class['class_id'],'section_id'=>$class['section_id'],'subject_id'=>$sub_list,'e_type'=>$data['e_type'],'mm_id'=>$mark_masters[0]['m_id'],'status'=>1))->result_array();
 					
 					$this->db->select('count(*) as get_max');
-					$result_1 = $this->db->get_where('student_mark',array('marks'=>$result[0]['max'],'session_id'=>$data['session'],'medium'=>$data['medium'],'class_id'=>$class['class_id'],'section_id'=>$class['section_id'],'subject_id'=>$sub_list,'e_type'=>$data['e_type'],'mm_id'=>$mark_masters[0]['m_id']))->result_array();
+					$result_1 = $this->db->get_where('student_mark',array('marks'=>$result[0]['max'],'session_id'=>$data['session'],'medium'=>$data['medium'],'class_id'=>$class['class_id'],'section_id'=>$class['section_id'],'subject_id'=>$sub_list,'e_type'=>$data['e_type'],'mm_id'=>$mark_masters[0]['m_id'],'status'=>1))->result_array();
 		
 					$max_marks_get = $result_1[0]['get_max'];
 					$max = $result[0]['max'];
 					$notapper = $notapper[0]['notapper'];
 					$total =  $result[0]['total'];
-                    
+					
 					$fail = 0;
 					$firstdiv = 0;
 					$seconddiv = 0;
@@ -404,7 +426,7 @@ class Teacher_model extends CI_Model {
 					    $e_marks = 40;
 					}
 					else{
-					    switch($data['type']){
+					    switch($data['e_type']){
 					        case 1 :
 					            $e_marks = 20;
 					            break;
@@ -420,12 +442,17 @@ class Teacher_model extends CI_Model {
 					}
 					
 					foreach($results as $result){
-					    if($data['type'] == 4 || $data['type'] == 9){
+					    if($data['e_type'] == 4 || $data['e_type'] == 9){
 					        $min = 27;
-					    }else{
+					    }
+					    elseif($data['e_type'] == 6){
+					        $min = 17;
+					    }
+					    else{
 					        $min = 7;
 					    }
-					    if($data['type'] == 1 || $data['type'] == 6){
+					    //----------for pre teacher abstract----------------------
+					    if($data['e_type'] == 1){
 					        if($result['marks'] < $min){
 					            $fail = $fail + 1;
 					        }
@@ -439,7 +466,22 @@ class Teacher_model extends CI_Model {
 					            $firstdiv = $firstdiv + 1;
 					        }
 					    }
-					    else if($data['type'] == 4 && $sub_list == 13 && $result['class_id'] == 12){
+					    //----------for Post teacher abstract----------------------
+					    elseif($data['e_type'] == 6){
+					        if($result['marks'] < $min){
+					            $fail = $fail + 1;
+					        }
+					        else if($result['marks'] >= $min && $result['marks'] <= 18){
+					            $thirddiv = $thirddiv + 1;
+					        }
+					        else if($result['marks'] > 18 && $result['marks'] <= 29){
+					            $seconddiv = $seconddiv + 1;
+					        }
+					        else{
+					            $firstdiv = $firstdiv + 1;
+					        }
+					    }
+					    else if($data['e_type'] == 4 && $sub_list == 13 && $result['class_id'] == 12){
 					        if($result['marks'] < 10){
 					            $fail = $fail + 1;
 					        }else if($result['marks'] >= 10 && $result['marks'] <= 13){
@@ -452,7 +494,7 @@ class Teacher_model extends CI_Model {
 					            $firstdiv = $firstdiv + 1;
 					        }
 					    }
-					    else if($data['type'] == 4 && $sub_list == 13 && $result['class_id'] == 13){
+					    else if($data['e_type'] == 4 && $sub_list == 13 && $result['class_id'] == 13){
 					        if($result['marks'] < 14){
 					            $fail = $fail + 1;
 					        }else if($result['marks'] >= 14 && $result['marks'] <= 17){
@@ -482,26 +524,26 @@ class Teacher_model extends CI_Model {
 	
 					$pass = ($no_of_students - $notapper) - $fail;
 					if($pass < 0 ){
-						$pass = 0;
+					    $pass = 0;
 					}
-						
+					
 					if($pass < 10){
-						$pass = '0'.$pass;
+					    $pass = '0'.$pass;
 					}
 					if($firstdiv < 10){
-						$firstdiv = '0'.$firstdiv;
+					    $firstdiv = '0'.$firstdiv;
 					}
 					if($seconddiv < 10){
-						$seconddiv = '0'.$seconddiv;
+					    $seconddiv = '0'.$seconddiv;
 					}
 					if($thirddiv < 10){
-						$thirddiv = '0'.$thirddiv;
+					    $thirddiv = '0'.$thirddiv;
 					}
 					if($max < 10){
-						$max = '0'.$max;
+					    $max = '0'.$max;
 					}
 					if($max_marks_get < 10){
-						$max_marks_get = '0'.$max_marks_get;
+					    $max_marks_get = '0'.$max_marks_get;
 					}
 		
 					$temp['teacher'] = $teacher_name;	//teacher name
@@ -532,7 +574,8 @@ class Teacher_model extends CI_Model {
                                         $temp['notapper'] = $no_of_students - $notapper;
 					//	$temp['pi'] = round($total / $no_of_students);
 					$final[] = $temp;
-				}
+					
+ 				}
 			}
 			if(count($final)>0){
 				$new_final[] = $final;
@@ -558,7 +601,7 @@ class Teacher_model extends CI_Model {
 				$final['first_div'] = 00;
 				$final['teacher'] = '';
 				$final['subject'] = $subject_name;
-                                $final['notapper'] = 00;
+                $final['notapper'] = 00;
 				$temp[] = $final;
 
 				$new_final[] = $temp;
